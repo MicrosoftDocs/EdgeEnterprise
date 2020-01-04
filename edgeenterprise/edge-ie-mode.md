@@ -252,16 +252,18 @@ You are receiving the message because you are missing the required updates. Plea
 
 ### Why am I receiving the following message “To open this page in IE mode, try reinstalling Microsoft Edge with administrator privileges.”?
 
-Microsoft Edge version 77 or later needs to be installed at the system level.
+Microsoft Edge version 77 or later needs to be installed at the system level, and Internet Explorer 11 needs to be enabled in Windows Features.
 
 Possible reasons for this error:
 
 - Microsoft Edge Canary is installed at the user level and doesn’t prompt for elevation.
 - Microsoft Edge Dev, Beta will prompt for elevation but if you cancel the elevation, the installation will be continue at the user level.
+- Internet Explorer 11 has been disabled in Windows Features
 
 Possible solutions:
 
 - Run the installer for any channel at the system level: `installer.exe --system-level`.
+- Enable Internet Explorer 11 in Windows Features
 
 To check that Microsoft Edge is installed at the systems level, type "edge://version" in the Microsoft Edge address bar. The Executable path will show a path starting with *C:\Program Files...*, which indicates a system install. If the Executable path begins with *C:\Users..*, uninstall and then reinstall Microsoft Edge with administrator privileges.
 
