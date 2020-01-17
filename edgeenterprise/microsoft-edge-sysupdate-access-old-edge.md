@@ -29,7 +29,7 @@ Before using the detailed instructions in this article, consider the following 2
 2. Install the [Beta channel](https://www.microsoftedgeinsider.com) of the new version of Microsoft Edge.
 
    > [!NOTE]
-   > This side-by-side solution is less complex and requires less management that the detailed solution described next in this article.
+   > This side-by-side solution is less complex and requires less management than the detailed solution described next in this article.
 
 ## How operating system (OS) changes are triggered
 
