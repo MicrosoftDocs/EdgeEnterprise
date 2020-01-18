@@ -51,11 +51,11 @@ This group policy is documented [here](https://docs.microsoft.com/en-us/deployed
    > If you do not see 'Microsoft Edge Update' available, verify that step 1 was completed correctly
 4. Under **Applications**, double-click "Allow Microsoft Edge Side by Side browser experience"
 5. Select **Enabled** and then click **OK**.  
-   > [!IMPORTANT]
-   > Setting this policy will set the followoing Registry Key (as documented in the link above) to '00000001':
-   > Key: `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\EdgeUpdate`
-   > Value Name: `Allowsxs`
-   > Value Type: 'REG_DWORD'
+
+Setting this policy will set the followoing Registry Key (as documented in the link above) to '00000001':
+- Key: `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\EdgeUpdate`
+- Value Name: `Allowsxs`
+- Value Type: 'REG_DWORD'
    
    > [!NOTE]
    > By default, this group policy is set to "Not configured", which results in Microsoft Edge Legacy being hidden when the new version of Microsoft Edge is installed.
