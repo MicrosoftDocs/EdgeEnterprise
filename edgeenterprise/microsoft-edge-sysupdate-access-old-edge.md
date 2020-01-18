@@ -32,16 +32,6 @@ Before using the detailed instructions in this article, consider the following 2
    > This side-by-side solution is less complex and requires less management than the detailed solution described in this article.
    > However, this does mean that you will be running the Beta Channel rather than the Stable Channel. 
 
-## How operating system (OS) changes are triggered
-
-After the systems are fully updated and the Stable channel of the next version of Microsoft Edge is installed, the following registry key and value is set:
-
-- Key: `Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\EdgeUpdate\ClientState\{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}`
-- Key value: `BrowserReplacement`
-
-   > [!IMPORTANT]
-   > This key is over-written every time the Microsoft Edge Stable channel is updated. As a best practice, we recommend that you do not delete this key to allow users to access both versions of Microsoft Edge.
-
 ## How to enable a side-by-side experience with both versions of Microsoft Edge
 
 Installing the Stable channel of the next version of Microsoft Edge at the system-level will cause the current version (Microsoft Edge Legacy) to be hidden. If you want to let your users see both versions of Microsoft Edge side-by-side in Windows, you can enable this experience by setting the **Allow Microsoft Edge Side by Side browser experience** group policy to "Enabled".
@@ -81,6 +71,16 @@ If the group policy is enabled after Microsoft Edge is deployed, there are the f
 
 2. Microsoft Edge Legacy will need to be re-pinned to Start or the Taskbar because the pin is migrated when the new version of Microsoft Edge is deployed.
 3. Sites that were pinned to Start or the Taskbar for Microsoft Edge Legacy will be migrated to the new version of Microsoft Edge.
+
+## How operating system (OS) changes are triggered
+
+After the systems are fully updated and the Stable channel of the next version of Microsoft Edge is installed, the following registry key and value is set:
+
+- Key: `Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\EdgeUpdate\ClientState\{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}`
+- Key value: `BrowserReplacement`
+
+   > [!IMPORTANT]
+   > This key is over-written every time the Microsoft Edge Stable channel is updated. As a best practice, we recommend that you do not delete this key to allow users to access both versions of Microsoft Edge.
 
 ## See also
 
