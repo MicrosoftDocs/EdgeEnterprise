@@ -34,7 +34,7 @@ Before using the detailed instructions in this article, consider the following 2
 
 ## How to enable a side-by-side experience with both versions of Microsoft Edge
 
-Installing the Stable channel of the next version of Microsoft Edge at the system-level will cause the current version (Microsoft Edge Legacy) to be hidden. If you want to let your users see both versions of Microsoft Edge side-by-side in Windows, you can enable this experience by setting the **Allow Microsoft Edge Side by Side browser experience** group policy to "Enabled".
+Installing the Stable Channel of the next version of Microsoft Edge at the system-level will cause the current version (Microsoft Edge Legacy) to be hidden. If you want to let your users see both versions of Microsoft Edge side-by-side in Windows, you can enable this experience by setting the **Allow Microsoft Edge Side by Side browser experience** group policy to "Enabled".
 
 This group policy is documented [here](https://docs.microsoft.com/en-us/deployedge/microsoft-edge-update-policies#allowsxs).
 
@@ -49,7 +49,7 @@ This group policy is documented [here](https://docs.microsoft.com/en-us/deployed
 3. Under **Computer Configuration**, go to *Administrative Templates>Microsoft Edge Update>Applications*.
    > [!NOTE]
    > If you do not see 'Microsoft Edge Update' available, verify that step 1 was completed correctly
-4. Under **Applications**, select "Allow Microsoft Edge Side by Side browser experience" and then click Edit **policy setting**.
+4. Under **Applications**, double-click "Allow Microsoft Edge Side by Side browser experience"
 5. Select **Enabled** and then click **OK**.  
    > [!IMPORTANT]
    > Setting this policy will set the followoing Registry Key (as documented in the link above) to '00000001':
