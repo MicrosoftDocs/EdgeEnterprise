@@ -36,7 +36,7 @@ Before using the detailed instructions in this article, consider the following 2
 
 After the systems are fully updated and the Stable channel of the next version of Microsoft Edge is installed, the following registry key and value is set:
 
-- Key: `SOFTWARE\Microsoft\EdgeUpdate\ClientState\{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}`
+- Key: `Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\EdgeUpdate\ClientState\{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}`
 - Key value: `BrowserReplacement`
 
    > [!IMPORTANT]
@@ -45,6 +45,8 @@ After the systems are fully updated and the Stable channel of the next version o
 ## How to enable a side-by-side experience with both versions of Microsoft Edge
 
 Installing the Stable channel of the next version of Microsoft Edge at the system-level will cause the current version (Microsoft Edge Legacy) to be hidden. If you want to let your users see both versions of Microsoft Edge side-by-side in Windows, you can enable this experience by setting the **Allow Microsoft Edge Side by Side browser experience** group policy to "Enabled".
+
+This group policy is documented [here](https://docs.microsoft.com/en-us/deployedge/microsoft-edge-update-policies#allowsxs).
 
 ### To enable the side-by-side browser experience policy:
 
@@ -56,15 +58,17 @@ Installing the Stable channel of the next version of Microsoft Edge at the syste
 2. Open the Group Policy Editor (gpedit.msc)
 3. Under **Computer Configuration**, go to *Administrative Templates>Microsoft Edge Update>Applications*.
    > [!NOTE]
-   > If you do not see the Microsoft Edge Update available, verify that step 1 was completed correctly
+   > If you do not see 'Microsoft Edge Update' available, verify that step 1 was completed correctly
 4. Under **Applications**, select "Allow Microsoft Edge Side by Side browser experience" and then click Edit **policy setting**.
 5. Select **Enabled** and then click **OK**.  
-   >[!IMPORTANT]
-   >Setting this policy will set the followoing Registry Key
+   > [!IMPORTANT]
+   > Setting this policy will set the followoing Registry Key (as documented in the link above) to '00000001':
+   > Key: `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\EdgeUpdate`
+   > Value Name: `Allowsxs`
+   > Value Type: 'REG_DWORD'
    
-
-> [!NOTE]
-> By default, this group policy is set to "Not configured", which results in Microsoft Edge Legacy being hidden when the new version of Microsoft Edge is installed.
+   > [!NOTE]
+   > By default, this group policy is set to "Not configured", which results in Microsoft Edge Legacy being hidden when the new version of Microsoft Edge is installed.
 
 For the best experience, the **Allow Microsoft Edge Side by Side browser experience** should be enabled before the new version of Microsoft Edge is deployed to your users' devices.
 
@@ -75,7 +79,7 @@ If the group policy is enabled after Microsoft Edge is deployed, there are the f
    > [!NOTE]
    > The installer can be run directly or automatically when the new version of Microsoft Edge updates.
 
-2. Microsoft Edge Legacy will need to be re-pinned to Start or the Taskbar because the pin is migrated when the new version of Microsoft Edge was deployed.
+2. Microsoft Edge Legacy will need to be re-pinned to Start or the Taskbar because the pin is migrated when the new version of Microsoft Edge is deployed.
 3. Sites that were pinned to Start or the Taskbar for Microsoft Edge Legacy will be migrated to the new version of Microsoft Edge.
 
 ## See also
