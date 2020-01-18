@@ -72,7 +72,7 @@ If the group policy is enabled after Microsoft Edge is deployed, there are the f
 2. Microsoft Edge Legacy will need to be re-pinned to Start or the Taskbar because the pin is migrated when the new version of Microsoft Edge is deployed.
 3. Sites that were pinned to Start or the Taskbar for Microsoft Edge Legacy will be migrated to the new version of Microsoft Edge.
 
-## How operating system (OS) changes are triggered
+## Additional Information
 
 After the systems are fully updated and the Stable channel of the next version of Microsoft Edge is installed, the following registry key and value is set:
 
