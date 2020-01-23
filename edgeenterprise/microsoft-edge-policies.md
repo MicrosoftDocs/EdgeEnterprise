@@ -2712,8 +2712,8 @@ Note that this policy doesn't apply to InPrivate mode.
   - Value Type: list of REG_SZ
   ##### Example value:
 ```
-SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallForcelist\0 = "gbchcmhmhahfdphkhkmpfmihenigjmpp;https://edge.microsoft.com/extensionwebstorebase/v1/crx"
-SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallForcelist\1 = "abcdefghijklmnopabcdefghijklmnop"
+SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallForcelist\0 = "ghbhpcookfemncgoinjblecnilppimih;https://edge.microsoft.com/extensionwebstorebase/v1/crx"
+SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallForcelist\1 = "gggmmkjegpiggikcnhidnjjhmicpibll"
 
 ```
 
@@ -2723,8 +2723,8 @@ SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallForcelist\1 = "abcdefghijklmnop
   - Example value:
 ``` xml
 <array>
-  <string>gbchcmhmhahfdphkhkmpfmihenigjmpp;https://edge.microsoft.com/extensionwebstorebase/v1/crx</string>
-  <string>abcdefghijklmnopabcdefghijklmnop</string>
+  <string>ghbhpcookfemncgoinjblecnilppimih;https://edge.microsoft.com/extensionwebstorebase/v1/crx</string>
+  <string>gggmmkjegpiggikcnhidnjjhmicpibll</string>
 </array>
 ```
   
