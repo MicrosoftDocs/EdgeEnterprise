@@ -23,7 +23,7 @@ This article explains how you can set Microsoft Edge as the default browser on W
 
 You can use the **Set a default associations configuration file** Group Policy or the [DefaultAssociationsConfiguration](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationdefaults#applicationdefaults-defaultassociationsconfiguration) Mobile Device Management setting to set Microsoft Edge as the default browser for your organization.
 
-To set Microsoft Edge Stable as the default browser for html files and http/https links use the following application association file example:
+To set Microsoft Edge Stable as the default browser for html files, http/https links, and PDF files use the following application association file example:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -32,7 +32,7 @@ To set Microsoft Edge Stable as the default browser for html files and http/http
   <Association ApplicationName="Microsoft Edge" ProgId="MSEdgeHTM" Identifier=".htm"/>
   <Association ApplicationName="Microsoft Edge" ProgId="MSEdgeHTM" Identifier="http"/>
   <Association ApplicationName="Microsoft Edge" ProgId="MSEdgeHTM" Identifier="https"/>  
-  <Association ApplicationName="Microsoft Edge" ProgId="MSEdgeHTM" Identifier=".pdf"/>
+  <Association ApplicationName="Microsoft Edge" ProgId="MSEdgePDF" Identifier=".pdf"/>
 </DefaultAssociations>
 ```
 
@@ -64,7 +64,7 @@ The example in the next screenshot shows an associations file named *appassoc.xm
 
 ## Set Microsoft Edge as the default browser on Azure Active Directory joined devices
 
-To set Microsoft Edge as the default browser on Azure Active Directory joined devices follow the steps in the [DefaultAssociationsConfiguration](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationdefaults#applicationdefaults-defaultassociationsconfiguration) Mobile Device Management setting using the following application association file example.
+To set Microsoft Edge as the default browser on Azure Active Directory joined devices follow the steps in the [DefaultAssociationsConfiguration](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationdefaults#applicationdefaults-defaultassociationsconfiguration) Mobile Device Management setting using the following application association file as an example.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -73,7 +73,7 @@ To set Microsoft Edge as the default browser on Azure Active Directory joined de
   <Association ApplicationName="Microsoft Edge" ProgId="MSEdgeHTM" Identifier=".htm"/>
   <Association ApplicationName="Microsoft Edge" ProgId="MSEdgeHTM" Identifier="http"/>
   <Association ApplicationName="Microsoft Edge" ProgId="MSEdgeHTM" Identifier="https"/>  
-  <Association ApplicationName="Microsoft Edge" ProgId="MSEdgeHTM" Identifier=".pdf"/>  
+  <Association ApplicationName="Microsoft Edge" ProgId="MSEdgePDF" Identifier=".pdf"/>
 </DefaultAssociations>
 ```
 

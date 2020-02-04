@@ -49,4 +49,4 @@ The Canary Channel ships daily and is the most bleeding edge of all the channels
 ## See also
 
 - [Microsoft Edge Enterprise landing page](https://aka.ms/EdgeEnterprise)
-- [Channel downloads](https://www.microsoftedgeinsider.com/download)
+- [Channel downloads](https://aka.ms/EdgeEnterprise)

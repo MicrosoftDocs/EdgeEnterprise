@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation"
 ms.author: stmoody
 author: brianalt-msft
 manager: tahills
-ms.date: 01/13/2020
+ms.date: 01/17/2020
 audience: ITPro
 ms.topic: reference
 ms.prod: microsoft-edge
@@ -22,7 +22,7 @@ For information about an additional set of policies used to control how and when
 > This article applies to Microsoft Edge version 77 or later.
 
 ## Available policies
-These tables lists all of the browser-related group policies available in this release of Microsoft Edge. Use the links in the table to get more details about specific policies.
+These tables list all of the browser-related group policies available in this release of Microsoft Edge. Use the links in the table to get more details about specific policies.
 
 |||
 |-|-|
@@ -4640,10 +4640,12 @@ This policy is available only on Windows instances that are joined to a Microsof
 
   ### NewTabPageCompanyLogo
   #### Set new tab page company logo
-  >Supported Versions: Microsoft Edge on Windows and Mac since version 79 or later
+  >DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release. Supported Versions: Microsoft Edge on Windows and Mac since version 79 or later
 
   #### Description
-  Specifies the company logo to use on the new tab page in Microsoft Edge.
+  We are deprecating this policy because it doesn't work as expected and recommend that it not be used.
+
+Specifies the company logo to use on the new tab page in Microsoft Edge.
 
 The policy should be configured as a string that expresses the logo(s) in JSON format. For example: { "default_logo": { "url": "https://www.contoso.com/logo.png", "hash": "cd0aa9856147b6c5b4ff2b7dfee5da20aa38253099ef1b4a64aced233c9afe29" }, "light_logo": { "url": "https://www.contoso.com/light_logo.png", "hash": "517d286edb416bb2625ccfcba9de78296e90da8e32330d4c9c8275c4c1c33737" } }
 
@@ -9213,7 +9215,7 @@ If the [EnableMediaRouter](#enablemediarouter) policy is disabled, then this pol
   >Supported Versions: Microsoft Edge on Windows and Mac since version 77 or later
 
   #### Description
-																																																																																
+																				
 
   This policy enables reporting of usage and crash-related data about Microsoft Edge to Microsoft.
 
@@ -9221,7 +9223,7 @@ Enable this policy to send reporting of usage and crash-related data to Microsof
 
 On Windows 10, Beta and Stable channels, if you don’t configure this policy, Microsoft Edge will default to the Windows diagnostic data setting. If you enable this policy, Microsoft Edge will only send usage data if the Windows Diagnostic data setting is set to Enhanced or Full. If you disable this policy, Microsoft Edge will not send usage data. Crash-related data is sent based on the Windows Diagnostic data setting. Learn more about Windows Diagnostic data settings at [https://go.microsoft.com/fwlink/?linkid=2099569](https://go.microsoft.com/fwlink/?linkid=2099569)
 
-																																												  
+											  
 
 On Windows 10, Canary and Dev channels, this policy controls sending usage data. If this policy is not configured, Microsoft Edge will default to the user's preference. Crash-related data is sent based on the Windows Diagnostic data setting. Learn more about Windows Diagnostic data settings: [https://go.microsoft.com/fwlink/?linkid=2099569](https://go.microsoft.com/fwlink/?linkid=2099569)
 
@@ -10399,11 +10401,11 @@ SOFTWARE\Policies\Microsoft\Edge\SecurityKeyPermitAttestation\0 = "https://conto
   >Supported Versions: Microsoft Edge on Windows and Mac since version 77 or later
 
   #### Description
-																																																																																
+																				
 
   This policy enables sending info about websites visited in Microsoft Edge to Microsoft to improve services like search.
 
-																							  
+						 
 
 Enable this policy to send info about websites visited in Microsoft Edge to Microsoft. Disable this policy to not send info about websites visited in Microsoft Edge to Microsoft. In both cases, users can't change or override the setting.
 
@@ -10785,7 +10787,7 @@ If this policy is false or unset, the warnings will appear on such unsupported c
   #### Description
   Disables data synchronization in Microsoft Edge. This policy also prevents the sync consent prompt from appearing.
 
-																				 
+					 
 
 If you don't set this policy or apply it as recommended, users will be able to turn sync on or off. If you apply this policy as mandatory, users will not be able to turn sync on.
 

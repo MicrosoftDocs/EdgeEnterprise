@@ -58,7 +58,7 @@ A Primary Refresh Token (PRT) is an AAD key that’s used for authentication on 
 
 #### Windows Integrated Authentication (WIA)
 
-Windows Integrated Authentication (WIA) is enabled in Active Directory Federation Services (AD FS) for authentication requests within an organization's internal network for any application that uses a browser for its authentication.
+Windows Integrated Authentication (WIA) is enabled in Active Directory Federation Services (AD FS) for authentication requests within an organization's internal network for any application that uses a browser for its authentication. Microsoft Edge will only respond to WIA requests if the server is on the intranet. To configure which servers are enabled for integrated authentication, please see [the AuthServerAllowlist policy](https://docs.microsoft.com/deployedge/microsoft-edge-policies#authserverallowlist).
 
 To use WIA with Microsoft Edge (version 77 and later) you have to configure the AD FS property **WiaSupportedUserAgents** and add support for the new Microsoft Edge user agent string. We use the "Edg" token to avoid compatibility issues that may be caused by using the string "Edge", which is used by the current version of Microsoft Edge based on EdgeHTML. The "Edg" token is also consistent with existing tokens used on iOS and Android. The following example of a UA string is for the latest Dev Channel build when this article was published:<br> `"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3951.0 Safari/537.36 Edg/80.0.334.2"`
 

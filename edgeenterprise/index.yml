@@ -28,7 +28,7 @@ landingContent:
           - text: Microsoft Edge channel overview
             url: microsoft-edge-channels.md
           - text: Download a Microsoft Edge channel
-            url: "https://www.microsoftedgeinsider.com/download"
+            url: "https://aka.ms/EdgeEnterprise"
           - text: Use enterprise features
             url: edge-ie-mode.md
 #          - text: FastTrack for Microsoft Edge
@@ -47,8 +47,10 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Configure Microsoft Edge on Windows and macOS
+          - text: Configure Microsoft Edge on Windows
             url: configure-microsoft-edge.md
+          - text: Configure Microsoft Edge on macOS
+            url: configure-microsoft-edge-on-mac.md
           - text: Set Microsoft Edge as the default browser
             url: edge-default-browser.md
 
@@ -75,6 +77,8 @@ landingContent:
             url: microsoft-edge-policies.md
           - text: Update policy reference
             url: microsoft-edge-update-policies.md
+          - text: Microsoft Security Baselines Blog
+            url: "https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines"
   # Card 6 (col 3, 2nd row)
   - title: Engage with enterprise community or get help
     linkLists:
