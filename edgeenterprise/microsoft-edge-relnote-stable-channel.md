@@ -16,6 +16,10 @@ description: "Microsoft Edge release notes for Stable Channel"
 
 These release notes provide information about new features and non-security updates that are included in the Microsoft Edge Stable Channel. All the security updates are listed [here](microsoft-edge-relnotes-security.md).
 
+## Version 80.0.361.66: March 4
+
+Security updates are listed [here](https://docs.microsoft.com/deployedge/microsoft-edge-relnotes-security#march-4-2020)
+
 ## Version 80.0.361.62: February 25
 
 Security updates are listed [here](https://docs.microsoft.com/deployedge/microsoft-edge-relnotes-security#february-25-2020)
