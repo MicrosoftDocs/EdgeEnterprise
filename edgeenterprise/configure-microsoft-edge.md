@@ -123,3 +123,6 @@ A master preferences file is a text file that’s formatted using JSON markup. T
 - [Microsoft Edge Enterprise landing page](https://aka.ms/EdgeEnterprise)
 - [Configure for Windows with Intune](configure-edge-with-intune.md)
 - [Configure for macOS](configure-microsoft-edge-on-mac.md)
+- [Browse Microsoft Edge Enterprise Policies](microsoft-edge-policies.md)
+
+

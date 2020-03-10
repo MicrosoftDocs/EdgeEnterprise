@@ -1,20 +1,46 @@
-# last revised 01/16/2020
+# last revised 03/02/2020
 - name: Microsoft Edge documentation 
   href: index.yml
 - name: Microsoft Edge content updates
   href: microsoft-edge-content-updates.md
-- name: Microsoft Edge in the enterprise
+# GET STARTED
+- name: Get started with Microsoft Edge
+  items:
+   - name: Learn about Microsoft Edge Channels
+     href: microsoft-edge-channels.md
+   - name: See what's new
+     href: https://www.microsoftedgeinsider.com/whats-new
+   - name: Explore documentation resources
+     href: https://docs.microsoft.com/microsoft-edge/
+   - name: Windows Blogs - Microsoft Edge Developer
+     href: https://blogs.windows.com/msedgedev/
+# PLAN
+- name: Plan for Microsoft Edge
   items:
    - name: Plan your deployment of Microsoft Edge
      href: deploy-edge-plan-deployment.md
-   - name: Microsoft Edge Channels
-     href: microsoft-edge-channels.md
+   - name: Microsoft Edge policy mapping
+     items:
+      - name: Policy mapping overview
+        href: microsoft-edge-policy-map-overview.md
+      - name: Microsoft Edge Legacy to Microsoft Edge policy mapping
+        href: microsoft-edge-policy-map-legacy-to-newedge.md
+      - name: Google Chrome to Microsoft Edge policy mapping
+        href: microsoft-edge-policy-map-chrome-to-newedge.md
+#      - name: Internet Explorer to Microsoft Edge policy mapping
+#        href: microsoft-edge-policy-map-ie-to-newedge.md
    - name: Supported Operating Systems
      href: microsoft-edge-supported-operating-systems.md
-   - name: Support Lifecycle Policy
+   - name: Lifecycle Policy
      href: microsoft-edge-support-lifecycle.md
    - name: Supported languages
      href: microsoft-edge-supported-languages.md
+   - name: Beta Channel Release Notes
+     href: microsoft-edge-relnote-beta-channel.md
+   - name: Stable Channel Release Notes
+     href: microsoft-edge-relnote-stable-channel.md
+   - name: Security updates
+     href: microsoft-edge-relnotes-security.md
    - name: System updates for Microsoft Edge
      items:
       - name: Blocker Toolkit for Microsoft Edge updates
@@ -23,7 +49,7 @@
         href: microsoft-edge-sysupdate-access-old-edge.md
       - name: Windows updates to support Microsoft Edge
         href: microsoft-edge-sysupdate-windows-updates.md
-# Deploy
+# DEPLOY
 - name: Deploy Microsoft Edge
   items:
    - name: Deploy to Windows with Configuration Manager 
@@ -37,8 +63,8 @@
    - name: Deploy to macOS with Intune
 #    href: deploy-edge-mac-intune.md
      href: https://docs.microsoft.com/intune/apps/apps-edge-macos/?toc=https://docs.microsoft.com/DeployEdge/toc.json&bc=https://docs.microsoft.com/DeployEdge/breadcrumb/toc.json
-# Configure
-- name: Configure Microsoft Edge 
+# CONFIGURE
+- name: Configure Microsoft Edge
   items:
    - name: Configure for Windows
      href: configure-microsoft-edge.md
@@ -46,42 +72,47 @@
      href: configure-edge-with-intune.md
    - name: Configure for Windows with Mobile Device Management
      href: configure-edge-with-mdm.md
-   - name: Configure for macOS
+   - name: Configure for macOS using a .plist
      href: configure-microsoft-edge-on-mac.md
-   - name: Set Microsoft Edge as the default browser
-     href: edge-default-browser.md 
-   - name: Browser policy reference
-     href: microsoft-edge-policies.md
-   - name: Update policy reference
-     href: microsoft-edge-update-policies.md
-# - name: Authenticated features
-#  items:
-#   - name: Identity support and configuration
-#     href: microsoft-edge-security-identity.md
-- name: Enterprise features 
+   - name: Configure for macOS with Jamf
+     href: configure-microsoft-edge-on-mac-jamf.md
+# USE ENTERPRISE FEATURES
+- name: Use Microsoft Edge enterprise features 
   items:
    - name: Configurations and experimentation
      href: edge-configuration-and-experiments.md
    - name: Identity support and configuration
      href: microsoft-edge-security-identity.md
-   - name: Microsoft Edge and Sync
-     href: microsoft-edge-enterprise-sync.md
    - name: Microsoft Edge and Enterprise State Roaming
      href: microsoft-edge-enterprise-state-roaming.md
-   - name: Use Microsoft Edge in IE Mode 
-     href: edge-ie-mode.md
    - name: Microsoft Edge kiosk mode
      href: microsoft-edge-kiosk-mode.md
-- name: Security and privacy
+   - name: Microsoft Edge and Sync
+     href: microsoft-edge-enterprise-sync.md
+   - name: Set Microsoft Edge as the default browser
+     href: edge-default-browser.md
+   - name: Use Microsoft Edge in IE Mode 
+     href: edge-ie-mode.md
+# SECURITY AND PRIVACY
+- name: Security and privacy for Microsoft Edge
   items:     
    - name: Security
      href: security-overview.md
    - name: Allow list for Microsoft Edge endpoints
      href: microsoft-edge-security-endpoints.md
+   - name: Protect against potentially unwanted applications
+     href: microsoft-edge-potentially-unwanted-apps.md
    - name: Privacy
      href: microsoft-edge-privacy-policy.md
-- name: Troubleshoot Microsoft Edge
-  href: microsoft-edge-troubleshooting.md
+   - name: Microsoft Edge Privacy Whitepaper
+     href: https://docs.microsoft.com/microsoft-edge/privacy-whitepaper
+# REFERENCE
+- name: Microsoft Edge Reference
+  items:
+   - name: Browser policy reference
+     href: microsoft-edge-policies.md
+   - name: Update policy reference
+     href: microsoft-edge-update-policies.md
 - name: Frequently asked questions
   href: faqs-edge-in-the-enterprise.md
 

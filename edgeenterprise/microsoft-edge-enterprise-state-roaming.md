@@ -3,7 +3,7 @@ title: "Microsoft Edge and Enterprise State Roaming"
 ms.author: kvice
 author: dan-wesley
 manager: laurawi
-ms.date: 12/12/2019
+ms.date: 02/14/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -40,7 +40,7 @@ No. Microsoft Edge will continue to support most of the abilities provided in th
 
 ### Unified experience across devices and new device configuration time
 
-When a user is signed into their windows device with an Azure Active Directory (AAD account), Microsoft Edge will implicitly inherit that Identity on first launch of the new browser.
+When a user is signed into their windows device with an Azure Active Directory (Azure AD account), Microsoft Edge will implicitly inherit that Identity on first launch of the new browser.
 
 After a user has explicitly consented to turning on sync in the new Microsoft Edge, the browser will sync all the browser data, such as favorites, passwords, and history. This ensures a unified experience across devices and reduces the time needed to personalize the browser.
 
@@ -86,7 +86,7 @@ The preceding list of attributes is different than the attributes that could be 
 
 ## Terms of service
 
-Terms of service for Microsoft Edge sync falls under the Microsoft software license viewable in Microsoft Edge at edge://terms.
+Terms of service for Microsoft Edge sync falls under the Microsoft software license viewable in Microsoft Edge at *edge://terms*.
 
 ## See also
 

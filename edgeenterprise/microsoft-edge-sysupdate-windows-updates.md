@@ -3,7 +3,7 @@ title: "Windows updates for Microsoft Edge"
 ms.author: jtkim
 author: dan-wesley
 manager: srugh
-ms.date: 01/14/2020
+ms.date: 02/20/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -78,10 +78,10 @@ The following table gives the details for specific updates in each set of change
 
 | Windows 10 | More Information | Required Download |
 |--|--|--|
-| Version 1709 | [KB4525241](https://support.microsoft.com/help/4525241/windows-10-update-kb4525241) | [Cumulative Update for Windows 10 Version 1709](http://www.catalog.update.microsoft.com/Search.aspx?q=4525241) |
-| Version 1803  | [KB4525237](https://support.microsoft.com/help/4525237/windows-10-update-kb4525237) | [Cumulative Update for Windows 10 Version 1803](http://www.catalog.update.microsoft.com/Search.aspx?q=KB4525237) |
-| Version 1809  | [KB4523205](https://support.microsoft.com/help/4523205/windows-10-update-kb4523205) | [Cumulative Update for Windows 10 Version 1809](http://www.catalog.update.microsoft.com/Search.aspx?q=4523205) |
-| Version 1903 and 1909 |[KB4517389](https://support.microsoft.com/help/4517389/windows-10-update-kb4517389)  | [Cumulative Update for Windows 10 Version 1903 and 1909](http://www.catalog.update.microsoft.com/Search.aspx?q=4517389) |
+| Version 1709 | [KB4525241](https://support.microsoft.com/help/4525241/windows-10-update-kb4525241) | [Cumulative Update for Windows 10 Version 1709](https://www.catalog.update.microsoft.com/Search.aspx?q=4525241) |
+| Version 1803  | [KB4525237](https://support.microsoft.com/help/4525237/windows-10-update-kb4525237) | [Cumulative Update for Windows 10 Version 1803](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4525237) |
+| Version 1809  | [KB4523205](https://support.microsoft.com/help/4523205/windows-10-update-kb4523205) | [Cumulative Update for Windows 10 Version 1809](https://www.catalog.update.microsoft.com/Search.aspx?q=4523205) |
+| Version 1903 and 1909 |[KB4517389](https://support.microsoft.com/help/4517389/windows-10-update-kb4517389)  | [Cumulative Update for Windows 10 Version 1903 and 1909](https://www.catalog.update.microsoft.com/Search.aspx?q=4517389) |
 
 ## See also
 

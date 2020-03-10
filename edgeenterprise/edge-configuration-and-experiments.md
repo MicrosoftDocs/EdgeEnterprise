@@ -3,7 +3,7 @@ title: "Microsoft Edge configurations and experimentation"
 ms.author: kvice
 author: dan-wesley
 manager: srugh
-ms.date: 10/31/2019
+ms.date: 02/20/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -17,7 +17,7 @@ description: "Microsoft Edge configurations and experimentation"
 This article describes the interaction between Microsoft Edge and the Experimentation and Configuration Service (ECS). Microsoft Edge communicates with this service to request and receive different kinds of payloads. These payloads include configurations, feature rollouts, and experiments.
 
 > [!IMPORTANT]
-> If the client is air-gapped without Internet access, add the `ecs.skype.com` endpoint to the allowed list to make sure payloads can be received.
+> Make sure clients are able to access `https://config.edge.skype.com` so payloads can be received.
 
 > [!NOTE]
 > This applies to Microsoft Edge version 77 or later.

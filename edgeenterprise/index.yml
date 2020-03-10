@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 
-title: Microsoft Edge documentation # < 60 chars
+title: Microsoft Edge documentation 
 summary: Microsoft Edge enhances and extends the browser experience. It runs on Windows, macOS, iOS and Android devices. # < 160 chars
 
 metadata:
@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: dan-wesley #Required; your GitHub user alias, with correct capitalization.
   ms.author: kvice #Required; microsoft alias of author; optional team alias.
-  ms.date: 12/16/2019 #Required; mm/dd/yyyy format.
+  ms.date: 02/24/2020 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -38,6 +38,8 @@ landingContent:
     linkLists:
       - linkListType: deploy
         links:
+          - text: Plan your deployment of Microsoft Edge
+            url: deploy-edge-plan-deployment.md
           - text: Deploy to Windows
             url: https://docs.microsoft.com/configmgr/apps/deploy-use/deploy-edge?toc=https://docs.microsoft.com/DeployEdge/toc.json&bc=https://docs.microsoft.com/DeployEdge/breadcrumb/toc.json
           - text: Deploy to macOS
@@ -77,6 +79,8 @@ landingContent:
             url: microsoft-edge-policies.md
           - text: Update policy reference
             url: microsoft-edge-update-policies.md
+          - text: Policy mapping overview
+            url: microsoft-edge-policy-map-overview.md
           - text: Microsoft Security Baselines Blog
             url: "https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines"
   # Card 6 (col 3, 2nd row)
@@ -88,5 +92,5 @@ landingContent:
              url: "https://techcommunity.microsoft.com/t5/Enterprise/bd-p/EdgeInsiderEnterprise"
            - text: Contact Microsoft Edge support
              url: "https://microsoftedgesupport.microsoft.com/hc/"
-           - text: Troubleshoot Microsoft Edge
-             url: microsoft-edge-troubleshooting.md
+#           - text: Troubleshoot Microsoft Edge
+#             url: microsoft-edge-troubleshooting.md

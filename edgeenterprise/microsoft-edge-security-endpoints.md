@@ -3,7 +3,7 @@ title: "Allow list for Microsoft Edge endpoints"
 ms.author: kvice
 author: dan-wesley
 manager: srugh
-ms.date: 12/06/2019
+ms.date: 02/24/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -31,7 +31,7 @@ The service that Microsoft Edge uses to check for new updates.
 
 ### Experimentation and Configuration service
 
-- `https://ecs.skype.com`
+- `https://config.ecs.skype.com`
 
 ### Download locations for Microsoft Edge
 

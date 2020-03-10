@@ -3,7 +3,7 @@ title: "Microsoft Edge Sync"
 ms.author: kvice
 author: dan-wesley
 manager: laurawi
-ms.date: 12/12/2019
+ms.date: 02/14/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -14,7 +14,7 @@ description: "Microsoft Edge Sync"
 
 # Microsoft Edge Sync
 
-This article explains how to use Microsoft Edge to sync your history, favorites, passwords, and other browser data across all your signed-in devices.
+This article explains how to use Microsoft Edge to sync your favorites, passwords, and other browser data across all your signed-in devices.
 
 > [!NOTE]
 > This article applies to Microsoft Edge version 77 or later.
@@ -27,9 +27,6 @@ Microsoft Edge sync enables users to access their browsing data across all their
 - Passwords
 - Addresses and more (form-fill)
 - Settings
-- Open tabs [Coming soon]
-- History [Coming soon]
-- Extensions [Coming soon]
 
 Sync functionality is enabled via user consent and users can turn sync on or off for each of the data types listed above.
 
@@ -38,9 +35,9 @@ Sync functionality is enabled via user consent and users can turn sync on or off
 
 ## Prerequisites
 
-Currently Microsoft Edge sync for Azure Active Directory (AAD) accounts is only available for the following subscriptions:
+Currently Microsoft Edge sync for Azure Active Directory (Azure AD) accounts is only available for the following subscriptions:
 
-- AAD Premium (P1 and P2)
+- Azure AD Premium (P1 and P2)
 - Office 365 E3 and above
 - Azure Information Protection (P1& P2)
 - All EDU subscriptions (O365 A1 or above, M365 A1 or above, or AIP P1 or P2 for Students or Faculty)
@@ -53,7 +50,7 @@ Currently Microsoft Edge sync for Azure Active Directory (AAD) accounts is only 
 The following configuration options are available for enabling Microsoft Edge sync:
 
 - Azure Information Protection (AIP)
-- AAD Enterprise State Roaming (ESR)
+- Azure AD Enterprise State Roaming (ESR)
 
 If both AIP and ESR are disabled, users will see an error message indicating that sync is not available for their account.
 
@@ -66,13 +63,13 @@ To restrict sync to certain set of users, the [AADRM onboarding control policy](
 > [!CAUTION]
 > This will also restrict access for other applications using Azure Information Protection, such as Microsoft Word or Microsoft Outlook.
 
-### AAD Enterprise State Roaming (ESR)
+### Azure AD Enterprise State Roaming (ESR)
 
 If the Azure Active Directory [Enterprise State Roaming](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview) (ESR) feature is enabled for any user or tenant, they can use the Microsoft Edge sync feature regardless of the onboarding control policy setting.
 
 ## Microsoft Edge and Enterprise State Roaming
 
-The new Microsoft Edge is a cross-platform application with an expanded scope for syncing user data across all their devices and is no longer a part of AAD Enterprise State Roaming. However, the new Microsoft Edge will fulfill the data protection promises of ESR, such as the ability to bring your own key. For more information, see [Microsoft Edge and Enterprise State Roaming](microsoft-edge-enterprise-state-roaming.md).
+The new Microsoft Edge is a cross-platform application with an expanded scope for syncing user data across all their devices and is no longer a part of Azure AD Enterprise State Roaming. However, the new Microsoft Edge will fulfill the data protection promises of ESR, such as the ability to bring your own key. For more information, see [Microsoft Edge and Enterprise State Roaming](microsoft-edge-enterprise-state-roaming.md).
 
 ## Sync group policies
 
@@ -89,7 +86,7 @@ The current version of Microsoft Edge browser will continue to participate in th
 
 ### Where is sync data stored for Microsoft Edge?
 
-Synced data for AAD accounts is stored in secure servers according to the tenant ID. For example, the data for a tenant that is registered in the United States is stored in servers geo-located for that region and leverages the same storage solution used by Office applications. While the synced data for AAD accounts is encrypted before leaving a user’s device, it is further encrypted when stored in the cloud.
+Synced data for Azure AD accounts is stored in secure servers according to the tenant ID. For example, the data for a tenant that is registered in the United States is stored in servers geo-located for that region and leverages the same storage solution used by Office applications. While the synced data for Azure AD accounts is encrypted before leaving a user’s device, it is further encrypted when stored in the cloud.
 
 ### Will the new Chromium-based Microsoft Edge browser sync with the current in-market version of Microsoft Edge?
 
@@ -99,9 +96,9 @@ No, it won’t. We believe connecting these two ecosystems will lead to compromi
 
 Currently Microsoft Edge doesn't support sync for on-prem accounts. We will be adding this support in a future release.
 
-### Is Microsoft Edge going to support sync for non-premium AAD accounts?
+### Is Microsoft Edge going to support sync for non-premium Azure AD accounts?
 
-Yes, sync will be enabled for all paid AAD SKUs in future releases.
+Yes, sync will be enabled for all paid Azure AD SKUs in future releases.
 
 ## See also
 

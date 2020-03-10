@@ -3,7 +3,7 @@ title: "Blocker Toolkit to disable automatic delivery of Microsoft Edge"
 ms.author: kvice
 author: dan-wesley
 manager: srugh
-ms.date: 01/10/2020
+ms.date: 02/28/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -14,7 +14,7 @@ description: "Blocker Toolkit to disable automatic delivery of Microsoft Edge"
 
 # Blocker Toolkit to disable automatic delivery of Microsoft Edge (Chromium-based)
 
-This article describes the Blocker Toolkit for disabling automatic delivery and installation of Microsoft Edge. This article was updated on **01/09/2020** with more information about devices that might require you to use the Blocker Toolkit.
+This article describes the Blocker Toolkit for disabling automatic delivery and installation of Microsoft Edge. This article was updated on **01/09/2020** with more information about devices that might require you to use the Blocker Toolkit and on **2/28/2020** to remove "MDM managed" from the criteria of devices to be excluded from this automatic update.
 
 > [!NOTE]
 > This applies to Microsoft Edge Stable channel.
@@ -23,7 +23,7 @@ This article describes the Blocker Toolkit for disabling automatic delivery and 
 
 To help our customers become more secure and up-to-date, Microsoft will distribute Microsoft Edge (Chromium-based) to Home and Pro Edition devices running Windows 10 version 1803 and newer via Windows Update. This process will start after January 15th, 2020 and more information will be available on that date.
 
-The Blocker Toolkit is intended for organizations that would like to block automatic delivery of Microsoft Edge (Chromium-based) on devices running Windows 10 version 1803 and newer that are running the Home or Pro Edition of Windows. All other versions and Editions of Windows are excluded from being updated automatically. Devices running Windows 10 Home or Pro Edition that are joined to an Active Directory or Azure Active Directory domain, are MDM managed, or are WSUS or WUfB managed, will also be excluded from this automatic update.
+The Blocker Toolkit is intended for organizations that would like to block automatic delivery of Microsoft Edge (Chromium-based) on devices running Windows 10 version 1803 and newer that are running the Home or Pro Edition of Windows. All other versions and Editions of Windows are excluded from being updated automatically. Devices running Windows 10 Home or Pro Edition that are joined to an Active Directory or Azure Active Directory domain, or are WSUS or WUfB managed, will also be excluded from this automatic update.
 
 **It's important to note that:**
 
