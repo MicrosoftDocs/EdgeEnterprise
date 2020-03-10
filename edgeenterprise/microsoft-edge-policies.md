@@ -9718,7 +9718,7 @@ If the [DefaultSearchProviderSearchURL](#defaultsearchprovidersearchurl) policy 
   - Value Type: REG_SZ
   ##### Example value:
 ```
-SOFTWARE\Policies\Microsoft\Edge\ManagedSearchEngines = [
+[
   {
     "is_default": true, 
     "keyword": "example1.com", 
