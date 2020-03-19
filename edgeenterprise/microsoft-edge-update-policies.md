@@ -382,4 +382,4 @@ https://www.microsoft.com
 
 ## See also
   - [Configuring Microsoft Edge](configure-microsoft-edge.md)
-  - [Microsoft Edge Enterprise landing page](https://aka.ms/EdgeEnterprise)
+  - [Download Microsoft Edge For Enterprise](https://aka.ms/EdgeEnterprise)
