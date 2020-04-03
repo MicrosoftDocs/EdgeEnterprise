@@ -53,7 +53,7 @@ Fixed various bugs and performance issues.
 
 ### Resolved issues
 
-- Fixed an issue where Password, Payment and Cookies fail to get imported in Microsoft Edge.
+- Fixed an issue where Password, Payment, and Cookies fail to get imported in Microsoft Edge.
 
 ## Version 80.0.361.50: February 11
 
@@ -92,7 +92,7 @@ Security updates are listed [here](https://docs.microsoft.com/deployedge/microso
 - [LegacySameSiteCookieBehaviorEnabled](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#legacysamesitecookiebehaviorenabled) - Enable default legacy SameSite cookie behavior setting.
 - [LegacySameSiteCookieBehaviorEnabledForDomainList](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) - Revert to legacy SameSite behavior for cookies on specified sites.
 - [PaymentMethodQueryEnabled](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#paymentmethodqueryenabled) - Allow websites to query for available payment methods.
-- [PersonalizationReportingEnabled](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#personalizationreportingenabled) - Allow personalization of ads, search and news by sending browsing history to Microsoft.
+- [PersonalizationReportingEnabled](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#personalizationreportingenabled) - Allow personalization of ads, search, and news by sending browsing history to Microsoft.
 - [PinningWizardAllowed](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#pinningwizardallowed) - Allow Pin to taskbar wizard.
 - [SmartScreenPuaEnabled](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#smartscreenpuaenabled) - Configure Microsoft Defender SmartScreen to block potentially unwanted apps.
 - [TotalMemoryLimitMb](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#totalmemorylimitmb) - Set limit on megabytes of memory a single Microsoft Edge instance can use.
@@ -109,7 +109,7 @@ The following policy was deprecated.
 ### Resolved issues
 
 - Fixed an issue where audio is not working in Citrix environment.
-- Fixed an issue where Microsoft Edge and legacy Microsoft Edge side by side experience results in broken legacy links and crashes.
+- Fixed an issue where Microsoft Edge and legacy Microsoft Edge side-by-side experience results in broken legacy links and crashes.
 
 ## See also
 
