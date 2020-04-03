@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Stable Channel"
 ms.author: kvice
 author: dan-wesley
 manager: laurawi
-ms.date: 04/01/2020
+ms.date: 04/06/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -18,6 +18,12 @@ These release notes provide information about new features and non-security upda
 
 > [!IMPORTANT]
 > Please see this [update on Stable channel releases](https://blogs.windows.com/msedgedev/2020/03/20/update-stable-channel-releases/).
+
+## Version 80.0.361.1xx: April x
+<!-- 
+
+Fixed various bugs and performance issues. -->
+
 
 ## Version 80.0.361.109: April 1
 
