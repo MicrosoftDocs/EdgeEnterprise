@@ -11470,6 +11470,8 @@ Specifically, there's a **Use a web service to help resolve navigation errors** 
   #### Description
   Determines which accounts can be set as browser primary accounts in Microsoft Edge (the account that is chosen during the Sync opt-in flow).
 
+One or more accounts can be configured for this policy according to the pattern/regular expression (regex) used.
+
 If a user tries to set a browser primary account with a username that doesn't match this pattern, they are blocked and see an appropriate error message.
 
 If you don't configure this policy or leave it blank, users can set any account as a browser primary account in Microsoft Edge.
@@ -11496,7 +11498,7 @@ If you don't configure this policy or leave it blank, users can set any account 
   - Value Type: REG_SZ
   ##### Example value:
 ```
-.*@contoso.com
+.*@(contoso1\.com|contoso2\.com)
 ```
 
 
@@ -11504,7 +11506,7 @@ If you don't configure this policy or leave it blank, users can set any account 
   - Preference Key Name: RestrictSigninToPattern
   - Example value:
 ``` xml
-<string>.*@contoso.com</string>
+<string>.*@(contoso1\.com|contoso2\.com)</string>
 ```
   
 
