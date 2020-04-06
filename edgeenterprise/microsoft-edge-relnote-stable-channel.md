@@ -19,7 +19,14 @@ These release notes provide information about new features and non-security upda
 > [!IMPORTANT]
 > Please see this [update on Stable channel releases](https://blogs.windows.com/msedgedev/2020/03/20/update-stable-channel-releases/).
 
-## Version 80.0.361.1xx: April x
+## Version 81.0.361.1xx: April x
+
+<!-- link to latest security updates? 
+
+Security updates are listed [here](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnotes-security#april-1-2020)
+
+-->
+
 
 <!-- begin based on beta Feb 20 81.0.416.12 -->
 ### Feature updates
@@ -66,7 +73,7 @@ These release notes provide information about new features and non-security upda
 
 #### New policies
 
-12 new policies were added. Download the updated Administrative Templates from the [Microsoft Edge Enterprise landing page](https://aka.ms/EdgeEnterprise). The following new policies were added.
+11 new policies were added. Download the updated Administrative Templates from the [Microsoft Edge Enterprise landing page](https://aka.ms/EdgeEnterprise). The following new policies were added.
 
 - [AmbientAuthenticationInPrivateModesEnabled](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#ambientauthenticationinprivatemodesenabled) - Enable Ambient Authentication for InPrivate and Guest profiles. 
 - [AudioSandboxEnabled](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#audiosandboxenabled) - Allow the audio sandbox to run.
