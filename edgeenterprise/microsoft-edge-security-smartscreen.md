@@ -3,7 +3,7 @@ title: "Microsoft Edge support for Windows Defender SmartScreen"
 ms.author: kvice
 author: dan-wesley
 manager: srugh
-ms.date: 04/08/2020
+ms.date: 04/09/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -17,6 +17,9 @@ description: "Microsoft Edge support for Windows Defender SmartScreen"
 Windows Defender SmartScreen (SmartScreen) is a service that Microsoft Edge uses to keep you safe while you browse the web.  Windows Defender SmartScreen provides an early warning system against websites that might engage in phishing attacks or attempt to distribute malware through a focused attack.
 
 In addition to learning about the benefits of using Windows Defender SmartScreen, and how it works, you'll learn how to turn this service On or Off.
+
+> [!NOTE]
+> Before Windows 10, version 1703, this feature was called the SmartScreen filter when used within the browser and Windows SmartScreen when used outside of the browser.
 
 > [!NOTE]
 > This article applies to Microsoft Edge version 77 or later.
@@ -50,13 +53,12 @@ Windows Defender SmartScreen determines whether a downloaded app or app installe
 - Checking downloaded files against a list of reported malicious software sites and programs known to be unsafe. If it finds a match, Windows Defender SmartScreen shows a warning to let the user know that the site might be malicious.
 - Checking downloaded files against a dynamic list of files that are well known and downloaded by many Windows users. If the file isn't on that list, Windows Defender SmartScreen shows a warning, advising caution.
 
-The next screenshot shows an example of a SmartScreen warning message when a Visual Studio Code user tries to open an external web site.
+The next screenshot shows an example of a SmartScreen warning message when a user tries to open an external web site.
 
 ![SmartScreen warning message for link to external site](media/microsoft-edge-security-smartscreen/microsoft-edge-smartscreen-warning.png)
 
-
-> [!NOTE]
-> Before Windows 10, version 1703, this feature was called the SmartScreen filter when used within the browser and Windows SmartScreen when used outside of the browser.
+> [!CAUTION]
+> By default, SmartScreen lets users bypass warnings. Because this user interaction is potentially risky, we recommend that you review these [recommended group policy settings](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-available-settings#recommended-group-policy-and-mdm-settings-for-your-organization).
 
 ## SmartScreen and user privacy
 
@@ -68,15 +70,23 @@ For more information about SmartScreen and privacy, read the [Microsoft Edge Pri
 
 ## SmartScreen setup for admins
 
-Admins can set up SmartScreen using Group Policy, Microsoft Intune, and mobile device management (MDM) settings. Based on how you set up SmartScreen, you can show users a warning page and let them continue to the site, or you can block the site entirely. For more information, see:
+Admins can set up SmartScreen using Group Policy, Microsoft Intune, and mobile device management (MDM) settings. Based on how you set up SmartScreen, you can show users a warning page and let them continue to the site, or you can block the site entirely.
+
+### SmartScreen set up using Group Policy
+
+For a complete list of SmartScreen policies, see
+[SmartScreen settings](https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-policies#smartscreen-settings)
+
+### SmartScreen set up using Microsoft Intune or MDM
+
+For more information, see:
 
 - [Windows Intune SmartScreen settings](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#windows-defender-smartscreen-settings)
 - [MDM policy settings](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#windows-defender-smartscreen-settings)
 
 ## SmartScreen setup for users
 
-
-
+SmartScreen is turned on by default for Microsoft Edge. To turn off SmartScreen, go to *edge://settings/privacy > Services > Microsoft Defender SmartScreen*. This setting is the same for all profiles associated with the installation of Microsoft Edge on a device. This setting is not synced across devices. The setting applies to InPrivate browsing and Guest mode. If a device is managed with group policies set by an organization, this will be reflected in *edge://settings/privacy*.  
 
 ## See also
 
