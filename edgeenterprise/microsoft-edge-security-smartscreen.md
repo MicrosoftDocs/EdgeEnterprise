@@ -14,19 +14,19 @@ description: "Microsoft Edge support for Windows Defender SmartScreen"
 
 # Microsoft Edge support for Windows Defender SmartScreen
 
-Windows Defender SmartScreen is a service that Microsoft Edge uses to keep you safe while you browse the web.  Windows Defender SmartScreen provides an early warning system against websites that might engage in phishing attacks or attempt to distribute malware through a focused attack.
-
-In addition to learning about the benefits of using Windows Defender SmartScreen, and how it works, you'll learn how to turn this service On or Off.
-
-> [!NOTE]
-> Before Windows 10, version 1703, this feature was called the SmartScreen filter when used within the browser and Windows SmartScreen when used outside of the browser.
+This article describes the benefits of using Windows Defender SmartScreen, explains how it works, and describes how to configure this Microsoft Edge feature.
 
 > [!NOTE]
 > This article applies to Microsoft Edge version 77 or later.
 
-## The benefits of SmartScreen
+Windows Defender SmartScreen is a service that Microsoft Edge uses to keep you safe while you browse the web. Windows Defender SmartScreen provides an early warning system against websites that might engage in phishing attacks or attempt to distribute malware through a focused attack.
 
- In addition to providing an early warning system, Windows Defender SmartScreen provides several benefits. These benefits are summarized in the following list and described in more detail in the [Windows Defender SmartScreen documentation](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview#benefits-of-windows-defender-smartscreen). The benefits are:
+> [!NOTE]
+> Before Windows 10, version 1703, this feature was called the SmartScreen filter when used within the browser and Windows SmartScreen when used outside of the browser.
+
+## The benefits of Windows Defender SmartScreen
+
+Windows Defender SmartScreen provides several benefits, which are summarized in the following list. These benefits are described in detail in the [Windows Defender SmartScreen documentation](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview#benefits-of-windows-defender-smartscreen). The benefits are:
 
 - Anti-phishing and anti-malware support
 - Reputation-based URL and app protection
@@ -64,7 +64,7 @@ Users are giving the option of reporting a blocked site as safe or unsafe from w
 
 ## Windows Defender SmartScreen and user privacy
 
-Windows Defender SmartScreen keeps users safe while they browse the internet by using a reputation check system. Microsoft Edge passes relevant information about the URL or file to the Windows Defender SmartScreen service to initiate the reputation check, which compares the website or file against dynamic lists of sites and files that are known to be dangerous. All requests to the Windows Defender SmartScreen service are made with TLS encryption. The service returns the results of the reputation check, which may lead to Microsoft Edge blocking the site or file. These results are stored locally on the device.
+Windows Defender SmartScreen keeps users safe while they browse the internet by using a reputation check system. Microsoft Edge passes relevant information about the URL or file to the Windows Defender SmartScreen service to start the reputation check. The check compares the website or file against dynamic lists of sites and files that are known to be dangerous. All requests to the Windows Defender SmartScreen service are made with TLS encryption. The service returns the results of the reputation check, which might lead to Microsoft Edge blocking the site or file. These results are stored locally on the device.
 
 The Windows Defender SmartScreen service stores data about the reputation checks and builds a database of known malicious URLs and files. This data is stored on secure Microsoft servers and is only used for Microsoft security services. This data will never be used to identify or target users in any way. Clearing browsing cache clears all locally stored Windows Defender SmartScreen URL data. Clearing download history will remove any locally stored SmartScreen data about file downloads.
 
@@ -72,7 +72,7 @@ For more information about Windows Defender SmartScreen and privacy, read the [M
 
 ## Windows Defender SmartScreen setup for admins
 
-Admins can set up Windows Defender SmartScreen using Group Policy, Microsoft Intune, and mobile device management (MDM) settings. Based on how you set up Windows Defender SmartScreen, you can show users a warning page and let them continue to the site, or you can block the site entirely.
+Admins can set up Windows Defender SmartScreen using Group Policy, Microsoft Intune, and mobile device management (MDM) settings. Based on how you set up Windows Defender SmartScreen, you can show users a warning page and let them continue to the site, or block the site entirely.
 
 ### Windows Defender SmartScreen set up using Group Policy
 
