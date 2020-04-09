@@ -88,7 +88,7 @@ For more information, see:
 
 ## SmartScreen setup for users
 
-SmartScreen is turned on by default for Microsoft Edge. To turn off SmartScreen, go to *edge://settings/privacy > Services > Microsoft Defender SmartScreen*. This setting is the same for all profiles associated with the installation of Microsoft Edge on a device. This setting is not synced across devices. The setting applies to InPrivate browsing and Guest mode. If a device is managed with group policies set by an organization, this will be reflected in *edge://settings/privacy*.
+SmartScreen is turned on by default for Microsoft Edge. To turn off SmartScreen, go to *edge://settings/privacy > Services > Microsoft Defender SmartScreen*. This setting is the same for all profiles associated with the installation of Microsoft Edge on a device. This setting is not synced across devices. The setting applies to InPrivate browsing and Guest mode. If a device is managed with group policies set by an organization, this configuration will be reflected in *edge://settings/privacy*.
 
 > [!NOTE]
 > Users can set up SmartScreen for an individual device unless Group Policy or Microsoft Intune is configured to prevent it. For more information, see [set up and use SmartScreen on individual devices](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device).
