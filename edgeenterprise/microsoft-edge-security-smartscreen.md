@@ -3,7 +3,7 @@ title: "Microsoft Edge support for Windows Defender SmartScreen"
 ms.author: kvice
 author: dan-wesley
 manager: srugh
-ms.date: 04/09/2020
+ms.date: 04/10/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -83,7 +83,7 @@ For a complete list of SmartScreen policies, see
 
 For more information, see:
 
-- [Windows Intune settings for Windows Defender SmartSceen](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#windows-defender-smartscreen-settings)
+- [Windows Intune settings for Windows Defender SmartScreen](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#windows-defender-smartscreen-settings)
 - [MDM policy settings](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#windows-defender-smartscreen-settings)
 
 ## Windows Defender SmartScreen setup for users
