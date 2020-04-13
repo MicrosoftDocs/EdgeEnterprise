@@ -98,6 +98,10 @@ The following policies continue to work in this release. They will become "obsol
 - Fixed an issue where IE mode on Microsoft Edge caused an ongoing download dialog to show even after the file was downloaded.
 - Fixed an issue where Microsoft Edge was dropping session cookies when a page already in IE mode triggered to open a new IE mode tab.
 
+## Version 80.0.361.111: April 7
+
+Fixed various bugs and performance issues.
+
 ## Version 80.0.361.109: April 1
 
 Security updates are listed [here](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnotes-security#april-1-2020)
