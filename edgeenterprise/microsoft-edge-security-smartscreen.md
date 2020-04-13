@@ -3,7 +3,7 @@ title: "Microsoft Edge support for Windows Defender SmartScreen"
 ms.author: kvice
 author: dan-wesley
 manager: srugh
-ms.date: 04/10/2020
+ms.date: 04/13/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -37,25 +37,25 @@ Windows Defender SmartScreen provides several benefits, which are summarized in 
 
 ## Understand how Windows Defender SmartScreen works
 
- Windows Defender SmartScreen analyzes webpages for suspicious behavior and checks visited sites against an online list of reported phishing, malware, exploit, and scam sites. Windows Defender SmartScreen also checks downloaded apps or app installers to see if they're malicious. In both scenarios, Windows Defender SmartScreen warns users about a suspicious site.
+Windows Defender SmartScreen analyzes webpages for suspicious behavior and performs a series of checks to determine if they are malicious sites. Windows Defender SmartScreen also checks downloaded apps or app installers to see if they're malicious. In both scenarios, Windows Defender SmartScreen warns users about a suspicious site.
 
 ### Site analysis
 
 Windows Defender SmartScreen determines whether a site is potentially malicious by:
 
 - Analyzing visited webpages looking for indications of suspicious behavior. If Windows Defender SmartScreen determines that a page is suspicious, it will show a warning page to advise caution.
-- Checking the visited sites against a dynamic list of reported phishing sites and malicious software sites. If it finds a match, Windows Defender SmartScreen shows a warning to let the user know that the site might be malicious.
+- Checking the visited sites against a dynamic record of reported phishing sites and malicious software sites. If it finds a match, Windows Defender SmartScreen shows a warning to let the user know that the site might be malicious.
 
 ### File analysis
 
 Windows Defender SmartScreen determines whether a downloaded app or app installer is potentially malicious by:
 
-- Checking downloaded files against a list of reported malicious software sites and programs known to be unsafe. If it finds a match, Windows Defender SmartScreen shows a warning to let the user know that the site might be malicious.
-- Checking downloaded files against a dynamic list of files that are well known and downloaded by many Windows users. If the file isn't on that list, Windows Defender SmartScreen shows a warning, advising caution.
+- Checking downloaded files against reported malicious software sites and programs known to be unsafe sources. If it finds a match, Windows Defender SmartScreen shows a warning to let the user know that the site might be malicious.
+- Checking downloaded files against a dynamic record of files that are well known and downloaded by many Windows users. If the file isn't on that list, Windows Defender SmartScreen shows a warning, advising caution.
 
-The next screenshot shows an example of a Windows Defender SmartScreen warning message when a user tries to open an external web site.
+The next screenshot shows an example of a Windows Defender SmartScreen block page when a user tries to open a malicious web site.
 
-![Windows Defender SmartScreen warning message for link to external site](media/microsoft-edge-security-smartscreen/microsoft-edge-smartscreen-warning.png)
+![Windows Defender SmartScreen block page for a link to external site](media/microsoft-edge-security-smartscreen/microsoft-edge-smartscreen-warning.png)
 
 Users are giving the option of reporting a blocked site as safe or unsafe from within the warning message. For more information, see [how to report a site](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device#how-users-can-report-websites-as-safe-or-unsafe).
 
