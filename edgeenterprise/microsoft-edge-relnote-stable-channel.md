@@ -21,7 +21,6 @@ These release notes provide information about new features and non-security upda
 
 ## Version 81.0.416.53: April 13
 
-<!-- begin  -->
 ### Feature updates
 
 - Collections is now available. You can get started by clicking the Collections icon next to the address bar. This action opens the Collections pane where you can create, edit, and view Collections. We designed Collections based on what you do on the web. If you're a shopper, a traveler, a teacher, or a student, Collections can help. [Learn more](https://blogs.windows.com/msedgedev/2019/12/09/improvements-collections-sync-microsoft-edge/#LuDPRDUDCgdgdOVt.97).
@@ -98,9 +97,6 @@ The following policies continue to work in this release. They will become "obsol
 
 - Fixed an issue where IE mode on Microsoft Edge caused an ongoing download dialog to show even after the file was downloaded.
 - Fixed an issue where Microsoft Edge was dropping session cookies when a page already in IE mode triggered to open a new IE mode tab.
-
-<!-- end -->
-
 
 ## Version 80.0.361.109: April 1
 
