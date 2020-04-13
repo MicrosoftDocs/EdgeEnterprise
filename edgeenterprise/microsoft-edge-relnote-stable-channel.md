@@ -21,6 +21,8 @@ These release notes provide information about new features and non-security upda
 
 ## Version 81.0.416.53: April 13
 
+Security updates are listed [here](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnotes-security#april-13-2020)
+
 ### Feature updates
 
 - Collections is now available. You can get started by clicking the Collections icon next to the address bar. This action opens the Collections pane where you can create, edit, and view Collections. We designed Collections based on what you do on the web. If you're a shopper, a traveler, a teacher, or a student, Collections can help. [Learn more](https://blogs.windows.com/msedgedev/2019/12/09/improvements-collections-sync-microsoft-edge/#LuDPRDUDCgdgdOVt.97).
