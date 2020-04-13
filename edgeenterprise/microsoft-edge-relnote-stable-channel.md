@@ -100,7 +100,9 @@ The following policies continue to work in this release. They will become "obsol
 - Fixed an issue where Microsoft Edge was dropping session cookies when a page already in IE mode triggered to open a new IE mode tab.
 
 <!-- end -->
+## Version 80.0.361.111: April 7
 
+Fixed various bugs and performance issues.
 
 ## Version 80.0.361.109: April 1
 
