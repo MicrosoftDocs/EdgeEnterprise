@@ -21,7 +21,7 @@ These release notes provide information about new features and non-security upda
 
 ## Version 81.0.416.53: April 13
 
-Security updates are listed [here](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnotes-security#april-13-2020)
+<!-- Security updates are listed [here](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnotes-security#april-13-2020) -->
 
 ### Feature updates
 
@@ -64,7 +64,8 @@ Security updates are listed [here](https://docs.microsoft.com/DeployEdge/microso
 - Now it's easier to start Read Aloud by using a keyboard shortcut (Ctrl + Shift + U).
 
 - Added an MSI command line parameter that lets you suppress Desktop icon creation when you install Microsoft Edge. The following example shows how to use this new parameter: <br>
-`MicrosoftEdgeEnterpriseX64.msi DONOTCREATEDESKTOPSHORTCUT=true`
+`MicrosoftEdgeEnterpriseX64.msi DONOTCREATEDESKTOPSHORTCUT=true`<br>
+There will be a group policy to support this update in an upcoming release.
 
 ### Policy updates
 
