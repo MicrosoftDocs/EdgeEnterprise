@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Stable Channel"
 ms.author: kvice
 author: dan-wesley
 manager: laurawi
-ms.date: 04/06/2020
+ms.date: 04/13/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -19,16 +19,9 @@ These release notes provide information about new features and non-security upda
 > [!IMPORTANT]
 > Please see this [update on Stable channel releases](https://blogs.windows.com/msedgedev/2020/03/20/update-stable-channel-releases/).
 
-## Version 81.0.361.1xx: April x
+## Version 81.0.416.53: April 13
 
-<!-- link to latest security updates? 
-
-Security updates are listed [here](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnotes-security#april-1-2020)
-
--->
-
-
-<!-- begin based on beta Feb 20 81.0.416.12 -->
+<!-- begin  -->
 ### Feature updates
 
 - Collections is now available. You can get started by clicking the Collections icon next to the address bar. This action opens the Collections pane where you can create, edit, and view Collections. We designed Collections based on what you do on the web. If you're a shopper, a traveler, a teacher, or a student, Collections can help. [Learn more](https://blogs.windows.com/msedgedev/2019/12/09/improvements-collections-sync-microsoft-edge/#LuDPRDUDCgdgdOVt.97).
@@ -69,6 +62,9 @@ Security updates are listed [here](https://docs.microsoft.com/DeployEdge/microso
 
 - Now it's easier to start Read Aloud by using a keyboard shortcut (Ctrl + Shift + U).
 
+- Added an MSI command line parameter that lets you suppress Desktop icon creation when you install Microsoft Edge. The following example shows how to use this new parameter: <br>
+`MicrosoftEdgeEnterpriseX64.msi DONOTCREATEDESKTOPSHORTCUT=true`
+
 ### Policy updates
 
 #### New policies
@@ -100,7 +96,8 @@ The following policies continue to work in this release. They will become "obsol
 
 #### Known issues
 
-Fixed an issue where IE mode on Microsoft Edge caused an ongoing download dialog to show even after the file was downloaded.
+- Fixed an issue where IE mode on Microsoft Edge caused an ongoing download dialog to show even after the file was downloaded.
+- Fixed an issue where Microsoft Edge was dropping session cookies when a page already in IE mode triggered to open a new IE mode tab.
 
 <!-- end -->
 
