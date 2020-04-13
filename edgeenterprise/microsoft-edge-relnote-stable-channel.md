@@ -65,7 +65,7 @@ These release notes provide information about new features and non-security upda
 
 - Added an MSI command line parameter that lets you suppress Desktop icon creation when you install Microsoft Edge. The following example shows how to use this new parameter: <br>
 `MicrosoftEdgeEnterpriseX64.msi DONOTCREATEDESKTOPSHORTCUT=true`<br>
-There will be a group policy to support this update in an upcoming release.
+There will be a group policy to support this functionality in an upcoming release.
 
 ### Policy updates
 
