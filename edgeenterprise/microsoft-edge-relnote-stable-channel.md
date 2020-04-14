@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Stable Channel"
 ms.author: kvice
 author: dan-wesley
 manager: laurawi
-ms.date: 04/13/2020
+ms.date: 04/14/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -96,7 +96,7 @@ The following policies continue to work in this release. They will become "obsol
 - [WebComponentsV0Enabled](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#webcomponentsv0enabled) - Re-enable Web Components v0 API until M84.
 - [WebDriverOverridesIncompatiblePolicies](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#webdriveroverridesincompatiblepolicies) - Allow WebDriver to Override Incompatible.
 
-#### Known issues
+#### Resolved issues
 
 - Fixed an issue where IE mode on Microsoft Edge caused an ongoing download dialog to show even after the file was downloaded.
 - Fixed an issue where Microsoft Edge was dropping session cookies when a page already in IE mode triggered to open a new IE mode tab.
