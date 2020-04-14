@@ -45,21 +45,6 @@ This support is available across all platforms, including all supported versions
 
 [Deploy Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) provides a detailed guide to help deploy Conditional Access in Azure Active Directory.
 
-## Application Guard
-
-Browsers remain the primary attack surface on client devices today because it’s their fundamental job to download and execute untrusted content from untrusted sources. Security incident prevention or detection/response strategies cannot guarantee 100% safety. Malicious actors are constantly at work to social engineer new forms of attacks against the browser. One of the security strategies to consider is the assume breach principle and ensure corporate network and other resources remain protected in such scenarios.
-
-Designed for Windows 10 and Microsoft Edge, Application Guard uses a hardware isolation approach to isolate untrusted site navigations that launch inside a container. This helps enterprises safeguard their corporate network and data in assumed breach scenarios while the employees browse the Internet. The enterprise administrator defines what are trusted web sites, cloud resources, and internal networks; everything not on that list is considered untrusted and gets isolated from the corporate network and data on the device. Learn more about Application Guard [here](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview).
-
-  > [!TIP]
-  > Application Guard in Microsoft Edge is supported only on Windows 10 1809 (RS5) and above.
-
-The following links provide additional information to get started using Application Guard with Microsoft Edge.
-
-- [System requirements](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/reqs-wd-app-guard)
-- [Installing Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/install-wd-app-guard)
-- [Configuring OS policies for Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/configure-wd-app-guard)
-
 ## See also
 
 - [Microsoft Edge Enterprise landing page](https://aka.ms/EdgeEnterprise)
