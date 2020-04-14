@@ -21,7 +21,7 @@ These release notes provide information about new features and non-security upda
 
 ## Version 81.0.416.53: April 13
 
-<!-- Security updates are listed [here](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnotes-security#april-13-2020) -->
+Security updates are listed [here](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnotes-security#april-13-2020)
 
 ### Feature updates
 
