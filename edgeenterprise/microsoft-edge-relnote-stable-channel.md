@@ -25,7 +25,7 @@ Security updates are listed [here](https://docs.microsoft.com/DeployEdge/microso
 
 ### Feature updates
 
-- Added support for Windows Information Protection (WIP), which helps enterprises protect sensitive data from unauthorized disclosure. [Learn More](https://docs.microsoft.com/en-us/deployedge/microsoft-edge-security-windows-information-protection).
+- Added support for Windows Information Protection (WIP), which helps enterprises protect sensitive data from unauthorized disclosure. [Learn More](https://docs.microsoft.com/deployedge/microsoft-edge-security-windows-information-protection).
 
 - Collections is now available. You can get started by clicking the Collections icon next to the address bar. This action opens the Collections pane where you can create, edit, and view Collections. We designed Collections based on what you do on the web. If you're a shopper, a traveler, a teacher, or a student, Collections can help. [Learn more](https://blogs.windows.com/msedgedev/2019/12/09/improvements-collections-sync-microsoft-edge/#LuDPRDUDCgdgdOVt.97).
 
