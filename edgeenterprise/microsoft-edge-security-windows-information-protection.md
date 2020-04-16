@@ -114,7 +114,7 @@ The following screenshot shows how the Microsoft Intune is used to add Microsoft
 
  ![Intune dialog to add Microsoft Edge as an app for WIP](./media/microsoft-edge-security-windows-information-protection/microsoft-edge-wip-exemption.png)
 
-<!-- Please download and apply the policy update in the [WIP Enterprise AppLocker Policy](https://download.microsoft.com/download/8/9/9/8995d820-065c-4ab1-aa2a-9d6dc0cd7ffa/MsEdge%20-%20WIP%20Enterprise%20AppLocker%20Policy%20Files.zip) file. -->
+If you're not using Microsoft Intune, download and apply the policy update in the [WIP Enterprise AppLocker Policy](https://download.microsoft.com/download/8/9/9/8995d820-065c-4ab1-aa2a-9d6dc0cd7ffa/MsEdge%20-%20WIP%20Enterprise%20AppLocker%20Policy%20Files.zip) file.
 
 ## See also
 
