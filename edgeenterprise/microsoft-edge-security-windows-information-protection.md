@@ -3,7 +3,7 @@ title: "Microsoft Edge support for Windows Information Protection"
 ms.author: kvice
 author: dan-wesley
 manager: srugh
-ms.date: 03/20/2020
+ms.date: 04/15/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -49,10 +49,10 @@ Using policies, you can configure the four protection modes described in the fol
 
 | Mode | Description |
 |------|-------------|
-| Block | WIP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing enterprise data to non-enterprise-protected apps in addition to sharing enterprise data between apps or attempting to share outside of your organization's network. |
+| Block | WIP looks for inappropriate data sharing practices and stops the employee from completing the action. This search can include sharing enterprise data to non-enterprise-protected apps in addition to sharing enterprise data between apps or attempting to share outside of your organization's network. |
 | Allow Overrides | WIP looks for inappropriate data sharing, warning employees if they do something deemed potentially unsafe. However, this management mode lets the employee override the policy and share the data, logging the action to your audit log. |
-| Silent | WIP runs silently, logging inappropriate data sharing, without stopping anything that would've been prompted for employee interaction while in Allow Overrides mode. Unallowed actions, like apps inappropriately trying to access a network resource or WIP-protected data, are still stopped. |
-| Off | WIP is turned off and doesn't help to protect or audit your data. After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on the locally attached drives. Be aware that your previous decryption and policy info isn't automatically reapplied if you turn WIP protection back on.
+| Silent | WIP runs silently, logging inappropriate data sharing, without stopping anything that would have been prompted for employee interaction while in Allow Overrides mode. Unallowed actions, like apps inappropriately trying to access a network resource or WIP-protected data, are still stopped. |
+| Off | WIP is turned off and doesn't help to protect or audit your data. After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on the locally attached drives. Your previous decryption and policy info isn't automatically reapplied if you turn WIP protection back on.
  |
 
 ## WIP features supported in Microsoft Edge
@@ -69,7 +69,7 @@ Starting with Microsoft Edge version 82, the following features are supported:
 
 ## Working with WIP in Microsoft Edge
 
-After WIP support is enabled for Microsoft Edge, users will see when work related information is accessed. The next screenshot shows the briefcase icon in the address bar, indicating that work related information is accessed via the browser.
+After WIP support is enabled for Microsoft Edge, users will see when work-related information is accessed. The next screenshot shows the briefcase icon in the address bar, indicating that work-related information is accessed via the browser.
 
  ![Address bar indicator for sites marked as "work"](./media/microsoft-edge-security-windows-information-protection/microsoft-edge-wip-notify.png)
 
@@ -90,7 +90,7 @@ On hybrid joined machines, Microsoft Edge is automatically signed in with the Az
 > [!NOTE]
 > If your environment isn't hybrid joined, you can hybrid join using these instructions: [Plan your hybrid Azure Active Directory join implementation](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan).
 
-If hybrid joining isn't an option, you can use on-prem Active Directory accounts to allow Edge to auto create a special work profile with the users' domain accounts. Note that on-prem accounts may not receive all of Azure AD's features, such as cloud sync, Office NTP, and so on.)
+If hybrid joining isn't an option, you can use on-prem Active Directory accounts to allow Microsoft Edge to auto create a special work profile with the users' domain accounts. Note that on-premises accounts may not receive all of Azure AD's features, such as cloud sync, Office NTP, and so on.)
 
 #### Active Directory (AD) accounts
 
@@ -110,7 +110,11 @@ This error code corresponds to the following Windows Information Protection erro
 
 Microsoft Edge shows this error when the organization has enabled Windows Information Protection (WIP) to only allow users with approved applications to access corporate resources. In this case because Microsoft Edge isn't on the approved applications list, the admin will have to update the WIP policies to grant access to Microsoft Edge.
 
-Please download and apply the policy update in the [WIP Enterprise AppLocker Policy](https://download.microsoft.com/download/8/9/9/8995d820-065c-4ab1-aa2a-9d6dc0cd7ffa/MsEdge%20-%20WIP%20Enterprise%20AppLocker%20Policy%20Files.zip) file.
+The following screenshot shows how the Microsoft Intune is used to add Microsoft Edge as an allowed app for WIP.
+
+ ![Intune dialog to add Microsoft Edge as an app for WIP](./media/microsoft-edge-security-windows-information-protection/microsoft-edge-wip-exemption.png)
+
+If you're not using Microsoft Intune, download and apply the policy update in the [WIP Enterprise AppLocker Policy](https://download.microsoft.com/download/8/9/9/8995d820-065c-4ab1-aa2a-9d6dc0cd7ffa/MsEdge%20-%20WIP%20Enterprise%20AppLocker%20Policy%20Files.zip) file.
 
 ## See also
 
