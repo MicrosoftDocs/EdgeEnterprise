@@ -57,17 +57,24 @@ Users are giving the option of reporting a site as safe or unsafe from within th
 Microsoft Defender SmartScreen determines whether a downloaded app or app installer is potentially malicious based on many criteria, such as download traffic, download history, past anti-virus results and URL reputation.
 
 - Files with a known safe reputation will download without any notification.  
-- Files with a known malicious reputation show a warning to let the user know that the file is unsafe and has been reported as malicious.  
-- Files that are unknown show a warning to let the user know that the download doesn't have a known footprint and advising caution.
-- Files that are unknown show a warning to let the user know that the download doesn't have a known footprint and advising caution.
-- Files with a known malicious reputation show a warning to let the user know that the file is unsafe and has been reported as malicious.
+- Files with a known malicious reputation show a warning to let the user know that the file is unsafe and has been reported as malicious. The next screenshot is an example of a warning for a malicious file.
 
-> [!CAUTION]
-> By default, Microsoft Defender SmartScreen lets users bypass warnings. Because this user interaction is potentially risky, we recommend that you review these [recommended group policy settings](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-available-settings#recommended-group-policy-and-mdm-settings-for-your-organization).
+  ![Microsoft Defender SmartScreen block page file with malicious reputation](media/microsoft-edge-security-smartscreen/ms-edge-smartscreen-known-malicious.png)
 
+- Files that are unknown show a warning to let the user know that the download doesn't have a known footprint and advising caution. The next screenshot is an example of a warning for a unknown file.
+
+  ![Microsoft Defender SmartScreen block page file with malicious reputation](media/microsoft-edge-security-smartscreen/ms-edge-smartscreen-unknown-malicious.png)
+
+Not all unknown programs are malicious, and the unknown warning is intended to provide context and guidance for those who need it, especially if the warning is unexpected.
+
+  ![Keep file with malicious reputation](media/microsoft-edge-security-smartscreen/ms-edge-smartscreen-unknown-malicious-keep.png)
+
+However, users can still download and run the application by clicking **... | Keep | Show More | Keep anyway**.
 
 > [!TIP]
-> You can experiment with the various Microsoft Defender SmartScreen experiences using our [demo site](https://demo.smartscreen.msft.net/)
+> **FYI for Enterprise Customers.** By default, Microsoft Defender SmartScreen lets users bypass warnings. Because this user interaction is potentially risky, we recommend that you review these [recommended group policy settings](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-available-settings#recommended-group-policy-and-mdm-settings-for-your-organization).
+
+You can experiment with the various Microsoft Defender SmartScreen experiences using our [demo site](https://demo.smartscreen.msft.net/)
 
 ## Microsoft Defender SmartScreen and user privacy
 
