@@ -19,6 +19,10 @@ These release notes provide information about new features and non-security upda
 > [!IMPORTANT]
 > Please see this [update on Stable channel releases](https://blogs.windows.com/msedgedev/2020/03/20/update-stable-channel-releases/).
 
+## Version 81.0.416.58: April 17
+
+Security updates are listed [here](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnotes-security#april-17-2020)
+
 ## Version 81.0.416.53: April 13
 
 Security updates are listed [here](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnotes-security#april-13-2020)
