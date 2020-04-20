@@ -3,7 +3,7 @@ title: "Microsoft Edge support for Microsoft Defender SmartScreen"
 ms.author: kvice
 author: dan-wesley
 manager: srugh
-ms.date: 04/17/2020
+ms.date: 04/20/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -112,3 +112,4 @@ Microsoft Defender SmartScreen is turned on by default for Microsoft Edge. To tu
 - [Microsoft Edge Enterprise landing page](https://aka.ms/EdgeEnterprise)
 - [Microsoft Defender SmartScreen Overview](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)
 - [Threat protection](https://docs.microsoft.com/windows/security/threat-protection/index)
+- [Protect against potentially unwanted applications](https://docs.microsoft.com/DeployEdge/microsoft-edge-potentially-unwanted-apps)
