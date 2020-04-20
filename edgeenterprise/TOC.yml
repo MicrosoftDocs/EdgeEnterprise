@@ -1,4 +1,4 @@
-# last revised 04/07/2020
+# last revised 04/20/2020
 - name: Microsoft Edge documentation 
   href: index.yml
 - name: Microsoft Edge content updates
@@ -114,6 +114,8 @@
      href: microsoft-edge-potentially-unwanted-apps.md
    - name: Support for Application Guard
      href: microsoft-edge-security-windows-defender-application-guard.md
+   - name: Support for Microsoft Defender SmartScreen
+     href: microsoft-edge-security-smartscreen.md
    - name: Support for Windows Information Protection
      href: microsoft-edge-security-windows-information-protection.md
 - name: Microsoft Edge Privacy
