@@ -54,54 +54,54 @@ Added the ability to sync Extensions.
 
 14 new policies were added. Download the updated Administrative Templates from the [Microsoft Edge Enterprise landing page](https://aka.ms/EdgeEnterprise). The following new policies were added.
 
-- [AllowSurfGame](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#allowsurfgame) - Allow surf game.
-- [AllowTokenBindingForUrls](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#allowtokenbindingforurls) - Configure the list of sites for which Microsoft Edge will attempt to establish a Token Binding with.
-- [BingAdsSuppression](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#bingadssuppression) - Block all ads on Bing search results.
-- [BuiltinCertificateVerifierEnabled](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#builtincertificateverifierenabled) - Determines whether the built-in certificate verifier will be used to verify server certificates.
-- [ClearCachedImagesAndFilesOnExit](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#clearcachedimagesandfilesonexit) - Clear cached images and files when Microsoft Edge closes.
-- [ConfigureShare](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#configureshare) - Configure the Share experience.
-- [DeleteDataOnMigration](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#deletedataonmigration) - Delete old browser data on migration.
-- [DnsOverHttpsMode](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#dnsoverhttpsmode) - Control the mode of DNS-over-HTTPS.
-- [DnsOverHttpsTemplates](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#dnsoverhttpstemplates) - Specify URI template of desired DNS-over-HTTPS resolver.
-- [FamilySafetySettingsEnabled](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#familysafetysettingsenabled) - Allow users to configure Family safety.
-- [LocalProvidersEnabled](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#localprovidersenabled) - Allow suggestions from local providers.
-- [ScrollToTextFragmentEnabled](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#scrolltotextfragmentenabled) - Enable scrolling to text specified in URL fragments.
-- [ScreenCaptureAllowed](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#screencaptureallowed) - Allow or deny screen capture.
-- [SyncTypesListDisabled](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#synctypeslistdisabled) - Configure the list of types that are excluded from synchronization.
+- [AllowSurfGame](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#allowsurfgame) - Allow surf game.
+- [AllowTokenBindingForUrls](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#allowtokenbindingforurls) - Configure the list of sites for which Microsoft Edge will attempt to establish a Token Binding with.
+- [BingAdsSuppression](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#bingadssuppression) - Block all ads on Bing search results.
+- [BuiltinCertificateVerifierEnabled](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#builtincertificateverifierenabled) - Determines whether the built-in certificate verifier will be used to verify server certificates.
+- [ClearCachedImagesAndFilesOnExit](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#clearcachedimagesandfilesonexit) - Clear cached images and files when Microsoft Edge closes.
+- [ConfigureShare](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#configureshare) - Configure the Share experience.
+- [DeleteDataOnMigration](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#deletedataonmigration) - Delete old browser data on migration.
+- [DnsOverHttpsMode](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#dnsoverhttpsmode) - Control the mode of DNS-over-HTTPS.
+- [DnsOverHttpsTemplates](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#dnsoverhttpstemplates) - Specify URI template of desired DNS-over-HTTPS resolver.
+- [FamilySafetySettingsEnabled](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#familysafetysettingsenabled) - Allow users to configure Family safety.
+- [LocalProvidersEnabled](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#localprovidersenabled) - Allow suggestions from local providers.
+- [ScrollToTextFragmentEnabled](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#scrolltotextfragmentenabled) - Enable scrolling to text specified in URL fragments.
+- [ScreenCaptureAllowed](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#screencaptureallowed) - Allow or deny screen capture.
+- [SyncTypesListDisabled](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#synctypeslistdisabled) - Configure the list of types that are excluded from synchronization.
 
 #### Deprecated policy
 
 The following policy will continue to work in this release. It will become "obsolete" in a future release.
 
-[EnableDomainActionsDownload](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#enabledomainactionsdownload) Enable Domain Actions Download from Microsoft
+[EnableDomainActionsDownload](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#enabledomainactionsdownload) Enable Domain Actions Download from Microsoft
 
 #### Additional changes
 
 The following policies had their policy descriptions changed.
 
-- [AmbientAuthenticationInPrivateModesEnabled](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#ambientauthenticationinprivatemodesenabled)
-- [AutoImportAtFirstRun](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#autoimportatfirstrun)
-- [ClearBrowsingDataOnExit](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#clearbrowsingdataonexit)
-- [ConfigureOnPremisesAccountAutoSignIn](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#configureonpremisesaccountautosignin)
-- [DefaultInsecureContentSetting](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#defaultinsecurecontentsetting)
-- [DefaultSearchProviderEnabled](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#defaultsearchproviderenabled)
-- [ExperimentationAndConfigurationServiceControl](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol)
-- [ExternalProtocolDialogShowAlwaysOpenCheckbox](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#externalprotocoldialogshowalwaysopencheckbox)
-- [ForceLegacyDefaultReferrerPolicy](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#forcelegacydefaultreferrerpolicy)
-- [HideFirstRunExperience](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#hidefirstrunexperience)
-- [ImportAutofillFormData](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#importautofillformdata)
-- [ImportFavorites](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#importfavorites)
-- [ImportHistory](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#importhistory)
-- [ImportSavedPasswords](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#importsavedpasswords)
-- [InternetExplorerIntegrationLevel](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#internetexplorerintegrationlevel)
-- [InternetExplorerIntegrationSiteRedirect](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#internetexplorerintegrationsiteredirect)
-- [ManagedSearchEngines](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#managedsearchengines)
-- [PasswordProtectionWarningTrigger](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#passwordprotectionwarningtrigger)
-- [RelaunchNotification](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#relaunchnotification)
-- [RestoreOnStartup](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#restoreonstartup)
-- [SmartScreenPuaEnabled](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#smartscreenpuaenabled)
-- [TLS13HardeningForLocalAnchorsEnabled](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#tls13hardeningforlocalanchorsenabled)
-- [TrackingPrevention](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#trackingprevention)
+- [AmbientAuthenticationInPrivateModesEnabled](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#ambientauthenticationinprivatemodesenabled)
+- [AutoImportAtFirstRun](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#autoimportatfirstrun)
+- [ClearBrowsingDataOnExit](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#clearbrowsingdataonexit)
+- [ConfigureOnPremisesAccountAutoSignIn](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#configureonpremisesaccountautosignin)
+- [DefaultInsecureContentSetting](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#defaultinsecurecontentsetting)
+- [DefaultSearchProviderEnabled](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#defaultsearchproviderenabled)
+- [ExperimentationAndConfigurationServiceControl](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol)
+- [ExternalProtocolDialogShowAlwaysOpenCheckbox](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#externalprotocoldialogshowalwaysopencheckbox)
+- [ForceLegacyDefaultReferrerPolicy](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#forcelegacydefaultreferrerpolicy)
+- [HideFirstRunExperience](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#hidefirstrunexperience)
+- [ImportAutofillFormData](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#importautofillformdata)
+- [ImportFavorites](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#importfavorites)
+- [ImportHistory](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#importhistory)
+- [ImportSavedPasswords](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#importsavedpasswords)
+- [InternetExplorerIntegrationLevel](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#internetexplorerintegrationlevel)
+- [InternetExplorerIntegrationSiteRedirect](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#internetexplorerintegrationsiteredirect)
+- [ManagedSearchEngines](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#managedsearchengines)
+- [PasswordProtectionWarningTrigger](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#passwordprotectionwarningtrigger)
+- [RelaunchNotification](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#relaunchnotification)
+- [RestoreOnStartup](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#restoreonstartup)
+- [SmartScreenPuaEnabled](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#smartscreenpuaenabled)
+- [TLS13HardeningForLocalAnchorsEnabled](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#tls13hardeningforlocalanchorsenabled)
+- [TrackingPrevention](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#trackingprevention)
 
 <!--  end 83 -->
 
