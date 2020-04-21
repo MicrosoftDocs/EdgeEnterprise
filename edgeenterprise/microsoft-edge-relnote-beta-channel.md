@@ -19,7 +19,7 @@ These release notes provide information about new features and non-security upda
 > [!IMPORTANT]
 > Please see this [update on Microsoft Edge channel releases](https://blogs.windows.com/msedgedev/2020/03/20/update-stable-channel-releases/).
 
-## Version 83.0.416.nn: April 21
+## Version 83.0.416.nn: April 22
 
 ### Feature updates
 
@@ -104,6 +104,13 @@ The following policies had their policy descriptions changed.
 - [TrackingPrevention](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#trackingprevention)
 
 <!--  end 83 -->
+## Version 81.0.416.60: April 20
+
+Fixed various bugs and performance issues.
+
+## Version 81.0.416.58: April 17
+
+Security updates.
 
 ## Version 81.0.416.50: April 10
 
@@ -112,7 +119,7 @@ Fixed various bugs and performance issues.
 ## Version 81.0.416.45: April 3
 
 Fixed various bugs and performance issues.
-s
+
 ## Version 81.0.416.41: March 30
 
 Fixed various bugs and performance issues.
