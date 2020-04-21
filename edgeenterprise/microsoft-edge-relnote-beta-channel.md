@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Beta Channel"
 ms.author: kvice
 author: dan-wesley
 manager: laurawi
-ms.date: 02/20/2020
+ms.date: 04/10/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -16,11 +16,42 @@ description: "Microsoft Edge release notes for Beta Channel"
 
 These release notes provide information about new features and non-security updates that are included in the Microsoft Edge Beta Channel.
 
+> [!IMPORTANT]
+> Please see this [update on Microsoft Edge channel releases](https://blogs.windows.com/msedgedev/2020/03/20/update-stable-channel-releases/).
+
+## Version 81.0.416.50: April 10
+
+Fixed various bugs and performance issues.
+
+## Version 81.0.416.45: April 3
+
+Fixed various bugs and performance issues.
+
+## Version 81.0.416.41: March 30
+
+Fixed various bugs and performance issues.
+
+## Version 81.0.416.34: March 17
+
+Fixed various bugs and performance issues.
+
+## Version 81.0.416.31: March 12
+
+Fixed various bugs and performance issues.
+
+## Version 81.0.416.28: March 9
+
+Fixed various bugs and performance issues.
+
+## Version 81.0.416.20: February 28
+
+Fixed various bugs and performance issues.
+
 ## Version 81.0.416.12: February 20
 
 ### Feature updates
 
-- Collections is now available. You can get started by clicking the Collections icon next to the address bar. This opens the Collections pane where you can create, edit, and view Collections. We designed Collections based on what you do on the web. If you’re a shopper, a traveller, a teacher or a student, Collections can help. [Learn more](https://blogs.windows.com/msedgedev/2019/12/09/improvements-collections-sync-microsoft-edge/#LuDPRDUDCgdgdOVt.97).
+- Collections is now available. You can get started by clicking the Collections icon next to the address bar. This action opens the Collections pane where you can create, edit, and view Collections. We designed Collections based on what you do on the web. If you're a shopper, a traveler, a teacher, or a student, Collections can help. [Learn more](https://blogs.windows.com/msedgedev/2019/12/09/improvements-collections-sync-microsoft-edge/#LuDPRDUDCgdgdOVt.97).
 
 - Allow the removal (Hide from toolbar) of the Collections button from the Microsoft Edge toolbar for consistency.
 
@@ -28,7 +59,7 @@ These release notes provide information about new features and non-security upda
 
 - Application Guard. Extensions support now available in the container.
 
-- Added a message to inform users that Internet Explorer is not installed when a user navigates to a page that is configured to open in Internet Explorer mode.
+- Added a message to inform users that Internet Explorer isn't installed when they navigate to a page that is configured to open in Internet Explorer mode.
 
 - Updated the 3D View tool in Microsoft Edge DevTools with a new feature to help debug z-index stacking context. 3D View shows a representation of the DOM (Document Object Model) depth using color and stacking, and the z-Index view helps you isolate the different stacking contexts of your page. [Learn more](https://blogs.windows.com/msedgedev/2020/01/23/debug-z-index-3d-view-edge-devtools/).
 
@@ -36,7 +67,7 @@ These release notes provide information about new features and non-security upda
 
 - Added support for Dolby Vision playback. On Dolby Vision-enabled Windows 10 Build 17134 (April 2018 Update), websites can show Dolby vision content. See how to enable Dolby Vision content from [Netflix](https://help.netflix.com/en/node/42384).
 
-- Microsoft Edge can now identify and remove duplicate favorites and merge folders with the same name. To access the tool, click the star on the browser’s toolbar and select "Remove duplicate favorites".  You will be able to confirm changes and any updates to your favorites will be synced across devices.
+- Microsoft Edge can now identify and remove duplicate favorites and merge folders with the same name. To access the tool, click the star on the browser's toolbar and select "Remove duplicate favorites".  You will be able to confirm changes and any updates to your favorites will be synced across devices.
 
 - We heard from users it can be difficult to distinguish a normal browsing window in dark theme from an InPrivate window since both window frames are dark. The new solid InPrivate blue pill in the top right corner helps reassure users they are browsing InPrivate.
 

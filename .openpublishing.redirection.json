@@ -1,6 +1,17 @@
 {
 
   "redirections": [
+    {
+      "source_path": "edgeenterprise/deploy-edge-with-intune.md",
+      "redirect_url": "https://docs.microsoft.com/mem/intune/apps/apps-windows-edge",
+      "redirect_document_id": false
+    },
+
+    {
+      "source_path": "edgeenterprise/deploy-edge-mac-intune.md",
+      "redirect_url": "https://docs.microsoft.com/mem/intune/apps/apps-edge-macos",
+      "redirect_document_id": false
+    }
 
   ]
 
