@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Beta Channel"
 ms.author: kvice
 author: dan-wesley
 manager: laurawi
-ms.date: 04/10/2020
+ms.date: 04/21/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -19,6 +19,92 @@ These release notes provide information about new features and non-security upda
 > [!IMPORTANT]
 > Please see this [update on Microsoft Edge channel releases](https://blogs.windows.com/msedgedev/2020/03/20/update-stable-channel-releases/).
 
+## Version 83.0.416.nn: April 21
+
+### Feature updates
+
+- Microsoft Cloud Access Security (MCAS) warn scenario is now available. This will allow admins to set up warn, a new category of MCAS blocks, where the user can override a MCAS block page. Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) E5 blocks are natively integrated with SmartScreen blocks in Edge for a seamless experience, allowing for a full page red block with messaging "This website is blocked by your organization", instead of just a toast.
+
+- Added the ability to select text and read aloud just the selection.
+
+- Added the ability to create a list of sites that are exempt from the deletion of cookies when the browser is configured to delete browsing data upon closing.
+
+- Added the ability to drag multiple items from a webpage into a Collection at once on certain websites.
+
+- Added support for the DNS Over HTTPS Mode management policy from upstream Chromium.
+Added the ability to sync Extensions.
+
+- Added support for adverb highlighting in Immersive Reader.
+
+- Added a capability to Guided Switch to ask to switch to a work or school profile when work or school content is being opened in a personal profile.
+
+- Added extra security to the Payment info Settings page by requiring the OS-level password in order to edit or delete cards.
+
+- Improved messaging on the Downloads management page for insecure downloads that have been blocked.
+
+- Enabled the new Fluent designs for webpage controls like the calendar picker or dropdown on Mac.
+
+- Added the ability to use network provider location as a fallback for when a website requests location but the underlying OS has disabled access to its location API.
+
+- Added support for syncing the "Allow extensions from other stores" setting to other devices.
+
+### Policy updates
+
+#### New policies
+
+14 new policies were added. Download the updated Administrative Templates from the [Microsoft Edge Enterprise landing page](https://aka.ms/EdgeEnterprise). The following new policies were added.
+
+- [AllowSurfGame](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#allowsurfgame) - Allow surf game.
+- [AllowTokenBindingForUrls](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#allowtokenbindingforurls) - Configure the list of sites for which Microsoft Edge will attempt to establish a Token Binding with.
+- [BingAdsSuppression](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#bingadssuppression) - Block all ads on Bing search results.
+- [BuiltinCertificateVerifierEnabled](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#builtincertificateverifierenabled) - Determines whether the built-in certificate verifier will be used to verify server certificates.
+- [ClearCachedImagesAndFilesOnExit](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#clearcachedimagesandfilesonexit) - Clear cached images and files when Microsoft Edge closes.
+- [ConfigureShare](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#configureshare) - Configure the Share experience.
+- [DeleteDataOnMigration](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#deletedataonmigration) - Delete old browser data on migration.
+- [DnsOverHttpsMode](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#dnsoverhttpsmode) - Control the mode of DNS-over-HTTPS.
+- [DnsOverHttpsTemplates](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#dnsoverhttpstemplates) - Specify URI template of desired DNS-over-HTTPS resolver.
+- [FamilySafetySettingsEnabled](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#familysafetysettingsenabled) - Allow users to configure Family safety.
+- [LocalProvidersEnabled](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#localprovidersenabled) - Allow suggestions from local providers.
+- [ScrollToTextFragmentEnabled](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#scrolltotextfragmentenabled) - Enable scrolling to text specified in URL fragments.
+- [ScreenCaptureAllowed](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#screencaptureallowed) - Allow or deny screen capture.
+- [SyncTypesListDisabled](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#synctypeslistdisabled) - Configure the list of types that are excluded from synchronization.
+
+#### Deprecated policy
+
+The following policy will continue to work in this release. It will become "obsolete" in a future release.
+
+[EnableDomainActionsDownload](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#enabledomainactionsdownload) Enable Domain Actions Download from Microsoft
+
+#### Additional changes
+
+The following policies had their policy descriptions changed.
+
+- [AmbientAuthenticationInPrivateModesEnabled](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#ambientauthenticationinprivatemodesenabled)
+- [AutoImportAtFirstRun](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#autoimportatfirstrun)
+- [ClearBrowsingDataOnExit](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#clearbrowsingdataonexit)
+- [ConfigureOnPremisesAccountAutoSignIn](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#configureonpremisesaccountautosignin)
+- [DefaultInsecureContentSetting](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#defaultinsecurecontentsetting)
+- [DefaultSearchProviderEnabled](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#defaultsearchproviderenabled)
+- [ExperimentationAndConfigurationServiceControl](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol)
+- [ExternalProtocolDialogShowAlwaysOpenCheckbox](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#externalprotocoldialogshowalwaysopencheckbox)
+- [ForceLegacyDefaultReferrerPolicy](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#forcelegacydefaultreferrerpolicy)
+- [HideFirstRunExperience](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#hidefirstrunexperience)
+- [ImportAutofillFormData](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#importautofillformdata)
+- [ImportFavorites](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#importfavorites)
+- [ImportHistory](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#importhistory)
+- [ImportSavedPasswords](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#importsavedpasswords)
+- [InternetExplorerIntegrationLevel](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#internetexplorerintegrationlevel)
+- [InternetExplorerIntegrationSiteRedirect](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#internetexplorerintegrationsiteredirect)
+- [ManagedSearchEngines](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#managedsearchengines)
+- [PasswordProtectionWarningTrigger](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#passwordprotectionwarningtrigger)
+- [RelaunchNotification](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#relaunchnotification)
+- [RestoreOnStartup](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#restoreonstartup)
+- [SmartScreenPuaEnabled](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#smartscreenpuaenabled)
+- [TLS13HardeningForLocalAnchorsEnabled](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#tls13hardeningforlocalanchorsenabled)
+- [TrackingPrevention](https://docs.microsoft.com/en-US/DeployEdge/microsoft-edge-policies#trackingprevention)
+
+<!--  end 83 -->
+
 ## Version 81.0.416.50: April 10
 
 Fixed various bugs and performance issues.
@@ -26,7 +112,7 @@ Fixed various bugs and performance issues.
 ## Version 81.0.416.45: April 3
 
 Fixed various bugs and performance issues.
-
+s
 ## Version 81.0.416.41: March 30
 
 Fixed various bugs and performance issues.
