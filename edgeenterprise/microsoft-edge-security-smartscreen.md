@@ -3,7 +3,7 @@ title: "Microsoft Edge support for Microsoft Defender SmartScreen"
 ms.author: kvice
 author: dan-wesley
 manager: srugh
-ms.date: 04/20/2020
+ms.date: 04/21/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -37,35 +37,35 @@ Microsoft Defender SmartScreen provides several benefits, which are summarized i
 
 ## Understand how Microsoft Defender SmartScreen works
 
-A number of inputs contribute to Microsoft Defender SmartScreen warnings. We receive data from many sources, including user feedback, data providers, and intelligence models, and we use this data to help us identify potentially malicious content. Microsoft Defender SmartScreen also checks downloaded apps or app installers to see if they're malicious. In both scenarios, Microsoft Defender SmartScreen warns users appropriately about suspicious content.
+A number of inputs contribute to Microsoft Defender SmartScreen warnings. Data is received from many sources, including user feedback, data providers, and intelligence models. This data is used to help identify potentially malicious content. Microsoft Defender SmartScreen also checks downloaded apps or app installers to see if they're malicious. In both scenarios, Microsoft Defender SmartScreen warns users appropriately about suspicious content.
 
 ### Site analysis
 
 Microsoft Defender SmartScreen determines whether a site is potentially malicious by:
 
-- Analyzing visited webpages looking for indications of suspicious behavior. If Microsoft Defender SmartScreen determines that a page is malicious, it will show a warning page to notify the user that that site is reported as unsafe.
-- Checking the visited sites against a dynamic record of reported phishing sites. If it finds a match, Microsoft Defender SmartScreen shows a warning to let the user know that the site might contain phishing threats.
+- Analyzing visited webpages for indications of suspicious behavior.
+- Checking the visited sites against a dynamic record of reported phishing sites.
 
-The next screenshot shows an example of a Microsoft Defender SmartScreen block page when a user tries to open a malicious website.
+If Microsoft Defender SmartScreen determines that a page is malicious, it will show a warning page to notify the user that that site is reported as unsafe. The next screenshot shows an example of a Microsoft Defender SmartScreen warning page when a user tries to open a malicious website.
 
 ![Microsoft Defender SmartScreen block page for a link to external site](media/microsoft-edge-security-smartscreen/microsoft-edge-smartscreen-warning.png)
 
-Users are giving the option of reporting a site as safe or unsafe from within the warning message. For more information, see [how to report a site](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device#how-users-can-report-websites-as-safe-or-unsafe).
+Users are given the option of reporting a site as safe or unsafe within the warning message. For more information, see [how to report a site](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device#how-users-can-report-websites-as-safe-or-unsafe).
 
 ### File analysis
 
-Microsoft Defender SmartScreen determines whether a downloaded app or app installer is potentially malicious based on many criteria, such as download traffic, download history, past anti-virus results and URL reputation.
+Microsoft Defender SmartScreen determines whether a downloaded app or app installer is potentially malicious based on many criteria, such as download traffic, download history, past anti-virus results, and URL reputation.
 
 - Files with a known safe reputation will download without any notification.  
 - Files with a known malicious reputation show a warning to let the user know that the file is unsafe and has been reported as malicious. The next screenshot is an example of a warning for a malicious file.
 
   ![Microsoft Defender SmartScreen block page file with malicious reputation](media/microsoft-edge-security-smartscreen/ms-edge-smartscreen-known-malicious.png)
 
-- Files that are unknown show a warning to let the user know that the download doesn't have a known footprint and advising caution. The next screenshot is an example of a warning for an unknown file.
+- Files that are unknown show a warning to let the user know that the download doesn't have a known footprint and advise caution. The next screenshot is an example of a warning for an unknown file.
 
   ![Microsoft Defender SmartScreen block page file with malicious reputation](media/microsoft-edge-security-smartscreen/ms-edge-smartscreen-unknown-malicious.png)
 
-Not all unknown programs are malicious, and the unknown warning is intended to provide context and guidance for those who need it, especially if the warning is unexpected.
+Not all unknown programs are malicious, and the unknown warning is intended to provide context and guidance for users who need it, especially if the warning is unexpected.
 
   ![Keep file with malicious reputation](media/microsoft-edge-security-smartscreen/ms-edge-smartscreen-unknown-malicious-keep.png)
 
@@ -74,19 +74,19 @@ However, users can still download and run the application by clicking **... | Ke
 > [!TIP]
 > **FYI for Enterprise Customers.** By default, Microsoft Defender SmartScreen lets users bypass warnings. Because this user interaction is potentially risky, we recommend that you review these [recommended group policy settings](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-available-settings#recommended-group-policy-and-mdm-settings-for-your-organization).
 
-You can experiment with the various Microsoft Defender SmartScreen experiences using our [demo site](https://demo.smartscreen.msft.net/)
+You see how Microsoft Defender SmartScreen responds to different scenarios using our [demo site](https://demo.smartscreen.msft.net/).
 
 ## Microsoft Defender SmartScreen and user privacy
 
-Microsoft Defender SmartScreen keeps users safe while they browse the internet by using a reputation check system. Microsoft Edge passes relevant information about the URL or file to the Microsoft Defender SmartScreen service to start the reputation check. The check compares the website or file against dynamic lists of sites and files that are known to be dangerous. All requests to the Microsoft Defender SmartScreen service are made with TLS encryption. The service returns the results of the reputation check, which might lead to Microsoft Edge showing a warning for the site or file. These results are stored locally on the device.
+Microsoft Defender SmartScreen protects users while they browse the internet by using a reputation check system. Microsoft Edge passes relevant information about the URL or file to the Microsoft Defender SmartScreen service to start the reputation check. The check compares the website or file against dynamic lists of sites and files that are known to be dangerous. All requests to the Microsoft Defender SmartScreen service are made with TLS encryption. The service returns the results of the reputation check, which might lead to Microsoft Edge showing a warning for the site or file. These results are stored locally on the device.
 
-The Microsoft Defender SmartScreen service stores data about the reputation checks and builds a database of known malicious URLs and files. This data is stored on secure Microsoft servers and is only used for Microsoft security services. This data will never be used to identify or target users in any way. Clearing browsing cache clears all locally stored Microsoft Defender SmartScreen URL data. Clearing download history will remove any locally stored SmartScreen data about file downloads.
+The Microsoft Defender SmartScreen service stores data about reputation checks. As new sites are identified, the service adds to a dynamic database of known malicious URLs and files. This data is stored on secure Microsoft servers and is only used for Microsoft security services. This data will never be used to identify or target users in any way. Clearing browsing cache clears all locally stored Microsoft Defender SmartScreen URL data. Clearing download history will remove any locally stored SmartScreen data about file downloads.
 
 For more information about Microsoft Defender SmartScreen and privacy on Microsoft Edge, read the [Microsoft Edge Privacy Whitepaper](https://docs.microsoft.com/microsoft-edge/privacy-whitepaper#smartscreen).
 
 ## Microsoft Defender SmartScreen setup for admins
 
-Admins can set up Microsoft Defender SmartScreen using Group Policy, Microsoft Intune, and mobile device management (MDM) settings. Based on how you set up Microsoft Defender SmartScreen, you can show users a warning page and let them continue to the site or block the site entirely.
+Admins can configure Microsoft Defender SmartScreen using Group Policy, Microsoft Intune, and mobile device management (MDM) settings. Based on how you set up Microsoft Defender SmartScreen, you can show users a warning page and let them continue to the site or block the site entirely.
 
 ### Microsoft Defender SmartScreen set up using Group Policy
 
