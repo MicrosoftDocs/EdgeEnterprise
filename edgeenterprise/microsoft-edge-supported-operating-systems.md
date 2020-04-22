@@ -3,7 +3,7 @@ title: "Microsoft Edge Supported Operating Systems"
 ms.author: srugh
 author: srugh
 manager: seanlynd
-ms.date: 04/10/2020
+ms.date: 04/21/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -40,8 +40,9 @@ The next version of Microsoft Edge is supported on the following operating syste
 - Windows Server 2008 R2**
 - Windows Server 2012
 - Windows Server 2012 R2
-- Windows Server 2016
-- Windows Server 2019
+- Windows Server 2016 (LTSC)
+- Windows Server 2019 (LTSC)
+- Windows Server (SAC)
 
 > [!IMPORTANT]
 > ** We will continue to support Microsoft Edge on Windows 7 and Windows Server 2008 R2 until July 15, 2021. These operating systems are out of support and Microsoft recommends you move to a supported operating system such as Windows 10. While Microsoft Edge helps keep you more secure on the web, your PC may still be vulnerable to security risks. In order for IE mode to be supported on these operating systems the devices will need to have the [Extended Security Updates for Windows 7](https://support.microsoft.com/help/4527878/faq-about-extended-security-updates-for-windows-7). Without the Windows 7 Extended Security updates Internet Explorer functionality will be vulnerable to security risks. Additionally, IE mode functionality may cease to work without the continued servicing through the extended security updates.  
