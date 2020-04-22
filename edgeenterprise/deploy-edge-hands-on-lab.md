@@ -1,8 +1,8 @@
 ---
 title: "Microsoft Edge hands-on deployment lab"
-ms.author: kvice
+ms.author: collw
 author: dan-wesley
-manager: srugh
+manager: seanlynd
 ms.date: 04/22/2020
 audience: ITPro
 ms.topic: conceptual
