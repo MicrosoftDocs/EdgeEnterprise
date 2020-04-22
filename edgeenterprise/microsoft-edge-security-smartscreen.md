@@ -93,7 +93,7 @@ Admins can configure Microsoft Defender SmartScreen using Group Policy, Microsof
 For a complete list of SmartScreen policies, see
 [Microsoft Defender SmartScreen settings](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#smartscreen-settings)
 
-### Microsoft Defender SmartScreen set up using Microsoft Intune or MDM
+### Microsoft Defender SmartScreen set up using MDM
 
 For more information, see:
 
