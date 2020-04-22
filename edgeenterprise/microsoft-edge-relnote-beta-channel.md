@@ -69,6 +69,7 @@ The following policy will continue to work in this release. It will become "obso
 [EnableDomainActionsDownload](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#enabledomainactionsdownload) Enable Domain Actions Download from Microsoft
 
 <!--  end 83 -->
+
 ## Version 81.0.416.60: April 20
 
 Fixed various bugs and performance issues.
