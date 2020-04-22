@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Beta Channel"
 ms.author: kvice
 author: dan-wesley
 manager: laurawi
-ms.date: 04/10/2020
+ms.date: 04/22/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -18,6 +18,14 @@ These release notes provide information about new features and non-security upda
 
 > [!IMPORTANT]
 > Please see this [update on Microsoft Edge channel releases](https://blogs.windows.com/msedgedev/2020/03/20/update-stable-channel-releases/).
+
+## Version 81.0.416.60: April 20
+
+Fixed various bugs and performance issues.
+
+## Version 81.0.416.58: April 17
+
+Security updates.
 
 ## Version 81.0.416.50: April 10
 
