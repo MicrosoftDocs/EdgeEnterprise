@@ -18,14 +18,12 @@ This article describes how to configure policy settings on macOS using a Microso
 
 You can also configure Microsoft Edge policy settings on macOS by using a property list (.plist) file. For more information, see [Configure for macOS using a .plist](configure-microsoft-edge-on-mac.md)
 
-> [!NOTE]
-> The feature described in this article is supported in preview and applies to Microsoft Edge Beta Channel version 81 and Jamf Pro 10.19.
 
 ## Prerequisites
 
 The following software is required:
 
-- Microsoft Edge Beta Channel 81
+- Microsoft Edge Stable channel 81
 - Policy Templates file, version 81.0.416.3
 - Jamf Pro, Version 10.19
 
@@ -42,8 +40,8 @@ For more information, see [Computer Configuration Profiles](https://jamf.it/comp
 To get the policy manifest:
 
 - Go to the [Microsoft Edge Enterprise landing page](https://aka.ms/EdgeEnterprise).
-- On the CHANNEL/BUILD dropdown list, select **Beta 81.***.
-- On the PLATFORM dropdown list, select **macOS 64 bit**.
+- On the Channel/Version dropdown list, select **any channel with version 81 or later.***.
+- On the Build dropdown list, select any **81 build or later.***.
 - Click GET POLICY FILES to download our policy templates bundle.
 
   > [!NOTE]
@@ -96,7 +94,7 @@ Use the following steps to upload the policy manifest to Jamf Pro and then creat
    > [!NOTE]
    > You can edit this profile after it's been saved and in another Jamf session. For example, you might decide to change the Distribution Method to Make Available in Self Service.
 
-   To do a follow up edit on the Microsoft Edge Beta Channel, or delete it, select the profile name, shown in the following Configuration Profiles screen shot.
+   To do a follow up edit on the Microsoft Edge Stable Channel, or delete it, select the profile name, shown in the following Configuration Profiles screen shot.
 
    ![Configuration Profiles list](media/configure-microsoft-edge-on-mac-jamf/configure-macos-jamf-configuration-profiles-beta-channel-done.png)
 
