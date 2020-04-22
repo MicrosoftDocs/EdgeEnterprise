@@ -1,4 +1,4 @@
-# last revised 04/07/2020
+# last revised 04/22/2020
 - name: Microsoft Edge documentation 
   href: index.yml
 - name: Microsoft Edge content updates
@@ -12,6 +12,8 @@
      href: https://www.microsoftedgeinsider.com/whats-new
    - name: Explore documentation resources
      href: https://docs.microsoft.com/microsoft-edge/
+   - name: Microsoft Edge hands-on deployment lab
+     href: deploy-edge-hands-on-lab.md
    - name: Windows Blogs - Microsoft Edge Developer
      href: https://blogs.windows.com/msedgedev/
 # PLAN
