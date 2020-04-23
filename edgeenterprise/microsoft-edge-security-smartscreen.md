@@ -3,7 +3,7 @@ title: "Microsoft Edge support for Microsoft Defender SmartScreen"
 ms.author: kvice
 author: dan-wesley
 manager: srugh
-ms.date: 04/22/2020
+ms.date: 04/23/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
