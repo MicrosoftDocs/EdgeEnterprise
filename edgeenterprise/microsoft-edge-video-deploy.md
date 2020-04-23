@@ -20,6 +20,8 @@ The video described in this article shows the steps to deploy Microsoft Edge to 
 
 See a hands-on tour of how to deploy Microsoft Edge to your devices. Learn about Microsoft Edge package options for automated installation, how to deploy Microsoft Edge to Windows PCs using Microsoft Endpoint Configuration Manager, and steps to ensure all managed devices, including your phones and Macs, are provisioned with Microsoft Edge.
 
+Watch Jeremy Chapman's video below.
+
 [![Deploy Microsoft Edge video](http://img.youtube.com/vi/o90UsN6g6NE/0.jpg)](http://www.youtube.com/watch?v=o90UsN6g6NE "Deploy Microsoft Edge to hundreds or thousands of devices")
 <!-- [Watch the video now](https://www.youtube.com/watch?v=o90UsN6g6NE) -->
 
