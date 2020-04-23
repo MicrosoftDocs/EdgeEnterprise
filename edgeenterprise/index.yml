@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: dan-wesley #Required; your GitHub user alias, with correct capitalization.
   ms.author: kvice #Required; microsoft alias of author; optional team alias.
-  ms.date: 03/30/2020 #Required; mm/dd/yyyy format.
+  ms.date: 04/23/2020 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -40,6 +40,8 @@ landingContent:
         links:
           - text: Plan your deployment of Microsoft Edge
             url: deploy-edge-plan-deployment.md
+          - text: Video - Deploy Microsoft Edge
+            url: microsoft-edge-video-deploy.md
           - text: Deploy to Windows
             url: https://docs.microsoft.com/configmgr/apps/deploy-use/deploy-edge?toc=https://docs.microsoft.com/DeployEdge/toc.json&bc=https://docs.microsoft.com/DeployEdge/breadcrumb/toc.json
           - text: Deploy to macOS
