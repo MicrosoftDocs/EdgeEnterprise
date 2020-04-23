@@ -22,8 +22,9 @@ See a hands-on tour of how to deploy Microsoft Edge to your devices. Learn about
 
 Click the next screenshot to watch the video by Jeremy Chapman, Director Microsoft 365.
 
-[![Deploy Microsoft Edge video](http://img.youtube.com/vi/o90UsN6g6NE/0.jpg)](http://www.youtube.com/watch?v=o90UsN6g6NE "Deploy Microsoft Edge to hundreds or thousands of devices")
+<!-- [![Deploy Microsoft Edge video](http://img.youtube.com/vi/o90UsN6g6NE/0.jpg)](http://www.youtube.com/watch?v=o90UsN6g6NE "Deploy Microsoft Edge to hundreds or thousands of devices")-->
 
+[![Steps to deploy Microsoft Edge](https://res.cloudinary.com/marcomontalbano/image/upload/v1587672892/video_to_markdown/images/youtube--o90UsN6g6NE-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=o90UsN6g6NE "Deploy Microsoft Edge to hundreds or thousands of devices.")
 
 ## See also
 
