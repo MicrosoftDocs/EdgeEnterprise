@@ -3,11 +3,11 @@ title: "Microsoft Edge Browser Policy Documentation"
 ms.author: stmoody
 author: brianalt-msft
 manager: tahills
-ms.date: 04/14/2020
+ms.date: 04/18/2020
 audience: ITPro
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: M365-modern-desktop
 ms.custom:
 description: "Windows and Mac documentation for all policies supported by the Microsoft Edge Browser"
@@ -182,12 +182,14 @@ These tables list all of the browser-related group policies available in this re
 |[AutoplayAllowed](#autoplayallowed)|Allow media autoplay for websites|
 |[BackgroundModeEnabled](#backgroundmodeenabled)|Continue running background apps after Microsoft Edge closes|
 |[BackgroundTemplateListUpdatesEnabled](#backgroundtemplatelistupdatesenabled)|Enables background updates to the list of available templates for Collections and other features that use templates|
+|[BingAdsSuppression](#bingadssuppression)|Block all ads on Bing search results|
 |[BlockThirdPartyCookies](#blockthirdpartycookies)|Block third party cookies|
 |[BrowserAddProfileEnabled](#browseraddprofileenabled)|Enable profile creation from the Identity flyout menu or the Settings page|
 |[BrowserGuestModeEnabled](#browserguestmodeenabled)|Enable guest mode|
 |[BrowserNetworkTimeQueriesEnabled](#browsernetworktimequeriesenabled)|Allow queries to a Browser Network Time service|
 |[BrowserSignin](#browsersignin)|Browser sign-in settings|
 |[BuiltInDnsClientEnabled](#builtindnsclientenabled)|Use built-in DNS client|
+|[BuiltinCertificateVerifierEnabled](#builtincertificateverifierenabled)|Determines whether the built-in certificate verifier will be used to verify server certificates|
 |[CertificateTransparencyEnforcementDisabledForCas](#certificatetransparencyenforcementdisabledforcas)|Disable Certificate Transparency enforcement for a list of subjectPublicKeyInfo hashes|
 |[CertificateTransparencyEnforcementDisabledForLegacyCas](#certificatetransparencyenforcementdisabledforlegacycas)|Disable Certificate Transparency enforcement for a list of legacy certificate authorities|
 |[CertificateTransparencyEnforcementDisabledForUrls](#certificatetransparencyenforcementdisabledforurls)|Disable Certificate Transparency enforcement for specific URLs|
@@ -6156,9 +6158,9 @@ This policy is intended to give enterprises flexibility to disable the audio san
   - On Windows and macOS since 77 or later
 
   #### Description
-  If you enable this policy, Microsoft Edge automatically and silently imports all supported datatypes and settings from the specified browser. This also forces Microsoft Edge to skip the import section of the first-run experience.
+  If you enable this policy, all supported datatypes and settings from the specified browser will be silently and automatically imported at first run. During the First Run Experience, the import section will also be skipped.
 
-Note: This policy currently supports importing from Internet Explorer (on Windows 7, 8, and 10), Google Chrome (on Windows 7, 8, and 10 and on macOS) and Apple Safari (on macOS) browsers.
+																																														   
 
 The browser data from Microsoft Edge Legacy will always be silently migrated at the first run, irrespective of the value of this policy. You can use the following values for this policy:
 
@@ -6172,20 +6174,22 @@ The browser data from Microsoft Edge Legacy will always be silently migrated at 
 
 * 4 = Disables automatic import, and the import section of the first-run experience is skipped
 
-If this policy is set to the default value (0), then depending on which browser is set as the default browser on the managed device, the corresponding datatypes will be imported into the new Microsoft Edge during the First Run Experience.
+* 5 = Automatically imports all supported datatypes and settings from Mozilla Firefox
+
+If this policy is set to the default value (0), then the datatypes corresponding to the default browser on the managed device will be imported.
 
 If the browser specified as the value of this policy is not present in the managed device, Microsoft Edge will simply skip the import without any notification to the user.
 
 If you set this policy to 'DisabledAutoImport' (4), the import section of the first-run experience is skipped entirely and Microsoft Edge doesn't import browser data and settings automatically.
 
-If this policy is set to the value of Internet Explorer (1), the following datatypes will be imported from the Internet Explorer instance on the managed device:
+If this policy is set to the value of Internet Explorer (1), the following datatypes will be imported from Internet Explorer:
 1. Favorites or bookmarks
 2. Saved passwords
 3. Search engines
 4. Browsing history
 5. Home page
 
-If this policy is set to the value of Google Chrome (2), the following datatypes will be imported from the Google Chrome instance on the managed device:
+If this policy is set to the value of Google Chrome (2), the following datatypes will be imported from Google Chrome:
 1. Favorites
 2. Saved passwords
 3. Addresses and more
@@ -6196,11 +6200,17 @@ If this policy is set to the value of Google Chrome (2), the following datatypes
 8. Extensions
 9. Cookies
 
-Note: For a more detailed look at everything that is imported from Google Chrome during the new First Run Experience, please see [https://go.microsoft.com/fwlink/?linkid=2120835](https://go.microsoft.com/fwlink/?linkid=2120835)
+Note: For more details on what is imported from Google Chrome, please see [https://go.microsoft.com/fwlink/?linkid=2120835](https://go.microsoft.com/fwlink/?linkid=2120835)
 
-If this policy is set to the value of Safari (3), the following datatypes will be imported from the Safari instance on the managed device:
+If this policy is set to the value of Safari (3), the following datatypes will be imported from Safari:
 1. Favorites or bookmarks
 2. Browsing history
+
+Starting with Microsoft Edge version 83, if this policy is set to the value of Mozilla Firefox (5), the following datatypes will be imported from Mozilla Firefox:
+1. Favorites or bookmarks
+2. Saved passwords
+3. Addresses and more
+4. Browsing History
 
 If you want to restrict specific datatypes from getting imported on the managed devices, you can use this policy with other policies such as [ImportAutofillFormData](#importautofillformdata), [ImportBrowserSettings](#importbrowsersettings), [ImportFavorites](#importfavorites), and etc.
 
@@ -6480,6 +6490,65 @@ If you disable this setting the list of available templates will be downloaded o
 
   #### Mac information and settings
   - Preference Key Name: BackgroundTemplateListUpdatesEnabled
+  - Example value:
+``` xml
+<true/>
+```
+  
+
+  [Back to top](#microsoft-edge---policies)
+
+  ### BingAdsSuppression
+  #### Block all ads on Bing search results
+  
+  #### Supported versions:
+  - On Windows and macOS since 83 or later
+
+  #### Description
+  Enables an ad-free search experience on Bing.com
+
+If you enable this policy, then a user can search on bing.com and have an ad-free search experience. At the same time, the SafeSearch setting will be set to 'Strict' and can't be changed by the user.
+
+If you don't configure this policy, then the default experience will have ads in the search results on bing.com. SafeSearch will be set to 'Moderate' by default and can be changed by the user.
+
+This policy is only available for K-12 SKUs that are identified as EDU tenants by Microsoft.
+
+Please refer to [https://go.microsoft.com/fwlink/?linkid=2119711](https://go.microsoft.com/fwlink/?linkid=2119711) to learn more about this policy or if the following scenarios apply to you:
+
+* You have an EDU tenant, but the policy doesn't work.
+
+* You had your IP whitelisted for having an ad free search experience.
+
+* You were experiencing an ad-free search experience on Microsoft Edge Legacy and want to upgrade to the new version of Microsoft Edge.
+
+  #### Supported features:
+  - Can be mandatory: Yes
+  - Can be recommended: No
+  - Dynamic Policy Refresh: No - Requires browser restart
+
+  #### Data Type:
+  - Boolean
+
+  #### Windows information and settings
+  ##### Group Policy (ADMX) info
+  - GP unique name: BingAdsSuppression
+  - GP name: Block all ads on Bing search results
+  - GP path (Mandatory): Administrative Templates/Microsoft Edge/
+  - GP path (Recommended): N/A
+  - GP ADMX file name: MSEdge.admx
+  ##### Windows Registry Settings
+  - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
+  - Path (Recommended): N/A
+  - Value Name: BingAdsSuppression
+  - Value Type: REG_DWORD
+  ##### Example value:
+```
+0x00000001
+```
+
+
+  #### Mac information and settings
+  - Preference Key Name: BingAdsSuppression
   - Example value:
 ``` xml
 <true/>
@@ -6792,6 +6861,42 @@ If you don't configure this policy, the built-in DNS client is enabled by defaul
   - Example value:
 ``` xml
 <true/>
+```
+  
+
+  [Back to top](#microsoft-edge---policies)
+
+  ### BuiltinCertificateVerifierEnabled
+  #### Determines whether the built-in certificate verifier will be used to verify server certificates
+  
+  #### Supported versions:
+  - On macOS since 83 or later
+
+  #### Description
+  If you enable this policy, Microsoft Edge OS will perform verification of server certificates using the built-in certificate verifier
+If you disable this setting, Microsoft Edge OS will verify server certificates using the legacy certificate verifier provided by the platform.
+If you don't configure this setting,  Microsoft Edge OS the built-in or the legacy certificate verifier can be used.
+
+This policy is scheduled to be removed in Microsoft Edge OS version 81, when support for the legacy certificate verifier on Microsoft Edge OS is planned to be removed.
+
+This policy is scheduled to be removed in Microsoft Edge for Mac OS X version 87, when support for the legacy certificate verifier on Mac OS X is planned to be removed.
+
+
+  #### Supported features:
+  - Can be mandatory: Yes
+  - Can be recommended: No
+  - Dynamic Policy Refresh: No - Requires browser restart
+
+  #### Data Type:
+  - Boolean
+
+  
+
+  #### Mac information and settings
+  - Preference Key Name: BuiltinCertificateVerifierEnabled
+  - Example value:
+``` xml
+<false/>
 ```
   
 
@@ -9374,7 +9479,7 @@ If you don't configure this policy, autofill data is imported at first run, and 
 
 You can set this policy as a recommendation. This means that Microsoft Edge will import autofill data on first run, but users can select or clear **autofill data** option during manual import.
 
-**Note**: This policy currently manages importing from Google Chrome (on Windows 7, 8, and 10 and on macOS).
+**Note**: This policy currently manages importing from Google Chrome (on Windows 7, 8, and 10 and on macOS) and Mozilla Firefox (on Windows 7, 8, and 10 and on macOS) browsers.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -9592,7 +9697,7 @@ If you don’t configure this policy, favorites are imported at first run, and u
 
 You can also set this policy as a recommendation. This means that Microsoft Edge imports favorites on first run, but users can select or clear the **favorites** option during manual import.
 
-**Note**: This policy currently manages importing from Internet Explorer (on Windows 7, 8, and 10), Google Chrome (on Windows 7, 8, and 10 and on macOS) and Apple Safari (on macOS) browsers.
+**Note**: This policy currently manages importing from Internet Explorer (on Windows 7, 8, and 10), Google Chrome (on Windows 7, 8, and 10 and on macOS), Mozilla Firefox (on Windows 7, 8, and 10 and on macOS), and Apple Safari (on macOS) browsers.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -9647,7 +9752,7 @@ If you don’t configure this policy, browsing history data is imported at first
 
 You can also set this policy as a recommendation. This means that Microsoft Edge imports browsing history on first run, but users can select or clear the **history** option during manual import.
 
-**Note**: This policy currently manages importing from Internet Explorer (on Windows 7, 8, and 10), Google Chrome (on Windows 7, 8, and 10 and on macOS) and Apple Safari (macOS) browsers.
+**Note**: This policy currently manages importing from Internet Explorer (on Windows 7, 8, and 10), Google Chrome (on Windows 7, 8, and 10 and on macOS), Mozilla Firefox (on Windows 7, 8, and 10 and on macOS), and Apple Safari (macOS) browsers.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -9867,7 +9972,7 @@ If you don't configure this policy, passwords are imported at first run, and use
 
 You can set this policy as a recommendation. This means that Microsoft Edge imports passwords on first run, but users can select or clear the **passwords** option during manual import.
 
-**Note**: This policy currently manages importing from Internet Explorer (on Windows 7, 8, and 10) and Google Chrome (on Windows 7, 8, and 10 and on macOS) browsers.
+**Note**: This policy currently manages importing from Internet Explorer (on Windows 7, 8, and 10), Google Chrome (on Windows 7, 8, and 10 and on macOS), and Mozilla Firefox (on Windows 7, 8, and 10 and on macOS) browsers.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -10181,8 +10286,8 @@ If you set this policy to AllInPageNavigations (value 2), all navigations from p
 If you enable this policy, you can choose one of the following navigation options:
 
 * 0 = Default
-			   
-			  
+	  
+	 
 
 * 1 = Keep only automatic navigations in Internet Explorer mode
 
@@ -10683,7 +10788,7 @@ If the [EnableMediaRouter](#enablemediarouter) policy is disabled, then this pol
 
   ### MetricsReportingEnabled
   #### Enable usage and crash-related data reporting
-	
+ 
 
    
   
@@ -12058,7 +12163,7 @@ SOFTWARE\Policies\Microsoft\Edge\SecurityKeyPermitAttestation\1 = https://contos
 
   ### SendSiteInfoToImproveServices
   #### Send site information to improve Microsoft services
-	
+ 
 
    
   
@@ -12822,9 +12927,9 @@ If you don't set this policy, the browser will only attempt to save memory when 
 If you enable this policy, you have the following options for setting the level of tracking prevention:
 
 * 0 = Off (no tracking prevention)
-	   
-		 
-			 
+	
+   
+	
 
 * 1 = Basic (blocks harmful trackers, content and ads will be personalized)
 
@@ -13448,12 +13553,12 @@ SOFTWARE\Policies\Microsoft\Edge\WebAppInstallForceList = [
   #### Allow WebDriver to Override Incompatible Policies
   >DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.
   #### Supported versions:
-  - On Windows and macOS since 77 or later
+  - On Windows and macOS since 77, until 84
 
   #### Description
   
-This policy was removed in M83, because it is not necessary anymore as
-WebDriver is now compatible with all existing policies.
+																	  
+This policy will be obsolete in Microsoft Edge version 84 because WebDriver is now compatible with all existing policies.
 
 This policy allows users of the WebDriver feature to override
 policies which can interfere with its operation.
