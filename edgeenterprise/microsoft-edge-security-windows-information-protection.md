@@ -3,7 +3,7 @@ title: "Microsoft Edge support for Windows Information Protection"
 ms.author: kvice
 author: dan-wesley
 manager: srugh
-ms.date: 04/15/2020
+ms.date: 04/24/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
