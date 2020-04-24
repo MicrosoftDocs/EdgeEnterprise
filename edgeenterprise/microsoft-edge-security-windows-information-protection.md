@@ -57,7 +57,7 @@ Using policies, you can configure the four protection modes described in the fol
 
 ## WIP features supported in Microsoft Edge
 
-Starting with Microsoft Edge version 82, the following features are supported:
+Starting with Microsoft Edge version 81, the following features are supported:
 
 - Work sites will be indicated by a briefcase icon on the address bar.  
 - Files downloaded from a work location are automatically encrypted.
