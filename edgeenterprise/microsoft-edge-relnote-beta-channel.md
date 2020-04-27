@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Beta Channel"
 ms.author: kvice
 author: dan-wesley
 manager: laurawi
-ms.date: 04/24/2020
+ms.date: 04/27/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -18,6 +18,16 @@ These release notes provide information about new features and non-security upda
 
 > [!IMPORTANT]
 > Please see this [update on Microsoft Edge channel releases](https://blogs.windows.com/msedgedev/2020/03/20/update-stable-channel-releases/).
+
+## Version 83.0.478.18: April 27
+
+Fixed various bugs and performance issues.
+
+### Feature updates
+
+- Link doctor provides host correction and a search query to the users when they mistype a URL. For example, if a user mistypes powerbi as powerbbi.com: Link doctor will suggest powerbi.com as a correction and create a link to search for "powerbbi" in case the user is looking for something different.
+
+- Allow users to save their decision to launch an external protocol for a specific site. Users can configure the [ExternalProtocolDialogShowAlwaysOpenCheckbox]( https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#externalprotocoldialogshowalwaysopencheckbox) policy to enable or disable this feature.
 
 ## Version 83.0.478.13: April 22
 
