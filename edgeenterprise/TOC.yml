@@ -1,4 +1,4 @@
-# last revised 04/23/2020
+# last revised 04/27/2020
 - name: Microsoft Edge documentation 
   href: index.yml
 - name: Microsoft Edge content updates
@@ -21,6 +21,14 @@
   items:
    - name: Plan your deployment of Microsoft Edge
      href: deploy-edge-plan-deployment.md
+   - name: Release information
+     items:
+      - name: Beta Channel Release Notes
+        href: microsoft-edge-relnote-beta-channel.md
+      - name: Stable Channel Release Notes
+        href: microsoft-edge-relnote-stable-channel.md
+      - name: Security updates
+        href: microsoft-edge-relnotes-security.md
    - name: Microsoft Edge policy mapping
      items:
       - name: Policy mapping overview
@@ -37,12 +45,6 @@
      href: microsoft-edge-support-lifecycle.md
    - name: Supported languages
      href: microsoft-edge-supported-languages.md
-   - name: Beta Channel Release Notes
-     href: microsoft-edge-relnote-beta-channel.md
-   - name: Stable Channel Release Notes
-     href: microsoft-edge-relnote-stable-channel.md
-   - name: Security updates
-     href: microsoft-edge-relnotes-security.md
    - name: System updates for Microsoft Edge
      items:
       - name: Blocker Toolkit for Microsoft Edge updates
