@@ -53,7 +53,7 @@ Support for ClickOnce and DirectInvoke:
 - DirectInvoke is supported out of the box for all Windows users but ClickOnce is disabled for all Windows users.
 
   > [!NOTE]
-  > Users that need ClickOnce support can go to edge://flags. Scroll to **ClickOnce Support** and select **Enable** from the dropdown list. You'll have to **Restart** the browser.
+  > Users that need ClickOnce support can go to edge://flags/#edge-click-once and select **Enable** from the dropdown list. You'll have to **Restart** the browser.
 
 - ClickOnce and DirectInvoke aren’t supported on any platforms other than Windows.
 - Because ClickOnce is an enterprise-focused feature that’s used by a specific group of power users and not intended for general use, ClickOnce is disabled by default.
@@ -83,7 +83,7 @@ The second popup only shows up if:
 
 ## ClickOnce and DirectInvoke policies
 
-There are 2 group policies that you can use to enable or disable ClickOnce and DirectInvoke for enterprise users. These two policies are [ClickOnceEnabled](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#clickonceenabled) and [DirectInvokeEnabled](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#directinvokeenabled).
+There are 2 group policies that you can use to enable or disable ClickOnce and DirectInvoke for enterprise users. These two policies are [ClickOnceEnabled](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#clickonceenabled) and [DirectInvokeEnabled](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#directinvokeenabled). These two policies are labeled in the Group Policy Editor as "Allow users to open files using the ClickOnce protocol" and "Allow users to open files using the DirectInvoke protocol" respectively.
 
 ## ClickOnce and DirectInvoke behavior
 
