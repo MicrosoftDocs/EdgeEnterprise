@@ -81,6 +81,7 @@ You may want to consider the following group policies related to data privacy:
 - Configure Do Not Track
 - Disable InPrivate mode
 
+<!--
 ## Frequently Asked Questions
 
 ### How do I resolve Error Code -2147024540?
@@ -92,7 +93,7 @@ Microsoft Edge shows this error when the organization has enabled Windows Inform
 
 > [!NOTE]
 > If WIP is turned on for your version of Microsoft Edge, the browser collects event logs and sends them to your organization. To Learn more about the event logs captured by WIP, see [Windows Information Protection](https://docs.microsoft.com/microsoft-edge/privacy-whitepaper#windows-information-protection) in the Microsoft Edge Privacy Whitepaper.
-
+-->
 
 ## See also
 
