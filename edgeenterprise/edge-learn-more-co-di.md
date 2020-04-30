@@ -3,7 +3,7 @@ title: "ClickOnce and DirectInvoke in Microsoft Edge"
 ms.author: kele
 author: dan-wesley
 manager: srugh
-ms.date: 04/29/2020
+ms.date: 04/30/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
