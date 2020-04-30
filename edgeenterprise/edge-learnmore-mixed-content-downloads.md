@@ -55,7 +55,7 @@ If a user decides to keep the download, they are prompted to confirm their actio
 
 Enterprises that want to exclude mixed content blocking from specific websites can use the [InsecureContentAllowedForUrls](https://docs.microsoft.com/deployedge/microsoft-edge-policies#insecurecontentallowedforurls) policy to do so.
 
-## Licensing
+## Content license
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and shared by Chromium.org and used according to terms 
