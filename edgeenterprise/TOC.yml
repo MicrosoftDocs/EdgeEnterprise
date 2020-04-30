@@ -1,4 +1,4 @@
-# last revised 04/27/2020
+# last revised 04/30/2020
 - name: Microsoft Edge documentation 
   href: index.yml
 - name: Microsoft Edge content updates
@@ -139,6 +139,8 @@
      href: microsoft-edge-update-policies.md
    - name: Learn more reference
      items:
+      - name: ClickOnce and DirectInvoke
+        href: edge-learn-more-co-di.md
       - name: Mixed content downloads
         href: edge-learnmore-mixed-content-downloads.md
 - name: Frequently asked questions
