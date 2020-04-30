@@ -3,7 +3,7 @@ title: "Microsoft Edge proxy settings"
 ms.author: brianalt
 author: dan-wesley
 manager: srugh
-ms.date: 08/06/2019
+ms.date: 04/29/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -23,7 +23,7 @@ This article describes how you can use command-line options to override the defa
 
 The Microsoft Edge network stack uses the system network settings by default. These settings include *proxy settings*, and *certificate and private key stores*.
 
-There are scenarios where users request an alternative to using the system’s default proxy settings. To support these scenarios, Microsoft Edge supports command-line options that you can use to configure custom proxy settings.
+There are scenarios where users request an alternative to using the system's default proxy settings. To support these scenarios, Microsoft Edge supports command-line options that you can use to configure custom proxy settings.
 
 These command-line options correspond to the following policies in the **Proxy server** group:
 
@@ -43,7 +43,7 @@ Tells Microsoft Edge not to use a Proxy, even if the system is otherwise configu
 
 **`--proxy-auto-detect`**
 
-Tells Mircrosoft Edge to try and automatically detect your proxy configuration. This argument is ignored if `--proxy-server` is configured.
+Tells Microsoft Edge to try and automatically detect your proxy configuration. This argument is ignored if `--proxy-server` is configured.
 
 **`--proxy-server=<scheme>=<uri>[:<port>][;...] | <uri>[:<port>] | "direct://"`**
 
@@ -67,11 +67,15 @@ Tells Microsoft Edge to bypass any specified proxy for the specified semicolon-s
 
 Tells Microsoft Edge to use the PAC file at the specified URL. For example, `--proxy-pac-url="https://wpad/proxy.pac"` tells Microsoft Edge to resolve proxy information for URL requests using the **proxy.pac** file.
 
-## See also
- - To see advanced configuration settings and additional options, consult the [proxy documentation](https://chromium.googlesource.com/chromium/src/+/HEAD/net/docs/proxy.md) in the Chromium Open Source project.
+## Licensing
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and shared by Chromium.org and used according to terms 
   described in the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). The original page can be found [here](https://www.chromium.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett).
   
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
+## See also
+
+- To see advanced configuration settings and additional options, consult the [proxy documentation](https://chromium.googlesource.com/chromium/src/+/HEAD/net/docs/proxy.md) in the Chromium Open Source project.
+- [Microsoft Edge Enterprise landing page](https://aka.ms/EdgeEnterprise)
