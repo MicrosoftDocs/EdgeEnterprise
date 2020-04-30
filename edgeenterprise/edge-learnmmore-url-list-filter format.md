@@ -3,7 +3,7 @@ title: "Filter format for Microsoft Edge URL policies"
 ms.author: brianalt
 author: dan-wesley
 manager: srugh
-ms.date: 04/29/2020
+ms.date: 04/30/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -93,6 +93,8 @@ Any other **schema** is treated as a custom **schema**, but only the _schema:*_ 
 **path** and **query** are case-sensitive. For example:
 
 - "http://contoso.com/path?query=A" filter doesn't match "http://contoso.com/Path?query=A" or "http://contoso.com/path?Query=A". It does match "http://contoso.COM/path?query=A".
+
+## Licensing
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and shared by Chromium.org and used according to terms 
