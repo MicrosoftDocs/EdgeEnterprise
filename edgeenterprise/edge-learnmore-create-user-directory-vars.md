@@ -12,7 +12,7 @@ ms.collection: M365-modern-desktop
 description: "Learn how to create Microsoft Edge user data directory variables"
 ---
 
-# How to configure Microsoft Edge data directory variables
+# Create Microsoft Edge user data directory variables
 
 This article explains how you can use data directory variables instead of using hard-coded paths when modifying Microsoft Edge.
 
