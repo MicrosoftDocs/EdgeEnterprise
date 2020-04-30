@@ -3,7 +3,7 @@ title: "Microsoft Edge and mixed content downloads"
 ms.author: kele
 author: dan-wesley
 manager: srugh
-ms.date: 03/25/2020
+ms.date: 04/30/2020
 audience: ITPro
 ms.topic: procedural
 ms.prod: microsoft-edge
