@@ -141,6 +141,8 @@
      items:
       - name: ClickOnce and DirectInvoke
         href: edge-learn-more-co-di.md
+      - name: Filter format for URL list-based policies
+        href: edge-learnmmore-url-list-filter format.md
       - name: Mixed content downloads
         href: edge-learnmore-mixed-content-downloads.md
       - name: User data directory variables
