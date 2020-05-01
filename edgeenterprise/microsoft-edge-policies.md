@@ -33,7 +33,7 @@ These tables list all of the browser-related group policies available in this re
 |[Extensions](#extensions)|[HTTP authentication](#http-authentication)|
 |[Native Messaging](#native-messaging)|[Password manager and protection](#password-manager-and-protection)|
 |[Printing](#printing)|[Proxy server](#proxy-server)|
-|[SmartScreen settings](#smartscreen-settings)|[Startup, home page and new tab page](#startup,-home-page-and-new-tab-page)|
+|[SmartScreen settings](#smartscreen-settings)|[Startup, home page and new tab page](#startup-home-page-and-new-tab-page)|
 |[Additional](#additional)|
 
 ### [*Application Guard settings*](#application-guard-settings-policies)
