@@ -141,6 +141,8 @@
      items:
       - name: ClickOnce and DirectInvoke
         href: edge-learn-more-co-di.md
+      - name: Keep in-page navigation in IE mode
+        href: edge-learnmore-inpage-nav.md
       - name: Mixed content downloads
         href: edge-learnmore-mixed-content-downloads.md
       - name: User data directory variables
