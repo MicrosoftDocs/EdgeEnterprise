@@ -29,8 +29,7 @@ These tables list all of the browser-related group policies available in this re
 |||
 |-|-|
 |[Application Guard settings](#application-guard-settings)|[Cast](#cast)|
-|[Content settings](#content-settings)|[Default search provider](#default-search-provider)|
-																			   
+|[Content settings](#content-settings)|[Default search provider](#default-search-provider)|	   
 |[Extensions](#extensions)|[HTTP authentication](#http-authentication)|
 |[Native Messaging](#native-messaging)|[Password manager and protection](#password-manager-and-protection)|
 |[Printing](#printing)|[Proxy server](#proxy-server)|
