@@ -3,7 +3,7 @@ title: "Keep in-page navigation in Internet Explorer mode"
 ms.author: shisub
 author: dan-wesley
 manager: srugh
-ms.date: 04/30/2020
+ms.date: 05/01/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
