@@ -3,7 +3,7 @@ title: "Microsoft Edge proxy settings"
 ms.author: brianalt
 author: dan-wesley
 manager: srugh
-ms.date: 04/29/2020
+ms.date: 05/01/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -67,7 +67,7 @@ Tells Microsoft Edge to bypass any specified proxy for the specified semicolon-s
 
 Tells Microsoft Edge to use the PAC file at the specified URL. For example, `--proxy-pac-url="https://wpad/proxy.pac"` tells Microsoft Edge to resolve proxy information for URL requests using the **proxy.pac** file.
 
-## Licensing
+## Content license
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and shared by Chromium.org and used according to terms 
