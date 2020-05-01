@@ -3,7 +3,7 @@ title: "Create Microsoft Edge user data directory variables"
 ms.author: brianalt
 author: dan-wesley
 manager: srugh
-ms.date: 04/30/2020
+ms.date: 05/01/2020
 audience: ITPro
 ms.topic: procedural
 ms.prod: microsoft-edge
@@ -70,7 +70,7 @@ Microsoft Edge supports the following path variables.
 | **${users}** | The folder where users' profiles are stored. Example: */Users* |
 | **${documents}** | The Documents folder for the current user. Example: */Users/audreysmall/Documents* |
 
-## Licensing
+## Content license
 
 >[!NOTE]
 >Portions of this page are modifications based on work created and shared by Chromium.org and used according to terms  described in the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). The original page can be found [here](https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables).
