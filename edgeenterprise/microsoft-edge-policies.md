@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation"
 ms.author: stmoody
 author: brianalt-msft
 manager: tahills
-ms.date: 04/18/2020
+ms.date: 04/28/2020
 audience: ITPro
 ms.topic: reference
 ms.prod: microsoft-edge
@@ -28,14 +28,18 @@ These tables list all of the browser-related group policies available in this re
 
 |||
 |-|-|
-|[Cast](#cast)|[Content settings](#content-settings)|
-|[Default search provider](#default-search-provider)|[Extensions](#extensions)|
-|[HTTP authentication](#http-authentication)|[Native Messaging](#native-messaging)|
-|[Password manager and protection](#password-manager-and-protection)|[Printing](#printing)|
-|[Proxy server](#proxy-server)|[SmartScreen settings](#smartscreen-settings)|
-|[Startup, home page and new tab page](#startup-home-page-and-new-tab-page)|[Additional](#additional)|
+|[Application Guard settings](#application-guard-settings)|[Cast](#cast)|
+|[Content settings](#content-settings)|[Default search provider](#default-search-provider)|	   
+|[Extensions](#extensions)|[HTTP authentication](#http-authentication)|
+|[Native Messaging](#native-messaging)|[Password manager and protection](#password-manager-and-protection)|
+|[Printing](#printing)|[Proxy server](#proxy-server)|
+|[SmartScreen settings](#smartscreen-settings)|[Startup, home page and new tab page](#startup-home-page-and-new-tab-page)|
+|[Additional](#additional)|
 
-
+### [*Application Guard settings*](#application-guard-settings-policies)
+|Policy Name|Caption|
+|-|-|
+|[ApplicationGuardContainerProxy](#applicationguardcontainerproxy)|Application Guard Container Proxy|
 ### [*Cast*](#cast-policies)
 |Policy Name|Caption|
 |-|-|
@@ -117,7 +121,7 @@ These tables list all of the browser-related group policies available in this re
 |-|-|
 |[PasswordManagerEnabled](#passwordmanagerenabled)|Enable saving passwords to the password manager|
 |[PasswordProtectionChangePasswordURL](#passwordprotectionchangepasswordurl)|Configure the change password URL|
-|[PasswordProtectionLoginURLs](#passwordprotectionloginurls)|Configure the list of enterprise login URLs where password protection service should capture fingerprint of password|
+|[PasswordProtectionLoginURLs](#passwordprotectionloginurls)|Configure the list of enterprise login URLs where the password protection service should capture salted hashes of a password|
 |[PasswordProtectionWarningTrigger](#passwordprotectionwarningtrigger)|Configure password protection warning trigger|
 ### [*Printing*](#printing-policies)
 |Policy Name|Caption|
@@ -321,6 +325,72 @@ These tables list all of the browser-related group policies available in this re
 
 
 
+
+  ## Application Guard settings policies
+
+  [Back to top](#microsoft-edge---policies)
+
+  ### ApplicationGuardContainerProxy
+  #### Application Guard Container Proxy
+  
+  #### Supported versions:
+  - On Windows since 84 or later
+
+  #### Description
+  Configures the proxy settings for Microsoft Edge Application Guard.
+If you enable this policy, Microsoft Edge Application Guard ignores other sources of proxy configurations.
+
+If you don't configure this policy, Microsoft Edge Application Guard uses the proxy configuration of the host.
+
+This policy does not affect the proxy configuration of Microsoft Edge outside of Application Guard (on the host).
+
+The ProxyMode field lets you specify the proxy server used by Microsoft Edge Application Guard.
+
+The ProxyPacUrl field is a URL to a proxy .pac file.
+
+The ProxyServer field is a URL for the proxy server.
+
+If you choose the 'direct' value as 'ProxyMode', all other fields are ignored.
+
+If you choose the 'auto_detect' value as 'ProxyMode', all other fields are ignored.
+
+If you choose the 'fixed_servers' value as 'ProxyMode', the 'ProxyServer' field is used.
+
+If you choose the 'pac_script' value as 'ProxyMode', the 'ProxyPacUrl' field is used.
+
+  #### Supported features:
+  - Can be mandatory: Yes
+  - Can be recommended: No
+  - Dynamic Policy Refresh: No - Requires browser restart
+
+  #### Data Type:
+  - Dictionary
+
+  #### Windows information and settings
+  ##### Group Policy (ADMX) info
+  - GP unique name: ApplicationGuardContainerProxy
+  - GP name: Application Guard Container Proxy
+  - GP path (Mandatory): Administrative Templates/Microsoft Edge/Application Guard settings
+  - GP path (Recommended): N/A
+  - GP ADMX file name: MSEdge.admx
+  ##### Windows Registry Settings
+  - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
+  - Path (Recommended): N/A
+  - Value Name: ApplicationGuardContainerProxy
+  - Value Type: REG_SZ
+  ##### Example value:
+```
+SOFTWARE\Policies\Microsoft\Edge\ApplicationGuardContainerProxy = {
+  "ProxyMode": "direct", 
+  "ProxyPacUrl": "https://internal.site/example.pac", 
+  "ProxyServer": "123.123.123.123:8080"
+}
+```
+
+
+  
+
+  [Back to top](#microsoft-edge---policies)
 
   ## Cast policies
 
@@ -1626,9 +1696,9 @@ SOFTWARE\Policies\Microsoft\Edge\LegacySameSiteCookieBehaviorEnabledForDomainLis
   - On Windows and macOS since 77 or later
 
   #### Description
-  Define a list of sites, based on URL patterns, that can display notifications.
+  Allows you to create a list of url patterns to specify sites that are allowed to display notifications.
 
-If you don't configure this policy, the global default value from the [DefaultNotificationsSetting](#defaultnotificationssetting) policy (if set) or the user's personal configuration is used for all sites.
+If you don’t set this policy, the global default value will be used for all sites. This default value will be from the [DefaultNotificationsSetting](#defaultnotificationssetting) policy if it’s set, or from the user's personal configuration. For detailed information on valid url patterns, see https://cloud.google.com/docs/chrome-enterprise/policies/url-patterns.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -1678,9 +1748,9 @@ SOFTWARE\Policies\Microsoft\Edge\NotificationsAllowedForUrls\2 = [*.]contoso.edu
   - On Windows and macOS since 77 or later
 
   #### Description
-  Define a list of sites, based on URL patterns, that are blocked from displaying notifications.
+  Allows you to create a list of url patterns to specify sites that are not allowed to display notifications.
 
-If you don't configure this policy, the global default value from the [DefaultNotificationsSetting](#defaultnotificationssetting) policy (if set) or the user's personal configuration is used for all sites.
+If you don’t set this policy, the global default value will be used for all sites. This default value will be from the [DefaultNotificationsSetting](#defaultnotificationssetting) policy if it’s set, or from the user's personal configuration. For detailed information on valid url patterns, see https://cloud.google.com/docs/chrome-enterprise/policies/url-patterns.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -3712,13 +3782,13 @@ https://contoso.com/change_password.html
   [Back to top](#microsoft-edge---policies)
 
   ### PasswordProtectionLoginURLs
-  #### Configure the list of enterprise login URLs where password protection service should capture fingerprint of password
+  #### Configure the list of enterprise login URLs where the password protection service should capture salted hashes of a password
   
   #### Supported versions:
   - On Windows and macOS since 77 or later
 
   #### Description
-  Configure the list of enterprise login URLs (HTTP and HTTPS schemes only) where Microsoft Edge should capture the fingerprint of passwords and use it for password reuse detection.
+  Configure the list of enterprise login URLs (HTTP and HTTPS schemes only) where Microsoft Edge should capture the salted hashes of passwords and use it for password reuse detection.
 
 If you enable this policy, the password protection service captures fingerprints of passwords on the defined URLs.
 
@@ -3737,7 +3807,7 @@ This policy is available only on Windows instances that are joined to a Microsof
   #### Windows information and settings
   ##### Group Policy (ADMX) info
   - GP unique name: PasswordProtectionLoginURLs
-  - GP name: Configure the list of enterprise login URLs where password protection service should capture fingerprint of password
+  - GP name: Configure the list of enterprise login URLs where the password protection service should capture salted hashes of a password
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/Password manager and protection
   - GP path (Recommended): N/A
   - GP ADMX file name: MSEdge.admx
@@ -6160,7 +6230,7 @@ This policy is intended to give enterprises flexibility to disable the audio san
   #### Description
   If you enable this policy, all supported datatypes and settings from the specified browser will be silently and automatically imported at first run. During the First Run Experience, the import section will also be skipped.
 
-																																														   
+												 
 
 The browser data from Microsoft Edge Legacy will always be silently migrated at the first run, irrespective of the value of this policy. You can use the following values for this policy:
 
@@ -6873,13 +6943,13 @@ If you don't configure this policy, the built-in DNS client is enabled by defaul
   - On macOS since 83 or later
 
   #### Description
-  If you enable this policy, Microsoft Edge OS will perform verification of server certificates using the built-in certificate verifier
-If you disable this setting, Microsoft Edge OS will verify server certificates using the legacy certificate verifier provided by the platform.
-If you don't configure this setting,  Microsoft Edge OS the built-in or the legacy certificate verifier can be used.
+  This policy is deprecated because it's intended to serve only as a short-term mechanism to give enterprises more time to update their environments and report issues if they are found to be incompatible with the built-in certificate verifier.
+																																			  
+																													
 
-This policy is scheduled to be removed in Microsoft Edge OS version 81, when support for the legacy certificate verifier on Microsoft Edge OS is planned to be removed.
+																																									   
 
-This policy is scheduled to be removed in Microsoft Edge for Mac OS X version 87, when support for the legacy certificate verifier on Mac OS X is planned to be removed.
+  This policy is scheduled to be removed in Microsoft Edge for Mac OS X version 87, when support for the legacy certificate verifier on Mac OS X is planned to be removed.
 
 
   #### Supported features:
@@ -8642,11 +8712,11 @@ If you don't configure this policy, on an unmanaged device the behavior is the s
   #### Description
   This policy controls whether the "Always allow this site to open links of this type" checkbox is shown on external protocol launch confirmation prompts.
 
-If you set this policy to True, when an external protocol confirmation prompt is shown, the user can select "Always allow" to skip all future confirmation prompts for the protocol on this site.
+If you enable this policy, when an external protocol confirmation prompt is shown, the user can select "Always allow" to skip all future confirmation prompts for the protocol on this site.
 
-If you set this policy to False, the "Always allow" checkbox isn't displayed. The user will be prompted for confirmation every time an external protocol is invoked.
+If you disable this policy, the "Always allow" checkbox isn't displayed. The user will be prompted for confirmation every time an external protocol is invoked.
 
-If this policy is unset, the checkbox visibility is controlled by the "Enable remembering protocol launch prompting preferences" flag in edge://flags
+If you don't configure this policy, the checkbox visibility is controlled by the "Enable remembering protocol launch prompting preferences" flag in edge://flags
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -10286,8 +10356,8 @@ If you set this policy to AllInPageNavigations (value 2), all navigations from p
 If you enable this policy, you can choose one of the following navigation options:
 
 * 0 = Default
-	  
-	 
+   
+  
 
 * 1 = Keep only automatic navigations in Internet Explorer mode
 
@@ -10800,13 +10870,13 @@ If the [EnableMediaRouter](#enablemediarouter) policy is disabled, then this pol
 
 Enable this policy to send reporting of usage and crash-related data to Microsoft. Disable this policy to not send the data to Microsoft. In both cases, users can't change or override the setting.
 
-On Windows 10, Beta and Stable channels, if you don’t configure this policy, Microsoft Edge will default to the Windows diagnostic data setting. If you enable this policy, Microsoft Edge will only send usage data if the Windows Diagnostic data setting is set to Enhanced or Full. If you disable this policy, Microsoft Edge will not send usage data. Crash-related data is sent based on the Windows Diagnostic data setting. Learn more about Windows Diagnostic data settings at [https://go.microsoft.com/fwlink/?linkid=2099569](https://go.microsoft.com/fwlink/?linkid=2099569)
+On Windows 10, if you don't configure this policy, Microsoft Edge will default to the Windows diagnostic data setting. If you enable this policy, Microsoft Edge will only send usage data if the Windows Diagnostic data setting is set to Enhanced or Full. If you disable this policy, Microsoft Edge will not send usage data. Crash-related data is sent based on the Windows Diagnostic data setting. Learn more about Windows Diagnostic data settings at [https://go.microsoft.com/fwlink/?linkid=2099569](https://go.microsoft.com/fwlink/?linkid=2099569)
 
  
 
-On Windows 10, Canary and Dev channels, this policy controls sending usage data. If this policy is not configured, Microsoft Edge will default to the user's preference. Crash-related data is sent based on the Windows Diagnostic data setting. Learn more about Windows Diagnostic data settings: [https://go.microsoft.com/fwlink/?linkid=2099569](https://go.microsoft.com/fwlink/?linkid=2099569)
+On Windows 7, 8, and macOS, this policy controls sending usage and crash-related data. If you don't configure this policy, Microsoft Edge will default to the user's preference.
 
-On Windows 7, 8, and macOS, this policy controls sending usage and crash-related data. If you don’t configure this policy, Microsoft Edge will default to the user's preference.
+																																												  
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -10848,7 +10918,7 @@ On Windows 7, 8, and macOS, this policy controls sending usage and crash-related
   #### Enable Hiding of Native Windows
   
   #### Supported versions:
-  - On Windows since 83 or later
+  - On Windows since 84 or later
 
   #### Description
   Enables hiding of native windows in Microsoft Edge.
@@ -11497,9 +11567,9 @@ The user's session is restored when the browser restarts.
   - On Windows and macOS since 77 or later
 
   #### Description
-  Allows you to set the time period, in milliseconds, over which users are notified that Microsoft Edge must be relaunched or that a Microsoft Edge OS device must be restarted to apply a pending update.
+  Allows you to set the time period, in milliseconds, over which users are notified that Microsoft Edge must be relaunched to apply a pending update.
 
-Over this time period, the user will be repeatedly informed of the need for an update. For Microsoft Edge OS devices, a restart notification appears in the system tray according to the RelaunchHeadsUpPeriod policy. For Microsoft Edge browsers, the app menu changes to indicate that a relaunch is needed once one third of the notification period passes. This notification changes color once two thirds of the notification period passes, and again once the full notification period has passed. The additional notifications enabled by the [RelaunchNotification](#relaunchnotification) policy follow this same schedule.
+Over this time period, the user will be repeatedly informed of the need for an update. 
 
 If not set, the default period of 604800000 milliseconds (one week) is used.
 
@@ -12177,11 +12247,11 @@ SOFTWARE\Policies\Microsoft\Edge\SecurityKeyPermitAttestation\1 = https://contos
 
 Enable this policy to send info about websites visited in Microsoft Edge to Microsoft. Disable this policy to not send info about websites visited in Microsoft Edge to Microsoft. In both cases, users can't change or override the setting.
 
-On Windows 10, Beta and Stable if this policy is not configured, Microsoft Edge will default to the Windows diagnostic data setting. If this policy is enabled Microsoft Edge will only send info about websites visited in Microsoft Edge if the Windows Diagnostic data setting is set to Full. If this policy is disabled Microsoft Edge will not send info about websites visited. Learn more about Windows Diagnostic data settings: [https://go.microsoft.com/fwlink/?linkid=2099569](https://go.microsoft.com/fwlink/?linkid=2099569)
+On Windows 10, if you don't configure this policy, Microsoft Edge will default to the Windows diagnostic data setting. If this policy is enabled Microsoft Edge will only send info about websites visited in Microsoft Edge if the Windows Diagnostic data setting is set to Full. If this policy is disabled Microsoft Edge will not send info about websites visited. Learn more about Windows Diagnostic data settings: [https://go.microsoft.com/fwlink/?linkid=2099569](https://go.microsoft.com/fwlink/?linkid=2099569)
 
-On Windows 10, Canary and Dev channels, this policy controls sending info about websites visited. If this policy is not configured, Microsoft Edge will default to the user’s preference.
+																																														   
 
-On Windows 7, 8, and Mac this policy controls sending info about websites visited. If this policy is not configured, Microsoft Edge will default to the user’s preference.
+On Windows 7, 8, and Mac this policy controls sending info about websites visited. If you don't configure this policy, Microsoft Edge will default to the user's preference.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -12927,9 +12997,9 @@ If you don't set this policy, the browser will only attempt to save memory when 
 If you enable this policy, you have the following options for setting the level of tracking prevention:
 
 * 0 = Off (no tracking prevention)
-	
+ 
    
-	
+ 
 
 * 1 = Basic (blocks harmful trackers, content and ads will be personalized)
 
@@ -13557,7 +13627,7 @@ SOFTWARE\Policies\Microsoft\Edge\WebAppInstallForceList = [
 
   #### Description
   
-																	  
+				   
 This policy will be obsolete in Microsoft Edge version 84 because WebDriver is now compatible with all existing policies.
 
 This policy allows users of the WebDriver feature to override
