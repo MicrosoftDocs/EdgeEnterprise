@@ -38,7 +38,7 @@ Enable this policy to send reporting of usage and crash-related data to Microsof
 On Windows 10 channels:
 
 - If this policy isn't configured, Microsoft Edge will default to the Windows diagnostic data setting. 
-- If this policy is enabled, Microsoft Edge will only send usage data if the Windows Diagnostic data setting is set to **Full**.
+- If this policy is enabled, Microsoft Edge will only send usage data if the Windows Diagnostic data setting is set to **Enhanced** or **Full**.
 - If this policy is disabled, Microsoft Edge will not send usage data. Crash-related data is sent based on the Windows Diagnostic data setting. To [learn more about Windows Diagnostic data settings](https://go.microsoft.com/fwlink/?linkid=2099569).
 
 On Windows 7, 8, and macOS this policy controls sending usage and crash-related data. If this policy isn't configured, Microsoft Edge will default to the user's preference.
