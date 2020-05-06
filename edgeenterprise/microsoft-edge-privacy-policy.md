@@ -38,7 +38,7 @@ Enable this policy to send reporting of usage and crash-related data to Microsof
 On Windows 10 channels:
 
 - If this policy isn't configured, Microsoft Edge will default to the Windows diagnostic data setting. 
-- If this policy is enabled, Microsoft Edge will only send usage data if the Windows Diagnostic data setting is set to **Full**.
+- If this policy is enabled, Microsoft Edge will only send usage data if the Windows Diagnostic data setting is set to **Enhanced** or **Full**.
 - If this policy is disabled, Microsoft Edge will not send usage data. Crash-related data is sent based on the Windows Diagnostic data setting. To [learn more about Windows Diagnostic data settings](https://go.microsoft.com/fwlink/?linkid=2099569).
 
 On Windows 7, 8, and macOS this policy controls sending usage and crash-related data. If this policy isn't configured, Microsoft Edge will default to the user's preference.
@@ -70,7 +70,14 @@ For Windows 10 channels to understand our implementation with the dependency on 
 | Enhanced                        | Not sent                                          | Not sent                                            |
 | Full                            | Sent                                          | Sent                                                |
 
-If your configurations for Windows 10 channels are misconfigured in accordance with this table, we will fall back to the lesser data collection setting. For example, if you set the **Enable usage and crash-related data reporting** policy to **Enabled** but the Windows Diagnostic data setting is set to **Basic**, we will not send usage and crash-related data. The correct implementation would be to set the **Enable usage and crash-related data reporting** policy to **Enabled** with the Windows Diagnostic data setting set to **Full**. Or, if you set the **Send site information to improve Microsoft services** to **Disabled** but Windows Diagnostic data setting is set to **Full**, we will not send information about the sites that are visited.  
+If your configurations for Windows 10 channels are misconfigured in accordance with the preceding table, we will fall back to the lesser data collection setting.
+
+For example:
+
+- You set the "Enable usage and crash-related data reporting" policy to **Enabled** but the Windows Diagnostic data setting is set to **Basic**. We won't send usage and crash-related data.
+- You set the "Send site information to improve Microsoft services" policy to **Disabled** but the Windows Diagnostic data setting is set to **Full**. We won't send information about the sites that are visited.
+
+The correct implementation for the previous settings is to set the "Enable usage and crash-related data reporting" policy to **Enabled** and set the Windows Diagnostic data setting to **Full**.
 
 ## Additional privacy policy options
 
