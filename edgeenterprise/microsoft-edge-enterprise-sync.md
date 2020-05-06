@@ -80,7 +80,7 @@ The following group policies impact Microsoft Edge sync:
 
 ## Frequently Asked Questions
 
-### SECURITY and COMPLIANCE
+### SECURITY and SERVER/DATA COMPLIANCE
 
 #### Is the synced data encrypted? Can anyone at Microsoft look at it?
 
