@@ -3,7 +3,7 @@ title: "Plan your deployment of Microsoft Edge"
 ms.author: cjacks
 author: appcompatguy
 manager: saudm
-ms.date: 01/08/2020
+ms.date: 04/23/2020
 audience: ITPro
 ms.topic: procedural
 ms.prod: microsoft-edge
@@ -181,3 +181,4 @@ After a finishing the pilot and updating your deployment plan with lessons learn
 ## See also
 
 - [Microsoft Edge Enterprise landing page](https://aka.ms/EdgeEnterprise)
+- [Video - Deploy Microsoft Edge](microsoft-edge-video-deploy.md)
