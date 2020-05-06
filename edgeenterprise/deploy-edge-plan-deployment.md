@@ -149,7 +149,7 @@ Application compatibility for Microsoft Edge is extremely high - so high that Mi
 
 If you have an application where we don't meet this promise, then we stand behind the promise to fix it with [Microsoft App Assure](https://www.microsoft.com/fasttrack/microsoft-365/desktop-app-assure).
 
-Despite this promise, we know that many organizations must validate some applications for compliance or risk management reasons. Even though we expect this to be very straightforward, it's important to be organized and rigorous in app testing.
+Despite this promise, we know that many organizations must validate some applications for their compliance or risk management reasons. Even though we expect this to be very straightforward, it's important to be organized and rigorous in app testing.
 
 There are 2 ways to do app compatibility testing:
 
