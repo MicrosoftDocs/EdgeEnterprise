@@ -3,7 +3,7 @@ title: "Microsoft Edge Sync"
 ms.author: kvice
 author: dan-wesley
 manager: laurawi
-ms.date: 04/03/2020
+ms.date: 05/07/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -77,6 +77,7 @@ The following group policies impact Microsoft Edge sync:
 
 - [SyncDisabled](https://docs.microsoft.com/deployedge/microsoft-edge-policies#syncdisabled): Disables sync completely.
 - [SavingBrowserHistoryDisabled](https://docs.microsoft.com/deployedge/microsoft-edge-policies#savingbrowserhistorydisabled): Disables saving browsing history and sync. This policy also disables open-tabs sync.
+- [SyncTypesListDisabled](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#synctypeslistdisabled): Configure the list of types that are excluded from synchronization.
 
 ## Frequently Asked Questions
 
