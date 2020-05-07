@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation"
 ms.author: stmoody
 author: brianalt-msft
 manager: tahills
-ms.date: 04/28/2020
+ms.date: 05/01/2020
 audience: ITPro
 ms.topic: reference
 ms.prod: microsoft-edge
@@ -29,7 +29,7 @@ These tables list all of the browser-related group policies available in this re
 |||
 |-|-|
 |[Application Guard settings](#application-guard-settings)|[Cast](#cast)|
-|[Content settings](#content-settings)|[Default search provider](#default-search-provider)|	   
+|[Content settings](#content-settings)|[Default search provider](#default-search-provider)|
 |[Extensions](#extensions)|[HTTP authentication](#http-authentication)|
 |[Native Messaging](#native-messaging)|[Password manager and protection](#password-manager-and-protection)|
 |[Printing](#printing)|[Proxy server](#proxy-server)|
@@ -170,7 +170,7 @@ These tables list all of the browser-related group policies available in this re
 |[AllowFileSelectionDialogs](#allowfileselectiondialogs)|Allow file selection dialogs|
 |[AllowPopupsDuringPageUnload](#allowpopupsduringpageunload)|Allows a page to show popups during its unloading|
 |[AllowSurfGame](#allowsurfgame)|Allow surf game|
-|[AllowSyncXHRInPageDismissal](#allowsyncxhrinpagedismissal)|Allow pages to send synchronous XHR requests during page dismissal|
+|[AllowSyncXHRInPageDismissal](#allowsyncxhrinpagedismissal)|Allow pages to send synchronous XHR requests during page dismissal (deprecated)|
 |[AllowTokenBindingForUrls](#allowtokenbindingforurls)|Configure the list of sites for which Microsoft Edge will attempt to establish a Token Binding with.|
 |[AllowTrackingForUrls](#allowtrackingforurls)|Configure tracking prevention exceptions for specific sites|
 |[AlternateErrorPagesEnabled](#alternateerrorpagesenabled)|Suggest similar pages when a webpage can’t be found|
@@ -193,7 +193,7 @@ These tables list all of the browser-related group policies available in this re
 |[BrowserNetworkTimeQueriesEnabled](#browsernetworktimequeriesenabled)|Allow queries to a Browser Network Time service|
 |[BrowserSignin](#browsersignin)|Browser sign-in settings|
 |[BuiltInDnsClientEnabled](#builtindnsclientenabled)|Use built-in DNS client|
-|[BuiltinCertificateVerifierEnabled](#builtincertificateverifierenabled)|Determines whether the built-in certificate verifier will be used to verify server certificates|
+|[BuiltinCertificateVerifierEnabled](#builtincertificateverifierenabled)|Determines whether the built-in certificate verifier will be used to verify server certificates (deprecated)|
 |[CertificateTransparencyEnforcementDisabledForCas](#certificatetransparencyenforcementdisabledforcas)|Disable Certificate Transparency enforcement for a list of subjectPublicKeyInfo hashes|
 |[CertificateTransparencyEnforcementDisabledForLegacyCas](#certificatetransparencyenforcementdisabledforlegacycas)|Disable Certificate Transparency enforcement for a list of legacy certificate authorities|
 |[CertificateTransparencyEnforcementDisabledForUrls](#certificatetransparencyenforcementdisabledforurls)|Disable Certificate Transparency enforcement for specific URLs|
@@ -235,7 +235,7 @@ These tables list all of the browser-related group policies available in this re
 |[ForceEphemeralProfiles](#forceephemeralprofiles)|Enable use of ephemeral profiles|
 |[ForceGoogleSafeSearch](#forcegooglesafesearch)|Enforce Google SafeSearch|
 |[ForceLegacyDefaultReferrerPolicy](#forcelegacydefaultreferrerpolicy)|Use a default referrer policy of no-referrer-when-downgrade. (deprecated)|
-|[ForceNetworkInProcess](#forcenetworkinprocess)|Force networking code to run in the browser process|
+|[ForceNetworkInProcess](#forcenetworkinprocess)|Force networking code to run in the browser process (deprecated)|
 |[ForceYouTubeRestrict](#forceyoutuberestrict)|Force minimum YouTube Restricted Mode|
 |[FullscreenAllowed](#fullscreenallowed)|Allow full screen mode|
 |[GloballyScopeHTTPAuthCacheEnabled](#globallyscopehttpauthcacheenabled)|Enable globally scoped HTTP auth cache|
@@ -299,7 +299,7 @@ These tables list all of the browser-related group policies available in this re
 |[SpellcheckEnabled](#spellcheckenabled)|Enable spellcheck|
 |[SpellcheckLanguage](#spellchecklanguage)|Enable specific spellcheck languages|
 |[SpellcheckLanguageBlocklist](#spellchecklanguageblocklist)|Force disable spellcheck languages|
-|[StricterMixedContentTreatmentEnabled](#strictermixedcontenttreatmentenabled)|Enable stricter treatment for mixed content|
+|[StricterMixedContentTreatmentEnabled](#strictermixedcontenttreatmentenabled)|Enable stricter treatment for mixed content (deprecated)|
 |[SuppressUnsupportedOSWarning](#suppressunsupportedoswarning)|Suppress the unsupported OS warning|
 |[SyncDisabled](#syncdisabled)|Disable synchronization of data using Microsoft sync services|
 |[SyncTypesListDisabled](#synctypeslistdisabled)|Configure the list of types that are excluded from synchronization|
@@ -5704,18 +5704,20 @@ If you enable or don't configure this policy, users can play the surf game.
 
   ### AllowSyncXHRInPageDismissal
   #### Allow pages to send synchronous XHR requests during page dismissal
-  
+  >DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.
   #### Supported versions:
   - On Windows and macOS since 79 or later
 
   #### Description
-  This policy lets you specify that a page can send synchronous XHR requests during page dismissal.
+  This policy is deprecated because it's only intended to be a short-term mechanism to give enterprises more time to update their web content if and when it's found to be incompatible with the change to disallow synchronous XHR requests during page dismissal. It won't work in Microsoft Edge as soon as version 88.
+
+This policy lets you specify that a page can send synchronous XHR requests during page dismissal.
 
 If you enable this policy, pages can send synchronous XHR requests during page dismissal.
 
 If you disable this policy or don't configure this policy, pages aren't allowed to send synchronous XHR requests during page dismissal.
 
-This policy is temporary and will be removed in a future release.
+																 
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -5728,7 +5730,7 @@ This policy is temporary and will be removed in a future release.
   #### Windows information and settings
   ##### Group Policy (ADMX) info
   - GP unique name: AllowSyncXHRInPageDismissal
-  - GP name: Allow pages to send synchronous XHR requests during page dismissal
+  - GP name: Allow pages to send synchronous XHR requests during page dismissal (deprecated)
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/
   - GP path (Recommended): N/A
   - GP ADMX file name: MSEdge.admx
@@ -6230,7 +6232,7 @@ This policy is intended to give enterprises flexibility to disable the audio san
   #### Description
   If you enable this policy, all supported datatypes and settings from the specified browser will be silently and automatically imported at first run. During the First Run Experience, the import section will also be skipped.
 
-												 
+			 
 
 The browser data from Microsoft Edge Legacy will always be silently migrated at the first run, irrespective of the value of this policy. You can use the following values for this policy:
 
@@ -6938,18 +6940,18 @@ If you don't configure this policy, the built-in DNS client is enabled by defaul
 
   ### BuiltinCertificateVerifierEnabled
   #### Determines whether the built-in certificate verifier will be used to verify server certificates
-  
+  >DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.
   #### Supported versions:
   - On macOS since 83 or later
 
   #### Description
   This policy is deprecated because it's intended to serve only as a short-term mechanism to give enterprises more time to update their environments and report issues if they are found to be incompatible with the built-in certificate verifier.
-																																			  
-																													
+									 
+							 
 
-																																									   
+											
 
-  This policy is scheduled to be removed in Microsoft Edge for Mac OS X version 87, when support for the legacy certificate verifier on Mac OS X is planned to be removed.
+This policy is scheduled to be removed in Microsoft Edge for Mac OS X version 87, when support for the legacy certificate verifier on Mac OS X is planned to be removed.
 
 
   #### Supported features:
@@ -9069,13 +9071,13 @@ If you disable this policy or don't configure it, SafeSearch in Google Search is
   - On Windows and macOS since 81 or later
 
   #### Description
-  This enterprise policy is for short-term adaptation and will be removed in M83.
+  This policy is deprecated because it's only intended to be a short-term mechanism to give enterprises more time to update their web content if and when it's found to be incompatible with the current default referrer policy. It won't work in Microsoft Edge as soon as version 86.
 
-Microsoft Edge’s default referrer policy is being strengthened from its current value of no-referrer-when-downgrade to the more secure strict-origin-when-cross-origin through a gradual rollout targeting M80 stable.
+Microsoft Edge's default referrer policy is being strengthened from its current value of no-referrer-when-downgrade to the more secure strict-origin-when-cross-origin through a gradual rollout.
 
-Before the rollout, this enterprise policy will have no effect. After the rollout, when this enterprise policy is enabled, Microsoft Edge’s default referrer policy will be set to its pre-M80 value of no-referrer-when-downgrade.
+Before the rollout, this enterprise policy will have no effect. After the rollout, when this enterprise policy is enabled, Microsoft Edge's default referrer policy will be set to its old value of no-referrer-when-downgrade.
 
-This enterprise policy is disabled by default
+This enterprise policy is disabled by default.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -9115,18 +9117,20 @@ This enterprise policy is disabled by default
 
   ### ForceNetworkInProcess
   #### Force networking code to run in the browser process
-  
+  >DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.
   #### Supported versions:
   - On Windows since 78 or later
 
   #### Description
-  This policy forces networking code to run in the browser process.
+  This policy is deprecated because it's only intended to be a short-term mechanism to give enterprises more time to migrate to 3rd party software that doesn't depend on hooking networking APIs. It won't work in Microsoft Edge as soon as version 84. Proxy servers are recommended over LSPs and Win32 API patching.
+
+This policy forces networking code to run in the browser process.
 
 This policy is disabled by default. If enabled, users are open to security issues when the networking process is sandboxed.
 
-This policy is intended to give enterprises a chance to migrate to 3rd party software that doesn't depend on hooking networking APIs. Proxy servers are recommended over LSPs and Win32 API patching.
+																																																	 
 
-If this policy isn't set, networking code may run out of the browser process depending on field trials of the NetworkService experiment.
+																																		
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -9139,7 +9143,7 @@ If this policy isn't set, networking code may run out of the browser process dep
   #### Windows information and settings
   ##### Group Policy (ADMX) info
   - GP unique name: ForceNetworkInProcess
-  - GP name: Force networking code to run in the browser process
+  - GP name: Force networking code to run in the browser process (deprecated)
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/
   - GP path (Recommended): N/A
   - GP ADMX file name: MSEdge.admx
@@ -10622,7 +10626,7 @@ SOFTWARE\Policies\Microsoft\Edge\ManagedFavorites = [
   Lets you configure a list of up to 10 search engines, one of which must be marked as the default search engine.
 You do not need to specify the encoding. Starting in Microsoft Edge 80, the suggest_url and image_search_url parameters are optional. The optional parameter, image_search_post_params (consists of comma-separated name/value pairs), is available starting in Microsoft Edge 80.
 
-Starting in Microsoft Edge 83, you can enable search engine discovery with the allow_search_engine_discovery optional parameter. This parameter must be the first item in the list. If allow_search_engine_discovery is not specified, search engine discovery will be disabled by default.
+Starting in Microsoft Edge 83, you can enable search engine discovery with the allow_search_engine_discovery optional parameter. This parameter must be the first item in the list. If allow_search_engine_discovery is not specified, search engine discovery will be disabled by default. Starting in Microsoft Edge 84, you can set this policy as a recommended policy to allow search provider discovery. You do not need to add the allow_search_engine_discovery optional parameter.
 
 If you enable this policy, users can't add, remove, or change any search engine in the list. Users can set their default search engine to any search engine in the list.
 
@@ -10632,7 +10636,7 @@ If the [DefaultSearchProviderSearchURL](#defaultsearchprovidersearchurl) policy 
 
   #### Supported features:
   - Can be mandatory: Yes
-  - Can be recommended: No
+  - Can be recommended: Yes
   - Dynamic Policy Refresh: No - Requires browser restart
 
   #### Data Type:
@@ -10643,11 +10647,11 @@ If the [DefaultSearchProviderSearchURL](#defaultsearchprovidersearchurl) policy 
   - GP unique name: ManagedSearchEngines
   - GP name: Manage Search Engines
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/
-  - GP path (Recommended): N/A
+  - GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)/
   - GP ADMX file name: MSEdge.admx
   ##### Windows Registry Settings
   - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
-  - Path (Recommended): N/A
+  - Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended
   - Value Name: ManagedSearchEngines
   - Value Type: REG_SZ
   ##### Example value:
@@ -10876,7 +10880,7 @@ On Windows 10, if you don't configure this policy, Microsoft Edge will default t
 
 On Windows 7, 8, and macOS, this policy controls sending usage and crash-related data. If you don't configure this policy, Microsoft Edge will default to the user's preference.
 
-																																												  
+											  
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -11569,7 +11573,7 @@ The user's session is restored when the browser restarts.
   #### Description
   Allows you to set the time period, in milliseconds, over which users are notified that Microsoft Edge must be relaunched to apply a pending update.
 
-Over this time period, the user will be repeatedly informed of the need for an update. 
+Over this time period, the user will be repeatedly informed of the need for an update. In Microsoft Edge the app menu changes to indicate that a relaunch is needed once one third of the notification period passes. This notification changes color once two thirds of the notification period passes, and again once the full notification period has passed. The additional notifications enabled by the [RelaunchNotification](#relaunchnotification) policy follow this same schedule.
 
 If not set, the default period of 604800000 milliseconds (one week) is used.
 
@@ -12249,7 +12253,7 @@ Enable this policy to send info about websites visited in Microsoft Edge to Micr
 
 On Windows 10, if you don't configure this policy, Microsoft Edge will default to the Windows diagnostic data setting. If this policy is enabled Microsoft Edge will only send info about websites visited in Microsoft Edge if the Windows Diagnostic data setting is set to Full. If this policy is disabled Microsoft Edge will not send info about websites visited. Learn more about Windows Diagnostic data settings: [https://go.microsoft.com/fwlink/?linkid=2099569](https://go.microsoft.com/fwlink/?linkid=2099569)
 
-																																														   
+												 
 
 On Windows 7, 8, and Mac this policy controls sending info about websites visited. If you don't configure this policy, Microsoft Edge will default to the user's preference.
 
@@ -12587,12 +12591,14 @@ SOFTWARE\Policies\Microsoft\Edge\SpellcheckLanguageBlocklist\2 = es
 
   ### StricterMixedContentTreatmentEnabled
   #### Enable stricter treatment for mixed content
-  
+  >DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.
   #### Supported versions:
   - On Windows and macOS since 81 or later
 
   #### Description
-  This policy controls the treatment for mixed content (HTTP content in HTTPS sites) in the browser.
+  This policy is deprecated because it's only intended to be a short-term mechanism to give enterprises more time to update their web content if and when it's found to be incompatible with stricter mixed content treatment. It won't work in Microsoft Edge as soon as version 84.
+
+This policy controls the treatment for mixed content (HTTP content in HTTPS sites) in the browser.
 
 If you set this policy to true or not set, audio and video mixed content will be automatically upgraded to HTTPS (that is, the URL will be rewritten as HTTPS, without a fallback if the resource isn’t available over HTTPS) and a 'Not Secure' warning will be shown in the URL bar for image mixed content.
 
@@ -12600,7 +12606,7 @@ If you set the policy to false, auto upgrades will be disabled for audio and vid
 
 This policy does not affect other types of mixed content other than audio, video, and images.
 
-This policy will no longer take effect starting in Microsoft Edge 84.
+																	 
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -12613,7 +12619,7 @@ This policy will no longer take effect starting in Microsoft Edge 84.
   #### Windows information and settings
   ##### Group Policy (ADMX) info
   - GP unique name: StricterMixedContentTreatmentEnabled
-  - GP name: Enable stricter treatment for mixed content
+  - GP name: Enable stricter treatment for mixed content (deprecated)
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/
   - GP path (Recommended): N/A
   - GP ADMX file name: MSEdge.admx
@@ -13627,7 +13633,7 @@ SOFTWARE\Policies\Microsoft\Edge\WebAppInstallForceList = [
 
   #### Description
   
-				   
+	   
 This policy will be obsolete in Microsoft Edge version 84 because WebDriver is now compatible with all existing policies.
 
 This policy allows users of the WebDriver feature to override
