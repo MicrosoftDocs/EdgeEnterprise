@@ -3,7 +3,7 @@ title: "Microsoft Edge Sync"
 ms.author: kvice
 author: dan-wesley
 manager: laurawi
-ms.date: 05/07/2020
+ms.date: 05/12/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -35,9 +35,10 @@ Sync functionality is enabled via user consent and users can turn sync on or off
 
 ## Prerequisites
 
-Currently Microsoft Edge sync for Azure Active Directory (Azure AD) accounts is only available for the following subscriptions:
+Currently Microsoft Edge sync for Azure Active Directory (Azure AD) accounts is available for the following subscriptions:
 
 - Azure AD Premium (P1 and P2)
+- M365 Business Premium
 - Office 365 E3 and above
 - Azure Information Protection (AIP) (P1& P2)
 - All EDU subscriptions (O365 A1 or above, M365 A1 or above, or Azure Information Protection P1 or P2 for Students or Faculty)
