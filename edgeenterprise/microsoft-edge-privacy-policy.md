@@ -3,7 +3,7 @@ title: "Microsoft Edge privacy policy"
 ms.author: likravit
 author: dan-wesley
 manager: srugh
-ms.date: 05/06/2020
+ms.date: 05/13/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -67,7 +67,7 @@ For Windows 10 channels to understand our implementation with the dependency on 
 |---------------------------------|-----------------------------------------------|-----------------------------------------------------|
 | Security                        | Not sent                                      | Not sent                                            |
 | Basic                           | Not sent                                      | Not sent                                            |
-| Enhanced                        | Not sent                                          | Not sent                                            |
+| Enhanced                        | Sent                                          | Not sent                                            |
 | Full                            | Sent                                          | Sent                                                |
 
 If your configurations for Windows 10 channels are misconfigured in accordance with the preceding table, we will fall back to the lesser data collection setting.
@@ -77,7 +77,7 @@ For example:
 - You set the "Enable usage and crash-related data reporting" policy to **Enabled** but the Windows Diagnostic data setting is set to **Basic**. We won't send usage and crash-related data.
 - You set the "Send site information to improve Microsoft services" policy to **Disabled** but the Windows Diagnostic data setting is set to **Full**. We won't send information about the sites that are visited.
 
-The correct implementation for the previous settings is to set the "Enable usage and crash-related data reporting" policy to **Enabled** and set the Windows Diagnostic data setting to **Full**.
+The correct implementation for the previous settings is to set the "Enable usage and crash-related data reporting" policy to **Enabled** and set the Windows Diagnostic data setting to **Enhanced** or **Full**.
 
 ## Additional privacy policy options
 
