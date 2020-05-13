@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation"
 ms.author: stmoody
 author: brianalt-msft
 manager: tahills
-ms.date: 05/01/2020
+ms.date: 05/07/2020
 audience: ITPro
 ms.topic: reference
 ms.prod: microsoft-edge
@@ -2283,7 +2283,7 @@ This policy is available only on Windows instances that are joined to a Microsof
 
   #### Supported features:
   - Can be mandatory: Yes
-  - Can be recommended: No
+  - Can be recommended: Yes
   - Dynamic Policy Refresh: Yes
 
   #### Data Type:
@@ -2294,11 +2294,11 @@ This policy is available only on Windows instances that are joined to a Microsof
   - GP unique name: DefaultSearchProviderEnabled
   - GP name: Enable the default search provider
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/Default search provider
-  - GP path (Recommended): N/A
+  - GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)/Default search provider
   - GP ADMX file name: MSEdge.admx
   ##### Windows Registry Settings
   - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
-  - Path (Recommended): N/A
+  - Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended
   - Value Name: DefaultSearchProviderEnabled
   - Value Type: REG_DWORD
   ##### Example value:
@@ -2332,7 +2332,7 @@ This policy is applied only if you enable the [DefaultSearchProviderEnabled](#de
 
   #### Supported features:
   - Can be mandatory: Yes
-  - Can be recommended: No
+  - Can be recommended: Yes
   - Dynamic Policy Refresh: Yes
 
   #### Data Type:
@@ -2343,11 +2343,11 @@ This policy is applied only if you enable the [DefaultSearchProviderEnabled](#de
   - GP unique name: DefaultSearchProviderEncodings
   - GP name: Default search provider encodings
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/Default search provider
-  - GP path (Recommended): N/A
+  - GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)/Default search provider
   - GP ADMX file name: MSEdge.admx
   ##### Windows Registry Settings
   - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\DefaultSearchProviderEncodings
-  - Path (Recommended): N/A
+  - Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended\DefaultSearchProviderEncodings
   - Value Name: 1, 2, 3, ...
   - Value Type: list of REG_SZ
   ##### Example value:
@@ -2397,7 +2397,7 @@ This policy is applied only if you enable the [DefaultSearchProviderEnabled](#de
 
   #### Supported features:
   - Can be mandatory: Yes
-  - Can be recommended: No
+  - Can be recommended: Yes
   - Dynamic Policy Refresh: Yes
 
   #### Data Type:
@@ -2408,11 +2408,11 @@ This policy is applied only if you enable the [DefaultSearchProviderEnabled](#de
   - GP unique name: DefaultSearchProviderImageURL
   - GP name: Specifies the search-by-image feature for the default search provider
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/Default search provider
-  - GP path (Recommended): N/A
+  - GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)/Default search provider
   - GP ADMX file name: MSEdge.admx
   ##### Windows Registry Settings
   - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
-  - Path (Recommended): N/A
+  - Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended
   - Value Name: DefaultSearchProviderImageURL
   - Value Type: REG_SZ
   ##### Example value:
@@ -2450,7 +2450,7 @@ If you don’t set this policy, image search requests are sent using the GET met
 
   #### Supported features:
   - Can be mandatory: Yes
-  - Can be recommended: No
+  - Can be recommended: Yes
   - Dynamic Policy Refresh: Yes
 
   #### Data Type:
@@ -2461,11 +2461,11 @@ If you don’t set this policy, image search requests are sent using the GET met
   - GP unique name: DefaultSearchProviderImageURLPostParams
   - GP name: Parameters for an image URL that uses POST
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/Default search provider
-  - GP path (Recommended): N/A
+  - GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)/Default search provider
   - GP ADMX file name: MSEdge.admx
   ##### Windows Registry Settings
   - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
-  - Path (Recommended): N/A
+  - Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended
   - Value Name: DefaultSearchProviderImageURLPostParams
   - Value Type: REG_SZ
   ##### Example value:
@@ -2499,7 +2499,7 @@ This policy is applied only if you enable the [DefaultSearchProviderEnabled](#de
 
   #### Supported features:
   - Can be mandatory: Yes
-  - Can be recommended: No
+  - Can be recommended: Yes
   - Dynamic Policy Refresh: Yes
 
   #### Data Type:
@@ -2510,11 +2510,11 @@ This policy is applied only if you enable the [DefaultSearchProviderEnabled](#de
   - GP unique name: DefaultSearchProviderKeyword
   - GP name: Default search provider keyword
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/Default search provider
-  - GP path (Recommended): N/A
+  - GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)/Default search provider
   - GP ADMX file name: MSEdge.admx
   ##### Windows Registry Settings
   - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
-  - Path (Recommended): N/A
+  - Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended
   - Value Name: DefaultSearchProviderKeyword
   - Value Type: REG_SZ
   ##### Example value:
@@ -2550,7 +2550,7 @@ If you don't enable this policy or if you leave it empty, the host name specifie
 
   #### Supported features:
   - Can be mandatory: Yes
-  - Can be recommended: No
+  - Can be recommended: Yes
   - Dynamic Policy Refresh: Yes
 
   #### Data Type:
@@ -2561,11 +2561,11 @@ If you don't enable this policy or if you leave it empty, the host name specifie
   - GP unique name: DefaultSearchProviderName
   - GP name: Default search provider name
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/Default search provider
-  - GP path (Recommended): N/A
+  - GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)/Default search provider
   - GP ADMX file name: MSEdge.admx
   ##### Windows Registry Settings
   - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
-  - Path (Recommended): N/A
+  - Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended
   - Value Name: DefaultSearchProviderName
   - Value Type: REG_SZ
   ##### Example value:
@@ -2603,7 +2603,7 @@ This policy is required when you enable the [DefaultSearchProviderEnabled](#defa
 
   #### Supported features:
   - Can be mandatory: Yes
-  - Can be recommended: No
+  - Can be recommended: Yes
   - Dynamic Policy Refresh: Yes
 
   #### Data Type:
@@ -2614,11 +2614,11 @@ This policy is required when you enable the [DefaultSearchProviderEnabled](#defa
   - GP unique name: DefaultSearchProviderSearchURL
   - GP name: Default search provider search URL
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/Default search provider
-  - GP path (Recommended): N/A
+  - GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)/Default search provider
   - GP ADMX file name: MSEdge.admx
   ##### Windows Registry Settings
   - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
-  - Path (Recommended): N/A
+  - Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended
   - Value Name: DefaultSearchProviderSearchURL
   - Value Type: REG_SZ
   ##### Example value:
@@ -2658,7 +2658,7 @@ This policy is applied only if you enable the [DefaultSearchProviderEnabled](#de
 
   #### Supported features:
   - Can be mandatory: Yes
-  - Can be recommended: No
+  - Can be recommended: Yes
   - Dynamic Policy Refresh: Yes
 
   #### Data Type:
@@ -2669,11 +2669,11 @@ This policy is applied only if you enable the [DefaultSearchProviderEnabled](#de
   - GP unique name: DefaultSearchProviderSuggestURL
   - GP name: Default search provider URL for suggestions
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/Default search provider
-  - GP path (Recommended): N/A
+  - GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)/Default search provider
   - GP ADMX file name: MSEdge.admx
   ##### Windows Registry Settings
   - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
-  - Path (Recommended): N/A
+  - Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended
   - Value Name: DefaultSearchProviderSuggestURL
   - Value Type: REG_SZ
   ##### Example value:
@@ -5717,7 +5717,7 @@ If you enable this policy, pages can send synchronous XHR requests during page d
 
 If you disable this policy or don't configure this policy, pages aren't allowed to send synchronous XHR requests during page dismissal.
 
-																 
+				 
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -6232,7 +6232,7 @@ This policy is intended to give enterprises flexibility to disable the audio san
   #### Description
   If you enable this policy, all supported datatypes and settings from the specified browser will be silently and automatically imported at first run. During the First Run Experience, the import section will also be skipped.
 
-			 
+	
 
 The browser data from Microsoft Edge Legacy will always be silently migrated at the first run, irrespective of the value of this policy. You can use the following values for this policy:
 
@@ -6946,10 +6946,10 @@ If you don't configure this policy, the built-in DNS client is enabled by defaul
 
   #### Description
   This policy is deprecated because it's intended to serve only as a short-term mechanism to give enterprises more time to update their environments and report issues if they are found to be incompatible with the built-in certificate verifier.
-									 
-							 
+		  
+		
 
-											
+		   
 
 This policy is scheduled to be removed in Microsoft Edge for Mac OS X version 87, when support for the legacy certificate verifier on Mac OS X is planned to be removed.
 
@@ -8277,7 +8277,7 @@ If the folder specified by the path doesn't exist, the download will trigger a p
 
 Set 'Block dangerous downloads' (1) to allow all downloads except for those that carry Microsoft Defender SmartScreen warnings.
 
-Set 'Block potentially dangerous downloads' (2) to allow all downloads except for those that carry Microsoft Defender SmartScreen warnings of potentially dangerous downloads.
+Set 'Block potentially dangerous or unwanted downloads' (2) to allow all downloads except for those that carry Microsoft Defender SmartScreen warnings of potentially dangerous or unwanted downloads.
 
 Set 'Block all downloads' (3) to block all downloads.
 
@@ -8718,7 +8718,11 @@ If you enable this policy, when an external protocol confirmation prompt is show
 
 If you disable this policy, the "Always allow" checkbox isn't displayed. The user will be prompted for confirmation every time an external protocol is invoked.
 
-If you don't configure this policy, the checkbox visibility is controlled by the "Enable remembering protocol launch prompting preferences" flag in edge://flags
+Prior to Microsoft Edge 83, if you don't configure this policy, the "Always allow" checkbox isn't displayed. The user will be prompted for confirmation every time an external protocol is invoked.
+
+On Microsoft Edge 83, if you don't configure this policy, the checkbox visibility is controlled by the "Enable remembering protocol launch prompting preferences" flag in edge://flags
+
+As of Microsoft Edge 84, if you don't configure this policy, when an external protocol confirmation prompt is shown, the user can select "Always allow" to skip all future confirmation prompts for the protocol on this site.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -9128,9 +9132,9 @@ This policy forces networking code to run in the browser process.
 
 This policy is disabled by default. If enabled, users are open to security issues when the networking process is sandboxed.
 
-																																																	 
+												  
 
-																																		
+								  
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -10880,7 +10884,7 @@ On Windows 10, if you don't configure this policy, Microsoft Edge will default t
 
 On Windows 7, 8, and macOS, this policy controls sending usage and crash-related data. If you don't configure this policy, Microsoft Edge will default to the user's preference.
 
-											  
+			 
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -11571,7 +11575,7 @@ The user's session is restored when the browser restarts.
   - On Windows and macOS since 77 or later
 
   #### Description
-  Allows you to set the time period, in milliseconds, over which users are notified that Microsoft Edge must be relaunched to apply a pending update.
+ Allows you to set the time period, in milliseconds, over which users are notified that Microsoft Edge must be relaunched to apply a pending update.
 
 Over this time period, the user will be repeatedly informed of the need for an update. In Microsoft Edge the app menu changes to indicate that a relaunch is needed once one third of the notification period passes. This notification changes color once two thirds of the notification period passes, and again once the full notification period has passed. The additional notifications enabled by the [RelaunchNotification](#relaunchnotification) policy follow this same schedule.
 
@@ -12253,7 +12257,7 @@ Enable this policy to send info about websites visited in Microsoft Edge to Micr
 
 On Windows 10, if you don't configure this policy, Microsoft Edge will default to the Windows diagnostic data setting. If this policy is enabled Microsoft Edge will only send info about websites visited in Microsoft Edge if the Windows Diagnostic data setting is set to Full. If this policy is disabled Microsoft Edge will not send info about websites visited. Learn more about Windows Diagnostic data settings: [https://go.microsoft.com/fwlink/?linkid=2099569](https://go.microsoft.com/fwlink/?linkid=2099569)
 
-												 
+			 
 
 On Windows 7, 8, and Mac this policy controls sending info about websites visited. If you don't configure this policy, Microsoft Edge will default to the user's preference.
 
@@ -12606,7 +12610,7 @@ If you set the policy to false, auto upgrades will be disabled for audio and vid
 
 This policy does not affect other types of mixed content other than audio, video, and images.
 
-																	 
+				  
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -13633,7 +13637,7 @@ SOFTWARE\Policies\Microsoft\Edge\WebAppInstallForceList = [
 
   #### Description
   
-	   
+	
 This policy will be obsolete in Microsoft Edge version 84 because WebDriver is now compatible with all existing policies.
 
 This policy allows users of the WebDriver feature to override
