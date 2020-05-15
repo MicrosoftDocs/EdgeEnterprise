@@ -32,7 +32,7 @@ Each installation of Microsoft Edge is assigned an upgrade value. When we start 
 Microsoft Edge artifacts are distributed to enterprises using multiple mechanisms such as Microsoft Intune, Windows Server Update Service (WSUS), and Configuration Manager. These deployment tools behave differently with respect to Progressive Rollout:
 
 - Enterprises that manage distribution via Microsoft Intune are registered for auto-updates. Progressive Rollout is used, and all the users will see an update in a few days.
-- Enterprises who manage distribution through WSUS (Windows Server Update Services) or Configuration Manager are not registered for auto-updates. Administrators manage and apply the updates that will be available from the start. Progressive Rollout does not affect this process.
+- Enterprises that manage distribution through WSUS (Windows Server Update Services) or Configuration Manager are not registered for auto-updates. Administrators manage and apply the updates that will be available from the start. Progressive Rollout does not affect this process.
 
 Please share your valuable feedback through user voice, the in-application feedback button, or below in the comments if you have any concerns or questions.
 
