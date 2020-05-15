@@ -14,14 +14,14 @@ description: "Progressive rollouts for Microsoft Edge updates"
 
 # Progressive rollouts for Microsoft Edge updates
 
-Starting with Microsoft Edge 83 release, we will perform gradual rollouts of major updates to Microsoft Edge over several days. This progressive rollout allows us to monitor upgrades and safely update the browser across the organization.
+Starting with Microsoft Edge 83 release, we will perform gradual rollouts of major updates to Microsoft Edge over the span of a few days. This progressive rollout allows us to monitor upgrades and safely update the browser across the organization.
 
 > [!NOTE]
 > This applies to Microsoft Edge version 83 or later.
 
 ## Why do we need progressive rollout?
 
-By monitoring the health of our updates closely and rolling out the updates over the course of several days, we have the ability to limit the impact of issues that might occur with the new update. With Microsoft Edge release 83, Progressive Rollouts will be enabled for all Windows 7, Windows 8 & 8.1, and Windows 10 versions of Microsoft Edge. We will support Microsoft Edge on Mac as soon as it is ready.
+By monitoring the health of our updates closely and rolling out the updates over the course of several days, we can limit the impact of issues that might occur with the new update. With Microsoft Edge release 83, Progressive Rollouts will be enabled for all Windows 7, Windows 8 & 8.1, and Windows 10 versions of Microsoft Edge. We will support Microsoft Edge on Mac as soon as it is ready.
 
 ## How will the updates work?
 
