@@ -30,6 +30,8 @@ This page lists the regular expression syntax accepted by RE2.
 
 It also lists some syntax accepted by PCRE, PERL and VIM.
 
+## Syntax tables
+
 | Kinds of single-character expressions | Examples |
 | --- | --- |
 | any character, possibly including newline (s=true) | . |
