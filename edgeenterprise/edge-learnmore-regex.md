@@ -37,7 +37,7 @@ It also lists some syntax accepted by PCRE, PERL and VIM.
 | any character, possibly including newline (s=true) | . |
 | character class | [xyz] |
 | negated character class | [^xyz] |
-| Perl character class | \d |
+| Perl character class ([link](#user-content-perl)) | \d |
 | negated Perl character class | \D |
 | ASCII character class ([link](#user-content-ascii)) | [[:alpha:]] |
 | negated ASCII character class | [[:^alpha:]] |
@@ -197,7 +197,7 @@ Flag syntax is xyz (set) or -xyz (clear) or xy-z (set xy, clear z).
 | [\p{Name}] | named Unicode property inside character class (≡ \p{Name}) |
 | [^\p{Name}] | named Unicode property inside negated character class (≡ \P{Name}) |
 
-|  | Perl character classes (all ASCII-only) |
+| <a name="user-content-perl"></a> | Perl character classes (all ASCII-only) |
 | --- | --- |
 | \d | digits (≡ [0-9]) |
 | \D | not digits (≡ [^0-9]) |
