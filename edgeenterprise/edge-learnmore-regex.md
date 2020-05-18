@@ -216,7 +216,7 @@ Flag syntax is xyz (set) or -xyz (clear) or xy-z (set xy, clear z).
 | [[:blank:]] | blank (≡ [\t]) |
 | [[:cntrl:]] | control (≡ [\x00-\x1F\x7F]) |
 | [[:digit:]] | digits (≡ [0-9]) |
-<!--| [[:graph:]] | graphical (≡ [!-~] ≡ [A-Za-z0-9!&quot;#$%&amp;&#39;()\*+,\-./:;&lt;=&gt;?@[\\\]^_`{\|}~]) |-->
+| [[:graph:]] | graphical (≡ `[!-~]` ≡ `[A-Za-z0-9!&quot;#$%&amp;&#39;()\*+,\-./:;&lt;=&gt;?@[\\\]^_`\` `{\|}~]`) |
 | [[:lower:]] | lower case (≡ [a-z]) |
 | [[:print:]] | printable (≡ [-~] ≡ [[:graph:]]) |
 | [[:punct:]] | punctuation (≡ [!-/:-@[-`{-~]) |
