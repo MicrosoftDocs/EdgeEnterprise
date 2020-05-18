@@ -3,7 +3,7 @@ title: "re2.h syntax"
 ms.author: comanea
 author: dan-wesley
 manager: seanlyn
-ms.date: 05/15/2020
+ms.date: 05/18/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -16,11 +16,11 @@ description: "re2.h syntax"
 
 Regular expressions are a notation for describing sets of character strings. When a string is in the set described by a regular expression, we often say that the regular expression matches the string.
 
-The simplest regular expression is a single literal character. Except for the metacharacters like _\*+?()|_, characters match themselves. To match a metacharacter, escape it with a backslash: \+ matches a literal plus character.
+The simplest regular expression is a single literal character. Except for the metacharacters like *\*+?()|*, characters match themselves. To match a metacharacter, escape it with a backslash: \+ matches a literal plus character.
 
-Two regular expressions can be altered or concatenated to form a new regular expression: if _e __1_ matches _s_ and _e__ 2_ matches _t_, then _e __1_ | _e__ 2_ matches _s_ or _t_, and _e __1__ e__2_ matches _st_.
+Two regular expressions can be altered or concatenated to form a new regular expression: if *e<sub>1</sub>* matches _s_ and *e<sub>2</sub>* matches _t_, then *e<sub>1</sub>* | *e<sub>2</sub>* matches _s_ or _t_, and *e<sub>1</sub>* *e<sub>2</sub>*  matches _st_.
 
-The metacharacters _\*_ , _+_ , and _?_ are repetition operators: _e__1_ _\*_ matches a sequence of zero or more (possibly different) strings, each of which match _e__1_; _e __1_ _+_ matches one or more; _e__ 1_ _?_ matches zero or one.
+The metacharacters _\*_ , _+_ , and _?_ are repetition operators: *e<sub>1</sub>* _\*_ matches a sequence of zero or more (possibly different) strings, each of which match *e<sub>1</sub>*; *e<sub>1</sub>* _+_ matches one or more; *e<sub>1</sub>* _?_ matches zero or one.
 
 The operator precedence, from weakest to strongest binding, is first alternation, then concatenation, and finally the repetition operators. Explicit parentheses can be used to force different meanings, just as in arithmetic expressions. Some examples: _ab|cd_ is equivalent to _(ab)|(cd)_ ; _ab\*_ is equivalent to _a(b\*)_ .
 
@@ -30,7 +30,7 @@ This page lists the regular expression syntax accepted by RE2.
 
 It also lists some syntax accepted by PCRE, PERL and VIM.
 
-| **kinds of single-character expressions** | **examples** |
+| Kinds of single-character expressions | Examples |
 | --- | --- |
 | any character, possibly including newline (s=true) | . |
 | character class | [xyz] |
@@ -44,14 +44,12 @@ It also lists some syntax accepted by PCRE, PERL and VIM.
 | negated Unicode character class (one-letter name) | \PN |
 | negated Unicode character class | \P{Greek} |
 
-|
- | **Composites** |
+| | Composites |
 | --- | --- |
 | xy | x followed by y |
-| x|y | x or y (prefer x) |
+| x\|y | x or y (prefer x) |
 
-|
- | **Repetitions** |
+| | Repetitions |
 | --- | --- |
 | x\* | zero or more x, prefer more |
 | x+ | one or more x, prefer more |
@@ -72,8 +70,7 @@ It also lists some syntax accepted by PCRE, PERL and VIM.
 
 Implementation restriction: The counting forms x{n,m}, x{n,}, and x{n} reject forms that create a minimum or maximum repetition count above 1000. Unlimited repetitions are not subject to this restriction.
 
-|
- | **Possessive repetitions** |
+| | Possessive repetitions |
 | --- | --- |
 | x\*+ | zero or more x, possessive (NOT SUPPORTED) |
 | x++ | one or more x, possessive (NOT SUPPORTED) |
@@ -82,24 +79,22 @@ Implementation restriction: The counting forms x{n,m}, x{n,}, and x{n} reject fo
 | x{n,}+ | n or more x, possessive (NOT SUPPORTED) |
 | x{n}+ | exactly n x, possessive (NOT SUPPORTED) |
 
-|
- | **Grouping** |
+| | Grouping |
 | --- | --- |
 | (re) | numbered capturing group (submatch) |
-| (?P\&lt;name\&gt;re) | named &amp; numbered capturing group (submatch) |
-| (?\&lt;name\&gt;re) | named &amp; numbered capturing group (submatch) (NOT SUPPORTED) |
+| (?P&lt;name&gt;re) | named &amp; numbered capturing group (submatch) |
+| (?&lt;name&gt;re) | named &amp; numbered capturing group (submatch) (NOT SUPPORTED) |
 | (?&#39;name&#39;re) | named &amp; numbered capturing group (submatch) (NOT SUPPORTED) |
 | (?:re) | non-capturing group |
 | (?flags) | set flags within current group; non-capturing |
 | (?flags:re) | set flags during re; non-capturing |
 | (?#text) | comment (NOT SUPPORTED) |
-| (?|x|y|z) | branch numbering reset (NOT SUPPORTED) |
-| (?\&gt;re) | possessive match of re (NOT SUPPORTED) |
-| re@\&gt; | possessive match of re (NOT SUPPORTED) VIM |
+| (?\|x\|y\|z) | branch numbering reset (NOT SUPPORTED) |
+| (?&gt;re) | possessive match of re (NOT SUPPORTED) |
+| re@&gt; | possessive match of re (NOT SUPPORTED) VIM |
 | %(re) | non-capturing group (NOT SUPPORTED) VIM |
 
-|
- | **Flags** |
+| | Flags |
 | --- | --- |
 | i | case-insensitive (default false) |
 | m | multi-line mode: ^ and $ match begin/end line in addition to begin/end text (default false) |
@@ -108,8 +103,7 @@ Implementation restriction: The counting forms x{n,m}, x{n,}, and x{n} reject fo
 
 Flag syntax is xyz (set) or -xyz (clear) or xy-z (set xy, clear z).
 
-|
- | **Empty strings** |
+|  | Empty strings |
 | --- | --- |
 | ^ | at beginning of text or line (m=true) |
 | $ | at end of text (like \z not \Z) or line (m=true) |
@@ -122,13 +116,13 @@ Flag syntax is xyz (set) or -xyz (clear) or xy-z (set xy, clear z).
 | \z | at end of text |
 | (?=re) | before text matching re (NOT SUPPORTED) |
 | (?!re) | before text not matching re (NOT SUPPORTED) |
-| (?\&lt;=re) | after text matching re (NOT SUPPORTED) |
-| (?\&lt;!re) | after text not matching re (NOT SUPPORTED) |
+| (?&lt;=re) | after text matching re (NOT SUPPORTED) |
+| (?&lt;!re) | after text not matching re (NOT SUPPORTED) |
 | re&amp; | before text matching re (NOT SUPPORTED) VIM |
 | re@= | before text matching re (NOT SUPPORTED) VIM |
 | re@! | before text not matching re (NOT SUPPORTED) VIM |
-| re@\&lt;= | after text matching re (NOT SUPPORTED) VIM |
-| re@\&lt;! | after text not matching re (NOT SUPPORTED) VIM |
+| re@&lt;= | after text matching re (NOT SUPPORTED) VIM |
+| re@&lt;! | after text not matching re (NOT SUPPORTED) VIM |
 | \zs | sets start of match (= \K) (NOT SUPPORTED) VIM |
 | \ze | sets end of match (NOT SUPPORTED) VIM |
 | \%^ | beginning of file (NOT SUPPORTED) VIM |
@@ -140,8 +134,7 @@ Flag syntax is xyz (set) or -xyz (clear) or xy-z (set xy, clear z).
 | \%23c | in column 23 (NOT SUPPORTED) VIM |
 | \%23v | in virtual column 23 (NOT SUPPORTED) VIM |
 
-|
- | **Escape sequences** |
+|  | Escape sequences |
 | --- | --- |
 | \a | bell (≡ \007) |
 | \f | form feed (≡ \014) |
@@ -164,9 +157,9 @@ Flag syntax is xyz (set) or -xyz (clear) or xy-z (set xy, clear z).
 | \g{+1} | backreference (NOT SUPPORTED) |
 | \g{-1} | backreference (NOT SUPPORTED) |
 | \g{name} | named backreference (NOT SUPPORTED) |
-| \g\&lt;name\&gt; | subroutine call (NOT SUPPORTED) |
+| \g&lt;name&gt; | subroutine call (NOT SUPPORTED) |
 | \g&#39;name&#39; | subroutine call (NOT SUPPORTED) |
-| \k\&lt;name\&gt; | named backreference (NOT SUPPORTED) |
+| \k&lt;name&gt; | named backreference (NOT SUPPORTED) |
 | \k&#39;name&#39; | named backreference (NOT SUPPORTED) |
 | \lX | lowercase X (NOT SUPPORTED) |
 | \ux | uppercase x (NOT SUPPORTED) |
@@ -182,8 +175,7 @@ Flag syntax is xyz (set) or -xyz (clear) or xy-z (set xy, clear z).
 | \%u1234 | Unicode character 0x1234 (NOT SUPPORTED) VIM |
 | \%U12345678 | Unicode character 0x12345678 (NOT SUPPORTED) VIM |
 
-|
- | **Character class elements** |
+|  | Character class elements |
 | --- | --- |
 | x | single character |
 | A-Z | character range (inclusive) |
@@ -192,8 +184,7 @@ Flag syntax is xyz (set) or -xyz (clear) or xy-z (set xy, clear z).
 | \p{Foo} | Unicode character class Foo |
 | \pF | Unicode character class F (one-letter name) |
 
-|
- | **Named character classes as character class elements** |
+|  | Named character classes as character class elements |
 | --- | --- |
 | [\d] | digits (≡ \d) |
 | [^\d] | not digits (≡ \D) |
@@ -204,8 +195,7 @@ Flag syntax is xyz (set) or -xyz (clear) or xy-z (set xy, clear z).
 | [\p{Name}] | named Unicode property inside character class (≡ \p{Name}) |
 | [^\p{Name}] | named Unicode property inside negated character class (≡ \P{Name}) |
 
-|
- | **Perl character classes (all ASCII-only)** |
+|  | Perl character classes (all ASCII-only) |
 | --- | --- |
 | \d | digits (≡ [0-9]) |
 | \D | not digits (≡ [^0-9]) |
@@ -218,8 +208,7 @@ Flag syntax is xyz (set) or -xyz (clear) or xy-z (set xy, clear z).
 | \v | vertical space (NOT SUPPORTED) |
 | \V | not vertical space (NOT SUPPORTED) |
 
-|
- | **ASCII character classes** |
+|  | ASCII character classes |
 | --- | --- |
 | [[:alnum:]] | alphanumeric (≡ [0-9A-Za-z]) |
 | [[:alpha:]] | alphabetic (≡ [A-Za-z]) |
@@ -227,7 +216,7 @@ Flag syntax is xyz (set) or -xyz (clear) or xy-z (set xy, clear z).
 | [[:blank:]] | blank (≡ [\t]) |
 | [[:cntrl:]] | control (≡ [\x00-\x1F\x7F]) |
 | [[:digit:]] | digits (≡ [0-9]) |
-| [[:graph:]] | graphical (≡ [!-~] ≡ [A-Za-z0-9!&quot;#$%&amp;&#39;()\*+,\-./:;\&lt;=\&gt;?@[\\\]^\_`{|}~]) |
+| [[:graph:]] | graphical (≡ [!-~] ≡ [A-Za-z0-9!&quot;#$%&amp;&#39;()\*+,\-./:;&lt;=&gt;?@[\\\]^\_`{|}~]) |
 | [[:lower:]] | lower case (≡ [a-z]) |
 | [[:print:]] | printable (≡ [-~] ≡ [[:graph:]]) |
 | [[:punct:]] | punctuation (≡ [!-/:-@[-`{-~]) |
@@ -236,8 +225,7 @@ Flag syntax is xyz (set) or -xyz (clear) or xy-z (set xy, clear z).
 | [[:word:]] | word characters (≡ [0-9A-Za-z\_]) |
 | [[:xdigit:]] | hex digit (≡ [0-9A-Fa-f]) |
 
-|
- | **Unicode character class names--general category** |
+| | Unicode character class names--general category |
 | --- | --- |
 | C | other |
 | Cc | control |
@@ -279,7 +267,7 @@ Flag syntax is xyz (set) or -xyz (clear) or xy-z (set xy, clear z).
 | Zp | paragraph separator |
 | Zs | space separator |
 
-| **Unicode character class names--scripts** |
+| Unicode character class names--scripts |
 | --- |
 | Adlam |
 | Ahom |
@@ -438,8 +426,7 @@ Flag syntax is xyz (set) or -xyz (clear) or xy-z (set xy, clear z).
 | Yi |
 | Zanabazar\_Square |
 
-|
- | **Vim character classes** |
+|  | Vim character classes |
 | --- | --- |
 | \i | identifier character (NOT SUPPORTED) VIM |
 | \I | \i except digits (NOT SUPPORTED) VIM |
@@ -476,8 +463,7 @@ Flag syntax is xyz (set) or -xyz (clear) or xy-z (set xy, clear z).
 | \V | verynomagic (NOT SUPPORTED) VIM |
 | \Z | ignore differences in Unicode combining characters (NOT SUPPORTED) VIM |
 
-|
- | **Magic** |
+|  | Magic |
 | --- | --- |
 | (?{code}) | arbitrary Perl code (NOT SUPPORTED) PERL |
 | (??{code}) | postponed arbitrary Perl code (NOT SUPPORTED) PERL |
@@ -488,7 +474,7 @@ Flag syntax is xyz (set) or -xyz (clear) or xy-z (set xy, clear z).
 | (?R) | recursive call to entire regexp (≡ (?0)) (NOT SUPPORTED) |
 | (?&amp;name) | recursive call to named group (NOT SUPPORTED) |
 | (?P=name) | named backreference (NOT SUPPORTED) |
-| (?P\&gt;name) | recursive call to named group (NOT SUPPORTED) |
+| (?P&gt;name) | recursive call to named group (NOT SUPPORTED) |
 | (?(cond)true|false) | conditional branch (NOT SUPPORTED) |
 | (?(cond)true) | conditional branch (NOT SUPPORTED) |
 | (\*ACCEPT) | make regexps more like Prolog (NOT SUPPORTED) |
