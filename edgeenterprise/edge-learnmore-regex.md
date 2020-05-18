@@ -39,7 +39,7 @@ It also lists some syntax accepted by PCRE, PERL and VIM.
 | negated character class | [^xyz] |
 | Perl character class | \d |
 | negated Perl character class | \D |
-| ASCII character class | [[:alpha:]] |
+| ASCII character class ([link](#user-content-ascii)) | [[:alpha:]] |
 | negated ASCII character class | [[:^alpha:]] |
 | Unicode character class (one-letter name) | \pN |
 | Unicode character class | \p{Greek} |
@@ -210,7 +210,7 @@ Flag syntax is xyz (set) or -xyz (clear) or xy-z (set xy, clear z).
 | \v | vertical space (NOT SUPPORTED) |
 | \V | not vertical space (NOT SUPPORTED) |
 
-|  | ASCII character classes |
+|<a name="user-content-ascii"></a>  | ASCII character classes |
 | --- | --- |
 | [[:alnum:]] | alphanumeric (≡ [0-9A-Za-z]) |
 | [[:alpha:]] | alphabetic (≡ [A-Za-z]) |
