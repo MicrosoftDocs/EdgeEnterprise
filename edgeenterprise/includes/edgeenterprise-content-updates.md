@@ -3,6 +3,18 @@
 
 
 
+## Week of May 11, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 5/12/2020 | [Microsoft Edge Sync](/DeployEdge/microsoft-edge-enterprise-sync) | modified |
+| 5/13/2020 | [Microsoft Edge privacy policy](/DeployEdge/microsoft-edge-privacy-policy) | modified |
+| 5/13/2020 | [Microsoft Edge Browser Policy Documentation](/DeployEdge/microsoft-edge-policies) | modified |
+| 5/15/2020 | [Microsoft Edge release notes for Beta Channel](/DeployEdge/microsoft-edge-relnote-beta-channel) | modified |
+| 5/15/2020 | [Microsoft Edge Update Policy Documentation](/DeployEdge/microsoft-edge-update-policies) | modified |
+
+
 ## Week of May 04, 2020
 
 
@@ -68,15 +80,3 @@
 | 4/16/2020 | [Microsoft Edge identity support and configuration](/DeployEdge/microsoft-edge-security-identity) | modified |
 | 4/17/2020 | [Release notes for Microsoft Edge Security Updates](/DeployEdge/microsoft-edge-relnotes-security) | modified |
 | 4/17/2020 | [Microsoft Edge release notes for Stable Channel](/DeployEdge/microsoft-edge-relnote-stable-channel) | modified |
-
-
-## Week of April 06, 2020
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 4/7/2020 | Automate Microsoft Edge for macOS deployment with Microsoft Intune | removed |
-| 4/7/2020 | Deploy Microsoft Edge for Windows 10 using Microsoft Intune | removed |
-| 4/8/2020 | [Microsoft Edge release notes for Stable Channel](/DeployEdge/microsoft-edge-relnote-stable-channel) | modified |
-| 4/10/2020 | [Microsoft Edge Supported Operating Systems](/DeployEdge/microsoft-edge-supported-operating-systems) | modified |
-| 4/10/2020 | [Microsoft Edge release notes for Beta Channel](/DeployEdge/microsoft-edge-relnote-beta-channel) | modified |
