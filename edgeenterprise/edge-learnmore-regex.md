@@ -35,9 +35,9 @@ It also lists some syntax accepted by PCRE, PERL and VIM.
 | any character, possibly including newline (s=true) | . |
 | character class | [xyz] |
 | negated character class | [^xyz] |
-| Perl character class ([link](#perl-character-classes)) | \d |
+| Perl character class | \d |
 | negated Perl character class | \D |
-| ASCII character class ([link](#ascii-character-classes)) | [[:alpha:]] |
+| ASCII character class | [[:alpha:]] |
 | negated ASCII character class | [[:^alpha:]] |
 | Unicode character class (one-letter name) | \pN |
 | Unicode character class | \p{Greek} |
