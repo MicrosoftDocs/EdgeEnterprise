@@ -1,5 +1,5 @@
 ---
-title: "re2.h syntax"
+title: "Regular Expression 2 syntax"
 ms.author: comanea
 author: dan-wesley
 manager: seanlyn
@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
-description: "re2.h syntax"
+description: "Regular Expression 2 syntax"
 ---
 
-# re2.h syntax
+# Regular Expression 2 (re2.h) syntax
 
 Regular expressions are a notation for describing sets of character strings. When a string is in the set described by a regular expression, we often say that the regular expression matches the string.
 

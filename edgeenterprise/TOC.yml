@@ -149,7 +149,7 @@
         href: edge-learnmore-inpage-nav.md
       - name: Mixed content downloads
         href: edge-learnmore-mixed-content-downloads.md
-      - name: re2.h syntax
+      - name: Regular Expression 2 syntax
         href: edge-learnmore-regex.md
       - name: User data directory variables
         href: edge-learnmore-create-user-directory-vars.md
