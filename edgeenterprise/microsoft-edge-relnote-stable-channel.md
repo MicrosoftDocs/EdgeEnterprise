@@ -1,9 +1,9 @@
 ---
 title: "Microsoft Edge release notes for Stable Channel"
-ms.author: kvice
+ms.author: aguta
 author: dan-wesley
-manager: laurawi
-ms.date: 05/14/2020
+manager: srugh
+ms.date: 05/18/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -89,6 +89,10 @@ The following policy will continue to work in this release. It will become "obso
 [EnableDomainActionsDownload](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#enabledomainactionsdownload) Enable Domain Actions Download from Microsoft
 
 <!-- end 83 -->
+
+## Version 81.0.416.77: May 18
+
+Fixed various bugs and performance issues.
 
 ## Version 81.0.416.72: May 7
 
