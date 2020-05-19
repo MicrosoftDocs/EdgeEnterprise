@@ -16,8 +16,8 @@ description: "Microsoft Edge release notes for Stable Channel"
 
 These release notes provide information about new features and non-security updates that are included in the Microsoft Edge Stable Channel. All the security updates are listed [here](microsoft-edge-relnotes-security.md).
 
-> [!IMPORTANT]
-> Please see this [update on Stable channel releases](https://blogs.windows.com/msedgedev/2020/03/20/update-stable-channel-releases/).
+> [!NOTE]
+> Please see the [Overview of the Microsoft Edge channels](microsoft-edge-channels.md) and [Progressive rollouts for Microsoft Edge updates](microsoft-edge-update-progressive-rollout.md).
 
 ## Version 83.0.416.12: May 21
 
@@ -25,6 +25,7 @@ Security updates are listed [here](https://docs.microsoft.com/DeployEdge/microso
 
 ### Feature updates
 
+- Microsoft Edge updates will now roll out gradually. Going forward, updates for Microsoft Edge will be rolled out to our users over a period of a few days. This enables us to protect more of you from accidental buggy updates, which improves your update experience. As a user you will continue to get seamless auto-updates. If your organization isn't enrolled for auto-updates you won't be affected by this change. To learn more, see the [progressive rollouts article](microsoft-edge-update-progressive-rollout.md).
 - Microsoft Defender SmartScreen improvements: Made several improvements to the Microsoft Defender SmartScreen service, such as improved protection from malicious sites that redirect when loading, and top-level frame blocking, which completely replaces malicious sites with the Microsoft Defender SmartScreen safety page. The top-level frame blocking prevents audio and other media from the malicious site from playing which gives an easier and less confusing experience.
 
 - In response to user feedback, users can now exempt certain cookies from automatically clearing when the browser closes. This option is helpful if there's a site that users don't want to be signed out of, but still want to have all the other cookies cleared when the browser closes. To use this feature, go to *edge://settings/clearBrowsingDataOnClose* and enable the "Cookies and other site data" toggle.
