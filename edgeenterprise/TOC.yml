@@ -1,4 +1,4 @@
-# last revised 05/01/2020
+# last revised 05/20/2020
 - name: Microsoft Edge documentation 
   href: index.yml
 - name: Microsoft Edge content updates
@@ -126,7 +126,7 @@
      href: microsoft-edge-security-windows-information-protection.md
 - name: Microsoft Edge Privacy
   items:  
-   - name: Privacy overview
+   - name: Configure privacy settings
      href: microsoft-edge-privacy-policy.md
    - name: Microsoft Edge Privacy Whitepaper
      href: https://docs.microsoft.com/microsoft-edge/privacy-whitepaper
