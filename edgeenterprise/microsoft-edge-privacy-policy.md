@@ -22,8 +22,8 @@ By default, Microsoft Edge deployed on non-Windows platforms doesn't send diagno
 
 You can also configure how Microsoft Edge handles data collection for your organization with the following group policies:
 
-- [MetricsReportingEnabled](https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-policies#metricsreportingenabled) - Enable usage and crash-related data reporting.
-- [SendSiteInfoToImproveServices](https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-policies#sendsiteinfotoimproveservices) - Send site information to improve Microsoft services.
+- [MetricsReportingEnabled](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#metricsreportingenabled) - Enable usage and crash-related data reporting.
+- [SendSiteInfoToImproveServices](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#sendsiteinfotoimproveservices) - Send site information to improve Microsoft services.
 
 ## Configure policy settings
 
