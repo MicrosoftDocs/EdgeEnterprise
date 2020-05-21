@@ -3,7 +3,7 @@ title: "Microsoft Edge privacy policy and data collection"
 ms.author: likravit
 author: dan-wesley
 manager: srugh
-ms.date: 05/20/2020
+ms.date: 05/21/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
