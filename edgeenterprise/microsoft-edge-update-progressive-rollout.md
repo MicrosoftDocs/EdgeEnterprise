@@ -3,7 +3,7 @@ title: "Progressive rollouts for Microsoft Edge Stable channel updates"
 ms.author: aguta
 author: dan-wesley
 manager: srugh
-ms.date: 05/19/2020
+ms.date: 05/21/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
