@@ -19,7 +19,7 @@ These release notes provide information about new features and non-security upda
 > [!NOTE]
 > Please see the [Overview of the Microsoft Edge channels](microsoft-edge-channels.md) and [Progressive rollouts for Microsoft Edge updates](microsoft-edge-update-progressive-rollout.md).
 
-## Version 83.0.416.12: May 21
+## Version 83.0.478.37: May 21
 
 Security updates are listed [here](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnotes-security#may-21-2020)
 
