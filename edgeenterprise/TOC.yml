@@ -23,8 +23,6 @@
      href: deploy-edge-plan-deployment.md
    - name: Release information
      items:
-      - name: Progressive rollouts for Stable channel updates
-        href: microsoft-edge-update-progressive-rollout.md
       - name: Beta Channel Release Notes
         href: microsoft-edge-relnote-beta-channel.md
       - name: Stable Channel Release Notes
@@ -128,7 +126,7 @@
      href: microsoft-edge-security-windows-information-protection.md
 - name: Microsoft Edge Privacy
   items:  
-   - name: Privacy overview
+   - name: Configure privacy settings
      href: microsoft-edge-privacy-policy.md
    - name: Microsoft Edge Privacy Whitepaper
      href: https://docs.microsoft.com/microsoft-edge/privacy-whitepaper
@@ -151,6 +149,8 @@
         href: edge-learnmore-inpage-nav.md
       - name: Mixed content downloads
         href: edge-learnmore-mixed-content-downloads.md
+      - name: Progressive rollouts for Stable channel updates
+        href: microsoft-edge-update-progressive-rollout.md
       - name: User data directory variables
         href: edge-learnmore-create-user-directory-vars.md
 - name: Frequently asked questions

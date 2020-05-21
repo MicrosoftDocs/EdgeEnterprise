@@ -95,6 +95,10 @@ The following policy will continue to work in this release. It will become "obso
 
 Fixed various bugs and performance issues.
 
+## Version 81.0.416.77: May 18
+
+Fixed various bugs and performance issues.
+
 ## Version 81.0.416.72: May 7
 
 Security updates are listed [here](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnotes-security#may-7-2020)
