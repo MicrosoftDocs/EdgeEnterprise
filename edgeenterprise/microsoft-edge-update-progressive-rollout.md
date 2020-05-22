@@ -1,23 +1,23 @@
 ---
-title: "Progressive rollouts for Microsoft Edge updates"
+title: "Progressive rollouts for Microsoft Edge Stable channel updates"
 ms.author: aguta
 author: dan-wesley
 manager: srugh
-ms.date: 05/15/2020
+ms.date: 05/21/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
-description: "Progressive rollouts for Microsoft Edge updates"
+description: "Progressive rollouts for Microsoft Edge Stable channel updates"
 ---
 
-# Progressive rollouts for Microsoft Edge updates
+# Progressive rollouts for Microsoft Edge Stable channel updates
 
-Starting with Microsoft Edge 83 release, we will perform gradual rollouts of major updates to Microsoft Edge over the span of a few days. This progressive rollout allows us to monitor upgrades and safely update the browser across the organization.
+Starting with Microsoft Edge 83 release, we will perform gradual rollouts of major updates to Microsoft Edge Stable channel over the span of a few days. This progressive rollout allows us to monitor upgrades and safely update the browser across the organization.
 
 > [!NOTE]
-> This applies to Microsoft Edge version 83 or later.
+> This applies to Microsoft Edge Stable channel version 83 or later.
 
 ## Why do we need progressive rollout?
 
