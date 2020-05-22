@@ -149,6 +149,8 @@
         href: edge-learnmore-inpage-nav.md
       - name: Mixed content downloads
         href: edge-learnmore-mixed-content-downloads.md
+      - name: Progressive rollouts for Stable channel updates
+        href: microsoft-edge-update-progressive-rollout.md
       - name: Regular Expression 2 syntax
         href: edge-learnmore-regex.md
       - name: User data directory variables
