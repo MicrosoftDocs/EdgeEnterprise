@@ -55,7 +55,7 @@ This procedure creates an Administrative Templates profile using Microsoft Edge 
     |Platform     |Windows 10 and later         |
     |Profile type     |Administrative Templates         |
 
-    ![Create profile](./media/edge-ent-intune/edge-intune-profile-create.png)
+    ![Create profile](./media/edge-ent-intune/edge-intune-profile-create.ng)
 
 6. Click **Settings** to show all the available settings.
 
