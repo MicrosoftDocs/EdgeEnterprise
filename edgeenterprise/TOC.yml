@@ -1,4 +1,4 @@
-# last revised 05/21/2020
+# last revised 05/26/2020
 - name: Microsoft Edge documentation 
   href: index.yml
 - name: Microsoft Edge content updates
@@ -127,7 +127,7 @@
 - name: Microsoft Edge Privacy
   items:  
    - name: Configure privacy settings
-     href: microsoft-edge-privacy-policy.md
+     href: microsoft-edge-enterprise-privacy-settings.md
    - name: Microsoft Edge Privacy Whitepaper
      href: https://docs.microsoft.com/microsoft-edge/privacy-whitepaper
 # REFERENCE

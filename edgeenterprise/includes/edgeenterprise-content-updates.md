@@ -3,6 +3,18 @@
 
 
 
+## Week of May 18, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 5/20/2020 | [Microsoft Edge release notes for Beta Channel](/DeployEdge/microsoft-edge-relnote-beta-channel) | modified |
+| 5/21/2020 | [Microsoft Edge privacy policy and data collection](/DeployEdge/microsoft-edge-privacy-policy) | modified |
+| 5/21/2020 | [Microsoft Edge release notes for Stable Channel](/DeployEdge/microsoft-edge-relnote-stable-channel) | modified |
+| 5/21/2020 | [Release notes for Microsoft Edge Security Updates](/DeployEdge/microsoft-edge-relnotes-security) | modified |
+| 5/22/2020 | [Microsoft Edge release notes for Stable Channel](/DeployEdge/microsoft-edge-relnote-stable-channel) | modified |
+
+
 ## Week of May 11, 2020
 
 
@@ -64,19 +76,3 @@
 | 4/24/2020 | [Release notes for Microsoft Edge Security Updates](/DeployEdge/microsoft-edge-relnotes-security) | modified |
 | 4/24/2020 | [Microsoft Edge release notes for Beta Channel](/DeployEdge/microsoft-edge-relnote-beta-channel) | modified |
 | 4/24/2020 | [Microsoft Edge support for Windows Information Protection](/DeployEdge/microsoft-edge-security-windows-information-protection) | modified |
-
-
-## Week of April 13, 2020
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 4/14/2020 | [Microsoft Edge release notes for Stable Channel](/DeployEdge/microsoft-edge-relnote-stable-channel) | modified |
-| 4/14/2020 | [Release notes for Microsoft Edge Security Updates](/DeployEdge/microsoft-edge-relnotes-security) | modified |
-| 4/15/2020 | [Microsoft Edge Browser Policy Documentation](/DeployEdge/microsoft-edge-policies) | modified |
-| 4/15/2020 | [Configure Microsoft Edge on macOS with Jamf](/DeployEdge/configure-microsoft-edge-on-mac-jamf) | modified |
-| 4/16/2020 | [Microsoft Edge support for Windows Information Protection](/DeployEdge/microsoft-edge-security-windows-information-protection) | modified |
-| 4/16/2020 | [Microsoft Edge release notes for Stable Channel](/DeployEdge/microsoft-edge-relnote-stable-channel) | modified |
-| 4/16/2020 | [Microsoft Edge identity support and configuration](/DeployEdge/microsoft-edge-security-identity) | modified |
-| 4/17/2020 | [Release notes for Microsoft Edge Security Updates](/DeployEdge/microsoft-edge-relnotes-security) | modified |
-| 4/17/2020 | [Microsoft Edge release notes for Stable Channel](/DeployEdge/microsoft-edge-relnote-stable-channel) | modified |
