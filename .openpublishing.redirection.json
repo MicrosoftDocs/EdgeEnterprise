@@ -15,7 +15,7 @@
     {
       "source_path": "edgeenterprise/microsoft-edge-privacy-settings.md",
       "redirect_url": "https://docs.microsoft.com/deployedge/microsoft-edge-enterprise-privacy-settings",
-      "redirect_document_id": false
+      "redirect_document_id": true
     }
 
 
