@@ -1,18 +1,18 @@
 ---
-title: "Microsoft Edge privacy policy and data collection"
+title: "Microsoft Edge enterprise privacy settings"
 ms.author: likravit
 author: dan-wesley
 manager: srugh
-ms.date: 05/21/2020
+ms.date: 05/26/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
-description: "Configure Microsoft Edge data collection and privacy policy"
+description: "Configure Microsoft Edge enterprise privacy settings"
 ---
 
-# Configure Microsoft Edge policies to support privacy
+# Configure Microsoft Edge policies to support enterprise privacy
 
 Microsoft is committed to providing enterprises with the information and controls needed to make choices about data collection in Microsoft Edge.
 
