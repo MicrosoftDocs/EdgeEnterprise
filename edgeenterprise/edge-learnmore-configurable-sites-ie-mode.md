@@ -24,12 +24,12 @@ This article explains the Configurable Sites feature of the Enterprise Mode Site
   - Windows 10 version 1903, Windows server version 1903 – KB4550945  or higher
   - Windows 10 version 1809, Windows Server version 1809, and Windows Server 2019 - KB4550969 or higher
   - Windows 10 version 1803 – KB4550944 or higher
-  - Windows 10 version 1607 and Windows Server 2016 - KB4556826 or higher
+  - Windows 10 version 1607, Windows Server 2016 - KB4556826 or higher
   - Windows 10 initial version, July 2015 - KB4550947 or higher
   - Windows 8.1 – KB4556798 or higher
 
 - Microsoft Edge 82 (exact version) or later
-- IE mode configured with Enterprise Mode Site List – https://aka.ms/iemodeonedge
+- [IE mode](https://aka.ms/iemodeonedge) configured with Enterprise Mode Site List
 
 ## Overview
 
