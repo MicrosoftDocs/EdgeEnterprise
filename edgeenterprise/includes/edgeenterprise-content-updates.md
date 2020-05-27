@@ -10,9 +10,9 @@
 |------|------------|--------|
 | 5/20/2020 | [Microsoft Edge release notes for Beta Channel](/DeployEdge/microsoft-edge-relnote-beta-channel)<br>Fixed various bugs and performance issues in Beta channel version 83.0.478.37. | modified |
 | 5/21/2020 | [Microsoft Edge privacy policy and data collection](/DeployEdge/microsoft-edge-privacy-policy)<br>Article updated to add more details about configuring policies to support  data collection and reporting. Also edited and re-named to clarify article contents. | modified |
-| 5/21/2020 | [Microsoft Edge release notes for Stable Channel](/DeployEdge/microsoft-edge-relnote-stable-channel)<br>Major Stable channel version update from 81 to 83.0.478.37. | modified |
+| 5/21/2020 | [Microsoft Edge release notes for Stable Channel](/DeployEdge/microsoft-edge-relnote-stable-channel)<br>Major Stable channel version update from 81 to 83.0.478.37. | modified  |
 | 5/21/2020 | [Release notes for Microsoft Edge Security Updates](/DeployEdge/microsoft-edge-relnotes-security)<br>Latest security updates for Stable channel version 83.0.478.37. **Note:** Microsoft Edge-specific update, [CVE-2020-1195](https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/CVE-2020-1195) | modified |
-| 5/22/2020 | [Microsoft Edge release notes for Stable Channel](/DeployEdge/microsoft-edge-relnote-stable-channel)<br>Stable channel version 83.0.478.37 release notes updated with new and updated features, and new policies. | modified |
+| 5/22/2020 | [Microsoft Edge release notes for Stable Channel](/DeployEdge/microsoft-edge-relnote-stable-channel)<br>Major Stable channel version update from 81 to 83.0.478.37. Release notes updated with new and updated features, and new policies. | modified |
 
 
 ## Week of May 11, 2020
