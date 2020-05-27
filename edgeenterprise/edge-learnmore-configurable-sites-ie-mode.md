@@ -18,6 +18,15 @@ description: "Microsoft Edge and configurable sites in IE mode"
 
 ## Overview
 
+## How does it work?
+
+### Automatic switching from Microsoft Edge to IE
+
+
+### Reverse switching from IE to Microsoft Edge
+
 ## See also
 
+- [About IE mode](https://docs.microsoft.com/deployedge/edge-ie-mode)
+- [Additional Enterprise Mode information](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/enterprise-mode-overview-for-ie11)
 - [Microsoft Edge Enterprise landing page](https://aka.ms/EdgeEnterprise)
