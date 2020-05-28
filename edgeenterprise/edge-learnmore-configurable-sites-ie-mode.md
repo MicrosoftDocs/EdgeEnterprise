@@ -39,7 +39,7 @@ The solution is to use the Configurable Sites feature of the Enterprise Mode Sit
 
 ## How does it work?
 
-### Automatic switching from Microsoft Edge to IE
+### Automatic switching from the Microsoft Edge engine to the IE mode engine
 
 To use the Configurable Sites feature, you'll need one or more sites in the Enterprise Mode Site List to have the `<open-in>Configurable</open-in>` option.
 
@@ -57,18 +57,18 @@ When the Configurable Sites feature is enabled, the following behavior occurs:
 
 1. When making a request to a Configurable site, Microsoft Edge will send the HTTP request header "`X-InternetExplorerModeConfigurable: 1`".
 2. A Configurable site may send a redirect response (for example, HTTP 302) with the HTTP response header "`X-InternetExplorerMode: 1`" to request that Microsoft Edge loads the site in IE mode.
-3. The target of the redirect (that is, the value of the Location response header) must also be a Configurable or Neutral site, otherwise the IE mode response header will be ignored. It's expected that the target of the redirect will usually be the same as the original URL. However, it doesn't have to be.
+3. The target of the redirect (that is, the value of the **Location** response header) must also be a **Configurable** or **Neutral** site, otherwise the IE mode response header will be ignored. It's expected that the target of the redirect will usually be the same as the original URL. However, it doesn't have to be.
 
    > [!NOTE]
    > The redirect response is subject to caching according to Microsoft Edge's normal HTTP caching behavior for redirects.
 
-### Switching back from IE to Microsoft Edge
+### Switching back from IE mode engine to Microsoft Edge engine
 
 Enabling Configurable Sites in Microsoft Edge automatically enables the following behaviors in IE mode tabs:
 
 1. When making a request to a Configurable site, IE mode tabs will send the HTTP request header "`X-InternetExplorerModeConfigurable: 1`", the same as Microsoft Edge tabs.
 2. A Configurable site might send a redirect response (for example, HTTP 302) with the HTTP response header "`X-InternetExplorerMode: 0`" to request that the navigation switch back to Microsoft Edge mode.
-3. The target of the redirect (that is, the value of the Location response header) must also be a Configurable or Neutral site, otherwise the IE mode response header will be ignored. It's expected that the target of the redirect will usually be the same as the original URL. However, it doesn't have to be.
+3. The target of the redirect (that is, the value of the **Location** response header) must also be a **Configurable** or **Neutral** site, otherwise the IE mode response header will be ignored. It's expected that the target of the redirect will usually be the same as the original URL. However, it doesn't have to be.
 
    > [!NOTE]
    > The redirect response is subject to caching according to Microsoft Edge's normal HTTP caching behavior for redirects.
