@@ -37,7 +37,7 @@ Configuring sites needing IE mode in the Enterprise Mode Site List will work wel
 
 The solution is to use the Configurable Sites feature of the Enterprise Mode Site List. When the feature is enabled, Microsoft Edge will allow sites with the "configurable" tag to participate in IE mode engine determination.
 
-## How does it work?
+## How Configurable Sites works
 
 ### Automatic switching from the Microsoft Edge engine to the IE mode engine
 
