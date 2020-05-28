@@ -3,7 +3,7 @@ title: "Microsoft Edge and configurable sites in IE mode"
 ms.author: shisub
 author: dan-wesley
 manager: srugh
-ms.date: 05/27/2020
+ms.date: 05/28/2020
 audience: ITPro
 ms.topic: procedural
 ms.prod: microsoft-edge
@@ -28,14 +28,14 @@ This article explains the Configurable Sites feature of the Enterprise Mode Site
   - Windows 10 initial version, July 2015 - KB4550947 or higher
   - Windows 8.1 – KB4556798 or higher
 
-- Microsoft Edge 82 (exact version) or later
+- Microsoft Edge version 83 or later
 - [IE mode](https://aka.ms/iemodeonedge) configured with Enterprise Mode Site List
 
 ## Overview
 
 Configuring sites needing IE mode in the Enterprise Mode Site List will work well for most environments with legacy applications. However, in some cases this approach isn't the best to configure a subset of sites to open in IE mode without rendering an entire domain in IE mode. For example, when your environment contains both modern and legacy applications running on a single server and you would like the flexibility to render only the legacy applications in IE mode and the remaining applications to render in Microsoft Edge mode.
 
-The solution is to use the Configurable Sites feature of the Enterprise Mode Site List. When the feature is enabled, the Microsoft Edge sitelist parser will allow sites with the "configurable" tag to participate in IE mode engine determination.
+The solution is to use the Configurable Sites feature of the Enterprise Mode Site List. When the feature is enabled, Microsoft Edge will allow sites with the "configurable" tag to participate in IE mode engine determination.
 
 ## How does it work?
 
@@ -62,12 +62,12 @@ When the Configurable Sites feature is enabled, the following behavior occurs:
    > [!NOTE]
    > The redirect response is subject to caching according to Microsoft Edge's normal HTTP caching behavior for redirects.
 
-### Reverse switching from IE to Microsoft Edge
+### Switching back from IE to Microsoft Edge
 
 Enabling Configurable Sites in Microsoft Edge automatically enables the following behaviors in IE mode tabs:
 
 1. When making a request to a Configurable site, IE mode tabs will send the HTTP request header "`X-InternetExplorerModeConfigurable: 1`", the same as Microsoft Edge tabs.
-2. A Configurable site might send a redirect response (for example, HTTP 302) with the HTTP response header "`X-InternetExplorerMode: 0`" to request that the navigation switch back to Microsoft Edge mode (colloquially "reverse switching".)
+2. A Configurable site might send a redirect response (for example, HTTP 302) with the HTTP response header "`X-InternetExplorerMode: 0`" to request that the navigation switch back to Microsoft Edge mode.
 3. The target of the redirect (that is, the value of the Location response header) must also be a Configurable or Neutral site, otherwise the IE mode response header will be ignored. It's expected that the target of the redirect will usually be the same as the original URL. However, it doesn't have to be.
 
    > [!NOTE]
