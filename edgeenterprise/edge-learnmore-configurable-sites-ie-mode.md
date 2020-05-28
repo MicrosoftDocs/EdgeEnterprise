@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Edge and configurable sites in IE mode"
+title: "Microsoft Edge and Configurable sites in IE mode"
 ms.author: shisub
 author: dan-wesley
 manager: srugh
@@ -9,12 +9,12 @@ ms.topic: procedural
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
-description: "Microsoft Edge and configurable sites in IE mode"
+description: "Microsoft Edge and Configurable sites in IE mode"
 ---
 
-# Learn about configurable sites in IE mode
+# Learn about Configurable sites in IE mode
 
-This article explains the Configurable Sites feature of the Enterprise Mode Site List when using IE mode in Microsoft Edge.
+This article explains the Configurable sites feature of the Enterprise Mode Site List when using IE mode in Microsoft Edge.
 
 ## Prerequisites
 
@@ -35,13 +35,13 @@ This article explains the Configurable Sites feature of the Enterprise Mode Site
 
 Configuring sites needing IE mode in the Enterprise Mode Site List will work well for most environments with legacy applications. However, in some cases this approach isn't the best to configure a subset of sites to open in IE mode without rendering an entire domain in IE mode. For example, when your environment contains both modern and legacy applications running on a single server and you would like the flexibility to render only the legacy applications in IE mode and the remaining applications to render in Microsoft Edge mode.
 
-The solution is to use the Configurable Sites feature of the Enterprise Mode Site List. When the feature is enabled, Microsoft Edge will allow sites with the "configurable" tag to participate in IE mode engine determination.
+The solution is to use the Configurable sites feature of the Enterprise Mode Site List. When the feature is enabled, Microsoft Edge will allow sites with the "configurable" tag to participate in IE mode engine determination.
 
-## How Configurable Sites works
+## How Configurable sites works
 
 ### Automatic switching from the Microsoft Edge engine to the IE mode engine
 
-To use the Configurable Sites feature, you'll need one or more sites in the Enterprise Mode Site List to have the `<open-in>Configurable</open-in>` option.
+To use the Configurable sites feature, you'll need one or more sites in the Enterprise Mode Site List to have the `<open-in>Configurable</open-in>` option.
 
 Example:
 
@@ -53,7 +53,7 @@ Example:
 </site-list>
 ```
 
-When the Configurable Sites feature is enabled, the following behavior occurs:
+When the Configurable sites feature is enabled, the following behavior occurs:
 
 1. When making a request to a Configurable site, Microsoft Edge will send the HTTP request header "`X-InternetExplorerModeConfigurable: 1`".
 2. A Configurable site may send a redirect response (for example, HTTP 302) with the HTTP response header "`X-InternetExplorerMode: 1`" to request that Microsoft Edge loads the site in IE mode.
@@ -64,7 +64,7 @@ When the Configurable Sites feature is enabled, the following behavior occurs:
 
 ### Switching back from IE mode engine to Microsoft Edge engine
 
-Enabling Configurable Sites in Microsoft Edge automatically enables the following behaviors in IE mode tabs:
+Enabling Configurable sites in Microsoft Edge automatically enables the following behaviors in IE mode tabs:
 
 1. When making a request to a Configurable site, IE mode tabs will send the HTTP request header "`X-InternetExplorerModeConfigurable: 1`", the same as Microsoft Edge tabs.
 2. A Configurable site might send a redirect response (for example, HTTP 302) with the HTTP response header "`X-InternetExplorerMode: 0`" to request that the navigation switch back to Microsoft Edge mode.
