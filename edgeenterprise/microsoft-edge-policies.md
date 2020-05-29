@@ -9241,13 +9241,11 @@ This enterprise policy is disabled by default.
 
   ### ForceNetworkInProcess
   #### Force networking code to run in the browser process (obsolete)
-  
+  >OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 83.
   #### Supported versions:
   - On Windows since 78, until 83
 
-  #### Description
-  OBSOLETE: This policy is obsolete, and doesn't work on Microsoft Edge version 83+.
-  
+  #### Description  
   This policy doesn't work because it was only intended to be a short-term mechanism to give enterprises more time to migrate to 3rd party software that doesn't depend on hooking networking APIs. Proxy servers are recommended over LSPs and Win32 API patching.
 
 This policy forces networking code to run in the browser process.
