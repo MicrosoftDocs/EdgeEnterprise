@@ -10,7 +10,7 @@
 |------|------------|--------|
 | 5/26/2020 | [Microsoft Edge documentation](/DeployEdge/index)<br>Refresh updated content page. | modified |
 | 5/28/2020 | [Microsoft Edge identity support and configuration](/DeployEdge/microsoft-edge-security-identity)<br>Change URL for article. | modified |
-| 5/28/2020 | [Configure Sites on the Enterprise Mode Site List](/DeployEdge/edge-ie-mode-sitelist)<br>Publish learn more article for Configurable sites. | modified |
+| 5/28/2020 | [Configure Sites on the Enterprise Mode Site List](/DeployEdge/edge-ie-mode-sitelist)<br>Learn more article about Configurable sites in IE mode. | modified |
 | 5/28/2020 | [IE mode FAQ](/DeployEdge/edge-ie-mode-faq)<br>Add FAQ item for *nomerge* option. | modified |
 | 5/29/2020 | [Microsoft Edge Browser Policy Documentation](/DeployEdge/microsoft-edge-policies)<br>Add new group policies. | modified |
 
