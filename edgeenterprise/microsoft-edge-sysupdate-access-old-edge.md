@@ -3,7 +3,7 @@ title: "Access the old version of Microsoft Edge"
 ms.author: jtkim
 author: dan-wesley
 manager: srugh
-ms.date: 02/21/2020
+ms.date: 06/01/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -16,19 +16,24 @@ description: "Learn how to access the legacy version of Microsoft Edge."
 
 Learn how to access Microsoft Edge Legacy after installing the new version of Microsoft Edge.
 
-While most organizations will want to replace Microsoft Edge Legacy with the new version, there are some situations where users will need access to both versions. For example: 
-
-- Helpdesk and support staff who interact with users who are using either or both versions of Microsoft Edge. 
-- Developers who support customers who are using either or both versions of Microsoft Edge.
-
 > [!NOTE]
 > This article applies to the Microsoft Edge [Stable channel](microsoft-edge-channels.md).
+
+While most organizations will want to replace Microsoft Edge Legacy with the new version, there are some situations where users will need access to both versions. For example:
+
+- Helpdesk and support staff who interact with users who are using either or both versions of Microsoft Edge.
+- Developers who support customers who are using either or both versions of Microsoft Edge.
+
+> [!IMPORTANT]
+> Running Microsoft Edge Legacy side-by-side with the new version is not recommended for regular usage. This configuration should only be used in specific cases where testing with both browser versions is required.
+
+## Before you begin
 
 The procedures in this article apply to systems that have been updated with the latest security updates. When the new version of Microsoft Edge is installed, the old version (Microsoft Edge Legacy) will be hidden. By default, all attempts to launch the old version will redirect the user to the newly installed version of Microsoft Edge. This article describes how you can keep using Microsoft Edge Legacy after you install Microsoft Edge.
 
 ## Quickstart: Side-by-side experience with Microsoft Edge Beta Channel and Microsoft Edge Legacy
 
-Before using the detailed instructions in this article, consider the following 2 steps to let your users run Microsoft Edge Legacy and the Microsoft Edge [Beta channel](microsoft-edge-channels.md) side-by-side.
+Before using the detailed instructions in this article, consider the following two steps to let your users run Microsoft Edge Legacy and the Microsoft Edge [Beta channel](microsoft-edge-channels.md) side-by-side.
 
 1. Prevent the automatic install of the Stable Channel of Microsoft Edge by [Windows Update](https://support.microsoft.com/help/12373/windows-update-faq).
 
@@ -40,7 +45,7 @@ Before using the detailed instructions in this article, consider the following 2
    > [!NOTE]
    > Read [Additional information](#additional-information) for information about Registry Key settings.
 
-This side-by-side solution is less complex and requires less management than the detailed solution described in this article. However, this does mean that you'll be running the Beta Channel rather than the Stable Channel.
+This side-by-side solution is less complex and requires less management than the detailed solution described in this article. However, this solution does mean that you'll be running the Beta Channel rather than the Stable Channel.
 
 ## Side-by-side experience with Microsoft Edge Stable Channel and Microsoft Edge Legacy
 
