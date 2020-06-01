@@ -27,13 +27,17 @@ These release notes provide information about new features and non-security upda
 
 - Microsoft Edge supports browser sign-In for "run as administrator" on Windows 10. This administrator level support will help customers running Microsoft Edge on Windows server or in remote-desktop and sandbox scenarios.
 
-- TLS/1.0 and TLS/1.1 is disabled by default. To help discover impacted sites, you can set the *edge://flags/#display-legacy-tls-warnings* flag to cause Microsoft Edge to display a non-blocking "Not Secure" notice when loading pages that require legacy TLS protocols. The [SSLMinVersion](https://docs.microsoft.com/deployedge/microsoft-edge-policies#sslversionmin) permits re-enabling of TLS/1.0 and TLS/1.1. This policy will remain available until at least Microsoft Edge 88. For more information, see [Site compatibility-impacting changes coming to Microsoft Edge](https://docs.microsoft.com/microsoft-edge/web-platform/site-impacting-changes).
-
 - Now it's easier to access tabs and the address bar while in full screen mode. You can use your mouse and don't have to exit full screen.
 
 - Online purchase improvement. Add custom nicknames to saved debit or credit cards. Now you can distinguish and differentiate your credit cards when making online purchases. Nicknaming your debit or credit cards lets you choose the correct card when using autofill to select a payment method.
 
-- Read Aloud for PDF lets users listen to PDF content while carrying out other tasks that may be important for them. It also helps audio visual learners focus on reading the content, making learning easier.
+- TLS/1.0 and TLS/1.1 is disabled by default. To help discover impacted sites, you can set the *edge://flags/#display-legacy-tls-warnings* flag to cause Microsoft Edge to display a non-blocking "Not Secure" notice when loading pages that require legacy TLS protocols. The [SSLMinVersion](https://docs.microsoft.com/deployedge/microsoft-edge-policies#sslversionmin) permits re-enabling of TLS/1.0 and TLS/1.1. This policy will remain available until at least Microsoft Edge 88. For more information, see [Site compatibility-impacting changes coming to Microsoft Edge](https://docs.microsoft.com/microsoft-edge/web-platform/site-impacting-changes).
+
+- Collections improvements:
+
+  - A note capability is added that lets you add a note or comment to an item in a collection. Notes are grouped together and stay attached to an item even if you sort the items in a collection. To try this new feature, right-click on an item and select "Add note".
+  - You can change the background color of notes in collections. You can use color coding to help you organize information and increase productivity.
+  - There are noticeable performance improvements, which lets you export your collections to  Excel in less time than in previous versions of Microsoft Edge.
 
 - Additional Microsoft Edge API support:
 
@@ -43,13 +47,10 @@ These release notes provide information about new features and non-security upda
 
   - The Native File System API, which means you can give sites permissions to edit files or folders via the Native File System API.
 
-- PDF file editing is improved. Now you can save an edit made to a PDF back to the file instead of saving a copy each time you edit the PDF.
+- PDF improvements:
 
-- Collections improvements:
-
-  - A note capability is added that lets you add a note or comment to an item in a collection. Notes are grouped together and stay attached to an item even if you sort the items in a collection. To try this new feature, right-click on an item and select "Add note".
-  - You can change the background color of notes in collections. You can use color coding to help you organize information and increase productivity.
-  - There are noticeable performance improvements, which lets you export your collections to  Excel in less time than in previous versions of Microsoft Edge.
+  - Read Aloud for PDF lets users listen to PDF content while carrying out other tasks that may be important for them. It also helps audio visual learners focus on reading the content, making learning easier.
+  - PDF file editing is improved. Now you can save an edit made to a PDF back to the file instead of saving a copy each time you edit the PDF.
 
 - Microsoft Edge now enables Translation in the Immersive Reader. When a user opens the Immersive Reader view, they get the option to translate the page to their desired language.
 
@@ -76,10 +77,6 @@ Five new policies were added. Download the updated Administrative Templates from
 #### Obsoleted policy
 
 [ForceNetworkInProcess](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#forcenetworkinprocess) - Force networking code to run in the browser process.
-
-#### Policy Caption changed
-
-[PasswordProtectionLoginURLs](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#passwordprotectionloginurls) - Configure the list of enterprise login URLs where the password protection service should capture salted hashes of a password.
 
 <!-- end 84 -->
 ## Version 83.0.478.37: May 20
