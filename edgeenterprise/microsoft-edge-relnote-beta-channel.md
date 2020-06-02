@@ -79,6 +79,11 @@ Five new policies were added. Download the updated Administrative Templates from
 [ForceNetworkInProcess](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#forcenetworkinprocess) - Force networking code to run in the browser process.
 
 <!-- end 84 -->
+
+## Version 83.0.478.44: June 1
+
+Fixed various bugs and performance issues.
+
 ## Version 83.0.478.37: May 20
 
 Fixed various bugs and performance issues.
