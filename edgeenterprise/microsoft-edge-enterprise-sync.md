@@ -127,7 +127,7 @@ No. ESR can be used to enable sync, but Microsoft Edge sync is not a part of ESR
 
 There are no plans to support this syncing. If you still need IE in your environment to support legacy apps, consider our [new IE mode](https://docs.microsoft.com/deployedge/edge-ie-mode).
 
-#### Will the new Microsoft Edge browser sync with the Microsoft Edge Legacy?
+#### Will the new Microsoft Edge browser sync with Microsoft Edge Legacy?
 
 No, it won't. We believe connecting these two ecosystems will lead to compromises in the reliability of sync in the new Microsoft Edge. We will ensure that existing data is migrated to the new Microsoft Edge. Users will also be able to import data from browser of their choice. This also means that new Microsoft Edge browser won't have a way to sync with IE.
 
