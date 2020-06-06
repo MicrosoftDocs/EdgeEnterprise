@@ -3,7 +3,7 @@ title: "Microsoft Edge release schedule"
 ms.author: aguta
 author: dan-wesley
 manager: srugh
-ms.date: 06/05/2020
+ms.date: 06/06/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -31,10 +31,10 @@ The following table lists the planned release dates for the Beta, and Stable cha
 
 | Version | Release status | Beta Channel<br>Release week | Stable Channel<br>Release week |
 |---------|-----|------|--------|
-| 81 | Released<br>Version | 02-20-2020<br>[Version 81.0.416.12](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnote-beta-channel#version-81041612-february-20) | 04-13-2020<br>[Version 81.0.416.53](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnote-stable-channel#version-81041653-april-13) |
+| 81 | Released<br>Version | 02-20-2020<br>[81.0.416.12](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnote-beta-channel#version-81041612-february-20) | 04-13-2020<br>[81.0.416.53](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnote-stable-channel#version-81041653-april-13) |
 | 82 | Cancelled | Cancelled | Cancelled |
-| **83** | Released<br>Version | 04-21-2020<br>[Version 83.0.478.13](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnote-beta-channel#version-83047813-april-22) | **05-21-2020**<br> **[Version 83.0.478.37](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnote-stable-channel#version-83047837-may-21)** |
-| **84** | Released<br>Version | **06-01-2020**<br> **[Version 84.0.522.11](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnote-beta-channel#version-84052211-june-2)** | To be released on<br>07-16-2020 |
+| **83** | Released<br>Version | 04-21-2020<br>[83.0.478.13](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnote-beta-channel#version-83047813-april-22) | **05-21-2020**<br> **[83.0.478.37](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnote-stable-channel#version-83047837-may-21)** |
+| **84** | Released<br>Version | **06-01-2020**<br> **[84.0.522.11](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnote-beta-channel#version-84052211-june-2)** | To be released on<br>07-16-2020 |
 | 85 | Target release | Week of 07-27-2020 | Week of 08-27-2020 |
 | 86 | Target release | Week of 09-07-2020 | Week of 10-08-2020 |
 | 87 | Target release | Week of 10-19-2020 | Week of 11-19-2020 |
