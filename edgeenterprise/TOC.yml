@@ -1,4 +1,4 @@
-# last revised 05/28/2020
+# last revised 06/08/2020
 - name: Microsoft Edge documentation 
   href: index.yml
 - name: Microsoft Edge content updates
@@ -23,6 +23,8 @@
      href: deploy-edge-plan-deployment.md
    - name: Release information
      items:
+      - name: Release schedule
+        href: microsoft-edge-release-schedule.md
       - name: Beta Channel Release Notes
         href: microsoft-edge-relnote-beta-channel.md
       - name: Stable Channel Release Notes
