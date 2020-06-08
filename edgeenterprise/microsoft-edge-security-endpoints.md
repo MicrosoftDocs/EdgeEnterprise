@@ -89,7 +89,7 @@ These endpoints manage the reading and writing of synced data, rights management
 - Edge sync service endpoints:
   - `https://enterprise.edge.activity.windows.com`
   - `https://edge.activity.windows.com`
-- [Azure Information Protection endpoints](https://docs.microsoft.com/azure/information-protection/reports-aip)
+- [Azure Information Protection endpoints](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges?redirectSourcePath=%252fen-US%252farticle%252fOffice-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)
 - [Windows Notification Service endpoints](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
 
 ## Other browser support services
