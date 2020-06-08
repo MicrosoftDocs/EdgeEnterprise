@@ -3,7 +3,7 @@ title: "Allow list for Microsoft Edge endpoints"
 ms.author: kvice
 author: dan-wesley
 manager: srugh
-ms.date: 02/24/2020
+ms.date: 06/08/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -81,6 +81,16 @@ For information about delivery optimization, see [Delivery Optimization for Wind
 
 - Client to Service communication: `*.do.dsp.mp.microsoft.com` (HTTP Port 80, HTTPS Port 443)
 - Client to Client communication: TCP port 7680 should be open for inbound traffic
+
+### Sync
+
+These endpoints manage the reading and writing of synced data, rights management for secure data, and notifying the browser when new sync data is available.
+
+- Edge sync service endpoints:
+  - `https://enterprise.edge.activity.windows.com`
+  - `https://edge.activity.windows.com`
+- [Azure Information Protection endpoints](https://docs.microsoft.com/azure/information-protection/reports-aip)
+- [Windows Notification Service endpoints](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
 
 ## Other browser support services
 
