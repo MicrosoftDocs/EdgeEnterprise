@@ -16,6 +16,8 @@ description: "Microsoft Edge release schedule"
 
 This article describes the release cadence and anticipated release schedule for Microsoft Edge.
 
+
+
 ## Release cadence
 
 Microsoft provides four options, called channels, to manage how often Microsoft Edge is updated with new features. The Microsoft Edge team plans to push public updates to the Beta and Stable channels every six weeks. For more information about our channels, their release cycle, and support levels, see the [Channel overview](https://docs.microsoft.com/DeployEdge/microsoft-edge-channels#channel-overview).
@@ -41,8 +43,18 @@ The following table lists the planned release dates for the Beta and Stable chan
 | 88 | Target release | Week of 12-07-2020 | Week of 01-21-2021 |
 | 89 | Target release | Week of 02-01-2021 | Week of 03-04-2021 |
 
+## Release Process
+
+The trigger for Beta and Stable major releases is an equivalent Chromium release.
+
+## Progressive rollouts
+
+The date reference (Released/Release week) for the Stable channel references the beginning of the progressive roll out.
+
+We use a progressive rollout model which means that new release availability for any given device could be staggered over upcoming days. For more information, see [Progressive rollouts for Microsoft Edge Stable Channel](microsoft-edge-update-progressive-rollout.md).
+
 ## See also
 
 - [Microsoft Edge Enterprise landing page](https://aka.ms/EdgeEnterprise)
-- [Microsoft Edge channels](https://docs.microsoft.com/DeployEdge/microsoft-edge-channels)
+- [Microsoft Edge channels](microsoft-edge-channels.md)
 - [Channel downloads](https://www.microsoft.com/edge/business/download)
