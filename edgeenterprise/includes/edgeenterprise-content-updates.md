@@ -8,11 +8,11 @@
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 6/2/2020 | [Microsoft Edge release notes for Beta Channel](/DeployEdge/microsoft-edge-relnote-beta-channel) | modified |
-| 6/4/2020 | [Microsoft Edge and Microsoft Defender Application Guard](/DeployEdge/microsoft-edge-security-windows-defender-application-guard) | modified |
-| 6/4/2020 | [Microsoft Edge release notes for Stable Channel](/DeployEdge/microsoft-edge-relnote-stable-channel) | modified |
-| 6/4/2020 | [Release notes for Microsoft Edge Security Updates](/DeployEdge/microsoft-edge-relnotes-security) | modified |
-| 6/5/2020 | [Microsoft Edge Enterprise Sync](/DeployEdge/microsoft-edge-enterprise-sync) | modified |
+| 6/2/2020 | [Microsoft Edge release notes for Beta Channel](/DeployEdge/microsoft-edge-relnote-beta-channel)<br>Updated notes for major release (Version 84.0.522.11) that introduces new/updated features and new group policies.  | modified |
+| 6/4/2020 | [Microsoft Edge and Microsoft Defender Application Guard](/DeployEdge/microsoft-edge-security-windows-defender-application-guard)<br>Added "What's new" section and FAQ items (IE mode and Chrome extension). | modified |
+| 6/4/2020 | [Microsoft Edge release notes for Stable Channel](/DeployEdge/microsoft-edge-relnote-stable-channel)<br>Updated for to reflect Stable Channel security updates (Version 83.0.478.45). | modified |
+| 6/4/2020 | [Release notes for Microsoft Edge Security Updates](/DeployEdge/microsoft-edge-relnotes-security)<br>Updated for Stable Channel (Version 83.0.478.45). | modified |
+| 6/5/2020 | [Microsoft Edge Enterprise Sync](/DeployEdge/microsoft-edge-enterprise-sync)<br>Added supported sync types, clarified configuration options (AIP), and refreshed FAQ. | modified |
 
 
 ## Week of May 25, 2020
