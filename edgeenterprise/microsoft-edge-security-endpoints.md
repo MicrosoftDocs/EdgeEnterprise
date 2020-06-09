@@ -3,7 +3,7 @@ title: "Allow list for Microsoft Edge endpoints"
 ms.author: kvice
 author: dan-wesley
 manager: srugh
-ms.date: 06/08/2020
+ms.date: 06/09/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -89,7 +89,7 @@ These endpoints manage the reading and writing of synced data, rights management
 - Edge sync service endpoints:
   - `https://enterprise.edge.activity.windows.com`
   - `https://edge.activity.windows.com`
-- [Azure Information Protection endpoints](https://docs.microsoft.com/en-us/office365/enterprise/office-365-endpoints)
+- [Azure Information Protection endpoints](https://docs.microsoft.com/office365/enterprise/office-365-endpoints)
 - [Windows Notification Service endpoints](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
 
 ## Other browser support services
