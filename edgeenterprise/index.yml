@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: dan-wesley #Required; your GitHub user alias, with correct capitalization.
   ms.author: kvice #Required; microsoft alias of author; optional team alias.
-  ms.date: 04/23/2020 #Required; mm/dd/yyyy format.
+  ms.date: 05/26/2020 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -66,7 +66,7 @@ landingContent:
           - text: Security
             url: security-overview.md
           - text: Privacy
-            url: microsoft-edge-privacy-policy.md
+            url: microsoft-edge-enterprise-privacy-settings.md
  # Card 4 (col 1, 2nd row)
 #  - title: Use enterprise features
 #    linkLists:

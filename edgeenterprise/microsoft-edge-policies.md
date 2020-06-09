@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation"
 ms.author: stmoody
 author: brianalt-msft
 manager: tahills
-ms.date: 05/07/2020
+ms.date: 05/28/2020
 audience: ITPro
 ms.topic: reference
 ms.prod: microsoft-edge
@@ -176,6 +176,7 @@ These tables list all of the browser-related group policies available in this re
 |[AlternateErrorPagesEnabled](#alternateerrorpagesenabled)|Suggest similar pages when a webpage can’t be found|
 |[AlwaysOpenPdfExternally](#alwaysopenpdfexternally)|Always open PDF files externally|
 |[AmbientAuthenticationInPrivateModesEnabled](#ambientauthenticationinprivatemodesenabled)|Enable Ambient Authentication for InPrivate and Guest profiles|
+|[AppCacheForceEnabled](#appcacheforceenabled)|Allows the AppCache feature to be re-enabled, even if it's turned off by default|
 |[ApplicationLocaleValue](#applicationlocalevalue)|Set application locale|
 |[AudioCaptureAllowed](#audiocaptureallowed)|Allow or block audio capture|
 |[AudioCaptureAllowedUrls](#audiocaptureallowedurls)|Sites that can access audio capture devices without requesting permission|
@@ -209,6 +210,7 @@ These tables list all of the browser-related group policies available in this re
 |[CustomHelpLink](#customhelplink)|Specify custom help link|
 |[DNSInterceptionChecksEnabled](#dnsinterceptionchecksenabled)|DNS interception checks enabled|
 |[DefaultBrowserSettingEnabled](#defaultbrowsersettingenabled)|Set Microsoft Edge as default browser|
+|[DelayNavigationsForInitialSiteListDownload](#delaynavigationsforinitialsitelistdownload)|Require that the Enterprise Mode Site List is available before tab navigation|
 |[DeleteDataOnMigration](#deletedataonmigration)|Delete old browser data on migration|
 |[DeveloperToolsAvailability](#developertoolsavailability)|Control where developer tools can be used|
 |[DirectInvokeEnabled](#directinvokeenabled)|Allow users to open files using the DirectInvoke protocol|
@@ -235,7 +237,7 @@ These tables list all of the browser-related group policies available in this re
 |[ForceEphemeralProfiles](#forceephemeralprofiles)|Enable use of ephemeral profiles|
 |[ForceGoogleSafeSearch](#forcegooglesafesearch)|Enforce Google SafeSearch|
 |[ForceLegacyDefaultReferrerPolicy](#forcelegacydefaultreferrerpolicy)|Use a default referrer policy of no-referrer-when-downgrade. (deprecated)|
-|[ForceNetworkInProcess](#forcenetworkinprocess)|Force networking code to run in the browser process (deprecated)|
+|[ForceNetworkInProcess](#forcenetworkinprocess)|Force networking code to run in the browser process (obsolete)|
 |[ForceYouTubeRestrict](#forceyoutuberestrict)|Force minimum YouTube Restricted Mode|
 |[FullscreenAllowed](#fullscreenallowed)|Allow full screen mode|
 |[GloballyScopeHTTPAuthCacheEnabled](#globallyscopehttpauthcacheenabled)|Enable globally scoped HTTP auth cache|
@@ -267,6 +269,7 @@ These tables list all of the browser-related group policies available in this re
 |[MediaRouterCastAllowAllIPs](#mediaroutercastallowallips)|Allow Google Cast to connect to Cast devices on all IP addresses|
 |[MetricsReportingEnabled](#metricsreportingenabled)|Enable usage and crash-related data reporting|
 |[NativeWindowOcclusionEnabled](#nativewindowocclusionenabled)|Enable Hiding of Native Windows|
+|[NavigationDelayForInitialSiteListDownloadTimeout](#navigationdelayforinitialsitelistdownloadtimeout)|Set a timeout for delay of tab navigation for the Enterprise Mode Site List|
 |[NetworkPredictionOptions](#networkpredictionoptions)|Enable network prediction|
 |[NonRemovableProfileEnabled](#nonremovableprofileenabled)|Configure whether a user always has a default profile automatically signed in with their work or school account|
 |[OverrideSecurityRestrictionsOnInsecureOrigin](#overridesecurityrestrictionsoninsecureorigin)|Control where security restrictions on insecure origins apply|
@@ -2281,6 +2284,8 @@ If you don't configure this policy, the default search provider is enabled, and 
 
 This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain or Windows 10 Pro or Enterprise instances that are enrolled for device management.
 
+Starting in Microsoft Edge 84, you can set this policy as a recommended policy.
+
   #### Supported features:
   - Can be mandatory: Yes
   - Can be recommended: Yes
@@ -2329,6 +2334,8 @@ This policy is available only on Windows instances that are joined to a Microsof
 This policy is optional. If not configured, the default, UTF-8, is used.
 
 This policy is applied only if you enable the [DefaultSearchProviderEnabled](#defaultsearchproviderenabled) and [DefaultSearchProviderSearchURL](#defaultsearchprovidersearchurl) policies.
+
+Starting in Microsoft Edge 84, you can set this policy as a recommended policy.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -2395,6 +2402,8 @@ See [DefaultSearchProviderImageURLPostParams](#defaultsearchproviderimageurlpost
 
 This policy is applied only if you enable the [DefaultSearchProviderEnabled](#defaultsearchproviderenabled) and [DefaultSearchProviderSearchURL](#defaultsearchprovidersearchurl) policies.
 
+Starting in Microsoft Edge 84, you can set this policy as a recommended policy.
+
   #### Supported features:
   - Can be mandatory: Yes
   - Can be recommended: Yes
@@ -2448,6 +2457,8 @@ Specify Google's Image Search URL Post Params as:
 
 If you don’t set this policy, image search requests are sent using the GET method.
 
+Starting in Microsoft Edge 84, you can set this policy as a recommended policy.
+
   #### Supported features:
   - Can be mandatory: Yes
   - Can be recommended: Yes
@@ -2496,6 +2507,8 @@ content={imageThumbnail},url={imageURL},sbisrc={SearchSource}
 This policy is optional. If you don't configure it, no keyword activates the search provider.
 
 This policy is applied only if you enable the [DefaultSearchProviderEnabled](#defaultsearchproviderenabled) and [DefaultSearchProviderSearchURL](#defaultsearchprovidersearchurl) policies.
+
+Starting in Microsoft Edge 84, you can set this policy as a recommended policy.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -2547,6 +2560,8 @@ If you enable this policy, you set the name of the default search provider.
 If you don't enable this policy or if you leave it empty, the host name specified by the search URL is used.
 
 'DefaultSearchProviderName' should be set to an organization-approved encrypted search provider that corresponds to the encrypted search provider set in DTBC-0008. This policy is applied only if you enable the [DefaultSearchProviderEnabled](#defaultsearchproviderenabled) and [DefaultSearchProviderSearchURL](#defaultsearchprovidersearchurl) policies.
+
+Starting in Microsoft Edge 84, you can set this policy as a recommended policy.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -2600,6 +2615,8 @@ Specify Bing's search URL as:
 Specify Google's search URL as: '{google:baseURL}search?q={searchTerms}&{google:RLZ}{google:originalQueryForSuggestion}{google:assistedQueryStats}{google:searchFieldtrialParameter}{google:searchClient}{google:sourceId}ie={inputEncoding}'.
 
 This policy is required when you enable the [DefaultSearchProviderEnabled](#defaultsearchproviderenabled) policy; if you don't enable the latter policy, this policy is ignored.
+
+Starting in Microsoft Edge 84, you can set this policy as a recommended policy.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -2655,6 +2672,8 @@ Bing's suggest URL can be specified as:
 Google's suggest URL can be specified as: '{google:baseURL}complete/search?output=chrome&q={searchTerms}'.
 
 This policy is applied only if you enable the [DefaultSearchProviderEnabled](#defaultsearchproviderenabled) and [DefaultSearchProviderSearchURL](#defaultsearchprovidersearchurl) policies.
+
+Starting in Microsoft Edge 84, you can set this policy as a recommended policy.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -2877,7 +2896,7 @@ Use the following format to add an extension to the list:
 
 - extensionID - the 32-letter string found on edge://extensions when in developer mode.
 
-- updateURL (optional) is the address of the Update Manifest XML document for the app or extension, as described at [https://go.microsoft.com/fwlink/?linkid=2095043](https://go.microsoft.com/fwlink/?linkid=2095043). If you don't set the updateURL, the Microsoft Store update URL is used (currently https://edge.microsoft.com/extensionwebstorebase/v1/crx).  Note that the update URL set in this policy is only used for the initial installation; subsequent updates of the extension use the update URL indicated in the extension's manifest.
+- updateURL (optional) is the address of the Update Manifest XML document for the app or extension, as described at [https://go.microsoft.com/fwlink/?linkid=2095043](https://go.microsoft.com/fwlink/?linkid=2095043). If you want to install an extension from the Chrome Web Store, provide the Chrome Web Store update URL, https://clients2.google.com/service/update2/crx. Note that the update URL set in this policy is only used for the initial installation; subsequent updates of the extension use the update URL indicated in the extension's manifest. If you don't set the updateURL, the extension is assumed to be hosted in Microsoft Store and the following update URL is used (https://edge.microsoft.com/extensionwebstorebase/v1/crx).
 
 For example, gggmmkjegpiggikcnhidnjjhmicpibll;https://edge.microsoft.com/extensionwebstorebase/v1/crx installs the Microsoft Online app from the Microsoft Store "update" URL. For more information about hosting extensions, see: [https://go.microsoft.com/fwlink/?linkid=2095044](https://go.microsoft.com/fwlink/?linkid=2095044).
 
@@ -5717,7 +5736,7 @@ If you enable this policy, pages can send synchronous XHR requests during page d
 
 If you disable this policy or don't configure this policy, pages aren't allowed to send synchronous XHR requests during page dismissal.
 
-				 
+	 
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -6025,6 +6044,53 @@ In Microsoft Edge version 81 and later, if the policy is left not set, ambient a
 
   [Back to top](#microsoft-edge---policies)
 
+  ### AppCacheForceEnabled
+  #### Allows the AppCache feature to be re-enabled, even if it's turned off by default
+  
+  #### Supported versions:
+  - On Windows and macOS since 84 or later
+
+  #### Description
+  If you set this policy to true, the AppCache is enabled, even when AppCache in Microsoft Edge is not available by default.
+
+If you set this policy to false, or don't set it, AppCache will follow Microsoft Edge's defaults.
+
+  #### Supported features:
+  - Can be mandatory: Yes
+  - Can be recommended: No
+  - Dynamic Policy Refresh: No - Requires browser restart
+
+  #### Data Type:
+  - Boolean
+
+  #### Windows information and settings
+  ##### Group Policy (ADMX) info
+  - GP unique name: AppCacheForceEnabled
+  - GP name: Allows the AppCache feature to be re-enabled, even if it's turned off by default
+  - GP path (Mandatory): Administrative Templates/Microsoft Edge/
+  - GP path (Recommended): N/A
+  - GP ADMX file name: MSEdge.admx
+  ##### Windows Registry Settings
+  - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
+  - Path (Recommended): N/A
+  - Value Name: AppCacheForceEnabled
+  - Value Type: REG_DWORD
+  ##### Example value:
+```
+0x00000000
+```
+
+
+  #### Mac information and settings
+  - Preference Key Name: AppCacheForceEnabled
+  - Example value:
+``` xml
+<false/>
+```
+  
+
+  [Back to top](#microsoft-edge---policies)
+
   ### ApplicationLocaleValue
   #### Set application locale
   
@@ -6232,7 +6298,7 @@ This policy is intended to give enterprises flexibility to disable the audio san
   #### Description
   If you enable this policy, all supported datatypes and settings from the specified browser will be silently and automatically imported at first run. During the First Run Experience, the import section will also be skipped.
 
-	
+ 
 
 The browser data from Microsoft Edge Legacy will always be silently migrated at the first run, irrespective of the value of this policy. You can use the following values for this policy:
 
@@ -6946,10 +7012,10 @@ If you don't configure this policy, the built-in DNS client is enabled by defaul
 
   #### Description
   This policy is deprecated because it's intended to serve only as a short-term mechanism to give enterprises more time to update their environments and report issues if they are found to be incompatible with the built-in certificate verifier.
-		  
-		
+	
+  
 
-		   
+	 
 
 This policy is scheduled to be removed in Microsoft Edge for Mac OS X version 87, when support for the legacy certificate verifier on Mac OS X is planned to be removed.
 
@@ -7750,6 +7816,60 @@ Note for Windows administrators: This policy only works for PCs running Windows 
 ``` xml
 <true/>
 ```
+  
+
+  [Back to top](#microsoft-edge---policies)
+
+  ### DelayNavigationsForInitialSiteListDownload
+  #### Require that the Enterprise Mode Site List is available before tab navigation
+  
+  #### Supported versions:
+  - On Windows since 84 or later
+
+  #### Description
+  Lets you specify whether Microsoft Edge tabs wait to navigate until the browser has downloaded the initial Enterprise Mode Site List. This setting is intended for the scenario where the browser home page should load in Internet Explorer mode, and it is important that is does so on browser first run after IE mode is enabled. If this scenario does not exist, we recommend not enabling this setting because it can negatively impact the performance of loading the home page. The setting only applies when Microsoft Edge does not have a cached Enterprise Mode Site List, such as on browser first run after IE mode is enabled.
+
+This setting works in conjunction with:
+[InternetExplorerIntegrationLevel](#internetexplorerintegrationlevel) is set to "Internet Explorer mode" (1)
+and
+[InternetExplorerIntegrationSiteList](#internetexplorerintegrationsitelist) policy where the list has at least one entry.
+
+The timeout behavior of this policy can be configured with the [NavigationDelayForInitialSiteListDownloadTimeout](#navigationdelayforinitialsitelistdownloadtimeout) policy.
+
+If you set this policy to 1, when Microsoft Edge does not have a cached version of the Enterprise Mode Site List, tabs delay navigating until the browser has downloaded the site list. Sites configured to open in Internet Explorer mode by the site list will load in Internet Explorer mode, even during the initial navigation of the browser. Sites that cannot possibly be configured to open in Internet Explorer, such as any site with a scheme other than http:, https:, file:, or ftp: do not delay navigating and load immediately in Edge mode.
+
+If you set this policy to 0 or don't configure it, when Microsoft Edge does not have a cached version of the Enterprise Mode Site List, tabs will navigate immediately, and not wait for the browser to download the Enterprise Mode Site List. Sites configured to open in Internet Explorer mode by the site list will open in Microsoft Edge mode until the browser has finished downloading the Enterprise Mode Site List.
+
+* 0 = None
+
+* 1 = All eligible navigations
+
+  #### Supported features:
+  - Can be mandatory: Yes
+  - Can be recommended: No
+  - Dynamic Policy Refresh: No - Requires browser restart
+
+  #### Data Type:
+  - Integer
+
+  #### Windows information and settings
+  ##### Group Policy (ADMX) info
+  - GP unique name: DelayNavigationsForInitialSiteListDownload
+  - GP name: Require that the Enterprise Mode Site List is available before tab navigation
+  - GP path (Mandatory): Administrative Templates/Microsoft Edge/
+  - GP path (Recommended): N/A
+  - GP ADMX file name: MSEdge.admx
+  ##### Windows Registry Settings
+  - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
+  - Path (Recommended): N/A
+  - Value Name: DelayNavigationsForInitialSiteListDownload
+  - Value Type: REG_DWORD
+  ##### Example value:
+```
+0x00000001
+```
+
+
   
 
   [Back to top](#microsoft-edge---policies)
@@ -9120,21 +9240,21 @@ This enterprise policy is disabled by default.
   [Back to top](#microsoft-edge---policies)
 
   ### ForceNetworkInProcess
-  #### Force networking code to run in the browser process
-  >DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.
+  #### Force networking code to run in the browser process (obsolete)
+  >OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 83.
   #### Supported versions:
-  - On Windows since 78 or later
+  - On Windows since 78, until 83
 
-  #### Description
-  This policy is deprecated because it's only intended to be a short-term mechanism to give enterprises more time to migrate to 3rd party software that doesn't depend on hooking networking APIs. It won't work in Microsoft Edge as soon as version 84. Proxy servers are recommended over LSPs and Win32 API patching.
+  #### Description  
+  This policy doesn't work because it was only intended to be a short-term mechanism to give enterprises more time to migrate to 3rd party software that doesn't depend on hooking networking APIs. Proxy servers are recommended over LSPs and Win32 API patching.
 
 This policy forces networking code to run in the browser process.
 
 This policy is disabled by default. If enabled, users are open to security issues when the networking process is sandboxed.
 
-												  
+			  
 
-								  
+		  
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -9147,7 +9267,7 @@ This policy is disabled by default. If enabled, users are open to security issue
   #### Windows information and settings
   ##### Group Policy (ADMX) info
   - GP unique name: ForceNetworkInProcess
-  - GP name: Force networking code to run in the browser process (deprecated)
+  - GP name: Force networking code to run in the browser process (obsolete)
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/
   - GP path (Recommended): N/A
   - GP ADMX file name: MSEdge.admx
@@ -10884,7 +11004,7 @@ On Windows 10, if you don't configure this policy, Microsoft Edge will default t
 
 On Windows 7, 8, and macOS, this policy controls sending usage and crash-related data. If you don't configure this policy, Microsoft Edge will default to the user's preference.
 
-			 
+	
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -10967,6 +11087,58 @@ If this policy is left not set, window hiding detection will be enabled.
 
   [Back to top](#microsoft-edge---policies)
 
+  ### NavigationDelayForInitialSiteListDownloadTimeout
+  #### Set a timeout for delay of tab navigation for the Enterprise Mode Site List
+  
+  #### Supported versions:
+  - On Windows since 84 or later
+
+  #### Description
+  Allows you to set a timeout, in seconds, for Microsoft Edge tabs waiting to navigate until the browser has downloaded the initial Enterprise Mode Site List.
+
+This setting works in conjunction with:
+[InternetExplorerIntegrationLevel](#internetexplorerintegrationlevel) is set to "Internet Explorer mode" (1)
+and
+[InternetExplorerIntegrationSiteList](#internetexplorerintegrationsitelist) policy where the list has at least one entry
+and
+[DelayNavigationsForInitialSiteListDownload](#delaynavigationsforinitialsitelistdownload) is set to "All eligible navigations" (1).
+
+Tabs will not wait longer than this timeout for the Enterprise Mode Site List to download. If the browser has not finished downloading the Enterprise Mode Site List when the timeout expires, Microsoft Edge tabs will continue navigating anyway. The value of the timeout should be no greater than 20 seconds and no fewer than 1 second.
+
+If you set the timeout in this policy to a value greater than the default of 2 seconds, an information bar is shown to the user after 2 seconds. The information bar contains a button that allows the user to quit waiting for the Enterprise Mode Site List download to complete.
+
+If you don't configure this policy, the default timeout of 2 seconds is used. This default is subject to change in the future.
+
+  #### Supported features:
+  - Can be mandatory: Yes
+  - Can be recommended: No
+  - Dynamic Policy Refresh: No - Requires browser restart
+
+  #### Data Type:
+  - Integer
+
+  #### Windows information and settings
+  ##### Group Policy (ADMX) info
+  - GP unique name: NavigationDelayForInitialSiteListDownloadTimeout
+  - GP name: Set a timeout for delay of tab navigation for the Enterprise Mode Site List
+  - GP path (Mandatory): Administrative Templates/Microsoft Edge/
+  - GP path (Recommended): N/A
+  - GP ADMX file name: MSEdge.admx
+  ##### Windows Registry Settings
+  - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
+  - Path (Recommended): N/A
+  - Value Name: NavigationDelayForInitialSiteListDownloadTimeout
+  - Value Type: REG_DWORD
+  ##### Example value:
+```
+0x0000000a
+```
+
+
+  
+
+  [Back to top](#microsoft-edge---policies)
+
   ### NetworkPredictionOptions
   #### Enable network prediction
   
@@ -10981,6 +11153,8 @@ This controls DNS prefetching, TCP and SSL preconnection, and prerendering of we
 If you don't configure this policy, network prediction is enabled but the user can change it.
 
 * 0 = Predict network actions on any network connection
+
+* 1 = Not supported, if this value is used it will be treated as if 'Predict network actions on any network connection' (0) was set
 
 * 2 = Don't predict network actions on any network connection
 
@@ -11006,7 +11180,7 @@ If you don't configure this policy, network prediction is enabled but the user c
   - Value Type: REG_DWORD
   ##### Example value:
 ```
-0x00000001
+0x00000002
 ```
 
 
@@ -11014,7 +11188,7 @@ If you don't configure this policy, network prediction is enabled but the user c
   - Preference Key Name: NetworkPredictionOptions
   - Example value:
 ``` xml
-<integer>1</integer>
+<integer>2</integer>
 ```
   
 
@@ -11575,7 +11749,7 @@ The user's session is restored when the browser restarts.
   - On Windows and macOS since 77 or later
 
   #### Description
- Allows you to set the time period, in milliseconds, over which users are notified that Microsoft Edge must be relaunched to apply a pending update.
+  Allows you to set the time period, in milliseconds, over which users are notified that Microsoft Edge must be relaunched to apply a pending update.
 
 Over this time period, the user will be repeatedly informed of the need for an update. In Microsoft Edge the app menu changes to indicate that a relaunch is needed once one third of the notification period passes. This notification changes color once two thirds of the notification period passes, and again once the full notification period has passed. The additional notifications enabled by the [RelaunchNotification](#relaunchnotification) policy follow this same schedule.
 
@@ -12257,7 +12431,7 @@ Enable this policy to send info about websites visited in Microsoft Edge to Micr
 
 On Windows 10, if you don't configure this policy, Microsoft Edge will default to the Windows diagnostic data setting. If this policy is enabled Microsoft Edge will only send info about websites visited in Microsoft Edge if the Windows Diagnostic data setting is set to Full. If this policy is disabled Microsoft Edge will not send info about websites visited. Learn more about Windows Diagnostic data settings: [https://go.microsoft.com/fwlink/?linkid=2099569](https://go.microsoft.com/fwlink/?linkid=2099569)
 
-			 
+	
 
 On Windows 7, 8, and Mac this policy controls sending info about websites visited. If you don't configure this policy, Microsoft Edge will default to the user's preference.
 
@@ -12610,7 +12784,7 @@ If you set the policy to false, auto upgrades will be disabled for audio and vid
 
 This policy does not affect other types of mixed content other than audio, video, and images.
 
-				  
+	  
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -13637,7 +13811,7 @@ SOFTWARE\Policies\Microsoft\Edge\WebAppInstallForceList = [
 
   #### Description
   
-	
+ 
 This policy will be obsolete in Microsoft Edge version 84 because WebDriver is now compatible with all existing policies.
 
 This policy allows users of the WebDriver feature to override
