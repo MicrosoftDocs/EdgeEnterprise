@@ -153,7 +153,7 @@
         href: edge-learnmore-mixed-content-downloads.md
       - name: Progressive rollouts for Stable channel updates
         href: microsoft-edge-update-progressive-rollout.md
-      - name: Regular Expression 2 syntax
+      - name: Regular Expression 2 (re2.h) syntax
         href: edge-learnmore-regex.md
       - name: User data directory variables
         href: edge-learnmore-create-user-directory-vars.md
