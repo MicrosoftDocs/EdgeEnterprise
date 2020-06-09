@@ -1,4 +1,4 @@
-# last revised 05/28/2020
+# last revised 06/09/2020
 - name: Microsoft Edge documentation 
   href: index.yml
 - name: Microsoft Edge content updates
@@ -153,6 +153,8 @@
         href: edge-learnmore-mixed-content-downloads.md
       - name: Progressive rollouts for Stable channel updates
         href: microsoft-edge-update-progressive-rollout.md
+      - name: Regular Expression 2 (re2.h) syntax
+        href: edge-learnmore-regex.md
       - name: User data directory variables
         href: edge-learnmore-create-user-directory-vars.md
 - name: Frequently asked questions
