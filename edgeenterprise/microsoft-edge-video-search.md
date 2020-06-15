@@ -14,7 +14,7 @@ description: "Microsoft Edge and Microsoft Search"
 
 # Video: Microsoft Edge and Microsoft Search
 
-This video demonstrates taking the Microsoft Edge compatibility experience to the next level in the enterprise with Microsoft Search.
+This video demonstrates how Microsoft Edge takes the compatibility experience to the next level with Microsoft Search.
 
 ## About the video
 
@@ -30,3 +30,4 @@ Click the next screenshot to watch the video by Chuck Friedman, CVP of the Micro
 ## See also
 
 - [Microsoft Edge Enterprise landing page](https://aka.ms/EdgeEnterprise)
+- [Microsoft Edge YouTube playlist](https://www.youtube.com/playlist?list=PLXtHYVsvn_b-uXh1tMeYpT-0iD8tD3tFy)
