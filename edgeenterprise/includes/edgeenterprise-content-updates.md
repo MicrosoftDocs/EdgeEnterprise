@@ -8,9 +8,9 @@
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 6/9/2020 | [Allow list for Microsoft Edge endpoints](/DeployEdge/microsoft-edge-security-endpoints) | modified |
-| 6/12/2020 | [Microsoft Edge Browser Policy Documentation](/DeployEdge/microsoft-edge-policies) | modified |
-| 6/12/2020 | [Microsoft Edge Update Policy Documentation](/DeployEdge/microsoft-edge-update-policies) | modified |
+| 6/9/2020 | [Allow list for Microsoft Edge endpoints](/DeployEdge/microsoft-edge-security-endpoints)<br>Added endpoints for Sync. | modified |
+| 6/12/2020 | [Microsoft Edge Browser Policy Documentation](/DeployEdge/microsoft-edge-policies)<br>Added new policies. | modified |
+| 6/12/2020 | [Microsoft Edge Update Policy Documentation](/DeployEdge/microsoft-edge-update-policies)<br>Added new policies. | modified |
 
 
 ## Week of June 01, 2020
