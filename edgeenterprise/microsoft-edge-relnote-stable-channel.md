@@ -21,7 +21,7 @@ These release notes provide information about new features and non-security upda
 
 ## Version 83.0.478.50: June 15
 
-Fixed various bugs and performance issues.
+Fixed various bugs and performance issues. This update will roll out over the coming days. Learn more about [Progressive rollouts for Microsoft Edge updates](microsoft-edge-update-progressive-rollout.md).
 
 ## Version 83.0.478.45: June 4
 
