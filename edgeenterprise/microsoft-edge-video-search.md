@@ -24,6 +24,9 @@ Click the next screenshot to watch the video by Chuck Friedman, CVP of the Micro
 
 [![Microsoft Edge and Microsoft Search Tour](http://img.youtube.com/vi/7LfNqmJkeTM/0.jpg)](http://www.youtube.com/watch?v=7LfNqmJkeTM "Microsoft Edge and Microsoft Search: Complete tour for IT admins and users")
 
-This was filmed at Microsoft Ignite 2019, session THR2279: Microsoft Edge and Microsoft Search: Complete tour for IT admins and users.
+> [!NOTE]
+> This was filmed at Microsoft Ignite 2019, session THR2279: Microsoft Edge and Microsoft Search: Complete tour for IT admins and users.
+
+## See also
 
 - [Microsoft Edge Enterprise landing page](https://aka.ms/EdgeEnterprise)
