@@ -21,8 +21,10 @@ This video demonstrates how Microsoft Edge takes the compatibility experience to
 Microsoft Search adds tailored and integrated Intranet search results for sites, people, files and more across Edge on the PC, Mac and mobile. Finally, we show how to configure Microsoft Search as part of Microsoft 365. and how to deploy Microsoft Edge from System Center Configuration Manager and Microsoft Intune across platforms.
 
 Click the next screenshot to watch the video by Chuck Friedman, CVP of the Microsoft Edge team.
+<!--
+[![Microsoft Edge and Microsoft Search Tour](http://img.youtube.com/vi/7LfNqmJkeTM/0.jpg)](http://www.youtube.com/watch?v=7LfNqmJkeTM "Microsoft Edge and Microsoft Search: Complete tour for IT admins and users")-->
 
-[![Microsoft Edge and Microsoft Search Tour](http://img.youtube.com/vi/7LfNqmJkeTM/0.jpg)](http://www.youtube.com/watch?v=7LfNqmJkeTM "Microsoft Edge and Microsoft Search: Complete tour for IT admins and users")
+[![Microsoft Edge and Microsoft Search](https://res.cloudinary.com/marcomontalbano/image/upload/v1592253564/video_to_markdown/images/youtube--7LfNqmJkeTM-c05b58ac6eb4c4700831b2b3070cd403.jpg)](http://www.youtube.com/watch?v=7LfNqmJkeTM "Microsoft Edge and Microsoft Search")
 
 > [!NOTE]
 > This was filmed at Microsoft Ignite 2019, session THR2279: Microsoft Edge and Microsoft Search: Complete tour for IT admins and users.
