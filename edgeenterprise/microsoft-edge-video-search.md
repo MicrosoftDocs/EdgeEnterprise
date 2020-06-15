@@ -14,4 +14,8 @@ description: "Microsoft Edge and Microsoft Search"
 
 # Video: Microsoft Edge and Microsoft Search
 
-We demonstrate taking the experience to the next level in the enterprise, Microsoft Search adds tailored and integrated Intranet search results for sites, people, files and more across Edge on the PC, Mac and mobile.  Finally, we show how to configure Microsoft Search as part of Microsoft 365. and how to deploy Microsoft Edge from System Center Configuration Manager and Microsoft Intune across platforms.
+This video demonstrates taking the Microsoft Edge compatibility experience to the next level in the enterprise with Microsoft Search.
+
+## About the video
+
+Microsoft Search adds tailored and integrated Intranet search results for sites, people, files and more across Edge on the PC, Mac and mobile. Finally, we show how to configure Microsoft Search as part of Microsoft 365. and how to deploy Microsoft Edge from System Center Configuration Manager and Microsoft Intune across platforms.
