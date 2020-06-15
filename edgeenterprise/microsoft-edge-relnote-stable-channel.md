@@ -14,10 +14,10 @@ description: "Microsoft Edge release notes for Stable Channel"
 
 # Release notes for Microsoft Edge Stable Channel
 
-These release notes provide information about new features and non-security updates that are included in the Microsoft Edge Stable Channel. All the security updates are listed [here](microsoft-edge-relnotes-security.md).
+These release notes provide information about new features and non-security updates that are included in the Microsoft Edge Stable Channel. To understand Microsoft Edge channels, see the [Overview of the Microsoft Edge channels](microsoft-edge-channels.md). All the security updates are listed [here](microsoft-edge-relnotes-security.md).
 
 > [!NOTE]
-> Please see the [Overview of the Microsoft Edge channels](microsoft-edge-channels.md) and [Progressive rollouts for Microsoft Edge updates](microsoft-edge-update-progressive-rollout.md).
+> For the Stable Channel, updates will roll out progressively over one or more days. To learn more, see [Progressive rollouts for Microsoft Edge updates](microsoft-edge-update-progressive-rollout.md).
 
 ## Version 83.0.478.50: June 15
 
