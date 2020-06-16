@@ -51,7 +51,7 @@ This procedure creates an Administrative Templates profile using Microsoft Edge 
 
     ![Select platform and type of profile](./media/configure-edge-with-intune/create-profile-platform.png)
 
-7. On the **Basics** tab, enter a descriptive **Name**, such as Microsoft Edge Policy. Optionally, enter a     **Description** for the policy.
+7. On the **Basics** tab, enter a descriptive **Name**, such as Microsoft Edge Policy. Optionally, enter a  **Description** for the policy.
 The next screenshot shows the form for the **Basics** tab and the menu bar shows the next steps (as grayed out tabs) to create the profile.
 
    ![Enter Name and Description](./media/configure-edge-with-intune/create-profile-basics-tab.png)
@@ -73,7 +73,7 @@ The next screenshot shows the form for the **Basics** tab and the menu bar shows
 
     ![Search results](./media/configure-edge-with-intune/create-profile-configuration-settings-tab-search.png)
 
-11. After you find the setting you intend to configure, select it to expose the values you can set. In this example we selected "Configure the home page URL", which is shown in the next screenshot.
+11. After you find the setting you intend to configure, select it to expose the values you can set. In the next screenshot we selected "Configure the home page URL" as an example.
 
     ![Configure the home page URL policy](./media/configure-edge-with-intune/create-profile-configuration-settings-tab-edit-pol.png)
 
@@ -99,32 +99,6 @@ The next screenshot shows the form for the **Basics** tab and the menu bar shows
 
     ![Select groups to include](./media/configure-edge-with-intune/create-profile-new-policy-finished.png)
 
-<!---
-5. Enter the following values:
-
-    |Field  |Value  |
-    |---------|---------|
-    |Name     |Enter a descriptive name, like _Microsoft Edge Policies_         |
-    |Description     |Optionally enter a description         |
-    |Platform     |Windows 10 and later         |
-    |Profile type     |Administrative Templates         |
-
-    ![Create profile](./media/edge-ent-intune/edge-intune-profile-create.png)
-
-6. Click **Settings** to show all the available settings.
-
-    ![Create profile](./media/edge-ent-intune/edge-intune-policy-settings.png)
-
-7. On the right upper corner of the window, select the **All products** drop-down and then select **Edge version 77 or later** to filter the list to show only Microsoft Edge settings.
-
-    ![Create profile](./media/edge-ent-intune/edge-intune-allproducts.png)
-
-8. To configure a setting, select it from the list and use the settings window on the right to enable and configure the setting.
-
-    ![Create profile](./media/edge-ent-intune/edge-intune-settings-config.png)
-
-9. Click **Create** to create the profile.
--->
 When you're finished, see [Assign user and device profiles in Microsoft Intune](https://docs.microsoft.com/intune/device-profile-assign) for information about how to assign the profile to your Azure Active Directory (Azure AD) user or device groups.
 
 For more information about Windows 10 profiles, see [Use Windows 10 templates to configure group policy settings in Microsoft Intune](https://docs.microsoft.com/intune/administrative-templates-windows).
