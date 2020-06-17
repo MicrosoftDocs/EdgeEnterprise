@@ -3,7 +3,7 @@ title: "Configure Microsoft Edge policy settings for Windows using Microsoft Int
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 06/16/2020
+ms.date: 06/17/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -19,7 +19,7 @@ This article explains how to configure Microsoft Edge policy settings for Window
 > [!NOTE]
 > This article applies to Microsoft Edge version 77 or later.
 
-You can configure Microsoft Edge policies and settings by adding a device configuration profile to Microsoft Intune. Using Intune to manage and enforce policies is essentially equivalent to using Active Directory Group Policy or configuring local Group Policy Object (GPO) settings on user devices.
+You can configure Microsoft Edge policies and settings by adding a device configuration profile to Microsoft Intune. Using Intune to manage and enforce policies is equivalent to using Active Directory Group Policy or configuring local Group Policy Object (GPO) settings on user devices.
 
 For more information about managing Microsoft Edge policies with Microsoft Intune, you can read [Manage web access by using Microsoft Edge with Microsoft Intune](https://docs.microsoft.com/intune/manage-microsoft-edge), but keep in mind that the linked article is specific to Microsoft Edge version 45 and earlier and therefore may contain information and references that don't apply to Microsoft Edge Enterprise version 77 and later.
 
@@ -40,7 +40,7 @@ Using Administrative Templates in Microsoft Intune, you can manage Microsoft Edg
 
 ### Create an Administrative Templates profile
 
-This procedure creates an Administrative Templates profile using Microsoft Edge policy settings built into Microsoft Intune.
+This procedure leverages Administrative templates (which you might be familiar with from Group Policy) that are built into Intune. You can use these templates to create a policy for Microsoft Edge by selecting settings from a pre-configured list.
 
 1. Sign in to the [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) portal.
 2. Select **Devices** in the left-hand navigation pane.
@@ -73,7 +73,7 @@ The next screenshot shows the form for the **Basics** tab and the menu bar shows
 
     ![Search results](./media/configure-edge-with-intune/create-profile-configuration-settings-tab-search.png)
 
-11. After you find the setting you intend to configure, select it to expose the values you can set. In the next screenshot we selected "Configure the home page URL" as an example.
+11. After you find the setting you intend to configure, select it to expose the values you can set. In the next screenshot, we selected "Configure the home page URL" as an example.
 
     ![Configure the home page URL policy](./media/configure-edge-with-intune/create-profile-configuration-settings-tab-edit-pol.png)
 
@@ -85,21 +85,19 @@ The next screenshot shows the form for the **Basics** tab and the menu bar shows
 
 14. Click the **Next** button.
 
-15. On the **Scope tags** tab, add a Scope tag if desired, otherwise click the **Next** button.
+15. On the **Scope tags** tab, add a Scope tag if wanted, otherwise click the **Next** button.
 
-16. On the **Assignments** tab, click **+ Select groups to include** to assign this policy to the  Azure Active Directory group that contains the devices or the users who will use this policy setting.
+16. On the **Assignments** tab, click **+ Select groups to include** to assign this policy to the Azure Active Directory (Azure AD) group that contains the devices or the users that you want to receive this policy setting. When you're finished, see [Assign user and device profiles in Microsoft Intune](https://docs.microsoft.com/intune/device-profile-assign) for information about how to assign the profile to your Azure AD user or device groups.
 
     ![Select groups to include](./media/configure-edge-with-intune/create-profile-assignments-tab.png)
 
 17. Click the **Next** button.
 
-18. On the **Review + create** tab, review the summary of your changes to ensure it is correct and then click the **Create** button.
+18. On the **Review + create** tab, review the summary of your changes to ensure it's correct and then click the **Create** button.
 
 19. The newly created policy (Microsoft Edge Policy for Windows 10 and later) is shown in the following screenshot.
 
     ![Select groups to include](./media/configure-edge-with-intune/create-profile-new-policy-finished.png)
-
-When you're finished, see [Assign user and device profiles in Microsoft Intune](https://docs.microsoft.com/intune/device-profile-assign) for information about how to assign the profile to your Azure Active Directory (Azure AD) user or device groups.
 
 For more information about Windows 10 profiles, see [Use Windows 10 templates to configure group policy settings in Microsoft Intune](https://docs.microsoft.com/intune/administrative-templates-windows).
 
