@@ -3,7 +3,7 @@ title: "Microsoft Edge and Microsoft Defender Application Guard"
 ms.author: srugh
 author: dan-wesley
 manager: seanlyn
-ms.date: 04/03/2020
+ms.date: 06/17/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -57,6 +57,9 @@ Some examples of container support include the following scenarios:
 
 > [!NOTE]
 > It's also possible to manually install individual extensions inside the container from the extension store. Manually installed extensions will only persist in the container when [Allow Persistence](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/configure-md-app-guard#application-specific-settings) policy is enabled.
+
+### Identifying Application Guard traffic via Dual Proxy
+
 
 ### Diagnostic page for troubleshooting
 
