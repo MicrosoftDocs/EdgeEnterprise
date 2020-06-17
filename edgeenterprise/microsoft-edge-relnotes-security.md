@@ -18,7 +18,7 @@ These release notes provide information about security fixes that are included i
 
 ## June 17, 2020
 
-Microsoft has released the latest **Microsoft Edge Stable Channel (Version 83.0.478.53)**, which incorporates the latest Security Updates of the Chromium project. For more information, see the [Security Update Guide](https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV200002).
+Microsoft has released the latest **Microsoft Edge Stable Channel (Version 83.0.478.54)**, which incorporates the latest Security Updates of the Chromium project. For more information, see the [Security Update Guide](https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV200002).
 
 ## June 4, 2020
 
