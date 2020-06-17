@@ -60,6 +60,11 @@ Some examples of container support include the following scenarios:
 
 ### Identifying Application Guard traffic via Dual Proxy
 
+Some enterprise customers are deploying Application Guard with a specific use case where they need to identify web traffic coming out of a Microsoft Defender Application Guard container at the proxy level. Starting with Stable Channel version 84, Microsoft Edge will support dual proxy to address this requirement. You can configure this functionality using the [ApplicationGuardContainerProxy](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#applicationguardcontainerproxy) policy.
+
+The following drawing shows the dual proxy architecture for Microsoft Edge.
+
+![Dual proxy architecture for Application Guard](media/microsoft-edge-security-windows-defender-application-guard/wd-application-guard-dual-proxy.png)
 
 ### Diagnostic page for troubleshooting
 
