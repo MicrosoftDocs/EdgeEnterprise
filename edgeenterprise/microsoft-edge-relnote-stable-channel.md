@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Stable Channel"
 ms.author: aguta
 author: dan-wesley
 manager: srugh
-ms.date: 06/15/2020
+ms.date: 06/17/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -18,6 +18,10 @@ These release notes provide information about new features and non-security upda
 
 > [!NOTE]
 > For the Stable Channel, updates will roll out progressively over one or more days. To learn more, see [Progressive rollouts for Microsoft Edge updates](microsoft-edge-update-progressive-rollout.md).
+
+## Version 83.0.478.53: June 17
+
+Security updates are listed [here](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnotes-security#june-17-2020)
 
 ## Version 83.0.478.50: June 15
 
