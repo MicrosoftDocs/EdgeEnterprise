@@ -3,7 +3,7 @@ title: "Configure Microsoft Edge policy settings for Windows using Microsoft Int
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 06/17/2020
+ms.date: 06/18/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -38,7 +38,7 @@ Using Administrative Templates in Microsoft Intune, you can manage Microsoft Edg
   - Windows 10, version 1803 with [KB4512509](https://support.microsoft.com/kb/4512509) installed
   - Windows 10, version 1709 with [KB4516071](https://support.microsoft.com/kb/4516071) installed
 
-### Create an Administrative Templates profile
+### Use Administrative Templates to create a policy for Microsoft Edge
 
 This procedure leverages Administrative templates (which you might be familiar with from Group Policy) that are built into Intune. You can use these templates to create a policy for Microsoft Edge by selecting settings from a pre-configured list.
 
@@ -87,7 +87,7 @@ The next screenshot shows the form for the **Basics** tab and the menu bar shows
 
 15. On the **Scope tags** tab, add a Scope tag if wanted, otherwise click the **Next** button.
 
-16. On the **Assignments** tab, click **+ Select groups to include** to assign this policy to the Azure Active Directory (Azure AD) group that contains the devices or the users that you want to receive this policy setting. When you're finished, see [Assign user and device profiles in Microsoft Intune](https://docs.microsoft.com/intune/device-profile-assign) for information about how to assign the profile to your Azure AD user or device groups.
+16. On the **Assignments** tab, click **+ Select groups to include** to assign this policy to the Azure Active Directory (Azure AD) group that contains the devices or the users that you want to receive this policy setting. See [Assign user and device profiles in Microsoft Intune](https://docs.microsoft.com/intune/device-profile-assign) for information about how to assign the profile to your Azure AD user or device groups.
 
     ![Select groups to include](./media/configure-edge-with-intune/create-profile-assignments-tab.png)
 
@@ -95,7 +95,7 @@ The next screenshot shows the form for the **Basics** tab and the menu bar shows
 
 18. On the **Review + create** tab, review the summary of your changes to ensure it's correct and then click the **Create** button.
 
-19. The newly created policy (Microsoft Edge Policy for Windows 10 and later) is shown in the following screenshot.
+19. The newly created policy (Microsoft Edge Policy) is shown in the following screenshot.
 
     ![Select groups to include](./media/configure-edge-with-intune/create-profile-new-policy-finished.png)
 
