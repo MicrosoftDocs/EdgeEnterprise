@@ -3,7 +3,7 @@ title: "Microsoft Edge and Microsoft Defender Application Guard"
 ms.author: srugh
 author: dan-wesley
 manager: seanlyn
-ms.date: 06/17/2020
+ms.date: 06/18/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
