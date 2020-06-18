@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation"
 ms.author: stmoody
 author: brianalt-msft
 manager: tahills
-ms.date: 06/05/2020
+ms.date: 06/12/2020
 audience: ITPro
 ms.topic: reference
 ms.prod: microsoft-edge
@@ -2339,7 +2339,7 @@ This policy is optional. If not configured, the default, UTF-8, is used.
 
 This policy is applied only if you enable the [DefaultSearchProviderEnabled](#defaultsearchproviderenabled) and [DefaultSearchProviderSearchURL](#defaultsearchprovidersearchurl) policies.
 
-Starting in Microsoft Edge 84, you can set this policy as a recommended policy.
+Starting in Microsoft Edge 84, you can set this policy as a recommended policy. If the user has already set a default search provider, the default search provider configured by this recommended policy will not be added to the list of search providers the user can choose from. If this is the desired behavior, use the [ManagedSearchEngines](#managedsearchengines) policy.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -2406,7 +2406,7 @@ See [DefaultSearchProviderImageURLPostParams](#defaultsearchproviderimageurlpost
 
 This policy is applied only if you enable the [DefaultSearchProviderEnabled](#defaultsearchproviderenabled) and [DefaultSearchProviderSearchURL](#defaultsearchprovidersearchurl) policies.
 
-Starting in Microsoft Edge 84, you can set this policy as a recommended policy.
+Starting in Microsoft Edge 84, you can set this policy as a recommended policy. If the user has already set a default search provider, the default search provider configured by this recommended policy will not be added to the list of search providers the user can choose from. If this is the desired behavior, use the [ManagedSearchEngines](#managedsearchengines) policy.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -2461,7 +2461,7 @@ Specify Google's Image Search URL Post Params as:
 
 If you don’t set this policy, image search requests are sent using the GET method.
 
-Starting in Microsoft Edge 84, you can set this policy as a recommended policy.
+Starting in Microsoft Edge 84, you can set this policy as a recommended policy. If the user has already set a default search provider, the default search provider configured by this recommended policy will not be added to the list of search providers the user can choose from. If this is the desired behavior, use the [ManagedSearchEngines](#managedsearchengines) policy.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -2512,7 +2512,7 @@ This policy is optional. If you don't configure it, no keyword activates the sea
 
 This policy is applied only if you enable the [DefaultSearchProviderEnabled](#defaultsearchproviderenabled) and [DefaultSearchProviderSearchURL](#defaultsearchprovidersearchurl) policies.
 
-Starting in Microsoft Edge 84, you can set this policy as a recommended policy.
+Starting in Microsoft Edge 84, you can set this policy as a recommended policy. If the user has already set a default search provider, the default search provider configured by this recommended policy will not be added to the list of search providers the user can choose from. If this is the desired behavior, use the [ManagedSearchEngines](#managedsearchengines) policy.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -2565,7 +2565,7 @@ If you don't enable this policy or if you leave it empty, the host name specifie
 
 'DefaultSearchProviderName' should be set to an organization-approved encrypted search provider that corresponds to the encrypted search provider set in DTBC-0008. This policy is applied only if you enable the [DefaultSearchProviderEnabled](#defaultsearchproviderenabled) and [DefaultSearchProviderSearchURL](#defaultsearchprovidersearchurl) policies.
 
-Starting in Microsoft Edge 84, you can set this policy as a recommended policy.
+Starting in Microsoft Edge 84, you can set this policy as a recommended policy. If the user has already set a default search provider, the default search provider configured by this recommended policy will not be added to the list of search providers the user can choose from. If this is the desired behavior, use the [ManagedSearchEngines](#managedsearchengines) policy.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -2620,7 +2620,7 @@ Specify Google's search URL as: '{google:baseURL}search?q={searchTerms}&{google:
 
 This policy is required when you enable the [DefaultSearchProviderEnabled](#defaultsearchproviderenabled) policy; if you don't enable the latter policy, this policy is ignored.
 
-Starting in Microsoft Edge 84, you can set this policy as a recommended policy.
+Starting in Microsoft Edge 84, you can set this policy as a recommended policy. If the user has already set a default search provider, the default search provider configured by this recommended policy will not be added to the list of search providers the user can choose from. If this is the desired behavior, use the [ManagedSearchEngines](#managedsearchengines) policy.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -2677,7 +2677,7 @@ Google's suggest URL can be specified as: '{google:baseURL}complete/search?outpu
 
 This policy is applied only if you enable the [DefaultSearchProviderEnabled](#defaultsearchproviderenabled) and [DefaultSearchProviderSearchURL](#defaultsearchprovidersearchurl) policies.
 
-Starting in Microsoft Edge 84, you can set this policy as a recommended policy.
+Starting in Microsoft Edge 84, you can set this policy as a recommended policy. If the user has already set a default search provider, the default search provider configured by this recommended policy will not be added to the list of search providers the user can choose from. If this is the desired behavior, use the [ManagedSearchEngines](#managedsearchengines) policy.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -6395,7 +6395,7 @@ Note: For more details on what is imported from Google Chrome, please see [https
 
 If this policy is set to the value of Safari (3), user data is no longer imported into Microsoft Edge. This is due to the way Full Disk Access works on Mac.
 On macOS Mojave and above, it's no longer possible to have automated and unattended import of Safari data into Microsoft Edge.
-				   
+	   
 
 Starting with Microsoft Edge version 83, if this policy is set to the value of Mozilla Firefox (5), the following datatypes will be imported from Mozilla Firefox:
 1. Favorites or bookmarks
@@ -7058,7 +7058,7 @@ If you don't configure this policy, the built-in DNS client is enabled by defaul
   [Back to top](#microsoft-edge---policies)
 
   ### BuiltinCertificateVerifierEnabled
-  #### Determines whether the built-in certificate verifier will be used to verify server certificates  (deprecated)
+  #### Determines whether the built-in certificate verifier will be used to verify server certificates (deprecated)
   >DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.
   #### Supported versions:
   - On macOS since 83 or later
@@ -9295,6 +9295,7 @@ This enterprise policy is disabled by default.
   ### ForceNetworkInProcess
   #### Force networking code to run in the browser process (obsolete)
   >OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 83.
+  
   #### Supported versions:
   - On Windows since 78, until 83
 
@@ -9305,10 +9306,10 @@ This policy forces networking code to run in the browser process.
 
 This policy is disabled by default. If enabled, users are open to security issues when the networking process is sandboxed.
 
-	 
 
-	
+ 
 
+						  
   #### Supported features:
   - Can be mandatory: Yes
   - Can be recommended: No
@@ -10593,8 +10594,8 @@ If you set this policy to AllInPageNavigations (value 2), all navigations from p
 If you enable this policy, you can choose one of the following navigation options:
 
 * 0 = Default
-   
   
+
 
 * 1 = Keep only automatic navigations in Internet Explorer mode
 
@@ -11095,9 +11096,9 @@ If the [EnableMediaRouter](#enablemediarouter) policy is disabled, then this pol
 
   ### MetricsReportingEnabled
   #### Enable usage and crash-related data reporting
- 
 
    
+  
   
   #### Supported versions:
   - On Windows and macOS since 77 or later
@@ -11109,12 +11110,12 @@ Enable this policy to send reporting of usage and crash-related data to Microsof
 
 On Windows 10, if you don't configure this policy, Microsoft Edge will default to the Windows diagnostic data setting. If you enable this policy, Microsoft Edge will only send usage data if the Windows Diagnostic data setting is set to Enhanced or Full. If you disable this policy, Microsoft Edge will not send usage data. Crash-related data is sent based on the Windows Diagnostic data setting. Learn more about Windows Diagnostic data settings at [https://go.microsoft.com/fwlink/?linkid=2099569](https://go.microsoft.com/fwlink/?linkid=2099569)
 
- 
 
+																																												
 On Windows 7, 8, and macOS, this policy controls sending usage and crash-related data. If you don't configure this policy, Microsoft Edge will default to the user's preference.
 
- 
 
+						  
   #### Supported features:
   - Can be mandatory: Yes
   - Can be recommended: No
@@ -11346,7 +11347,6 @@ If you want to configure browser sign in, use the [BrowserSignin](#browsersignin
 
   
 
- 
 
  
    
@@ -11393,6 +11393,7 @@ If you want to configure browser sign in, use the [BrowserSignin](#browsersignin
    
   
 
+										   
   [Back to top](#microsoft-edge---policies)
 
   ### OverrideSecurityRestrictionsOnInsecureOrigin
@@ -12524,9 +12525,9 @@ SOFTWARE\Policies\Microsoft\Edge\SecurityKeyPermitAttestation\1 = https://contos
 
   ### SendSiteInfoToImproveServices
   #### Send site information to improve Microsoft services
- 
 
    
+  
   
   #### Supported versions:
   - On Windows and macOS since 77 or later
@@ -12534,14 +12535,14 @@ SOFTWARE\Policies\Microsoft\Edge\SecurityKeyPermitAttestation\1 = https://contos
   #### Description
   This policy enables sending info about websites visited in Microsoft Edge to Microsoft to improve services like search.
 
- 
 
+																																																											 
 Enable this policy to send info about websites visited in Microsoft Edge to Microsoft. Disable this policy to not send info about websites visited in Microsoft Edge to Microsoft. In both cases, users can't change or override the setting.
 
 On Windows 10, if you don't configure this policy, Microsoft Edge will default to the Windows diagnostic data setting. If this policy is enabled Microsoft Edge will only send info about websites visited in Microsoft Edge if the Windows Diagnostic data setting is set to Full. If this policy is disabled Microsoft Edge will not send info about websites visited. Learn more about Windows Diagnostic data settings: [https://go.microsoft.com/fwlink/?linkid=2099569](https://go.microsoft.com/fwlink/?linkid=2099569)
 
- 
 
+																																											
 On Windows 7, 8, and Mac this policy controls sending info about websites visited. If you don't configure this policy, Microsoft Edge will default to the user's preference.
 
   #### Supported features:
@@ -12893,8 +12894,8 @@ If you set the policy to false, auto upgrades will be disabled for audio and vid
 
 This policy does not affect other types of mixed content other than audio, video, and images.
 
-   
 
+						  
   #### Supported features:
   - Can be mandatory: Yes
   - Can be recommended: No
@@ -12987,8 +12988,8 @@ If this policy is false or unset, the warnings will appear on such unsupported c
   #### Description
   Disables data synchronization in Microsoft Edge. This policy also prevents the sync consent prompt from appearing.
 
-   
 
+																																												  
 If you don't set this policy or apply it as recommended, users will be able to turn sync on or off. If you apply this policy as mandatory, users will not be able to turn sync on.
 
   #### Supported features:
@@ -13352,9 +13353,9 @@ If you don't set this policy, the browser will only attempt to save memory when 
 If you enable this policy, you have the following options for setting the level of tracking prevention:
 
 * 0 = Off (no tracking prevention)
- 
    
  
+
 
 * 1 = Basic (blocks harmful trackers, content and ads will be personalized)
 
@@ -13924,8 +13925,8 @@ SOFTWARE\Policies\Microsoft\Edge\WebAppInstallForceList = [
   [Back to top](#microsoft-edge---policies)
 
   ### WebComponentsV0Enabled
-  #### Re-enable Web Components v0 API until M84 (obsolete)
-   >OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 84.
+  #### Re-enable Web Components v0 API until M84 (obsolete)  
+  >OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 84.
   #### Supported versions:
   - On Windows and macOS since 80, until 84
 
@@ -13935,7 +13936,6 @@ SOFTWARE\Policies\Microsoft\Edge\WebAppInstallForceList = [
      If you set this policy is set to True, the Web Components v0 features will be enabled for all sites.
 
      If you set this policy to False or don't set this policy, the Web Components v0 features will be disabled by default, starting in M80.
-
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -13981,7 +13981,7 @@ SOFTWARE\Policies\Microsoft\Edge\WebAppInstallForceList = [
 
   #### Description
   
- 
+  
 This policy will be obsolete in Microsoft Edge version 84 because WebDriver is now compatible with all existing policies.
 
 This policy allows users of the WebDriver feature to override
