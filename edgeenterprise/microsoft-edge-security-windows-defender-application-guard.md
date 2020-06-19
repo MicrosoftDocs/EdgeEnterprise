@@ -3,7 +3,7 @@ title: "Microsoft Edge and Microsoft Defender Application Guard"
 ms.author: srugh
 author: dan-wesley
 manager: seanlyn
-ms.date: 06/18/2020
+ms.date: 06/19/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -95,8 +95,8 @@ The following  requirements apply to devices using Application Guard with Micros
 The following articles provide the information you need to install, configure, and test Application Guard with Microsoft Edge.
 
 - [System requirements](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard)
-- [Install Windows Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard)
-- [Configure Windows Defender group policy settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/configure-md-app-guard)
+- [Install Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard)
+- [Configure Microsoft Defender group policy settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/configure-md-app-guard)
 - [Test Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/test-scenarios-md-app-guard)
 
 ## Frequently Asked Questions
@@ -111,7 +111,7 @@ No, the Application Guard feature is natively supported in Microsoft Edge. In fa
 
 ### Are there any other platform related FAQs?
 
-Yes. [Frequently asked questions - Windows Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard) 
+Yes. [Frequently asked questions - Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard) 
 
 ## See also
 
