@@ -8,12 +8,11 @@
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 6/17/2020 | [Microsoft Edge release notes for Stable Channel](/DeployEdge/microsoft-edge-relnote-stable-channel) | modified |
-| 6/17/2020 | [Release notes for Microsoft Edge Security Updates](/DeployEdge/microsoft-edge-relnotes-security) | modified |
-| 6/18/2020 | [Microsoft Edge Browser Policy Documentation](/DeployEdge/microsoft-edge-policies) | modified |
-| 6/18/2020 | [Microsoft Edge and Microsoft Defender Application Guard](/DeployEdge/microsoft-edge-security-windows-defender-application-guard) | modified |
-| 6/19/2020 | [Microsoft Edge and Microsoft Defender Application Guard](/DeployEdge/microsoft-edge-security-windows-defender-application-guard) | modified |
-| 6/19/2020 | [Configure Microsoft Edge policy settings for Windows using Microsoft Intune](/DeployEdge/configure-edge-with-intune) | modified |
+| 6/17/2020 | [Microsoft Edge release notes for Stable Channel](/DeployEdge/microsoft-edge-relnote-stable-channel)<br>Updated to reflect Security Updates (83.0.478.54).  | modified |
+| 6/17/2020 | [Release notes for Microsoft Edge Security Updates](/DeployEdge/microsoft-edge-relnotes-security)<br>Updated for security update to Stable Channel (83.0.478.54). | modified |
+| 6/18/2020 | [Microsoft Edge Browser Policy Documentation](/DeployEdge/microsoft-edge-policies)<br>Added new policies. | modified |
+| 6/19/2020 | [Microsoft Edge and Microsoft Defender Application Guard](/DeployEdge/microsoft-edge-security-windows-defender-application-guard)<br>Add support for identifying container traffic using dual proxy. | modified |
+| 6/19/2020 | [Configure Microsoft Edge policy settings for Windows using Microsoft Intune](/DeployEdge/configure-edge-with-intune)<br>Update process for configuring a policy using Administrative Templates. | modified |
 
 
 ## Week of June 08, 2020
