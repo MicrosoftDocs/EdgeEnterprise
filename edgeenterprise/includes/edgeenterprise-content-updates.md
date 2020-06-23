@@ -3,14 +3,26 @@
 
 
 
+## Week of June 15, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 6/17/2020 | [Microsoft Edge release notes for Stable Channel](/DeployEdge/microsoft-edge-relnote-stable-channel)<br>Updated to reflect Security Updates (83.0.478.54).  | modified |
+| 6/17/2020 | [Release notes for Microsoft Edge Security Updates](/DeployEdge/microsoft-edge-relnotes-security)<br>Updated for security update to Stable Channel (83.0.478.54). | modified |
+| 6/18/2020 | [Microsoft Edge Browser Policy Documentation](/DeployEdge/microsoft-edge-policies)<br>Added new policies. | modified |
+| 6/19/2020 | [Microsoft Edge and Microsoft Defender Application Guard](/DeployEdge/microsoft-edge-security-windows-defender-application-guard)<br>Add support for identifying container traffic using dual proxy. | modified |
+| 6/19/2020 | [Configure Microsoft Edge policy settings for Windows using Microsoft Intune](/DeployEdge/configure-edge-with-intune)<br>Update process for configuring a policy using Administrative Templates. | modified |
+
+
 ## Week of June 08, 2020
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 6/9/2020 | [Allow list for Microsoft Edge endpoints](/DeployEdge/microsoft-edge-security-endpoints)<br>Added endpoints for Sync. | modified |
-| 6/12/2020 | [Microsoft Edge Browser Policy Documentation](/DeployEdge/microsoft-edge-policies)<br>Added new policies. | modified |
-| 6/12/2020 | [Microsoft Edge Update Policy Documentation](/DeployEdge/microsoft-edge-update-policies)<br>Added new policies. | modified |
+| 6/9/2020 | [Allow list for Microsoft Edge endpoints](/DeployEdge/microsoft-edge-security-endpoints) | modified |
+| 6/12/2020 | [Microsoft Edge Browser Policy Documentation](/DeployEdge/microsoft-edge-policies) | modified |
+| 6/12/2020 | [Microsoft Edge Update Policy Documentation](/DeployEdge/microsoft-edge-update-policies) | modified |
 
 
 ## Week of June 01, 2020
@@ -47,15 +59,3 @@
 | 5/21/2020 | [Microsoft Edge release notes for Stable Channel](/DeployEdge/microsoft-edge-relnote-stable-channel) | modified |
 | 5/21/2020 | [Release notes for Microsoft Edge Security Updates](/DeployEdge/microsoft-edge-relnotes-security) | modified |
 | 5/22/2020 | [Microsoft Edge release notes for Stable Channel](/DeployEdge/microsoft-edge-relnote-stable-channel) | modified |
-
-
-## Week of May 11, 2020
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 5/12/2020 | [Microsoft Edge Sync](/DeployEdge/microsoft-edge-enterprise-sync) | modified |
-| 5/13/2020 | [Microsoft Edge privacy policy](/DeployEdge/microsoft-edge-privacy-policy) | modified |
-| 5/13/2020 | [Microsoft Edge Browser Policy Documentation](/DeployEdge/microsoft-edge-policies) | modified |
-| 5/15/2020 | [Microsoft Edge release notes for Beta Channel](/DeployEdge/microsoft-edge-relnote-beta-channel) | modified |
-| 5/15/2020 | [Microsoft Edge Update Policy Documentation](/DeployEdge/microsoft-edge-update-policies) | modified |
