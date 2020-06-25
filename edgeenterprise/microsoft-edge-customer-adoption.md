@@ -14,13 +14,13 @@ description: "Microsoft Edge customer adoption materials"
 
 # Customer adoption materials for Microsoft Edge
 
-To support the deployment and adoption of the new Microsoft Edge, see the collected materials and resources below. A collection zip file is available for download, as well as individual assets that you can download.
+To support the deployment and adoption of the new Microsoft Edge, look at the following collected materials and resources below. You can download a compressed (zip) file of these resources or pick individual assets that you can view or download.
 
 Check back for additional materials as they become available.
 
 ## Customer adoption kit
 
-This zip file contains all the following material:
+The customer adoption kit is available as a zip file that contains all the following material:
 
 - IT Deployment Guide
 - How to Get Started User Guide
