@@ -14424,8 +14424,6 @@ If you disable or don't configure this policy, the Microsoft Edge proxy resolver
 ```
 
 
-  
-
   [Back to top](#microsoft-edge---policies)
 
 
