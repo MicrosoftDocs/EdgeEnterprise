@@ -28,39 +28,39 @@ The customer adoption kit is available as a zip file that contains all the follo
 - Tips & Tricks Email
 - Digital Signage
 
-[Download the customer adoption kit (zip)](https://microsoft.sharepoint.com/teams/CommercialSearchGTM/Shared%20Documents/Forms/AllItems.aspx?id=%2Fteams%2FCommercialSearchGTM%2FShared%20Documents%2FEdge%20GTM%2FContent%2FField%20BOM%2FFinals%2FZipped%20Folder%2FCustomer%20Adoption%20Kit%20%2D%20Microsoft%20Edge%2Ezip&parent=%2Fteams%2FCommercialSearchGTM%2FShared%20Documents%2FEdge%20GTM%2FContent%2FField%20BOM%2FFinals%2FZipped%20Folder&p=true&originalPath=aHR0cHM6Ly9taWNyb3NvZnQuc2hhcmVwb2ludC5jb20vOnU6L3QvQ29tbWVyY2lhbFNlYXJjaEdUTS9FUU5hSFlzNnVxRk1yNUEzUGFDZF90OEJqbHF4WS00RWpwd1N3dzd3ck0tOVNnP3J0aW1lPXl5S1VRVElaMkVn)
+[Download the customer adoption kit (zip)](media/microsoft-edge-customer-adoption/Customer-Adoption-Kit-Microsoft-Edge.zip)
 
 ## IT Deployment Guide
 
 Use this guide to begin planning deployment and learn how to get started deploying Microsoft Edge in your environment.
 
-[Download the IT Deployment Guide](https://microsoft.sharepoint.com/teams/CommercialSearchGTM/Shared%20Documents/Forms/AllItems.aspx?id=%2Fteams%2FCommercialSearchGTM%2FShared%20Documents%2FEdge%20GTM%2FContent%2FField%20BOM%2FFinals%2FGuides%2FDeployment%2FEdge%5FDeployment%5FGuide%5FFinal%5FDelivery%2Fedge%5FDeploymentGuide%5FFinal%2FCommercial%20Deployment%20Guide%20%2D%20Microsoft%20Edge%2Epdf&parent=%2Fteams%2FCommercialSearchGTM%2FShared%20Documents%2FEdge%20GTM%2FContent%2FField%20BOM%2FFinals%2FGuides%2FDeployment%2FEdge%5FDeployment%5FGuide%5FFinal%5FDelivery%2Fedge%5FDeploymentGuide%5FFinal&p=true&originalPath=aHR0cHM6Ly9taWNyb3NvZnQuc2hhcmVwb2ludC5jb20vOmI6L3QvQ29tbWVyY2lhbFNlYXJjaEdUTS9FWDhGVzUxZDVBbERrZnFKOGZwQVpvWUJsa25hM2g1OExDZ2s3NXkwN3JvUWZRP3J0aW1lPVMyLUExRElaMkVn)
+[Download the IT Deployment Guide](media/microsoft-edge-customer-adoption/Commercial-Deployment-Guide-Microsoft-Edge.pdf)
 
 ## How to Get Started User Guide
 
 Use this guide to educate users on the new Microsoft Edge. The guide includes overviews of the UI, menus, and features. We've also included tips to help users get started.
 
-[Download the How to Get Started User Guide](https://microsoft.sharepoint.com/teams/CommercialSearchGTM/Shared%20Documents/Forms/AllItems.aspx?id=%2Fteams%2FCommercialSearchGTM%2FShared%20Documents%2FEdge%20GTM%2FContent%2FField%20BOM%2FFinals%2FGuides%2FEnd%20User%2FMicrosoft%20Edge%5FHow%20To%20Get%20Started%5FUser%20Guide%2Epdf&parent=%2Fteams%2FCommercialSearchGTM%2FShared%20Documents%2FEdge%20GTM%2FContent%2FField%20BOM%2FFinals%2FGuides%2FEnd%20User&p=true&originalPath=aHR0cHM6Ly9taWNyb3NvZnQuc2hhcmVwb2ludC5jb20vOmI6L3QvQ29tbWVyY2lhbFNlYXJjaEdUTS9FZExJaVQ4dFVSQkpoSDBxOU1WZzlDOEJvMVNDR2hKbkpLUWVLdFZzbmJWSXNnP3J0aW1lPTNzdzJQRE1aMkVn)
+[Download the How to Get Started User Guide](media/microsoft-edge-customer-adoption/Microsoft-Edge_How-To-Get-Started_User-Guide.pdf)
 
 ## Email templates
 
 Use these email templates to announce that the new Microsoft Edge is available for users. You can also provide tips and tricks on how to get the most out of the browser.
 
-[Announcement Email](https://microsoft.sharepoint.com/teams/CommercialSearchGTM/Shared%20Documents/Forms/AllItems.aspx?id=%2Fteams%2FCommercialSearchGTM%2FShared%20Documents%2FEdge%20GTM%2FContent%2FField%20BOM%2FFinals%2FEnd%20User%20Adoption%20Kit%2FEmails%2FCommercial%2FCommercial%20Announcement%20Email%20%2D%20Microsoft%20Edge%2Eoft&parent=%2Fteams%2FCommercialSearchGTM%2FShared%20Documents%2FEdge%20GTM%2FContent%2FField%20BOM%2FFinals%2FEnd%20User%20Adoption%20Kit%2FEmails%2FCommercial&p=true&originalPath=aHR0cHM6Ly9taWNyb3NvZnQuc2hhcmVwb2ludC5jb20vOnU6L3QvQ29tbWVyY2lhbFNlYXJjaEdUTS9FUWRXYVhDV0tMTk9za2tBdjBXeVBhZ0JzeG1FZlpYYktueEhiVXhKYUVRUFh3P3J0aW1lPXJxRjkxVGNaMkVn)
+[Announcement Email](media/microsoft-edge-customer-adoption/Commercial-Announcement-Email-Microsoft-Edge.oft)
 
-[Tips & Tricks Email](https://microsoft.sharepoint.com/:u:/t/CommercialSearchGTM/ETwzH5uvQ55MqQ-Rv-F64bABChfLaa056by1Y6myGJhTzg?e=hmFNGl)
+[Tips & Tricks Email](media/microsoft-edge-customer-adoption/Commercial-Tips-and-Tricks-Email1-Microsoft-Edge.oft)
 
 ## Digital Signage
 
 Use the following digital signage to inform users about the new Microsoft Edge.
 
-[Microsoft Edge – Enterprise new tab page](https://microsoft.sharepoint.com/teams/CommercialSearchGTM/Shared%20Documents/Forms/AllItems.aspx?id=%2Fteams%2FCommercialSearchGTM%2FShared%20Documents%2FEdge%20GTM%2FContent%2FField%20BOM%2FFinals%2FEnd%20User%20Adoption%20Kit%2FPosters%2FCommercial%5FPosters%2FPDFs%2FMicrosoft%20Edge%20Digital%20Signage%20%2D%20Enterprise%20New%20Tab%20Page%2Epdf&parent=%2Fteams%2FCommercialSearchGTM%2FShared%20Documents%2FEdge%20GTM%2FContent%2FField%20BOM%2FFinals%2FEnd%20User%20Adoption%20Kit%2FPosters%2FCommercial%5FPosters%2FPDFs&p=true&originalPath=aHR0cHM6Ly9taWNyb3NvZnQuc2hhcmVwb2ludC5jb20vOmI6L3QvQ29tbWVyY2lhbFNlYXJjaEdUTS9FWHNKN1haNWRydEt1X01ZcWlZeGxsY0JIS0FjcHN6MjVCVFVxMG52QmNrbUtBP3J0aW1lPTNBN2pQVGtaMkVn)
+[Microsoft Edge – Enterprise new tab page](media/microsoft-edge-customer-adoption/Microsoft-Edge-Digital-Signage-Enterprise-New-Tab-Page.pdf)
 
-[Microsoft Edge – Multiple Profiles and Cross Platform](https://microsoft.sharepoint.com/teams/CommercialSearchGTM/Shared%20Documents/Forms/AllItems.aspx?id=%2Fteams%2FCommercialSearchGTM%2FShared%20Documents%2FEdge%20GTM%2FContent%2FField%20BOM%2FFinals%2FEnd%20User%20Adoption%20Kit%2FPosters%2FCommercial%5FPosters%2FPDFs%2FMicrosoft%20Edge%20Digital%20Signage%20%2D%20Multiple%20Profiles%20and%20Cross%20Platform%2Epdf&parent=%2Fteams%2FCommercialSearchGTM%2FShared%20Documents%2FEdge%20GTM%2FContent%2FField%20BOM%2FFinals%2FEnd%20User%20Adoption%20Kit%2FPosters%2FCommercial%5FPosters%2FPDFs&p=true&originalPath=aHR0cHM6Ly9taWNyb3NvZnQuc2hhcmVwb2ludC5jb20vOmI6L3QvQ29tbWVyY2lhbFNlYXJjaEdUTS9FVzhVYnVNUDlkRkJyMHBHaVM2T3RkSUJGbldiazViby1iVFR0dGJRVHhQQ0VBP3J0aW1lPXFkSG9YRGtaMkVn)
+[Microsoft Edge – Multiple Profiles and Cross Platform](media/microsoft-edge-customer-adoption/Microsoft-Edge-Digital-Signage-Multiple-Profiles-and-Cross-Platform.pdf)
 
-[Microsoft Edge – Microsoft Search in Bing](https://microsoft.sharepoint.com/teams/CommercialSearchGTM/Shared%20Documents/Forms/AllItems.aspx?id=%2Fteams%2FCommercialSearchGTM%2FShared%20Documents%2FEdge%20GTM%2FContent%2FField%20BOM%2FFinals%2FEnd%20User%20Adoption%20Kit%2FPosters%2FCommercial%5FPosters%2FPDFs%2FMicrosoft%20Edge%20Digital%20Signage%20%2D%20Microsoft%20Search%20in%20Bing%2Epdf&parent=%2Fteams%2FCommercialSearchGTM%2FShared%20Documents%2FEdge%20GTM%2FContent%2FField%20BOM%2FFinals%2FEnd%20User%20Adoption%20Kit%2FPosters%2FCommercial%5FPosters%2FPDFs&p=true&originalPath=aHR0cHM6Ly9taWNyb3NvZnQuc2hhcmVwb2ludC5jb20vOmI6L3QvQ29tbWVyY2lhbFNlYXJjaEdUTS9FYlNmNG5NZ1A0QkltNEdFM084aVlMWUJXS2VHQWVaVkg5YkhTVmJsakdaNGNBP3J0aW1lPWgzQUpmemtaMkVn)
+[Microsoft Edge – Microsoft Search in Bing](media/microsoft-edge-customer-adoption/Microsoft-Edge-Digital-Signage-Microsoft-Search-in-Bing.pdf)
 
-[Microsoft Edge - Security](https://microsoft.sharepoint.com/teams/CommercialSearchGTM/Shared%20Documents/Forms/AllItems.aspx?id=%2Fteams%2FCommercialSearchGTM%2FShared%20Documents%2FEdge%20GTM%2FContent%2FField%20BOM%2FFinals%2FEnd%20User%20Adoption%20Kit%2FPosters%2FCommercial%5FPosters%2FPDFs%2FMicrosoft%20Edge%20Digital%20Signage%20%2D%20Security%2Epdf&parent=%2Fteams%2FCommercialSearchGTM%2FShared%20Documents%2FEdge%20GTM%2FContent%2FField%20BOM%2FFinals%2FEnd%20User%20Adoption%20Kit%2FPosters%2FCommercial%5FPosters%2FPDFs&p=true&originalPath=aHR0cHM6Ly9taWNyb3NvZnQuc2hhcmVwb2ludC5jb20vOmI6L3QvQ29tbWVyY2lhbFNlYXJjaEdUTS9FY1I2RzlBWTdLVkFyRDdvQWJuWTBORUJHZXBvd0JCUG1qRXVaNjhaSll1aW1BP3J0aW1lPXFrR2tvamtaMkVn)
+[Microsoft Edge - Security](media/microsoft-edge-customer-adoption/Microsoft-Edge-Digital-Signage-Security.pdf)
 
 ## Other learning resources
 
