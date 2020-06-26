@@ -3,7 +3,7 @@ title: "Microsoft Edge customer adoption materials"
 ms.author: collw
 author: dan-wesley
 manager: seanlynd
-ms.date: 06/25/2020
+ms.date: 06/26/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -34,7 +34,7 @@ The customer adoption kit is available as a zip file that contains all the follo
 
 Use this guide to begin planning deployment and learn how to get started deploying Microsoft Edge in your environment.
 
-[Download the IT Deployment Guide](media/microsoft-edge-customer-adoption/Commercial-Deployment-Guide-Microsoft-Edge.pdf)
+[Download the IT Deployment Guide](media/microsoft-edge-customer-adoption/commercial-deployment-guide-microsoft-edge.pdf)
 
 ## How to Get Started User Guide
 
