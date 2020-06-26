@@ -40,7 +40,7 @@ Use this guide to begin planning deployment and learn how to get started deployi
 
 Use this guide to educate users on the new Microsoft Edge. The guide includes overviews of the UI, menus, and features. We've also included tips to help users get started.
 
-[Download the How to Get Started User Guide](media/microsoft-edge-customer-adoption/Microsoft-Edge_How-To-Get-Started_User-Guide.pdf)
+[Download the How to Get Started User Guide](media/microsoft-edge-customer-adoption/microsoft-edge-how-to-get-started-user-guide.pdf)
 
 ## Email templates
 
