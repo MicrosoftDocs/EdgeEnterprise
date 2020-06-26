@@ -35,13 +35,13 @@ The customer adoption kit is available as a zip file that contains all the follo
 
 Use this guide to begin planning deployment and learn how to get started deploying Microsoft Edge in your environment.
 
-[Download the IT Deployment Guide](media/customer-adoption-not-md/commercial-deployment-guide-microsoft-edge.pdf)
+[Get the IT Deployment Guide](media/customer-adoption-not-md/commercial-deployment-guide-microsoft-edge.pdf)
 
 ## How to Get Started User Guide
 
 Use this guide to educate users on the new Microsoft Edge. The guide includes overviews of the UI, menus, and features. We've also included tips to help users get started.
 
-[Download the How to Get Started User Guide](media/customer-adoption-not-md/microsoft-edge-how-to-get-started-user-guide.pdf)
+[Get the How to Get Started User Guide](media/customer-adoption-not-md/microsoft-edge-how-to-get-started-user-guide.pdf)
 
 ## Email templates
 
@@ -56,14 +56,13 @@ Use these email templates to announce that the new Microsoft Edge is available f
 
 Use the following digital signage to inform users about the new Microsoft Edge.
 
-<!--
 [Microsoft Edge – Enterprise new tab page](media/customer-adoption-not-md/microsoft-edge-digital-signage-enterprise-new-tab-page.pdf)
 
 [Microsoft Edge – Multiple Profiles and Cross Platform](media/customer-adoption-not-md/microsoft-edge-digital-signage-multiple-profiles-and-cross-platform.pdf)
 
 [Microsoft Edge – Microsoft Search in Bing](media/customer-adoption-not-md/microsoft-edge-digital-signage-microsoft-search-in-bing.pdf)
 
-[Microsoft Edge - Security](media/customer-adoption-not-md/microsoft-edge-digital-signage-security.pdf) -->
+[Microsoft Edge - Security](media/customer-adoption-not-md/microsoft-edge-digital-signage-security.pdf)
 
 ## Other learning resources
 
