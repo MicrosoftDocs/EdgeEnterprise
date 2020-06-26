@@ -48,7 +48,7 @@ Use these email templates to announce that the new Microsoft Edge is available f
 
 [Announcement Email](media/customer-adoption-not-md/commercial-announcement-email-microsoft-edge.oft)
 
-[Tips & Tricks Email](media/customer-adoption-not-md/commercial-tips-and-tricks-email1-microsoft-edge.msg)
+[Tips & Tricks Email](media/customer-adoption-not-md/commercial-tips-and-tricks-email1-microsoft-edge.oft)
 
 ## Digital Signage
 
