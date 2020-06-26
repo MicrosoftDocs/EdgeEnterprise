@@ -44,9 +44,9 @@ Use this guide to educate users on the new Microsoft Edge. The guide includes ov
 
 Use these email templates to announce that the new Microsoft Edge is available for users. You can also provide tips and tricks on how to get the most out of the browser.
 
-[Announcement Email](media/customer-adoption-not-md/commercial-announcement-email-microsoft-edge.oft)
+[Announcement Email](media/customer-adoption-not-md/meet-the-new-microsoft-edge.pdf)
 
-[Tips & Tricks Email](media/customer-adoption-not-md/commercial-tips-and-tricks-email1-microsoft-edge.oft)
+[Tips & Tricks Email](media/customer-adoption-not-md/tips-and-tricks-for-the-new-microsoft-edge.pdf)
 
 ## Digital Signage
 
