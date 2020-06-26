@@ -16,11 +16,15 @@ description: "Microsoft Edge Roadmap"
 
 This article describes the roadmap for Microsoft Edge.
 
-## Roadmap
-
 The web is constantly evolving to improve the user experience, security, and privacy. In some cases, changes are significant enough to impact the functionality of existing webpages.
 
-Visit the [Site compatibility-impacting changes coming to Microsoft Edge](https://docs.microsoft.com/en-us/microsoft-edge/web-platform/site-impacting-changes) site to see the high-impact changes that the Microsoft Edge team is currently tracking. Check back often; the Microsoft Edge team updates this page as timelines solidify and new changes are announced.
+## Roadmap
+
+Microsoft Edge has been added to the M365 Roadmap. Over time, you'll see the Microsoft Edge roadmap fill with more features and it will be added into the Products section soon. In the interim, take a look at what we currently have planned for the remainder of the 2020 calendar year.
+
+### Site compatibility changes
+
+Visit the [Site compatibility-impacting changes coming to Microsoft Edge](https://docs.microsoft.com/microsoft-edge/web-platform/site-impacting-changes) site to see the high-impact changes that the Microsoft Edge team is currently tracking. Check back often; the Microsoft Edge team updates this page as timelines solidify and new changes are announced.
 
 ## See also
 
