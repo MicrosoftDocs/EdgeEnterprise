@@ -27,8 +27,8 @@ The customer adoption kit is available as a zip file that contains all the follo
 - Announcement Email
 - Tips & Tricks Email
 - Digital Signage
-<!-->
-[Download the customer adoption kit (zip)](media/microsoft-edge-customer-adoption/Customer-Adoption-Kit-Microsoft-Edge.zip)-->
+<!--
+[Download the customer adoption kit (zip)](media/microsoft-edge-customer-adoption/Customer-Adoption-Kit-Microsoft-Edge.zip) -->
 
 ## IT Deployment Guide
 
@@ -43,24 +43,24 @@ Use this guide to educate users on the new Microsoft Edge. The guide includes ov
 [Download the How to Get Started User Guide](media/customer-adoption-not-md/microsoft-edge-how-to-get-started-user-guide.pdf)
 
 ## Email templates
-<!-->
+<!--
 Use these email templates to announce that the new Microsoft Edge is available for users. You can also provide tips and tricks on how to get the most out of the browser.
 
 [Announcement Email](media/microsoft-edge-customer-adoption/commercial-announcement-email-microsoft-edge.oft)
 
-[Tips & Tricks Email](media/microsoft-edge-customer-adoption/commercial-tips-and-tricks-email1-microsoft-edge.oft)-->
+[Tips & Tricks Email](media/microsoft-edge-customer-adoption/commercial-tips-and-tricks-email1-microsoft-edge.oft) -->
 
 ## Digital Signage
 
 Use the following digital signage to inform users about the new Microsoft Edge.
-<!-->
+<!--
 [Microsoft Edge – Enterprise new tab page](media/customer-adoption-not-md/microsoft-edge-digital-signage-enterprise-new-tab-page.pdf)
 
 [Microsoft Edge – Multiple Profiles and Cross Platform](media/customer-adoption-not-md/microsoft-edge-digital-signage-multiple-profiles-and-cross-platform.pdf)
 
 [Microsoft Edge – Microsoft Search in Bing](media/customer-adoption-not-md/microsoft-edge-digital-signage-microsoft-search-in-bing.pdf)
 
-[Microsoft Edge - Security](media/customer-adoption-not-md/microsoft-edge-digital-signage-security.pdf)-->
+[Microsoft Edge - Security](media/customer-adoption-not-md/microsoft-edge-digital-signage-security.pdf) -->
 
 ## Other learning resources
 
