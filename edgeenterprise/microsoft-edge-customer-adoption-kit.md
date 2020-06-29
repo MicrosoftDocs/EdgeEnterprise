@@ -3,7 +3,7 @@ title: "Microsoft Edge customer adoption materials"
 ms.author: collw
 author: dan-wesley
 manager: seanlynd
-ms.date: 06/26/2020
+ms.date: 06/29/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -14,7 +14,7 @@ description: "Microsoft Edge customer adoption materials"
 
 # Customer adoption materials for Microsoft Edge
 
-To support the deployment and adoption of the new Microsoft Edge, look at the following collected materials and resources below. You can download a compressed (zip) file of these resources or pick individual assets that you can view or download.
+To support the deployment and adoption of the new Microsoft Edge, look at the following collected materials and resources below.
 
 Check back for additional materials as they become available.
 
@@ -40,13 +40,13 @@ Use this guide to educate users on the new Microsoft Edge. The guide includes ov
 
 [Get the How to Get Started User Guide](media/customer-adoption-not-md/microsoft-edge-how-to-get-started-user-guide.pdf)
 
-## Email templates
+## Email posters
 
-Use these email templates to announce that the new Microsoft Edge is available for users. You can also provide tips and tricks on how to get the most out of the browser.
+Use these email posters to announce that the new Microsoft Edge is available for users. You can also provide tips and tricks on how to get the most out of the browser.
 
-[Announcement Email](media/customer-adoption-not-md/meet-the-new-microsoft-edge.pdf)
+[Announcement Email Poster](media/customer-adoption-not-md/meet-the-new-microsoft-edge.pdf)
 
-[Tips & Tricks Email](media/customer-adoption-not-md/tips-and-tricks-for-the-new-microsoft-edge.pdf)
+[Tips & Tricks Email Poster](media/customer-adoption-not-md/tips-and-tricks-for-the-new-microsoft-edge.pdf)
 
 ## Digital Signage
 
