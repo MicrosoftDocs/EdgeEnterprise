@@ -48,6 +48,9 @@ Use these email posters to announce that the new Microsoft Edge is available for
 
 [Tips & Tricks Email Poster](media/customer-adoption-not-md/tips-and-tricks-for-the-new-microsoft-edge.pdf)
 
+[Tips & Tricks Email Poster](media/customer-adoption-not-md/tips-and-tricks-for-the-new-microsoft-edge.docx)
+
+
 ## Digital Signage
 
 Use the following digital signage to inform users about the new Microsoft Edge.
