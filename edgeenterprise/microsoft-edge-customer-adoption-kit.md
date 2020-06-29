@@ -46,8 +46,6 @@ Use these email posters to announce that the new Microsoft Edge is available for
 
 [Announcement Email Poster](media/customer-adoption-not-md/meet-the-new-microsoft-edge.pdf)
 
-[Announcement Email Template](media/customer-adoption-not-md/meet-the-new-microsoft-edge.oft)
-
 [Tips & Tricks Email Poster](media/customer-adoption-not-md/tips-and-tricks-for-the-new-microsoft-edge.pdf)
 
 ## Digital Signage
