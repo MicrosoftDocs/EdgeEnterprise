@@ -1,4 +1,4 @@
-# last revised 06/26/2020
+# last revised 06/29/2020
 - name: Microsoft Edge documentation 
   href: index.yml
 - name: Microsoft Edge content updates
@@ -19,7 +19,7 @@
 # PLAN
 - name: Plan for Microsoft Edge
   items:
-   - name: Microsoft Edge Roadmap
+   - name: Microsoft Edge Enterprise Roadmap
      href: microsoft-edge-roadmap.md
    - name: Plan your deployment of Microsoft Edge
      href: deploy-edge-plan-deployment.md
