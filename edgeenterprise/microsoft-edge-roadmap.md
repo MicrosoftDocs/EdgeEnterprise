@@ -3,7 +3,7 @@ title: "Microsoft Edge Roadmap"
 ms.author: kvice
 author: dan-wesley
 manager: laurawi
-ms.date: 06/26/2020
+ms.date: 06/29/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -18,7 +18,7 @@ This article describes the roadmap for Microsoft Edge.
 
 ## Roadmap
 
-Microsoft Edge has been added to the [M365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=Microsoft%2CEdge). Over time, you'll see the Microsoft Edge roadmap fill with more features and it will be added into the Products section soon. In the interim, take a look at what we currently have planned for the remainder of the 2020 calendar year.
+Microsoft Edge has been added to the [M365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=Microsoft%2CEdge). Over time, you'll see the Microsoft Edge roadmap fill with more features and you can filter by selecting Microsoft Edge from the Products section. We are working to continuously improve the experience and we welcome your feedback. Take a look at what we currently have planned for the upcoming Microsoft Edge releases. 
 
 ### Site compatibility changes
 
