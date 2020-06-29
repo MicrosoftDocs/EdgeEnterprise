@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Edge Roadmap"
+title: "Microsoft Edge Enterprise Roadmap"
 ms.author: kvice
 author: dan-wesley
 manager: laurawi
@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
-description: "Microsoft Edge Roadmap"
+description: "Microsoft Edge Enterprise Roadmap"
 ---
 
-# Microsoft Edge Roadmap
+# Microsoft Edge Enterprise Roadmap
 
-This article describes the roadmap for Microsoft Edge.
+This article describes the roadmap for Microsoft Edge Enterprise.
 
 ## Roadmap
 
