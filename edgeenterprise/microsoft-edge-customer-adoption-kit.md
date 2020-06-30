@@ -3,7 +3,7 @@ title: "Microsoft Edge customer adoption materials"
 ms.author: collw
 author: dan-wesley
 manager: seanlynd
-ms.date: 06/29/2020
+ms.date: 06/30/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
