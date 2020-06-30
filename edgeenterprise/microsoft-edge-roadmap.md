@@ -1,26 +1,30 @@
 ---
-title: "Microsoft Edge Roadmap"
+title: "Microsoft Edge Enterprise Roadmap"
 ms.author: kvice
 author: dan-wesley
 manager: laurawi
-ms.date: 01/15/2020
+ms.date: 06/29/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
-description: "Microsoft Edge Roadmap"
+description: "Microsoft Edge Enterprise Roadmap"
 ---
 
-# Microsoft Edge Roadmap
+# Microsoft Edge Enterprise Roadmap
 
-This article describes the roadmap for Microsoft Edge.
+This article describes the roadmap for Microsoft Edge Enterprise.
 
 ## Roadmap
 
-| Description | Status | Tags | Release |
-|--|--|--|--|
-| Disallow synchronous XmlHttpRequest in page dismissal<br> <br> Sending of synchronous XmlHttpRequests during unload of a webpage will be removed. This change will improve browser performance and reliability, but may impact web applications that have not yet been updated to use more modern web APIs including sendBeacon and fetch.<br>Group Policy to disable this change and permit synchronous XHR during page dismissal will be available until Edge 88.<br> The current settings is behind a flag. Until enabled-by-default in Edge 82, this change can be previewed by setting edge://flags/#allow-sync-xhr-in-page-dismissal to Disabled.<br>[More information](https://docs.microsoft.com/microsoft-edge/web-platform/site-impacting-changes) | In development      |  Microsoft Edge, SAP    | Edge 82       |
+Microsoft Edge has been added to the [M365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=Microsoft%2CEdge). Over time, you'll see the Microsoft Edge roadmap fill with more features and you can filter by selecting Microsoft Edge from the Products section. We are working to continuously improve the experience and we welcome your feedback. Take a look at what we currently have planned for the upcoming Microsoft Edge releases. 
+
+### Site compatibility changes
+
+The web is constantly evolving to improve the user experience, security, and privacy. In some cases, changes are significant enough to impact the functionality of existing webpages.
+
+Visit the [Site compatibility-impacting changes coming to Microsoft Edge](https://docs.microsoft.com/microsoft-edge/web-platform/site-impacting-changes) site to see the high-impact changes that the Microsoft Edge team is currently tracking. Check back often; the Microsoft Edge team updates this page as timelines solidify and new changes are announced.
 
 ## See also
 
