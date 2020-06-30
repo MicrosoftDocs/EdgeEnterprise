@@ -3,7 +3,7 @@ title: "Blocker Toolkit to disable automatic delivery of Microsoft Edge"
 ms.author: kvice
 author: dan-wesley
 manager: srugh
-ms.date: 02/28/2020
+ms.date: 06/30/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -14,16 +14,17 @@ description: "Blocker Toolkit to disable automatic delivery of Microsoft Edge"
 
 # Blocker Toolkit to disable automatic delivery of Microsoft Edge (Chromium-based)
 
-This article describes the Blocker Toolkit for disabling automatic delivery and installation of Microsoft Edge. This article was updated on **01/09/2020** with more information about devices that might require you to use the Blocker Toolkit and on **2/28/2020** to remove "MDM managed" from the criteria of devices to be excluded from this automatic update.
+This article describes the Blocker Toolkit for disabling automatic delivery and installation of Microsoft Edge. This article was updated on **01/09/2020** with more information about devices that might require you to use the Blocker Toolkit, on **2/28/2020** to remove "MDM managed" from the criteria of devices to be excluded from this automatic update, and on **6/30/2020** to reflect that all Windows Update connected devices are in scope to receive this update (effective no sooner than 7/30/2020).
 
 > [!NOTE]
 > This applies to Microsoft Edge Stable channel.
 
 ## Overview
 
-To help our customers become more secure and up-to-date, Microsoft will distribute Microsoft Edge (Chromium-based) to Home and Pro Edition devices running Windows 10 version 1803 and newer via Windows Update. This process will start after January 15th, 2020 and more information will be available on that date.
+To help our customers become more secure and up-to-date, Microsoft will distribute Microsoft Edge (Chromium-based) to all Windows Update-connected devices running Windows 10 version 1803 and newer. This process will start after January 15th, 2020 and more information will be available on that date.
 
-The Blocker Toolkit is intended for organizations that would like to block automatic delivery of Microsoft Edge (Chromium-based) on devices running Windows 10 version 1803 and newer that are running the Home or Pro Edition of Windows. All other versions and Editions of Windows are excluded from being updated automatically. Devices running Windows 10 Home or Pro Edition that are joined to an Active Directory or Azure Active Directory domain, or are WSUS or WUfB managed, will also be excluded from this automatic update.
+The Blocker Toolkit is intended for organizations that would like to block automatic delivery of Microsoft Edge (Chromium-based) Windows Updated-connected devices running Windows 10 version 1803 and newer.
+Devices that are WSUS or WUfB managed, will be excluded from this automatic update.
 
 **It's important to note that:**
 
@@ -31,6 +32,7 @@ The Blocker Toolkit is intended for organizations that would like to block autom
 - Organizations with updates managed through Windows Update for Business (WUfB) will not automatically receive this update and do not need to deploy the blocker toolkit.
 - Organizations with environments managed with an update management solution such as Windows Server Update Services (WSUS) or System Center Configuration Manager (SCCM) do not have to deploy the Blocker Toolkit. They can use those products to fully manage deployment of updates released through Windows Update and Microsoft Update, including Microsoft Edge (Chromium-based), within their environment.
 - This update is a stand-alone update (not part of the monthly cumulative update) to give Enterprise customers flexibility and maximum control over deploying this update.
+- The new Microsoft Edge (Chromium-based) will be included as part of the Windows 10, version 20H2 feature update in the second half of 2020. The Blocker toolkit does not impact 20H2 behaviors or deployment. See more information about Windows 10, version 20H2 [here](https://blogs.windows.com/windowsexperience/2020/06/16/whats-next-for-windows-10-updates/).
 
 You can download the Blocker Toolkit executable file from [https://msedgeblockertoolkit.blob.core.windows.net/blockertoolkit/MicrosoftEdgeChromiumBlockerToolkit.exe](https://msedgeblockertoolkit.blob.core.windows.net/blockertoolkit/MicrosoftEdgeChromiumBlockerToolkit.exe).
 
