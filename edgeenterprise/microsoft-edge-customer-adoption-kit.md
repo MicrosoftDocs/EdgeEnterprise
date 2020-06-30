@@ -24,8 +24,6 @@ The customer adoption kit contains the following material:
 
 - IT Deployment Guide
 - How to Get Started User Guide
-- Announcement Email
-- Tips & Tricks Email
 - Digital Signage
 
 ## IT Deployment Guide
