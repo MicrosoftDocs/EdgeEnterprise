@@ -40,14 +40,6 @@ Use this guide to educate users on the new Microsoft Edge. The guide includes ov
 
 [Get the How to Get Started User Guide](media/customer-adoption-not-md/microsoft-edge-how-to-get-started-user-guide.pdf)
 
-## Email posters
-
-Use these email posters to announce that the new Microsoft Edge is available for users. You can also provide tips and tricks on how to get the most out of the browser.
-
-[Announcement Email Poster](media/customer-adoption-not-md/meet-the-new-microsoft-edge.pdf)
-
-[Tips & Tricks Email Poster](media/customer-adoption-not-md/tips-and-tricks-for-the-new-microsoft-edge.pdf)
-
 ## Digital Signage
 
 Use the following digital signage to inform users about the new Microsoft Edge.
