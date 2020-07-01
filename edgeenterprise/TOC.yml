@@ -1,4 +1,4 @@
-# last revised 06/30/2020
+# last revised 07/01/2020
 - name: Microsoft Edge documentation 
   href: index.yml
 - name: Microsoft Edge content updates
@@ -10,7 +10,7 @@
      href: microsoft-edge-channels.md
    - name: See what's new
      href: https://www.microsoftedgeinsider.com/whats-new
-   - name: Customer adoption materials for Microsoft Edge
+   - name: Customer adoption materials
      href: microsoft-edge-customer-adoption-kit.md
    - name: Explore documentation resources
      href: https://docs.microsoft.com/microsoft-edge/
