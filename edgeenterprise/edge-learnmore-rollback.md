@@ -1,6 +1,6 @@
 ---
-title: "Microsoft Edge rollback for enterprises "
-ms.author: t-alprz
+title: "Microsoft Edge rollback for enterprises"
+ms.author: v-danwes
 author: dan-wesley
 manager: srugh
 ms.date: 07/02/2020
@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
-description: "Microsoft Edge rollback for enterprises "
+description: "Microsoft Edge rollback for enterprises"
 ---
 
 # Microsoft Edge rollback for enterprises
 
-This article describes a feature named "Rollback to Target Version" that allows enterprise customers to easily revert their version of Microsoft Edge to a previous version.
+This article describes the rollback feature ("Rollback to Target Version") that enables enterprise customers to easily revert their version of Microsoft Edge to a previous version.
 
 ## Introduction to rollback
 
