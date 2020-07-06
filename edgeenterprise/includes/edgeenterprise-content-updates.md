@@ -9,7 +9,7 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 6/30/2020 | [Blocker Toolkit to disable automatic delivery of Microsoft Edge](/DeployEdge/microsoft-edge-blocker-toolkit)<br>Update to supported devices. | modified |
-| 6/30/2020 | [Customer adoption materials for Microsoft Edge](/DeployEdge/microsoft-edge-customer-adoption-kit.md)<br>Collection of customer adoption materials. | new |
+| 6/30/2020 | [Customer adoption materials for Microsoft Edge](https://docs.microsoft.com/DeployEdge/microsoft-edge-customer-adoption-kit)<br>Collection of customer adoption materials. | new |
 | 6/30/2020 | [Microsoft Edge release notes for Stable Channel](/DeployEdge/microsoft-edge-relnote-stable-channel)<br>Update for minor version 83.0.478.58 | modified |
 
 
