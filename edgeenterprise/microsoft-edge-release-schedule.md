@@ -3,7 +3,7 @@ title: "Microsoft Edge release schedule"
 ms.author: aguta
 author: dan-wesley
 manager: srugh
-ms.date: 06/08/2020
+ms.date: 07/09/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -15,8 +15,6 @@ description: "Microsoft Edge release schedule"
 # Microsoft Edge release schedule
 
 This article describes the release cadence and anticipated release schedule for Microsoft Edge.
-
-
 
 ## Release cadence
 
@@ -34,7 +32,7 @@ The following table lists the planned release dates for the Beta and Stable chan
 | Version | Release status | Beta Channel<br>Release week | Stable Channel<br>Release week |
 |---------|-----|------|--------|
 | 81 | Released<br>Version | 02-20-2020<br>[81.0.416.12](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnote-beta-channel#version-81041612-february-20) | 04-13-2020<br>[81.0.416.53](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnote-stable-channel#version-81041653-april-13) |
-| 82 | Cancelled | Cancelled | Cancelled |
+| 82 | Cancelled, see [Update on Stable channel releases for Microsoft Edge](https://blogs.windows.com/msedgedev/2020/03/20/update-stable-channel-releases/) |  |  |
 | **83** | Released<br>Version | 04-22-2020<br>[83.0.478.13](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnote-beta-channel#version-83047813-april-22) | **05-21-2020**<br> **[83.0.478.37](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnote-stable-channel#version-83047837-may-21)** |
 | **84** | Released<br>Version | **06-02-2020**<br> **[84.0.522.11](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnote-beta-channel#version-84052211-june-2)** | To be released week of<br>07-16-2020 |
 | 85 | Target release | Week of 07-27-2020 | Week of 08-27-2020 |
