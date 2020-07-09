@@ -3,7 +3,7 @@ title: "Microsoft Edge rollback for enterprises"
 ms.author: v-danwes
 author: dan-wesley
 manager: srugh
-ms.date: 07/08/2020
+ms.date: 07/09/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
