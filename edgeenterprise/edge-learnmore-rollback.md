@@ -45,7 +45,7 @@ Use the following steps to roll back manually with an MSI.
    > [!NOTE]
    > We recommend that you install the most current Administrative templates. For more information, see [Download and install the Microsoft Edge administrative template](https://docs.microsoft.com/DeployEdge/configure-microsoft-edge#1-download-and-install-the-microsoft-edge-administrative-template).
 
-   - Open the Local Group Policy Editor. *Go to Computer Configuration>Administrative Templates>Microsoft Edge Update>Applications>Microsoft Edge>*.
+   - Open the local Group Policy Editor and go to *Computer Configuration>Administrative Templates>Microsoft Edge Update>Applications>Microsoft Edge>*.
    - Select **Update policy override** and then select **Enabled**.
    - Under **Options**, pick **Update disabled** from the Policy dropdown list.
 
@@ -64,6 +64,53 @@ Use the following steps to roll back manually with an MSI.
 ## Enable rollback with Microsoft Edge update and Group Policy
 
 Use the following steps to enable rollback with Microsoft Edge update and Group Policy.
+
+1. Open the local Group Policy Editor and go to *Computer Configuration>Administrative Templates>Microsoft Edge Update>Applications>Microsoft Edge>*.
+2. Select **Rollback to target version** and then select **Enabled**.
+3. Select **Target version override** and pick the browser version you want to roll back to.
+4. Select **Update policy override** and then select **Enabled**. Under **Options**, pick one of the following options from the Policy dropdown list (except for **Update disabled**):
+
+   - Always allow updates
+   - Automatic silent updates only
+   - Manual updates only  
+
+5. Rollback will happen the next time Microsoft Edge Update checks for an update.
+
+   > [!NOTE]
+   > If you want rollback to happen right away you have to change the Microsoft Edge Update polling interval or enable rollback using an MSI.
+
+### Common rollback errors
+
+The following errors will prevent rollback:
+
+- Input is an unsupported target version
+- Input is a non-existent target version
+- Input is incorrectly formatted
+
+### Recommended Group Policies
+
+The following group policies and settings are highly recommended for using rollback.
+
+#### Sync Group Policies
+
+- ForceSync. Set ForceSync to enabled. This policy will force enable Sync on all Azure Active Directory (Azure AD) users. This policy is only effective for Microsoft Edge versions 86 and later.
+- The *Configure the list of the types that are excluded from synchronization policy* allows admins to control what data can be synced by users.
+
+#### Browser restart Group Policies
+
+We recommend forcing a restart on users after rollback is enabled.
+
+- Enable *Notify a user that a browser restart is recommended or required for pending updates*. Under Options, select **Required**.
+- Enable *Set the time period for update notifications* and then set the desired time in milliseconds.
+
+## Frequently asked questions
+
+### Manual MSI rollback
+
+
+### Microsoft Edge Update and Group Policy rollback
+
+
 
 ## See also
 
