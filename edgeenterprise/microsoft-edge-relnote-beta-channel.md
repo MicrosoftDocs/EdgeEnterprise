@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Beta Channel"
 ms.author: aguta
 author: dan-wesley
 manager: srugh
-ms.date: 06/02/2020
+ms.date: 06/26/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -18,6 +18,22 @@ These release notes provide information about new features and non-security upda
 
 > [!IMPORTANT]
 > Please see this [update on Microsoft Edge channel releases](https://blogs.windows.com/msedgedev/2020/03/20/update-stable-channel-releases/).
+
+## Version 84.0.522.28: June 26
+
+Fixed various bugs and performance issues.
+
+## Version 84.0.522.26: June 24
+
+Fixed various bugs and performance issues.
+
+## Version 84.0.522.20: June 15
+
+Fixed various bugs and performance issues.
+
+## Version 84.0.522.15: June 8
+
+Fixed various bugs and performance issues.
 
 ## Version 84.0.522.11: June 2
 

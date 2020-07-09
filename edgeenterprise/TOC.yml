@@ -1,4 +1,4 @@
-# last revised 06/08/2020
+# last revised 07/01/2020
 - name: Microsoft Edge documentation 
   href: index.yml
 - name: Microsoft Edge content updates
@@ -10,6 +10,8 @@
      href: microsoft-edge-channels.md
    - name: See what's new
      href: https://www.microsoftedgeinsider.com/whats-new
+   - name: Customer adoption materials
+     href: microsoft-edge-customer-adoption-kit.md
    - name: Explore documentation resources
      href: https://docs.microsoft.com/microsoft-edge/
    - name: Microsoft Edge hands-on deployment lab
@@ -19,6 +21,8 @@
 # PLAN
 - name: Plan for Microsoft Edge
   items:
+   - name: Microsoft Edge Enterprise Roadmap
+     href: microsoft-edge-roadmap.md
    - name: Plan your deployment of Microsoft Edge
      href: deploy-edge-plan-deployment.md
    - name: Release information
@@ -87,6 +91,8 @@
 # USE ENTERPRISE FEATURES
 - name: Use Microsoft Edge enterprise features 
   items:
+   - name: Video - Microsoft Edge and Microsoft Search
+     href: microsoft-edge-video-search.md
    - name: Configurations and experimentation
      href: edge-configuration-and-experiments.md
    - name: Identity support and configuration
@@ -155,6 +161,8 @@
         href: edge-learnmore-mixed-content-downloads.md
       - name: Progressive rollouts for Stable channel updates
         href: microsoft-edge-update-progressive-rollout.md
+      - name: Regular Expression 2 (re2.h) syntax
+        href: edge-learnmore-regex.md
       - name: User data directory variables
         href: edge-learnmore-create-user-directory-vars.md
 - name: Frequently asked questions
