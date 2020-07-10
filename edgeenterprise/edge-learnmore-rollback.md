@@ -127,6 +127,43 @@ For more information, see [Windows updates to support the next version of Micros
 
 ### Microsoft Edge Update and Group Policy rollback
 
+#### I set *Rollback to target version*, enabled *Update policy override*, input my desired browser version for *Target version override*, but the browser version wasn't what I expected. What's wrong?
+
+Some common errors that prevent rollback are: 
+<!--
+Target version override is set to an unsupported target version 
+
+Target version override is set to a non-existent target version 
+
+Target version override input is incorrectly formatted 
+
+If Update policy override is set to "Updates disabled", Edge Update will not accept any updates. This will result in rollback not being executed. 
+
+If Rollback to target version is not set, rollback will not be executed. -->
+
+### I set all the group policies correctly, but rollback didn't execute. What happened?
+
+Microsoft Edge Update hasn't run a check for updates yet. By default, auto-update checks for updates every 10 hours.
+<!-->
+You can address this by changing Edge Update's polling interval with the Auto-update check period override group policy. 
+
+For more information visit https://docs.microsoft.com/en-us/deployedge/microsoft-edge-update-policies#autoupdatecheckperiodminutes -->
+
+### As an IT admin, I followed all the steps for rollback correctly. Only a portion of my user group was rolled back. Why haven't the other users been rolled back yet?
+
+The group policy hasn't setting hasn't synced to all the clients yet. When admins set a group policy, clients don't receive these settings instantaneously.
+
+<!--
+You can update all users' group policy with the  
+
+When admins set all users don't get this setting instantaneously 
+
+GP Update force group policy – link to this 
+
+-->
+
+
+
 
 
 ## See also
