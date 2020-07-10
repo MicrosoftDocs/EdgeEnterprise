@@ -3,7 +3,7 @@ title: "Microsoft Edge rollback for enterprises"
 ms.author: v-danwes
 author: dan-wesley
 manager: srugh
-ms.date: 07/09/2020
+ms.date: 07/10/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -59,7 +59,7 @@ Use the following steps to roll back manually with an MSI.
    - Open the Windows command prompt with **Run as administrator**.
    - Type the following command, where: *C:\Users\username\Desktop\test* is the path to the MSI you downloaded, and FileName is the name of the .msi file:<br>
  `C:\Users\username\Desktop\test>msiexec /I FileName.msi ALLOWDOWNGRADE=1`
-   - Close and re-open Microsoft Edge to verify that the rollback worked. Under **Settings and more** (ALT + F) go to **Settings** and select **About Microsoft Edge**.
+   - Close and reopen Microsoft Edge to verify that the rollback worked. Under **Settings and more** (ALT + F), go to **Settings** and select **About Microsoft Edge**.
 
 ## Enable rollback with Microsoft Edge update and Group Policy
 
@@ -107,6 +107,23 @@ We recommend forcing a restart on users after rollback is enabled.
 
 ### Manual MSI rollback
 
+#### What generic MSI failures that can happen?
+
+1. If the Install update group policy is disabled, rollback won't occur.
+
+   - To use rollback, make sure Install is set to **Enabled**. When this policy is disabled, it prevents Microsoft Edge channels from being installed. For more information, see [Install](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies#install).
+
+2. If Enlightenment Updates aren't present, Microsoft Edge installations will be blocked unless *Allow Microsoft Edge Side by Side browser experience* is enabled.
+
+   - For Windows versions 1903 and 1909: If your last update was before October 2019, you may have this issue.
+   - For Windows versions 1709, 1803, and 1809: If your last update was before November 2019, you may have this issue.<br>
+For more information, see [Windows updates to support the next version of Microsoft Edge](https://docs.microsoft.com/deployedge/microsoft-edge-sysupdate-windows-updates)
+
+#### The following error message was shown after using the Command Prompt and rollback didn't occur. What's wrong?
+
+![Rollback status message](./media/edge-learnmore-rollback/edge-rollback-cmd-flag-error.png)
+
+*ALLOWDOWNGRADE=1* was not executed.
 
 ### Microsoft Edge Update and Group Policy rollback
 
