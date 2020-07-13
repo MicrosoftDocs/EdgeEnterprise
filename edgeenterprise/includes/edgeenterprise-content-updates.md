@@ -8,8 +8,17 @@
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 6/30/2020 | [Blocker Toolkit to disable automatic delivery of Microsoft Edge](/DeployEdge/microsoft-edge-blocker-toolkit)<br>Update to supported devices. | modified |
-| 6/30/2020 | [Microsoft Edge release notes for Stable Channel](/DeployEdge/microsoft-edge-relnote-stable-channel)<br>Update for minor version 83.0.478.58 | modified |
+| 7/8/2020 | [Microsoft Edge release notes for Stable Channel](/DeployEdge/microsoft-edge-relnote-stable-channel)<br>Update for minor version 83.0.478.61 | modified |
+| 7/9/2020 | [Microsoft Edge release notes for Beta Channel](/DeployEdge/microsoft-edge-relnote-beta-channel)<br>Update for minor version 84.0.522.35 | modified |
+
+
+## Week of July 06, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 6/30/2020 | [Blocker Toolkit to disable automatic delivery of Microsoft Edge](/DeployEdge/microsoft-edge-blocker-toolkit) | modified |
+| 6/30/2020 | [Microsoft Edge release notes for Stable Channel](/DeployEdge/microsoft-edge-relnote-stable-channel) | modified |
 
 
 ## Week of June 29, 2020
