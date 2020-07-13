@@ -3,7 +3,7 @@ title: "Microsoft Edge rollback for enterprises"
 ms.author: v-danwes
 author: dan-wesley
 manager: srugh
-ms.date: 07/10/2020
+ms.date: 07/13/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -129,29 +129,24 @@ For more information, see [Windows updates to support the next version of Micros
 
 #### I set *Rollback to target version*, enabled *Update policy override*, input my desired browser version for *Target version override*, but the browser version wasn't what I expected. What's wrong?
 
-Some common errors that prevent rollback are: 
-<!--
-Target version override is set to an unsupported target version 
+Some common errors that prevent rollback are:
 
-Target version override is set to a non-existent target version 
+- If Rollback to target version isn't set, rollback will not be executed.
+- There are one of the following issues with the target version override setting:
 
-Target version override input is incorrectly formatted 
+  - Target version override is set to an unsupported target version.
+  - Target version override is set to a non-existent target version.
+  - Target version override input is incorrectly formatted.
 
-If Update policy override is set to "Updates disabled", Edge Update will not accept any updates. This will result in rollback not being executed. 
-
-If Rollback to target version is not set, rollback will not be executed. -->
+- If Update policy override is set to "Updates disabled", Microsoft Edge Update won't accept any updates. This results in rollback not getting executed.
 
 ### I set all the group policies correctly, but rollback didn't execute. What happened?
 
-Microsoft Edge Update hasn't run a check for updates yet. By default, auto-update checks for updates every 10 hours.
-<!-->
-You can address this by changing Edge Update's polling interval with the Auto-update check period override group policy. 
-
-For more information visit https://docs.microsoft.com/en-us/deployedge/microsoft-edge-update-policies#autoupdatecheckperiodminutes -->
+Microsoft Edge Update hasn't run a check for updates yet. By default, auto-update checks for updates every 10 hours. You can fix this by changing Microsoft Edge Update's polling interval with the Auto-update check period override group policy. For more information, see the [AutoUpdateCheckPeriodMinutes](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies#autoupdatecheckperiodminutes) policy.
 
 ### As an IT admin, I followed all the steps for rollback correctly. Only a portion of my user group was rolled back. Why haven't the other users been rolled back yet?
 
-The group policy hasn't setting hasn't synced to all the clients yet. When admins set a group policy, clients don't receive these settings instantaneously.
+The group policy setting hasn't synced to all the clients yet. When admins set a group policy, clients don't receive these settings instantaneously.
 
 <!--
 You can update all users' group policy with the  
