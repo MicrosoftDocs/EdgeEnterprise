@@ -1,9 +1,9 @@
 ---
 title: "Microsoft Edge identity support and configuration"
-ms.author: kvice
+ms.author: avvaid
 author: dan-wesley
 manager: srugh
-ms.date: 05/28/2020
+ms.date: 07/15/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -14,7 +14,7 @@ description: "Microsoft Edge identity support and configuration"
 
 # Microsoft Edge identity support and configuration
 
-This article describes how Microsoft Edge uses identity to support features such as sync and single sign-on (SSO). Microsoft Edge supports signing in with Active Directory Domain Services (AD DS), Azure Active Directory (Azure AD), and Microsoft accounts (MSA).
+This article describes how Microsoft Edge uses identity to support features such as sync and single sign-on (SSO). Microsoft Edge supports signing in with Active Directory Domain Services (AD DS), Azure Active Directory (Azure AD), and Microsoft accounts (MSA). Currently, Microsoft Edge only supports Azure Active Directory (Azure AD) accounts belonging to the global cloud or the GCC sovereign cloud. We are working on adding support for other sovereign clouds.
 
 > [!NOTE]
 > This applies  to Microsoft Edge version 77 or later.
