@@ -15,6 +15,7 @@ description: "Documentation for all policies supported by the Microsoft Edge Upd
 
 # Microsoft Edge - Update policies
 The latest version of Microsoft Edge includes the following policies that you can use to control how and when Microsoft Edge is updated.
+Update policies (except Allowsxs) are available only on Windows instances that are joined to a Microsoft Active Directory domain or Windows 10 Pro or Enterprise instances enrolled for device management.
 
 		   
 For information about other policies available in Microsoft Edge, check out [Microsoft Edge browser policy reference](microsoft-edge-policies.md)
