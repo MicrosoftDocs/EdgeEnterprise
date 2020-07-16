@@ -21,10 +21,10 @@ This article describes the Blocker Toolkit for disabling automatic delivery and 
 
 ## Overview
 
-To help our customers become more secure and up-to-date, Microsoft will distribute Microsoft Edge (Chromium-based) to all Windows Update-connected devices running Windows 10 version 1803 and newer. This process will start after January 15th, 2020 and more information will be available on that date.
+To help our customers become more secure and up-to-date, Microsoft will distribute Microsoft Edge (Chromium-based) to all Windows Update-connected devices running Windows 10 version 1803 and newer. This process will start after January 15, 2020 and more information will be available on that date.
 
-The Blocker Toolkit is intended for organizations that would like to block automatic delivery of Microsoft Edge (Chromium-based) Windows Updated-connected devices running Windows 10 version 1803 and newer.
-Devices that are WSUS or WUfB managed, will be excluded from this automatic update.
+The Blocker Toolkit is intended for organizations that would like to block automatic delivery of Microsoft Edge (Chromium-based) to Windows Updated-connected devices running Windows 10 version 1803 and newer.
+Devices that are Windows Server Update Services (WSUS) or Windows Update for Business (WUfB) managed will be excluded from this automatic update.
 
 **It's important to note that:**
 

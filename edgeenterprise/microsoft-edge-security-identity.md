@@ -1,9 +1,9 @@
 ---
 title: "Microsoft Edge identity support and configuration"
-ms.author: kvice
+ms.author: avvaid
 author: dan-wesley
 manager: srugh
-ms.date: 05/28/2020
+ms.date: 07/15/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
