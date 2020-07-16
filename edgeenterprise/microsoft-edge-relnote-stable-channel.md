@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Stable Channel"
 ms.author: aguta
 author: dan-wesley
 manager: srugh
-ms.date: 07/14/2020
+ms.date: 07/16/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -21,6 +21,8 @@ These release notes provide information about new features and non-security upda
 
 <!-- Begin 84 -->
 ## Version 84.0.999.99: July 16
+
+Security updates are listed [here](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnotes-security#july-16-2020)
 
 ### Feature updates
 
