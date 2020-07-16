@@ -57,7 +57,7 @@ Security updates are listed [here](https://docs.microsoft.com/DeployEdge/microso
 
 - Microsoft Edge now enables Translation in the Immersive Reader. When a user opens the Immersive Reader view, they get the option to translate the page to their desired language.
 
-- DevTools supports customizing keyboard shortcuts to match your editor/IDE, which includes VS Code. For more details, see [What's New In DevTools (Microsoft Edge 84)](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/whats-new/2020/05/devtools).
+- Several DevTools updates, including support for customizing keyboard shortcuts to match VS Code and viewing the DevTools in high contrast.  For more details, see [What's New In DevTools (Microsoft Edge 84)](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/whats-new/2020/05/devtools).
 
 ### Policy updates
 
