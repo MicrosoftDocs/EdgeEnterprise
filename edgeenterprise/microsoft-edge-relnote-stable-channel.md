@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Stable Channel"
 ms.author: aguta
 author: dan-wesley
 manager: srugh
-ms.date: 07/16/2020
+ms.date: 07/20/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
