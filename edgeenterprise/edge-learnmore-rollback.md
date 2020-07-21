@@ -3,7 +3,7 @@ title: "Microsoft Edge rollback for enterprises"
 ms.author: v-danwes
 author: dan-wesley
 manager: srugh
-ms.date: 07/13/2020
+ms.date: 07/21/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -58,7 +58,9 @@ Use the following steps to roll back manually with an MSI.
 
    - Open the Windows command prompt with **Run as administrator**.
    - Type the following command, where: *C:\Users\username\Desktop\test* is the path to the MSI you downloaded, and FileName is the name of the .msi file:<br>
- `C:\Users\username\Desktop\test>msiexec /I FileName.msi ALLOWDOWNGRADE=1`
+ `C:\Users\username\Desktop\test>msiexec /I FileName.msi /qn ALLOWDOWNGRADE=1`<br>
+     > [!NOTE]
+     > For more information about msiexec, see [msiexec](https://docs.microsoft.com/windows-server/administration/windows-commands/msiexec).
    - Close and reopen Microsoft Edge to verify that the rollback worked. Under **Settings and more** (ALT + F), go to **Settings** and select **About Microsoft Edge**.
 
 ## Enable rollback with Microsoft Edge update and Group Policy
