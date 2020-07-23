@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation"
 ms.author: stmoody
 author: brianalt-msft
 manager: tahills
-ms.date: 06/23/2020
+ms.date: 07/15/2020
 audience: ITPro
 ms.topic: reference
 ms.prod: microsoft-edge
@@ -121,7 +121,7 @@ These tables list all of the browser-related group policies available in this re
 |Policy Name|Caption|
 |-|-|
 |[PasswordManagerEnabled](#passwordmanagerenabled)|Enable saving passwords to the password manager|
-|[PasswordMonitorAllowed](#passwordmonitorallowed)|Allow Microsoft Edge to monitor user passwords|
+|[PasswordMonitorAllowed](#passwordmonitorallowed)|Allow users to be alerted if their passwords are found to be unsafe|
 |[PasswordProtectionChangePasswordURL](#passwordprotectionchangepasswordurl)|Configure the change password URL|
 |[PasswordProtectionLoginURLs](#passwordprotectionloginurls)|Configure the list of enterprise login URLs where the password protection service should capture salted hashes of a password|
 |[PasswordProtectionWarningTrigger](#passwordprotectionwarningtrigger)|Configure password protection warning trigger|
@@ -159,6 +159,7 @@ These tables list all of the browser-related group policies available in this re
 |[NewTabPageHideDefaultTopSites](#newtabpagehidedefaulttopsites)|Hide the default top sites from the new tab page|
 |[NewTabPageLocation](#newtabpagelocation)|Configure the new tab page URL|
 |[NewTabPageManagedQuickLinks](#newtabpagemanagedquicklinks)|Set new tab page quick links|
+|[NewTabPagePrerenderEnabled](#newtabpageprerenderenabled)|Enable preload of the new tab page for faster rendering|
 |[NewTabPageSetFeedType](#newtabpagesetfeedtype)|Configure the Microsoft Edge new tab page experience|
 |[RestoreOnStartup](#restoreonstartup)|Action to take on startup|
 |[RestoreOnStartupURLs](#restoreonstartupurls)|Sites to open when the browser starts|
@@ -184,6 +185,7 @@ These tables list all of the browser-related group policies available in this re
 |[AudioCaptureAllowedUrls](#audiocaptureallowedurls)|Sites that can access audio capture devices without requesting permission|
 |[AudioSandboxEnabled](#audiosandboxenabled)|Allow the audio sandbox to run|
 |[AutoImportAtFirstRun](#autoimportatfirstrun)|Automatically import another browser's data and settings at first run|
+|[AutoLaunchProtocolsFromOrigins](#autolaunchprotocolsfromorigins)|Define a list of protocols that can launch an external application from listed origins without prompting the user|
 |[AutoOpenAllowedForURLs](#autoopenallowedforurls)|URLs where AutoOpenFileTypes can apply|
 |[AutoOpenFileTypes](#autoopenfiletypes)|List of file types that should be automatically opened on download|
 |[AutofillAddressEnabled](#autofilladdressenabled)|Enable AutoFill for addresses|
@@ -229,9 +231,10 @@ These tables list all of the browser-related group policies available in this re
 |[EdgeCollectionsEnabled](#edgecollectionsenabled)|Enable the Collections feature|
 |[EditFavoritesEnabled](#editfavoritesenabled)|Allows users to edit favorites|
 |[EnableDeprecatedWebPlatformFeatures](#enabledeprecatedwebplatformfeatures)|Re-enable deprecated web platform features for a limited time|
-|[EnableDomainActionsDownload](#enabledomainactionsdownload)|Enable Domain Actions Download from Microsoft (deprecated)|
+|[EnableDomainActionsDownload](#enabledomainactionsdownload)|Enable Domain Actions Download from Microsoft (obsolete)|
 |[EnableOnlineRevocationChecks](#enableonlinerevocationchecks)|Enable online OCSP/CRL checks|
 |[EnterpriseHardwarePlatformAPIEnabled](#enterprisehardwareplatformapienabled)|Allow managed extensions to use the Enterprise Hardware Platform API|
+|[ExemptDomainFileTypePairsFromFileTypeDownloadWarnings](#exemptdomainfiletypepairsfromfiletypedownloadwarnings)|Disable download file type extension-based warnings for specified file types on domains|
 |[ExperimentationAndConfigurationServiceControl](#experimentationandconfigurationservicecontrol)|Control communication with the Experimentation and Configuration Service|
 |[ExternalProtocolDialogShowAlwaysOpenCheckbox](#externalprotocoldialogshowalwaysopencheckbox)|Show an "Always open" checkbox in external protocol dialog|
 |[FamilySafetySettingsEnabled](#familysafetysettingsenabled)|Allow users to configure Family safety|
@@ -262,6 +265,7 @@ These tables list all of the browser-related group policies available in this re
 |[ImportSearchEngine](#importsearchengine)|Allow importing of search engine settings|
 |[ImportShortcuts](#importshortcuts)|Allow importing of shortcuts|
 |[InPrivateModeAvailability](#inprivatemodeavailability)|Configure InPrivate mode availability|
+|[IntensiveWakeUpThrottlingEnabled](#intensivewakeupthrottlingenabled)|Control the IntensiveWakeUpThrottling feature|
 |[InternetExplorerIntegrationEnhancedHangDetection](#internetexplorerintegrationenhancedhangdetection)|Configure enhanced hang detection for Internet Explorer mode|
 |[InternetExplorerIntegrationLevel](#internetexplorerintegrationlevel)|Configure Internet Explorer integration|
 |[InternetExplorerIntegrationSiteList](#internetexplorerintegrationsitelist)|Configure the Enterprise Mode Site List|
@@ -291,6 +295,8 @@ These tables list all of the browser-related group policies available in this re
 |[RequireOnlineRevocationChecksForLocalAnchors](#requireonlinerevocationchecksforlocalanchors)|Specify if online OCSP/CRL checks are required for local trust anchors|
 |[ResolveNavigationErrorsUseWebService](#resolvenavigationerrorsusewebservice)|Enable resolution of navigation errors using a web service|
 |[RestrictSigninToPattern](#restrictsignintopattern)|Restrict which accounts can be used as Microsoft Edge primary accounts|
+|[RoamingProfileLocation](#roamingprofilelocation)|Set the roaming profile directory|
+|[RoamingProfileSupportEnabled](#roamingprofilesupportenabled)|Enable using roaming copies for Microsoft Edge profile data|
 |[RunAllFlashInAllowMode](#runallflashinallowmode)|Extend Adobe Flash content setting to all content|
 |[SSLErrorOverrideAllowed](#sslerroroverrideallowed)|Allow users to proceed from the HTTPS warning page|
 |[SSLVersionMin](#sslversionmin)|Minimum TLS version enabled|
@@ -327,7 +333,7 @@ These tables list all of the browser-related group policies available in this re
 |[WPADQuickCheckEnabled](#wpadquickcheckenabled)|Set WPAD optimization|
 |[WebAppInstallForceList](#webappinstallforcelist)|Configure list of force-installed Web Apps|
 |[WebComponentsV0Enabled](#webcomponentsv0enabled)|Re-enable Web Components v0 API until M84 (obsolete)|
-|[WebDriverOverridesIncompatiblePolicies](#webdriveroverridesincompatiblepolicies)|Allow WebDriver to Override Incompatible Policies (deprecated)|
+|[WebDriverOverridesIncompatiblePolicies](#webdriveroverridesincompatiblepolicies)|Allow WebDriver to Override Incompatible Policies (obsolete)|
 |[WebRtcLocalIpsAllowedUrls](#webrtclocalipsallowedurls)|Manage exposure of local IP addressess by WebRTC|
 |[WebRtcLocalhostIpHandling](#webrtclocalhostiphandling)|Restrict exposure of local IP address by WebRTC|
 |[WebRtcUdpPortRange](#webrtcudpportrange)|Restrict the range of local UDP ports used by WebRTC|
@@ -1708,7 +1714,7 @@ SOFTWARE\Policies\Microsoft\Edge\LegacySameSiteCookieBehaviorEnabledForDomainLis
   #### Description
   Allows you to create a list of url patterns to specify sites that are allowed to display notifications.
 
-If you don't set this policy, the global default value will be used for all sites. This default value will be from the [DefaultNotificationsSetting](#defaultnotificationssetting) policy if it's set, or from the user's personal configuration. For detailed information on valid url patterns, see https://cloud.google.com/docs/chrome-enterprise/policies/url-patterns.
+If you don't set this policy, the global default value will be used for all sites. This default value will be from the [DefaultNotificationsSetting](#defaultnotificationssetting) policy if it's set, or from the user's personal configuration. For detailed information on valid url patterns, see [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322).
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -1760,7 +1766,7 @@ SOFTWARE\Policies\Microsoft\Edge\NotificationsAllowedForUrls\2 = [*.]contoso.edu
   #### Description
   Allows you to create a list of url patterns to specify sites that are not allowed to display notifications.
 
-If you don't set this policy, the global default value will be used for all sites. This default value will be from the [DefaultNotificationsSetting](#defaultnotificationssetting) policy if it's set, or from the user's personal configuration. For detailed information on valid url patterns, see https://cloud.google.com/docs/chrome-enterprise/policies/url-patterns.
+If you don't set this policy, the global default value will be used for all sites. This default value will be from the [DefaultNotificationsSetting](#defaultnotificationssetting) policy if it's set, or from the user's personal configuration. For detailed information on valid url patterns, see [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322).
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -2169,7 +2175,7 @@ SOFTWARE\Policies\Microsoft\Edge\WebUsbAllowDevicesForUrls = [
 
 If you don't configure this policy, the global default value from the [DefaultWebUsbGuardSetting](#defaultwebusbguardsetting) policy (if set) or the user's personal configuration is used for all sites.
 
-The URL patterns defined in this policy can't conflict with those configured in the [WebUsbBlockedForUrls](#webusbblockedforurls) policy - you can't both allow and block a URL.
+The URL patterns defined in this policy can't conflict with those configured in the [WebUsbBlockedForUrls](#webusbblockedforurls) policy - you can't both allow and block a URL. For detailed information on valid url patterns, please see [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322)
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -2223,7 +2229,7 @@ SOFTWARE\Policies\Microsoft\Edge\WebUsbAskForUrls\2 = [*.]contoso.edu
 
 If you don't configure this policy, the global default value from the [DefaultWebUsbGuardSetting](#defaultwebusbguardsetting) policy (if set) or the user's personal configuration is used for all sites.
 
-URL patterns in this policy can't conflict with those configured in the [WebUsbAskForUrls](#webusbaskforurls) policy. You can't both allow and block a URL.
+URL patterns in this policy can't conflict with those configured in the [WebUsbAskForUrls](#webusbaskforurls) policy. You can't both allow and block a URL.  For detailed information on valid url patterns, see [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322).
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -3814,17 +3820,33 @@ If you enable or disable this policy, users can't change or override it in Micro
   [Back to top](#microsoft-edge---policies)
 
   ### PasswordMonitorAllowed
-  #### Allow Microsoft Edge to monitor user passwords
+  #### Allow users to be alerted if their passwords are found to be unsafe
   
   #### Supported versions:
-  - On Windows and macOS since 85 or later
+  - On Windows since 85 or later
 
   #### Description
-  If you enable this policy and a user consents to enabling the policy, the user will get alerted if any of their passwords stored in Microsoft Edge are found to be unsafe. Microsoft Edge will show an alert and this information will also be available in Settings > Passwords > Password Monitor.
+  Allow Microsoft Edge to monitor user passwords.
 
-If you disable this policy, users will not be asked for permission to enable this feature and will not be alerted. Their passwords will not be scanned.
+If you enable this policy and a user consents to enabling the policy, the user will get alerted if any of their passwords stored in Microsoft Edge are found to be unsafe. Microsoft Edge will show an alert and this information will also be available in Settings > Passwords > Password Monitor.
 
-If you disable this policy, users can't change or override the policy. However, if you enable or don't configure the policy, users can turn this feature on or off.
+If you disable this policy, users will not be asked for permission to enable this feature. Their passwords will not be scanned and they will not be alerted either.
+
+If you enable or don't configure the policy, users can turn this feature on or off.
+
+To learn more about how Microsoft Edge finds unsafe passwords see [https://go.microsoft.com/fwlink/?linkid=2133833](https://go.microsoft.com/fwlink/?linkid=2133833)
+
+Additional guidance:
+
+This policy can be set as both Recommended as well as Mandatory, however with an important callout.
+
+Mandatory enabled: Given that individual user consent is a pre-condition to enabling this feature for a given user, this policy does not have a Mandatory enabled setting. If the policy is set to Mandatory enabled, the UI in Settings will not change and the following error message will be displayed in edge://policy
+
+Example Error state message: "This policy value is ignored because Password Monitor requires the consent of the individual user for it to be turned on. You can ask users in your Organization to go to Settings > Profile > Password and turn on the feature."
+
+Recommended enabled: If the policy is set to Recommended enabled, the UI in Settings will remain in 'Off' state, but a briefcase icon will be made visible next to it with this description displayed on hover - "Your organization recommends a specific value for this setting and you have chosen a different value"
+
+Mandatory and Recommended disabled: Both these states will work the normal way, with the usual captions being shown to users.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -3837,7 +3859,7 @@ If you disable this policy, users can't change or override the policy. However, 
   #### Windows information and settings
   ##### Group Policy (ADMX) info
   - GP unique name: PasswordMonitorAllowed
-  - GP name: Allow Microsoft Edge to monitor user passwords
+  - GP name: Allow users to be alerted if their passwords are found to be unsafe
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/Password manager and protection
   - GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)/Password manager and protection
   - GP ADMX file name: MSEdge.admx
@@ -3852,12 +3874,12 @@ If you disable this policy, users can't change or override the policy. However, 
 ```
 
 
-  #### Mac information and settings
-  - Preference Key Name: PasswordMonitorAllowed
-  - Example value:
-``` xml
-<true/>
-```
+								   
+											   
+				  
+	   
+	   
+   
   
 
   [Back to top](#microsoft-edge---policies)
@@ -5307,6 +5329,51 @@ SOFTWARE\Policies\Microsoft\Edge\NewTabPageManagedQuickLinks = [
 
   [Back to top](#microsoft-edge---policies)
 
+  ### NewTabPagePrerenderEnabled
+  #### Enable preload of the new tab page for faster rendering
+  
+  #### Supported versions:
+  - On Windows and macOS since 85 or later
+
+  #### Description
+  If you configure this policy, preloading the New tab page is enabled, and users can't change this setting. If you don't configure this policy, preloading is enabled and a user can change this setting.
+
+  #### Supported features:
+  - Can be mandatory: Yes
+  - Can be recommended: Yes
+  - Dynamic Policy Refresh: Yes
+
+  #### Data Type:
+  - Boolean
+
+  #### Windows information and settings
+  ##### Group Policy (ADMX) info
+  - GP unique name: NewTabPagePrerenderEnabled
+  - GP name: Enable preload of the new tab page for faster rendering
+  - GP path (Mandatory): Administrative Templates/Microsoft Edge/Startup, home page and new tab page
+  - GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)/Startup, home page and new tab page
+  - GP ADMX file name: MSEdge.admx
+  ##### Windows Registry Settings
+  - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
+  - Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended
+  - Value Name: NewTabPagePrerenderEnabled
+  - Value Type: REG_DWORD
+  ##### Example value:
+```
+0x00000001
+```
+
+
+  #### Mac information and settings
+  - Preference Key Name: NewTabPagePrerenderEnabled
+  - Example value:
+``` xml
+<true/>
+```
+  
+
+  [Back to top](#microsoft-edge---policies)
+
   ### NewTabPageSetFeedType
   #### Configure the Microsoft Edge new tab page experience
   
@@ -6457,7 +6524,7 @@ Note: For more details on what is imported from Google Chrome, please see [https
 
 If this policy is set to the value of Safari (3), user data is no longer imported into Microsoft Edge. This is due to the way Full Disk Access works on Mac.
 On macOS Mojave and above, it's no longer possible to have automated and unattended import of Safari data into Microsoft Edge.
-	
+ 
 
 Starting with Microsoft Edge version 83, if this policy is set to the value of Mozilla Firefox (5), the following datatypes will be imported from Mozilla Firefox:
 1. Favorites or bookmarks
@@ -6498,6 +6565,114 @@ If you want to restrict specific datatypes from getting imported on the managed 
   - Example value:
 ``` xml
 <integer>2</integer>
+```
+  
+
+  [Back to top](#microsoft-edge---policies)
+
+  ### AutoLaunchProtocolsFromOrigins
+  #### Define a list of protocols that can launch an external application from listed origins without prompting the user
+  
+  #### Supported versions:
+  - On Windows and macOS since 85 or later
+
+  #### Description
+  Allows you to set a list of protocols, and for each protocol an associated list of allowed origin patterns, that can launch an external application without prompting the user. The trailing separator should not be included when listing the protocol. For example, list "skype" instead of "skype:" or "skype://".
+
+If you configure this policy, a protocol will only be permitted to launch an external application without prompting by policy if:
+
+- the protocol is listed
+
+- the origin of the site trying to launch the protocol matches one of the origin patterns in that protocol's allowed_origins list.
+
+If either condition is false, the external protocol launch prompt will not be omitted by policy.
+
+If you don't configure this policy, no protocols can launch without a prompt. Users can opt out of prompts on a per-protocol/per-site basis unless the [ExternalProtocolDialogShowAlwaysOpenCheckbox](#externalprotocoldialogshowalwaysopencheckbox) policy is set to Disabled. This policy has no impact on per-protocol/per-site prompt exemptions set by users.
+
+The origin matching patterns use a similar format to those for the [URLBlocklist](#urlblocklist) policy, which are documented at [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322).
+
+However, origin matching patterns for this policy cannot contain "/path" or "@query" elements. Any pattern that does contain a "/path" or "@query" element will be ignored.
+
+  #### Supported features:
+  - Can be mandatory: Yes
+  - Can be recommended: No
+  - Dynamic Policy Refresh: Yes
+
+  #### Data Type:
+  - Dictionary
+
+  #### Windows information and settings
+  ##### Group Policy (ADMX) info
+  - GP unique name: AutoLaunchProtocolsFromOrigins
+  - GP name: Define a list of protocols that can launch an external application from listed origins without prompting the user
+  - GP path (Mandatory): Administrative Templates/Microsoft Edge/
+  - GP path (Recommended): N/A
+  - GP ADMX file name: MSEdge.admx
+  ##### Windows Registry Settings
+  - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
+  - Path (Recommended): N/A
+  - Value Name: AutoLaunchProtocolsFromOrigins
+  - Value Type: REG_SZ
+  ##### Example value:
+```
+SOFTWARE\Policies\Microsoft\Edge\AutoLaunchProtocolsFromOrigins = [
+  {
+    "allowed_origins": [
+      "example.com", 
+      "http://www.example.com:8080"
+    ], 
+    "protocol": "spotify"
+  }, 
+  {
+    "allowed_origins": [
+      "https://example.com", 
+      "https://.mail.example.com"
+    ], 
+    "protocol": "teams"
+  }, 
+  {
+    "allowed_origins": [
+      "*"
+    ], 
+    "protocol": "outlook"
+  }
+]
+```
+
+
+  #### Mac information and settings
+  - Preference Key Name: AutoLaunchProtocolsFromOrigins
+  - Example value:
+``` xml
+<key>AutoLaunchProtocolsFromOrigins</key>
+<array>
+  <dict>
+    <key>allowed_origins</key>
+    <array>
+      <string>example.com</string>
+      <string>http://www.example.com:8080</string>
+    </array>
+    <key>protocol</key>
+    <string>spotify</string>
+  </dict>
+  <dict>
+    <key>allowed_origins</key>
+    <array>
+      <string>https://example.com</string>
+      <string>https://.mail.example.com</string>
+    </array>
+    <key>protocol</key>
+    <string>teams</string>
+  </dict>
+  <dict>
+    <key>allowed_origins</key>
+    <array>
+      <string>*</string>
+    </array>
+    <key>protocol</key>
+    <string>outlook</string>
+  </dict>
+</array>
 ```
   
 
@@ -6583,6 +6758,8 @@ File types that a user has already specified to automatically be opened will con
 If you don't set this policy, only file types that a user has already specified to automatically be opened will do so when downloaded.
 
 For this policy to apply on Windows devices, the device must either be joined to a Microsoft Active Directory domain, or be a Windows 10 Pro or Enterprise instance that is enrolled for device management.
+
+For this policy to apply on macOS devices, the device must either be managed via MDM, or be joined to a domain via MCX.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -8013,11 +8190,11 @@ If you disable this policy, DNS interception checks aren't performed.
   #### Description
   Configures the default browser checks in Microsoft Edge and prevents users from changing them.
 
-If you enable this policy, Microsoft Edge always checks on startup whether it is the default browser and automatically registers itself, if possible.
+If you set this policy to True, Microsoft Edge always checks whether it's the default browser on startup and, if possible, automatically registers itself.
 
-If you disable this policy, Microsoft Edge never checks and disables user controls for setting this option.
+If you set this policy to False, Microsoft Edge is stopped from ever checking if it's the default and turns user controls off for this option.
 
-If you don't configure this policy, Microsoft Edge lets the user control whether it's the default browser and whether to show user notifications when it isn't.
+If you don't set this policy, Microsoft Edge lets users control whether it's the default and, if not, whether user notifications should appear.
 
 Note for Windows administrators: This policy only works for PCs running Windows 7. For later versions of Windows, you have to deploy a "default application associations" file that makes Microsoft Edge the handler for the https and http protocols (and, optionally, the ftp protocol and file formats such as .html, .htm, .pdf, .svg, .webp). See [https://go.microsoft.com/fwlink/?linkid=2094932](https://go.microsoft.com/fwlink/?linkid=2094932) for more information.
 
@@ -8845,6 +9022,7 @@ SOFTWARE\Policies\Microsoft\Edge\EnableDeprecatedWebPlatformFeatures\1 = Example
   ### EnableDomainActionsDownload
   #### Enable Domain Actions Download from Microsoft (Obsolete)
   >OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 84.
+																					  
   
   #### Supported versions:
   - On Windows and macOS since 77, until 84
@@ -8991,6 +9169,77 @@ This policy also applies to component extensions.
   - Example value:
 ``` xml
 <true/>
+```
+  
+
+  [Back to top](#microsoft-edge---policies)
+
+  ### ExemptDomainFileTypePairsFromFileTypeDownloadWarnings
+  #### Disable download file type extension-based warnings for specified file types on domains
+  
+  #### Supported versions:
+  - On Windows and macOS since 85 or later
+
+  #### Description
+  You can enable this policy to create a dictionary of file type extensions with a corresponding list of domains that will be exempted from file type extension-based download warnings. This lets enterprise administrators block file type extension-based download warnings for files that are associated with a listed domain. For example, if  the "jnlp" extension is associated with "website1.com", users would not see a warning when downloading "jnlp" files from "website1.com", but see a download warning when downloading "jnlp" files from "website2.com".
+
+Files with file type extensions specified for domains identified by this policy will still be subject to non-file type extension-based security warnings such as mixed-content download warnings and Microsoft Defender SmartScreen warnings.
+
+If you disable this policy or don't configure it, file types that trigger extension-based download warnings will show warnings to the user.
+
+If you enable this policy:
+
+* The URL pattern should be formatted according to [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322).
+* The file type extension entered must be in lower-cased ASCII. The leading separator should not be included when listing the file type extension, so list "jnlp" should be used instead of ".jnlp".
+
+Example:
+
+The following example value would prevent file type extension-based download warnings on swf, exe, and jnlp extensions for *.contoso.com domains. It will show the user a file type extension-based download warning on any other domain for exe and jnlp files, but not for swf files.
+
+[
+  { "file_extension": "jnlp", "domains": ["contoso.com"] },
+  { "file_extension": "exe", "domains": ["contoso.com"] },
+  { "file_extension": "swf", "domains": ["*"] }
+]
+
+Note that while the preceding example shows the suppression of file type extension-based download warnings for "swf" files for all domains, applying suppression of such warnings for all domains for any dangerous file type extension is not recommended due to security concerns. It is shown in the example merely to demonstrate the ability to do so.
+
+  #### Supported features:
+  - Can be mandatory: Yes
+  - Can be recommended: No
+  - Dynamic Policy Refresh: Yes
+
+  #### Data Type:
+  - List of strings
+
+  #### Windows information and settings
+  ##### Group Policy (ADMX) info
+  - GP unique name: ExemptDomainFileTypePairsFromFileTypeDownloadWarnings
+  - GP name: Disable download file type extension-based warnings for specified file types on domains
+  - GP path (Mandatory): Administrative Templates/Microsoft Edge/
+  - GP path (Recommended): N/A
+  - GP ADMX file name: MSEdge.admx
+  ##### Windows Registry Settings
+  - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\ExemptDomainFileTypePairsFromFileTypeDownloadWarnings
+  - Path (Recommended): N/A
+  - Value Name: 1, 2, 3, ...
+  - Value Type: list of REG_SZ
+  ##### Example value:
+```
+SOFTWARE\Policies\Microsoft\Edge\ExemptDomainFileTypePairsFromFileTypeDownloadWarnings\1 = {'domains': ['https://contoso.com', 'contoso2.com'], 'file_extension': 'jnlp'}
+SOFTWARE\Policies\Microsoft\Edge\ExemptDomainFileTypePairsFromFileTypeDownloadWarnings\2 = {'domains': ['*'], 'file_extension': 'swf'}
+
+```
+
+
+  #### Mac information and settings
+  - Preference Key Name: ExemptDomainFileTypePairsFromFileTypeDownloadWarnings
+  - Example value:
+``` xml
+<array>
+  <string>{'domains': ['https://contoso.com', 'contoso2.com'], 'file_extension': 'jnlp'}</string>
+  <string>{'domains': ['*'], 'file_extension': 'swf'}</string>
+</array>
 ```
   
 
@@ -9481,6 +9730,7 @@ This enterprise policy is disabled by default.
   #### Force networking code to run in the browser process (obsolete)
   >OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 83.
 																					  
+					   
   
   #### Supported versions:
   - On Windows since 78, until 83
@@ -9495,7 +9745,7 @@ This policy is disabled by default. If enabled, users are open to security issue
 
  
 
-		
+  
   #### Supported features:
   - Can be mandatory: Yes
   - Can be recommended: No
@@ -10613,6 +10863,60 @@ Set this policy to 'Forced' (2) to always use InPrivate mode.
 
   [Back to top](#microsoft-edge---policies)
 
+  ### IntensiveWakeUpThrottlingEnabled
+  #### Control the IntensiveWakeUpThrottling feature
+  
+  #### Supported versions:
+  - On Windows and macOS since 85 or later
+
+  #### Description
+  When enabled the IntensiveWakeUpThrottling feature causes Javascript timers in background tabs to be aggressively throttled and coalesced, running no more than once per minute after a page has been backgrounded for 5 minutes or more.
+
+This is a web standards compliant feature, but it may break functionality on some websites by causing certain actions to be delayed by up to a minute. However, it results in significant CPU and battery savings when enabled. See https://bit.ly/30b1XR4 for more details.
+
+If you enable this policy, the feature will be force enabled, and users will not be able to override this setting.
+If you disable this policy, the feature will be force disabled, and users will not be able to override this setting.
+If you don't configure this policy, the feature will be controlled by its own internal logic. Users can manually configure this setting.
+
+Note that the policy is applied per renderer process, with the most recent value of the policy setting in force when a renderer process starts. A full restart is required to ensure that all the loaded tabs receive a consistent policy setting. It is harmless for processes to be running with different values of this policy.
+
+
+  #### Supported features:
+  - Can be mandatory: Yes
+  - Can be recommended: No
+  - Dynamic Policy Refresh: Yes
+
+  #### Data Type:
+  - Boolean
+
+  #### Windows information and settings
+  ##### Group Policy (ADMX) info
+  - GP unique name: IntensiveWakeUpThrottlingEnabled
+  - GP name: Control the IntensiveWakeUpThrottling feature
+  - GP path (Mandatory): Administrative Templates/Microsoft Edge/
+  - GP path (Recommended): N/A
+  - GP ADMX file name: MSEdge.admx
+  ##### Windows Registry Settings
+  - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
+  - Path (Recommended): N/A
+  - Value Name: IntensiveWakeUpThrottlingEnabled
+  - Value Type: REG_DWORD
+  ##### Example value:
+```
+0x00000001
+```
+
+
+  #### Mac information and settings
+  - Preference Key Name: IntensiveWakeUpThrottlingEnabled
+  - Example value:
+``` xml
+<true/>
+```
+  
+
+  [Back to top](#microsoft-edge---policies)
+
   ### InternetExplorerIntegrationEnhancedHangDetection
   #### Configure enhanced hang detection for Internet Explorer mode
   
@@ -11297,11 +11601,11 @@ Enable this policy to send reporting of usage and crash-related data to Microsof
 On Windows 10, if you don't configure this policy, Microsoft Edge will default to the Windows diagnostic data setting. If you enable this policy, Microsoft Edge will only send usage data if the Windows Diagnostic data setting is set to Enhanced or Full. If you disable this policy, Microsoft Edge will not send usage data. Crash-related data is sent based on the Windows Diagnostic data setting. Learn more about Windows Diagnostic data settings at [https://go.microsoft.com/fwlink/?linkid=2099569](https://go.microsoft.com/fwlink/?linkid=2099569)
 
 
-											
+		   
 On Windows 7, 8, and macOS, this policy controls sending usage and crash-related data. If you don't configure this policy, Microsoft Edge will default to the user's preference.
 
 
-		
+  
   #### Supported features:
   - Can be mandatory: Yes
   - Can be recommended: No
@@ -11579,7 +11883,7 @@ If you want to configure browser sign in, use the [BrowserSignin](#browsersignin
    
   
 
-			 
+	
   [Back to top](#microsoft-edge---policies)
 
   ### OverrideSecurityRestrictionsOnInsecureOrigin
@@ -12274,6 +12578,108 @@ If you don't configure this policy or leave it blank, users can set any account 
 
   [Back to top](#microsoft-edge---policies)
 
+  ### RoamingProfileLocation
+  #### Set the roaming profile directory
+  
+  #### Supported versions:
+  - On Windows and macOS since 85 or later
+
+  #### Description
+  Configures the directory to use to store the roaming copy of profiles.
+
+If you enable this policy, Microsoft Edge uses the provided directory to store a roaming copy of the profiles, as long as you've also enabled the [RoamingProfileSupportEnabled](#roamingprofilesupportenabled) policy. If you disable the [RoamingProfileSupportEnabled](#roamingprofilesupportenabled) policy or don't configure it, the value stored in this policy isn't used.
+
+See [https://go.microsoft.com/fwlink/?linkid=2095041](https://go.microsoft.com/fwlink/?linkid=2095041) for a list of variables you can use.
+
+If you don't configure this policy, the default roaming profile path is used.
+
+  #### Supported features:
+  - Can be mandatory: Yes
+  - Can be recommended: No
+  - Dynamic Policy Refresh: No - Requires browser restart
+
+  #### Data Type:
+  - String
+
+  #### Windows information and settings
+  ##### Group Policy (ADMX) info
+  - GP unique name: RoamingProfileLocation
+  - GP name: Set the roaming profile directory
+  - GP path (Mandatory): Administrative Templates/Microsoft Edge/
+  - GP path (Recommended): N/A
+  - GP ADMX file name: MSEdge.admx
+  ##### Windows Registry Settings
+  - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
+  - Path (Recommended): N/A
+  - Value Name: RoamingProfileLocation
+  - Value Type: REG_SZ
+  ##### Example value:
+```
+${roaming_app_data}\edge-profile
+```
+
+
+  #### Mac information and settings
+  - Preference Key Name: RoamingProfileLocation
+  - Example value:
+``` xml
+<string>${roaming_app_data}\edge-profile</string>
+```
+  
+
+  [Back to top](#microsoft-edge---policies)
+
+  ### RoamingProfileSupportEnabled
+  #### Enable using roaming copies for Microsoft Edge profile data
+  
+  #### Supported versions:
+  - On Windows and macOS since 85 or later
+
+  #### Description
+  Enable this policy to use roaming profiles on Windows. The settings stored in Microsoft Edge profiles (favorites and preferences) are also saved to a file stored in the Roaming user profile folder (or the location specified by the administrator through the [RoamingProfileLocation](#roamingprofilelocation) policy). Enabling this policy disables cloud sync.
+
+If you disable this policy or don't configure it, only the regular local profiles are used.
+
+The [SyncDisabled](#syncdisabled) policy disables all data synchronization, overriding policy.
+
+See https://docs.microsoft.com/windows-server/storage/folder-redirection/deploy-roaming-user-profiles for more information on using roaming user profiles.
+
+  #### Supported features:
+  - Can be mandatory: Yes
+  - Can be recommended: No
+  - Dynamic Policy Refresh: No - Requires browser restart
+
+  #### Data Type:
+  - Boolean
+
+  #### Windows information and settings
+  ##### Group Policy (ADMX) info
+  - GP unique name: RoamingProfileSupportEnabled
+  - GP name: Enable using roaming copies for Microsoft Edge profile data
+  - GP path (Mandatory): Administrative Templates/Microsoft Edge/
+  - GP path (Recommended): N/A
+  - GP ADMX file name: MSEdge.admx
+  ##### Windows Registry Settings
+  - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
+  - Path (Recommended): N/A
+  - Value Name: RoamingProfileSupportEnabled
+  - Value Type: REG_DWORD
+  ##### Example value:
+```
+0x00000001
+```
+
+
+  #### Mac information and settings
+  - Preference Key Name: RoamingProfileSupportEnabled
+  - Example value:
+``` xml
+<true/>
+```
+  
+
+  [Back to top](#microsoft-edge---policies)
+
   ### RunAllFlashInAllowMode
   #### Extend Adobe Flash content setting to all content
   
@@ -12722,13 +13128,13 @@ SOFTWARE\Policies\Microsoft\Edge\SecurityKeyPermitAttestation\1 = https://contos
   This policy enables sending info about websites visited in Microsoft Edge to Microsoft to improve services like search.
 
 
-															
+			   
 Enable this policy to send info about websites visited in Microsoft Edge to Microsoft. Disable this policy to not send info about websites visited in Microsoft Edge to Microsoft. In both cases, users can't change or override the setting.
 
 On Windows 10, if you don't configure this policy, Microsoft Edge will default to the Windows diagnostic data setting. If this policy is enabled Microsoft Edge will only send info about websites visited in Microsoft Edge if the Windows Diagnostic data setting is set to Full. If this policy is disabled Microsoft Edge will not send info about websites visited. Learn more about Windows Diagnostic data settings: [https://go.microsoft.com/fwlink/?linkid=2099569](https://go.microsoft.com/fwlink/?linkid=2099569)
 
 
-										   
+			 
 On Windows 7, 8, and Mac this policy controls sending info about websites visited. If you don't configure this policy, Microsoft Edge will default to the user's preference.
 
   #### Supported features:
@@ -13081,7 +13487,7 @@ If you set the policy to false, auto upgrades will be disabled for audio and vid
 This policy does not affect other types of mixed content other than audio, video, and images.
 
 
-		
+  
   #### Supported features:
   - Can be mandatory: Yes
   - Can be recommended: No
@@ -13175,7 +13581,7 @@ If this policy is false or unset, the warnings will appear on such unsupported c
   Disables data synchronization in Microsoft Edge. This policy also prevents the sync consent prompt from appearing.
 
 
-											  
+			 
 If you don't set this policy or apply it as recommended, users will be able to turn sync on or off. If you apply this policy as mandatory, users will not be able to turn sync on.
 
   #### Supported features:
@@ -14113,6 +14519,7 @@ SOFTWARE\Policies\Microsoft\Edge\WebAppInstallForceList = [
   ### WebComponentsV0Enabled
   #### Re-enable Web Components v0 API until M84 (obsolete)  
   >OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 84.
+																					  
   
   #### Supported versions:
   - On Windows and macOS since 80, until 84
@@ -14163,6 +14570,7 @@ If you set this policy to False or don't set this policy, the Web Components v0 
   ### WebDriverOverridesIncompatiblePolicies
   #### Allow WebDriver to Override Incompatible Policies (obsolete)
   >OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 84.
+																					  
   
   #### Supported versions:
   - On Windows and macOS since 77, until 84
@@ -14423,6 +14831,8 @@ If you disable or don't configure this policy, the Microsoft Edge proxy resolver
 0x00000001
 ```
 
+
+  
 
   [Back to top](#microsoft-edge---policies)
 
