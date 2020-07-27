@@ -19,30 +19,29 @@ These release notes provide information about new features and non-security upda
 > [!IMPORTANT]
 > Please see this [update on Microsoft Edge channel releases](https://blogs.windows.com/msedgedev/2020/03/20/update-stable-channel-releases/).
 
-
 <!--- BEGIN 85 ---->
 ## Version 85.0.522.99: July 27
 
 ### Feature updates
 
-- On-premise synchronization of favorites and settings. You can now synchronize browser favorites and settings between Active Directory profiles within your own environment without the need for cloud sync.
+- **On-premise synchronization of favorites and settings**. You can now synchronize browser favorites and settings between Active Directory profiles within your own environment without the need for cloud sync.
 
-- Internet Explorer mode.
+- **Internet Explorer mode update**.
 
    - Microsoft Edge group policy support for trusting site + app combos to launch without a confirmation prompt. Group policy support added that lets administrators add site + app combos that are trusted to launch without the confirmation prompt. This adds the ability for administrators to configure trusted protocol/origin combinations (such as Microsoft 365 apps) for their end-users to suppress the confirmation prompt when navigating to a URL that contains an app protocol.
 
-- PDF Highlighter tool. This tool can be added to the toolbar for PDFs to easily highlight important text.
+- **PDF Highlighter tool**. This tool can be added to the toolbar for PDFs to easily highlight important text.
 
-- Support for the AV1 codec for HTML videos. The AV1 media format offers improved quality with better bandwidth efficiency. Microsoft Edge now can play back AV1-encoded content.
+- **Support for the AV1 codec for HTML videos**. The AV1 media format offers improved quality with better bandwidth efficiency. Microsoft Edge now can play back AV1-encoded content.
 
-- The Storage Access API is now available. The Storage Access API allows access to first-party storage in a third-party context when a user has provided a direct intent to allow storage that would otherwise be blocked by the browser's current configuration. For more information, see [Storage Access API](https://www.chromestatus.com/feature/5612590694662144).
+- **The Storage Access API is now available**. The Storage Access API allows access to first-party storage in a third-party context when a user has provided a direct intent to allow storage that would otherwise be blocked by the browser's current configuration. For more information, see [Storage Access API](https://www.chromestatus.com/feature/5612590694662144).
 
-- Send to OneNote is now available for Microsoft Edge Collections. Everyone's excited to be able to send the information they've gathered in Collections to OneNote, where they can append it to a larger project and collaborate with others! And even more importantly, in Microsoft Edge 85, you'll be able send content to *Office for Mac* products (Word, Excel, and OneNote) for both MSA and Azure Active Directory.
+- **Send to OneNote is now available for Microsoft Edge Collections**. Everyone's excited to be able to send the information they've gathered in Collections to OneNote, where they can append it to a larger project and collaborate with others! And even more importantly, in Microsoft Edge 85, you'll be able send content to *Office for Mac* products (Word, Excel, and OneNote) for both MSA and Azure Active Directory.
 
-- Several DevTools updates. For more details, see [What's New In DevTools (Microsoft Edge 85)](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools). The following updates are included with this release:
+- **DevTools updates**.  The following updates are included with this release:
 
-   - Microsoft Edge DevTools now supports Surface Duo emulation. The Microsoft Edge DevTools can emulate the Surface Duo so you can test how your web content will look on dual-screen devices. To turn on this experiment in DevTools, enter Device Mode by pressing **Ctrl+Shift+M** on Windows or **Command+Shift+M** on macOS, and then select **Surface Duo** from the device drop-down.
-   - Microsoft Edge DevTools lets you match keyboard shortcuts to VS Code. The Microsoft Edge DevTools now support customizing keyboard shortcuts in the DevTools to match  your editor/IDE. In Microsoft Edge 85, we are adding the ability to match DevTools keyboard shortcuts to VS Code. This change will help increase productively across VS Code and DevTools.
+   - Microsoft Edge DevTools now supports Surface Duo emulation. The Microsoft Edge DevTools can emulate the Surface Duo so you can test how your web content will look on dual-screen devices. To turn on this experiment in DevTools, enter Device Mode by pressing Ctrl+Shift+M* on Windows or Command+Shift+M on macOS, and then select Surface Duo from the device drop-down.
+   - Microsoft Edge DevTools lets you match keyboard shortcuts to VS Code. The Microsoft Edge DevTools now support customizing keyboard shortcuts in the DevTools to match  your editor/IDE. In Microsoft Edge 85, we are adding the ability to match DevTools keyboard shortcuts to VS Code. This change will help increase productively across VS Code and DevTools.<br> For more details, see [What's New In DevTools (Microsoft Edge 85)](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools).
 
 ### Policy updates
 
