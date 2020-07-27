@@ -9,7 +9,7 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 7/23/2020 | [Microsoft Edge release notes for Stable Channel](/DeployEdge/microsoft-edge-relnote-stable-channel)<br>Minor update (84.0.522.44) to fix bugs and performance issues. | modified |
-| 7/23/2020 | [Microsoft Edge release schedule](/DeployEdge/microsoft-edge-release/schedule)<br>Release schedule for Microsoft Edge Beta and Stable channels. | New
+| 7/23/2020 | [Microsoft Edge release schedule](https://docs.microsoft.com/DeployEdge/microsoft-edge-release-schedule)<br>Release schedule for Microsoft Edge Beta and Stable channels. | New
 | 7/24/2020 | [Microsoft Edge Browser Policy Documentation](/DeployEdge/microsoft-edge-policies)<br>Add new policies. | modified |
 | 7/24/2020 | [Microsoft Edge customer adoption materials](/DeployEdge/microsoft-edge-customer-adoption-kit)<br>Minor update to fix link issues. | modified |
 
