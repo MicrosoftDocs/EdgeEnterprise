@@ -112,6 +112,11 @@ Because Microsoft Edge is Chromium-based, users can expect the same level of rel
 
 ## Deploy and update PDF reader
 
+The PDF reader gets deployed and updated with the rest of the Microsoft Edge browser. To learn more about deploying Microsoft Edge, go to the [Microsoft Edge documentation](https://docs.microsoft.com/DeployEdge/) landing page.
+
+> [!TIP]
+> You can make Microsoft Edge the default PDF reader for your organization. To do this, [follow these steps](https://docs.microsoft.com/deployedge/edge-default-browser).
+
 ## Roadmap and feedback
 
 The roadmap for PDF Reader in Microsoft Edge is available [here](https://techcommunity.microsoft.com/t5/articles/roadmap-for-pdf-reader-in-microsoft-edge/m-p/1467667).
