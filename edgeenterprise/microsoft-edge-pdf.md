@@ -21,12 +21,35 @@ Microsoft Edge comes with a built-in PDF reader that lets you open your local pd
 > [!NOTE]
 > This article applies to Microsoft Edge version 77 or later.
 
+## Prerequisites, support, and constraints
+
+The following table shows which channels and versions of Microsoft Edge support each PDF reader feature.
+
+| Feature | Stable channel version |
+|---------|------------------------|
+| View and print local, online, and embedded PDF files | 79.0.309.71                |
+| Basic form filling<br>(JavaScript forms aren't supported) | 79.0.309.71           |
+| Inking  | 80.0.361.48            |
+| Ink customization | 83.0.478.54  |
+| Highlight  | 81.0.416.53         |
+| Read Aloud | Currently being promoted in [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/) channels |
+| View MIP protected files | Windows support in 80.0.361.48<br>Mac support in 81.0.416.53 |
+|  View IRM protected files  | 83.0.478.37            |
+
+### Constraints
+
+Note the following constraints for the current PDF reader:
+
+-  XML Forms Architecture (XFA), is a legacy format of forms that isn't  supported in Microsoft Edge.
+-  Documentation related to Accessibility scenarios that currently aren't supported can be found on the [Microsoft Accessibility Conformance Reports](https://cloudblogs.microsoft.com/industry-blog/government/2018/09/11/accessibility-conformance-reports/) blog.
+
 ## Features
 
 ### Inking
 
 Inking on PDF files comes in handy to take quick notes for easy reference, sign, or fill out PDF forms. This capability is now available in Microsoft Edge where not only can you ink PDF files when needed, you can also use color and stroke width to bring attention to different parts of the PDF file.
-<!-- screenshot -->
+
+<!-- SCREENSHOT -->
 
 ### Highlight
 
@@ -34,13 +57,58 @@ PDF reader in Microsoft Edge comes with support for adding and editing highlight
 
 ### Read Aloud
 
+Read Aloud for PDF adds the convenience of listening to PDF content while carrying out other tasks that may be important to users. It also helps auditory learners focus on the content which makes learning much easier. 
+
 ### Protected PDFs
 
-### Accessibility
+[Microsoft Information Protection (MIP)](https://docs.microsoft.com/microsoft-365/compliance/protect-information?view=o365-worldwide) enables users to collaborate with others securely, while adhering to your organization's compliance policies. After a file is protected, the actions users can take on it are determined by the permissions assigned to them.
 
-## Support and constraints
+These files can be opened directly in the browser, without the need to download any other software, or install any add in. This integrates the security provided by MIP directly into the browser, providing a seamless workflow.
+
+In addition to MIP protected files, PDF files in [Information Rights Management (IRM)](https://docs.microsoft.com/microsoft-365/compliance/set-up-irm-in-sp-admin-center?view=o365-worldwide) protected SharePoint libraries can also be opened natively in the browser.
+
+<!-- SCREENSHOT -->
+
+With Microsoft Edge, users can view MIP protected files saved locally, or in the cloud. If saved locally, the file can be opened directly in the browser. If the file is opened from a cloud service as SharePoint, the user may need to use the "Open in browser" option.
+
+If the profile that the user is logged into Microsoft Edge with has at least view permissions to the file, the file will open in Microsoft Edge.
+
+<!-- SCREENSHOT -->
+
+## Accessibility
+
+The PDF reader comes with support for Keyboard accessibility, High contrast mode, and screen reader support across Windows and macOS devices.
+
+### Keyboard Accessibility
+
+Users can use navigate to different parts of the document that a user can interact with, such as form fields and highlights, using the keyboard.
+
+<!-- SCREENSHOT -->
+
+### High contrast mode
+
+PDF reader will use the settings defined at the operating system level to render PDF content in high contrast mode.
+
+<!-- SCREENSHOT -->
+
+### Screen reader support
+
+Users can navigate through and read PDF files using screen readers on Windows and Mac computers.
+
+<!-- SCREENSHOT -->
 
 ## Security and reliability
+
+Security is among the most important tenets for any organization. PDF reader security is an integral part of the Microsoft Edge security design. Two of the most important security features From a PDF reader perspective, two important security features are process isolation and Microsoft Defender Application Guard (Application Guard).
+
+- Process isolation. PDFs opened from different web sites are completely process isolated. This means that they do not talk to any websites, or PDF files opened from another source. This helps keeps PDF browsing secure from any attacks planning to use compromised PDFs as an attack surface.
+
+- Application Guard. With Application Guard, admins can set a list of sites that are trusted by their organization. If users open any other sites, they are opened in a separate Application Guard window which runs in its own container. This helps protects the corporate network and any data on user's computer from being compromised.<br><br>
+This protection also applies to any online PDF files that are viewed. Further, any PDF files that are downloaded from an Application Guard window are stored, and when needed, re-opened in the container. This helps keeps your environment secure not just when the file is downloaded, but through its whole lifecycle. For more information, see [Application Guard](https://docs.microsoft.com/DeployEdge/microsoft-edge-security-windows-defender-application-guard).
+
+### Reliability
+
+Because Microsoft Edge is Chromium-based, users can expect the same level of reliability that they're used to seeing in Google Chrome.
 
 ## Deploy and update PDF reader
 
