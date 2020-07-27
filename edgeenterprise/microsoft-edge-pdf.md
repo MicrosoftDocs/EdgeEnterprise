@@ -3,7 +3,7 @@ title: "PDF in Microsoft Edge"
 ms.author: collw
 author: dan-wesley
 manager: seanlynd
-ms.date: 07/23/2020
+ms.date: 07/27/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -25,7 +25,12 @@ Microsoft Edge comes with a built-in PDF reader that lets you open your local pd
 
 ### Inking
 
+Inking on PDF files comes in handy to take quick notes for easy reference, sign, or fill out PDF forms. This capability is now available in Microsoft Edge where not only can you ink PDF files when needed, you can also use color and stroke width to bring attention to different parts of the PDF file.
+<!-- screenshot -->
+
 ### Highlight
+
+PDF reader in Microsoft Edge comes with support for adding and editing highlights. To create a highlight, the user simply needs to select the text, right click on it, select highlights in the menu and choose the desired color.
 
 ### Read Aloud
 
