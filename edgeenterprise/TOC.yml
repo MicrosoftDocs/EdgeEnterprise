@@ -1,4 +1,4 @@
-# last revised 07/23/2020
+# last revised 07/28/2020
 - name: Microsoft Edge documentation 
   href: index.yml
 - name: Microsoft Edge content updates
@@ -119,7 +119,9 @@
         href: edge-ie-mode-faq.md
 # SECURITY AND PRIVACY
 - name: Microsoft Edge Security
-  items:     
+  items:
+   - name: Video - Security, compatibility, and manageability
+     href: microsoft-edge-security-compatibility-manageability.md     
    - name: Security overview
      href: security-overview.md
    - name: Allow list for Microsoft Edge endpoints

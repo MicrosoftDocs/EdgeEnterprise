@@ -3,7 +3,7 @@ title: "Microsoft Edge security, compatibility, and manageability"
 ms.author: collw
 author: dan-wesley
 manager: seanlynd
-ms.date: 07/27/2020
+ms.date: 07/28/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
