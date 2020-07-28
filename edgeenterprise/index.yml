@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: dan-wesley #Required; your GitHub user alias, with correct capitalization.
   ms.author: kvice #Required; microsoft alias of author; optional team alias.
-  ms.date: 06/15/2020 #Required; mm/dd/yyyy format.
+  ms.date: 07/28/2020 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -63,6 +63,8 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
+          - text: Video - Security, compatibility, and manageability
+            url: microsoft-edge-video-security-compatibility-manageability.md
           - text: Security
             url: security-overview.md
           - text: Privacy
