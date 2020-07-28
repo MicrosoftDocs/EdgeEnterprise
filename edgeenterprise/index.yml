@@ -64,7 +64,7 @@ landingContent:
       - linkListType: concept
         links:
           - text: Video - Security, compatibility, and manageability
-            url: microsoft-edge-security-compatibility-manageability.md
+            url: microsoft-edge-video-security-compatibility-manageability.md
           - text: Security
             url: security-overview.md
           - text: Privacy
