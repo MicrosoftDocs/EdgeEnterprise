@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Beta Channel"
 ms.author: aguta
 author: dan-wesley
 manager: srugh
-ms.date: 07/28/2020
+ms.date: 07/29/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -31,8 +31,6 @@ These release notes provide information about new features and non-security upda
    - Microsoft Edge group policy support for trusting site + app combos to launch without a confirmation prompt. Group policy support added that lets administrators add site + app combos that are trusted to launch without the confirmation prompt. This adds the ability for administrators to configure trusted protocol/origin combinations (such as Microsoft 365 apps) for their end-users to suppress the confirmation prompt when navigating to a URL that contains an app protocol.
 
 - **PDF Highlighter tool**. This tool can be added to the toolbar for PDFs to easily highlight important text.
-
-- **Support for the AV1 codec for HTML videos**. The AV1 media format offers improved quality with better bandwidth efficiency. Microsoft Edge now can play back AV1-encoded content.
 
 - **The Storage Access API is available**. The Storage Access API allows access to first-party storage in a third-party context when a user has provided a direct intent to allow storage that would otherwise be blocked by the browser's current configuration. For more information, see [Storage Access API](https://www.chromestatus.com/feature/5612590694662144).
 
