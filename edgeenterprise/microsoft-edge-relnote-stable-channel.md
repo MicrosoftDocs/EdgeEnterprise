@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Stable Channel"
 ms.author: aguta
 author: dan-wesley
 manager: srugh
-ms.date: 07/20/2020
+ms.date: 07/28/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -19,7 +19,15 @@ These release notes provide information about new features and non-security upda
 > [!NOTE]
 > For the Stable Channel, updates will roll out progressively over one or more days. To learn more, see [Progressive rollouts for Microsoft Edge updates](microsoft-edge-update-progressive-rollout.md).
 
-<!-- Begin 84 -->
+## Version 84.0.522.48: July 28
+
+Fixed various bugs and performance issues.
+
+## Version 84.0.522.44: July 23
+
+Fixed various bugs and performance issues.
+
+<!-- begin 84 -->
 ## Version 84.0.522.40: July 16
 
 Security updates are listed [here](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnotes-security#july-16-2020)
@@ -44,11 +52,11 @@ Security updates are listed [here](https://docs.microsoft.com/DeployEdge/microso
 
 - Additional Microsoft Edge API support:
 
-  - The Storage Access API. This API allows access to first-party storage in a third-party context when a user provides a direct intent to allow storage that would otherwise be blocked by the browser's current configuration. <!-- For more information about this API, see [Storage Access API](https://github.com/privacycg/storage-access).-->
+  - The Storage Access API. This API allows access to first-party storage in a third-party context when a user provides a direct intent to allow storage that would otherwise be blocked by the browser's current configuration.
 
     As privacy is becoming increasingly important to users, requests for stricter browser defaults and user opt-in settings like blocking all third-party storage access are increasingly common. While these settings help improve privacy and block unwanted access by unknown or untrusted parties, they can have unwanted side effects such as blocking access to content the user may want to view (for example, social media and embedded media content.)
 
-  - The Native File System API, which means you can give sites permissions to edit files or folders via the Native File System API. <!--For more information about this API, see [Native File System API](https://github.com/WICG/native-file-system).-->
+  - The Native File System API, which means you can give sites permissions to edit files or folders via the Native File System API. 
 
 - PDF improvements:
 

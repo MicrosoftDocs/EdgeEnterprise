@@ -44,9 +44,9 @@ Use the following digital signage to inform users about the new Microsoft Edge.
 
 [Microsoft Edge – Enterprise new tab page](media/customer-adoption-not-md/microsoft-edge-digital-signage-enterprise-new-tab-page.pdf)
 
-[Microsoft Edge – Multiple Profiles and Cross Platform](media/customer-adoption-not-md/microsoft-edge-digital-signage-multiple-profiles-and-cross-platform.pdf)
+[Microsoft Edge – Multiple Profiles and Cross Platform](https://officedocs-cdn.azureedge.net/microsoft-edge-digital-signage-multiple-profiles-and-cross-platform.pdf)
 
-[Microsoft Edge – Microsoft Search in Bing](media/customer-adoption-not-md/microsoft-edge-digital-signage-microsoft-search-in-bing.pdf)
+[Microsoft Edge – Microsoft Search in Bing](https://officedocs-cdn.azureedge.net/microsoft-edge-digital-signage-microsoft-search-in-bing.pdf)
 
 [Microsoft Edge - Security](media/customer-adoption-not-md/microsoft-edge-digital-signage-security.pdf)
 
