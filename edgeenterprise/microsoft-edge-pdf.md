@@ -1,8 +1,8 @@
 ---
 title: "PDF in Microsoft Edge"
-ms.author: collw
+ms.author: adigan
 author: dan-wesley
-manager: seanlynd
+manager: balajek
 ms.date: 07/30/2020
 audience: ITPro
 ms.topic: conceptual
