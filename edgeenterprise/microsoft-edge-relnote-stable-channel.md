@@ -21,8 +21,6 @@ These release notes provide information about new features and non-security upda
 
 ## Version 84.0.522.49: July 29
 
-Fixed various bugs and performance issues.
-
 Security updates are listed [here](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnotes-security#july-29-2020)
 
 ## Version 84.0.522.48: July 28
