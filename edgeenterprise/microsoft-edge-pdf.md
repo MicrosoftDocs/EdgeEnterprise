@@ -47,26 +47,28 @@ Note the following constraints for the current PDF reader:
 
 ### Inking
 
-Inking on PDF files comes in handy to take quick notes for easy reference, sign, or fill out PDF forms. This capability is now available in Microsoft Edge where not only can you ink PDF files when needed, you can also use color and stroke width to bring attention to different parts of the PDF file. The next screenshot shows how a user can add inking to a pdf page.
+Inking on PDF files comes in handy to take quick notes for easy reference, sign, or fill out PDF forms. This capability is now available in Microsoft Edge. In addition to inking PDF files as needed, you can use color and stroke width to bring attention to different parts of the PDF file. The next screenshot shows how a user can add inking to a pdf page.
 
 <!-- SCREENSHOT -->
 ![Add inking to pdf page](media/microsoft-edge-pdf/pdf-reader-inking.png)
 
 ### Highlight
 
-PDF reader in Microsoft Edge comes with support for adding and editing highlights. To create a highlight, the user simply needs to select the text, right click on it, select highlights in the menu and choose the desired color.
+PDF reader in Microsoft Edge comes with support for adding and editing highlights. To create a highlight, the user simply needs to select the text, right-click on it, select highlights in the menu and choose the desired color. The next screenshot shows the highlight options that are available.
 
 ![Use the highlight option in PDF reader](media/microsoft-edge-pdf/pdf-reader-highlight.png)
 
 ### Read Aloud
 
-Read Aloud for PDF adds the convenience of listening to PDF content while carrying out other tasks that may be important to users. It also helps auditory learners focus on the content which makes learning much easier. 
+Read Aloud for PDF adds the convenience of listening to PDF content while carrying out other tasks that may be important to users. It also helps auditory learners focus on the content, which makes learning much easier. The next screenshot shows a Read Aloud example. The highlighting shows the text that is currently being read.
+
+![Use the highlight option in PDF reader](media/microsoft-edge-pdf/pdf-reader-read-aloud-example.png)
 
 ### Protected PDFs
 
 [Microsoft Information Protection (MIP)](https://docs.microsoft.com/microsoft-365/compliance/protect-information?view=o365-worldwide) enables users to collaborate with others securely, while adhering to your organization's compliance policies. After a file is protected, the actions users can take on it are determined by the permissions assigned to them.
 
-These files can be opened directly in the browser, without the need to download any other software, or install any add in. This integrates the security provided by MIP directly into the browser, providing a seamless workflow.
+These files can be opened directly in the browser, without the need to download any other software, or install any add-in. This integrates the security provided by MIP directly into the browser, providing a seamless workflow.
 
 <!-- SCREENSHOT -->
 ![Protected pdf document.](media/microsoft-edge-pdf/pdf-reader-mip-irm.png)
@@ -108,9 +110,9 @@ Users can navigate through and read PDF files using screen readers on Windows an
 
 Security is among the most important tenets for any organization. PDF reader security is an integral part of the Microsoft Edge security design. Two of the most important security features From a PDF reader perspective, two important security features are process isolation and Microsoft Defender Application Guard (Application Guard).
 
-- Process isolation. PDFs opened from different web sites are completely process isolated. This means that they do not talk to any websites, or PDF files opened from another source. This helps keeps PDF browsing secure from any attacks planning to use compromised PDFs as an attack surface.
+- Process isolation. PDFs opened from different web sites are completely process isolated. The browser doesn't have to communicate with any websites, or PDF files opened from another source. PDF browsing is secure from any attacks that plan to use compromised PDFs as an attack surface.
 
-- Application Guard. With Application Guard, admins can set a list of sites that are trusted by their organization. If users open any other sites, they are opened in a separate Application Guard window which runs in its own container. This helps protects the corporate network and any data on user's computer from being compromised.<br><br>
+- Application Guard. With Application Guard, admins can set a list of sites that are trusted by their organization. If users open any other sites, they are opened in a separate Application Guard window that runs in its own container. The container helps protect the corporate network and any data on user's computer from being compromised.<br><br>
 This protection also applies to any online PDF files that are viewed. Further, any PDF files that are downloaded from an Application Guard window are stored, and when needed, re-opened in the container. This helps keeps your environment secure not just when the file is downloaded, but through its whole lifecycle. For more information, see [Application Guard](https://docs.microsoft.com/DeployEdge/microsoft-edge-security-windows-defender-application-guard).
 
 ### Reliability
