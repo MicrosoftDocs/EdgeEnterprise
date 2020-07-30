@@ -19,9 +19,11 @@ These release notes provide information about new features and non-security upda
 > [!NOTE]
 > For the Stable Channel, updates will roll out progressively over one or more days. To learn more, see [Progressive rollouts for Microsoft Edge updates](microsoft-edge-update-progressive-rollout.md).
 
-## Version 84.0.522.49: July 30
+## Version 84.0.522.49: July 29
 
-Security updates are listed [here](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnotes-security#july-30-2020)
+Fixed various bugs and performance issues.
+
+Security updates are listed [here](https://docs.microsoft.com/DeployEdge/microsoft-edge-relnotes-security#july-29-2020)
 
 ## Version 84.0.522.48: July 28
 
