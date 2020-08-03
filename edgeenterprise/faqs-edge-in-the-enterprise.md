@@ -51,7 +51,7 @@ Yes. Configuring Microsoft Edge on Windows 10 using Microsoft Intune and Mobile 
 
 ## Does WSUS support the initial deployment of the new Microsoft Edge?
 
-No. WSUS supports updating existing MSI installs of Microsoft Edge, but it cannot be used for the initial deployment. If the intent is to ultimatley manage updates via WSUS then the initial deployment can be done through a management tool, such as [ConfigMgr](https://docs.microsoft.com/configmgr/apps/deploy-use/deploy-edge?toc=https://docs.microsoft.com/DeployEdge/toc.json&bc=https://docs.microsoft.com/DeployEdge/breadcrumb/toc.json).
+No. WSUS supports updating existing MSI installs of Microsoft Edge, but it cannot be used for the initial deployment. If the intent is to ultimately manage updates via WSUS then the initial deployment can be done through a management tool, such as [ConfigMgr](https://docs.microsoft.com/configmgr/apps/deploy-use/deploy-edge?toc=https://docs.microsoft.com/DeployEdge/toc.json&bc=https://docs.microsoft.com/DeployEdge/breadcrumb/toc.json).
 
 ## See also
 
