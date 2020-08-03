@@ -1,18 +1,18 @@
 ---
-title: "PDF in Microsoft Edge"
+title: "PDF reader in Microsoft Edge"
 ms.author: adigan
 author: dan-wesley
 manager: balajek
-ms.date: 07/30/2020
+ms.date: 08/03/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
-description: "Learn about PDF in Microsoft Edge."
+description: "Learn about PDF reader in Microsoft Edge."
 ---
 
-# PDF in Microsoft Edge
+# PDF reader in Microsoft Edge
 
 PDF files make up a substantial part of our day-to-day lives. They come in the form of contracts and agreements, newsletters, forms, research articles, resumes, and so on. These files highlight the need for a reliable, secure, and powerful PDF reader that can be adopted by Enterprises.
 
