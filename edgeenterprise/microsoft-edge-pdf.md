@@ -3,7 +3,7 @@ title: "PDF reader in Microsoft Edge"
 ms.author: adigan
 author: dan-wesley
 manager: balajek
-ms.date: 08/03/2020
+ms.date: 08/04/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -71,7 +71,7 @@ Read Aloud for PDF adds the convenience of listening to PDF content while carryi
 These files can be opened directly in the browser, without the need to download any other software, or install any add-in. This integrates the security provided by MIP directly into the browser, providing a seamless workflow.
 
 <!-- SCREENSHOT -->
-![Protected pdf document.](media/microsoft-edge-pdf/pdf-reader-mip-irm.png)
+![Protected pdf document.](media/microsoft-edge-pdf/pdf-reader-protected-pdf.png)
 
 In addition to MIP protected files, PDF files in [Information Rights Management (IRM)](https://docs.microsoft.com/microsoft-365/compliance/set-up-irm-in-sp-admin-center?view=o365-worldwide) protected SharePoint libraries can also be opened natively in the browser.
 
@@ -101,10 +101,11 @@ PDF reader will use the settings defined at the operating system level to render
 
 ### Screen reader support
 
-Users can navigate through and read PDF files using screen readers on Windows and Mac computers. The next screenshot shows the toolbar that users can use for audio settings when they're using the Read Aloud option in PDF reader.
+Users can navigate through and read PDF files using screen readers on Windows and Mac computers. <!--The next screenshot shows the toolbar that users can use for audio settings when they're using the Read Aloud option in PDF reader. -->
 
 <!-- SCREENSHOT -->
-![Screen reader toolbar](media/microsoft-edge-pdf/pdf-reader-read-aloud.png)
+<!--
+![Screen reader toolbar](media/microsoft-edge-pdf/pdf-reader-read-aloud.png) -->
 
 ## Security and reliability
 
