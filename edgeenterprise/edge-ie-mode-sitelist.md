@@ -3,7 +3,7 @@ title: "Configure Sites on the Enterprise Mode Site List"
 ms.author: cjacks
 author: cjacks
 manager: saudm
-ms.date: 03/25/2020
+ms.date: 05/28/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -47,6 +47,7 @@ The following table shows the possible values of the \<open-in\> element:
 | **\<open-in app="**true**"\>IE11\</open-in\>** | Opens the site in a full IE11 window |
 | **\<open-in\>MSEdge\</open-in\>** | Opens the site in Microsoft Edge |
 | **\<open-in\>None or not specified\</open-in\>** | Opens the site in the default browser or in the browser where the user navigated to the site. |
+|**\<open-in\>Configurable\</open-in\>** | Allows the site to participate in IE mode engine determination. To learn more, see [Learn about Configurable sites in IE mode](edge-learnmore-configurable-sites-ie-mode.md).  |
 
 >[!NOTE]
 > The attribute app=**"true"** is only recognized when associated to _'open-in' IE11_. Adding it to the other 'open-in' elements won't change browser behavior.   

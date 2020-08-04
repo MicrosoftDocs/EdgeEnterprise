@@ -1,18 +1,18 @@
 ---
-title: "Microsoft Edge Sync"
-ms.author: kvice
+title: "Microsoft Edge Enterprise Sync"
+ms.author: scottbo
 author: dan-wesley
-manager: laurawi
-ms.date: 04/03/2020
+manager: silvanam
+ms.date: 08/03/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
-description: "Microsoft Edge Sync"
+description: "Microsoft Edge Enterprise Sync"
 ---
 
-# Microsoft Edge Sync
+# Microsoft Edge Enterprise Sync
 
 This article explains how to use Microsoft Edge to sync your favorites, passwords, and other browser data across all your signed-in devices.
 
@@ -26,6 +26,7 @@ Microsoft Edge sync enables users to access their browsing data across all their
 - Favorites
 - Passwords
 - Addresses and more (form-fill)
+- Collections
 - Settings
 
 Sync functionality is enabled via user consent and users can turn sync on or off for each of the data types listed above.
@@ -35,9 +36,10 @@ Sync functionality is enabled via user consent and users can turn sync on or off
 
 ## Prerequisites
 
-Currently Microsoft Edge sync for Azure Active Directory (Azure AD) accounts is only available for the following subscriptions:
+Currently Microsoft Edge sync for Azure Active Directory (Azure AD) accounts is available for the following subscriptions:
 
 - Azure AD Premium (P1 and P2)
+- M365 Business Premium
 - Office 365 E3 and above
 - Azure Information Protection (AIP) (P1& P2)
 - All EDU subscriptions (O365 A1 or above, M365 A1 or above, or Azure Information Protection P1 or P2 for Students or Faculty)
@@ -58,10 +60,10 @@ If both AIP and ESR are disabled, users will see an error message indicating tha
 
 If the Azure Information Protection (AIP) service is enabled for a tenant, all users can sync Microsoft Edge data, regardless of licensing. Instructions on how to enable AIP can be found [here](https://docs.microsoft.com/azure/information-protection/activate-office365).
 
-To restrict sync to certain set of users, the [AADRM onboarding control policy](https://docs.microsoft.com/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy?view=azureipps) can be enabled for those users.
+To restrict sync to certain set of users, you can enable the [AADRM onboarding control policy](https://docs.microsoft.com/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy?view=azureipps) for those users. If sync is still not available after ensuring that all necessary users are onboarded, ensure that the IPCv3Service is enabled using the [Get-AIPServiceIPCv3](https://docs.microsoft.com/powershell/module/aipservice/Get-AipServiceIPCv3?view=azureipps) PowerShell cmdlet.
 
 > [!CAUTION]
-> This will also restrict access for other applications using Azure Information Protection, such as Microsoft Word or Microsoft Outlook.
+> Activating Azure Information Protection will also restrict access for other applications using AIP, such as Microsoft Word or Microsoft Outlook.
 
 ### Azure AD Enterprise State Roaming (ESR)
 
@@ -77,18 +79,19 @@ The following group policies impact Microsoft Edge sync:
 
 - [SyncDisabled](https://docs.microsoft.com/deployedge/microsoft-edge-policies#syncdisabled): Disables sync completely.
 - [SavingBrowserHistoryDisabled](https://docs.microsoft.com/deployedge/microsoft-edge-policies#savingbrowserhistorydisabled): Disables saving browsing history and sync. This policy also disables open-tabs sync.
+- [SyncTypesListDisabled](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#synctypeslistdisabled): Configure the list of types that are excluded from synchronization.
 
 ## Frequently Asked Questions
 
-### SECURITY and COMPLIANCE
+### SECURITY and SERVER/DATA COMPLIANCE
 
-#### Is the synced data encrypted? Can anyone at Microsoft look at it?
+#### Is the synced data encrypted? 
 
-The data is encrypted in transport using TLS 1.2 or greater, and at additionally at rest in Microsoft's service using AES256. Nobody at Microsoft can decrypt the data; only clients can.
+The data is encrypted in transport using TLS 1.2 or greater, and additionally at rest in Microsoft's service using AES256.
 
 #### Where is Microsoft Edge sync data stored?
 
-Synced data for Azure AD accounts is stored in secure servers according to the tenant ID. For example, the data for a tenant that is registered in the United States is stored in servers geo-located for that region and uses the same storage solution as Office applications. While the synced data for Azure AD accounts is encrypted before leaving a user's device, it is further encrypted when stored in the cloud.
+Synced data for Azure AD accounts is stored in secure servers according to the tenant ID. For example, the data for a tenant that is registered in the United States is stored in servers geo-located for that region and uses the same storage solution as Office applications.
 
 #### Does the data ever leave Microsoft's cloud, aside from syncing to Microsoft Edge?
 
@@ -124,7 +127,7 @@ No. ESR can be used to enable sync, but Microsoft Edge sync is not a part of ESR
 
 There are no plans to support this syncing. If you still need IE in your environment to support legacy apps, consider our [new IE mode](https://docs.microsoft.com/deployedge/edge-ie-mode).
 
-#### Will the new Chromium-based Microsoft Edge browser sync with the current in-market version of Microsoft Edge?
+#### Will the new Microsoft Edge browser sync with Microsoft Edge Legacy?
 
 No, it won't. We believe connecting these two ecosystems will lead to compromises in the reliability of sync in the new Microsoft Edge. We will ensure that existing data is migrated to the new Microsoft Edge. Users will also be able to import data from browser of their choice. This also means that new Microsoft Edge browser won't have a way to sync with IE.
 

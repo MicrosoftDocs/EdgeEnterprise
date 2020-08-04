@@ -1,20 +1,20 @@
 ---
-title: "Microsoft Edge and Windows Defender Application Guard"
+title: "Microsoft Edge and Microsoft Defender Application Guard"
 ms.author: srugh
 author: dan-wesley
 manager: seanlyn
-ms.date: 04/03/2020
+ms.date: 06/19/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
-description: "Microsoft Edge support for Windows Defender Application Guard"
+description: "Microsoft Edge support for Microsoft Defender Application Guard"
 ---
 
-# Microsoft Edge support for Windows Defender Application Guard
+# Microsoft Edge support for Microsoft Defender Application Guard
 
-This article describes how Microsoft Edge supports Windows Defender Application Guard (Application Guard).
+This article describes how Microsoft Edge supports Microsoft Defender Application Guard (Application Guard).
 
 > [!NOTE]
 > This article applies to Microsoft Edge version 77 or later.
@@ -33,7 +33,7 @@ Designed for Windows 10 and Microsoft Edge, Application Guard uses a hardware is
 
 The enterprise administrator defines what are trusted sites, cloud resources, and internal networks. Everything that's not in the trusted sites list is considered untrusted. These sites are isolated from the corporate network and data on the user's device.
 
-For more information, see [What is Application Guard and how does it work?](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview#what-is-application-guard-and-how-does-it-work).
+For more information, see [What is Application Guard and how does it work?](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview#what-is-application-guard-and-how-does-it-work).
 
 The next screenshot shows an example of Application Guard's message showing that the user is browsing in a safe space.
 
@@ -56,8 +56,15 @@ Some examples of container support include the following scenarios:
 - Extensions blocked on the host
 
 > [!NOTE]
-> It's also possible to manually install individual extensions inside the container from the extension store. Manually installed extensions will only persist in the container when [Allow Persistence](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/configure-wd-app-guard#application-specific-settings
-) policy is enabled.
+> It's also possible to manually install individual extensions inside the container from the extension store. Manually installed extensions will only persist in the container when [Allow Persistence](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/configure-md-app-guard#application-specific-settings) policy is enabled.
+
+### Identifying Application Guard traffic via Dual Proxy
+
+Some enterprise customers are deploying Application Guard with a specific use case where they need to identify web traffic coming out of a Microsoft Defender Application Guard container at the proxy level. Starting with Stable Channel version 84, Microsoft Edge will support dual proxy to address this requirement. You can configure this functionality using the [ApplicationGuardContainerProxy](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#applicationguardcontainerproxy) policy.
+
+The following drawing shows the dual proxy architecture for Microsoft Edge.
+
+![Dual proxy architecture for Application Guard](media/microsoft-edge-security-windows-defender-application-guard/wd-application-guard-dual-proxy.png)
 
 ### Diagnostic page for troubleshooting
 
@@ -81,16 +88,16 @@ The following  requirements apply to devices using Application Guard with Micros
   > [!NOTE]
   > Application Guard is only supported on Windows 10 Pro and Windows 10 Enterprise SKUs.
 
-- One of the management solutions described in [Software requirements](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/reqs-wd-app-guard#software-requirements)
+- One of the management solutions described in [Software requirements](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard#software-requirements)
 
 ## How to install Application Guard
 
 The following articles provide the information you need to install, configure, and test Application Guard with Microsoft Edge.
 
-- [System requirements](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/reqs-wd-app-guard)
-- [Install Windows Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/install-wd-app-guard)
-- [Configure Windows Defender group policy settings](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/configure-wd-app-guard)
-- [Test Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/test-scenarios-wd-app-guard)
+- [System requirements](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard)
+- [Install Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard)
+- [Configure Microsoft Defender group policy settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/configure-md-app-guard)
+- [Test Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/test-scenarios-md-app-guard)
 
 ## Frequently Asked Questions
 
@@ -104,7 +111,7 @@ No, the Application Guard feature is natively supported in Microsoft Edge. In fa
 
 ### Are there any other platform related FAQs?
 
-Yes. [Frequently asked questions - Windows Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/faq-wd-app-guard) 
+Yes. [Frequently asked questions - Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard) 
 
 ## See also
 

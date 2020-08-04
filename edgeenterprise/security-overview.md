@@ -3,7 +3,7 @@ title: "Overview of Microsoft Edge security"
 ms.author: srugh
 author: srugh
 manager: seanlyn
-ms.date: 02/14/2020
+ms.date: 04/29/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -25,7 +25,7 @@ A key aspect of cloud security is identity and access when it comes to managing 
 
 ### Accessing Conditional Access protected resources in Microsoft Edge
 
-Microsoft Edge natively supports Azure AD Conditional Access. There's no need to install a separate extension. When you’re signed into a Microsoft Edge profile with enterprise Azure AD credentials, Microsoft Edge allows seamless access to enterprise cloud resources protected using Conditional Access.
+Microsoft Edge natively supports Azure AD Conditional Access. There's no need to install a separate extension. When you're signed into a Microsoft Edge profile with enterprise Azure AD credentials, Microsoft Edge allows seamless access to enterprise cloud resources protected using Conditional Access.
 
 On a compliant device, the identity accessing the resource should match the identity on the profile.  If it doesn't, you'll see a message like the one in the next screenshot. In the screenshot example, "testadmin@evostsoneboxtest.com" is the sign-in account needed to access the resource.
 
@@ -45,21 +45,7 @@ This support is available across all platforms, including all supported versions
 
 [Deploy Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) provides a detailed guide to help deploy Conditional Access in Azure Active Directory.
 
-## Application Guard
-
-Browsers remain the primary attack surface on client devices today because it’s their fundamental job to download and execute untrusted content from untrusted sources. Security incident prevention or detection/response strategies cannot guarantee 100% safety. Malicious actors are constantly at work to social engineer new forms of attacks against the browser. One of the security strategies to consider is the assume breach principle and ensure corporate network and other resources remain protected in such scenarios.
-
-Designed for Windows 10 and Microsoft Edge, Application Guard uses a hardware isolation approach to isolate untrusted site navigations that launch inside a container. This helps enterprises safeguard their corporate network and data in assumed breach scenarios while the employees browse the Internet. The enterprise administrator defines what are trusted web sites, cloud resources, and internal networks; everything not on that list is considered untrusted and gets isolated from the corporate network and data on the device. Learn more about Application Guard [here](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview).
-
-  > [!TIP]
-  > Application Guard in Microsoft Edge is supported only on Windows 10 1809 (RS5) and above.
-
-The following links provide additional information to get started using Application Guard with Microsoft Edge.
-
-- [System requirements](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/reqs-wd-app-guard)
-- [Installing Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/install-wd-app-guard)
-- [Configuring OS policies for Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/configure-wd-app-guard)
-
 ## See also
 
 - [Microsoft Edge Enterprise landing page](https://aka.ms/EdgeEnterprise)
+- [Video: Security, compatibility, and manageability](/microsoft-edge-video-security-compatibility-manageability.md)
