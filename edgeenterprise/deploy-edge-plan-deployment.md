@@ -53,7 +53,7 @@ With these answers in mind, you're ready to planning your Microsoft Edge deploym
 
 ## Make sure your Windows 10 devices are ready
 
-The Edge Stable channel requires the Latest Cumulative Update (LCU) from October 2019 (or later). If you attempt to deploy to a Windows 10 device that has an older LCU, then the installation will fail. For more details about the minimum LCU that must be applied before deploying Edge, see [Windows updates to support the next version of Microsoft Edge](https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-sysupdate-windows-updates).
+The Edge Stable channel requires the Latest Cumulative Update (LCU) from October 2019 (or later). If you attempt to deploy to a Windows 10 device that has an older LCU, then the installation will fail. For more details about the minimum LCU that must be applied before deploying Edge, see [Windows updates to support the next version of Microsoft Edge](https://docs.microsoft.com/DeployEdge/microsoft-edge-sysupdate-windows-updates).
 
 ## Determine your deployment methodology
 
