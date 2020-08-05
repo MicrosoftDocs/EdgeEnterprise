@@ -3,7 +3,7 @@ title: "PDF reader in Microsoft Edge"
 ms.author: adigan
 author: dan-wesley
 manager: balajek
-ms.date: 08/03/2020
+ms.date: 08/05/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -71,7 +71,7 @@ Read Aloud for PDF adds the convenience of listening to PDF content while carryi
 These files can be opened directly in the browser, without the need to download any other software, or install any add-in. This integrates the security provided by MIP directly into the browser, providing a seamless workflow.
 
 <!-- SCREENSHOT -->
-![Protected pdf document.](media/microsoft-edge-pdf/pdf-reader-mip-irm.png)
+![Protected pdf document.](media/microsoft-edge-pdf/pdf-reader-protected-pdf2.png)
 
 In addition to MIP protected files, PDF files in [Information Rights Management (IRM)](https://docs.microsoft.com/microsoft-365/compliance/set-up-irm-in-sp-admin-center?view=o365-worldwide) protected SharePoint libraries can also be opened natively in the browser.
 
@@ -97,14 +97,15 @@ Users can use navigate to different parts of the document that a user can intera
 PDF reader will use the settings defined at the operating system level to render PDF content in high contrast mode.
 
 <!-- SCREENSHOT -->
-![High contrast mode for pdf file](media/microsoft-edge-pdf/pdf-reader-high-contrast.png)
+<!--![High contrast mode for pdf file](media/microsoft-edge-pdf/pdf-reader-high-contrast.png)-->
 
 ### Screen reader support
 
-Users can navigate through and read PDF files using screen readers on Windows and Mac computers. The next screenshot shows the toolbar that users can use for audio settings when they're using the Read Aloud option in PDF reader.
+Users can navigate through and read PDF files using screen readers on Windows and Mac computers. <!--The next screenshot shows the toolbar that users can use for audio settings when they're using the Read Aloud option in PDF reader. -->
 
 <!-- SCREENSHOT -->
-![Screen reader toolbar](media/microsoft-edge-pdf/pdf-reader-read-aloud.png)
+<!--
+![Screen reader toolbar](media/microsoft-edge-pdf/pdf-reader-read-aloud.png) -->
 
 ## Security and reliability
 
@@ -121,7 +122,7 @@ Because Microsoft Edge is Chromium-based, users can expect the same level of rel
 
 ## Deploy and update PDF reader
 
-The PDF reader gets deployed and updated with the rest of the Microsoft Edge browser. To learn more about deploying Microsoft Edge, go to the [Microsoft Edge documentation](https://docs.microsoft.com/DeployEdge/) landing page.
+The PDF reader gets deployed and updated with the rest of the Microsoft Edge browser. To learn more about deploying Microsoft Edge, watch the [Deploy Microsoft Edge to hundreds or thousands of devices](microsoft-edge-video-deploy.md) video. You can also find more deployment information on the [Microsoft Edge documentation](https://docs.microsoft.com/DeployEdge/) landing page.
 
 > [!TIP]
 > You can make Microsoft Edge the default PDF reader for your organization. To do this, [follow these steps](https://docs.microsoft.com/deployedge/edge-default-browser).
