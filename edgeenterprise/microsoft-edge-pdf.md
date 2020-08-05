@@ -3,7 +3,7 @@ title: "PDF reader in Microsoft Edge"
 ms.author: adigan
 author: dan-wesley
 manager: balajek
-ms.date: 08/04/2020
+ms.date: 08/05/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -71,7 +71,7 @@ Read Aloud for PDF adds the convenience of listening to PDF content while carryi
 These files can be opened directly in the browser, without the need to download any other software, or install any add-in. This integrates the security provided by MIP directly into the browser, providing a seamless workflow.
 
 <!-- SCREENSHOT -->
-![Protected pdf document.](media/microsoft-edge-pdf/pdf-reader-protected-pdf.png)
+![Protected pdf document.](media/microsoft-edge-pdf/pdf-reader-protected-pdf2.png)
 
 In addition to MIP protected files, PDF files in [Information Rights Management (IRM)](https://docs.microsoft.com/microsoft-365/compliance/set-up-irm-in-sp-admin-center?view=o365-worldwide) protected SharePoint libraries can also be opened natively in the browser.
 
@@ -97,7 +97,7 @@ Users can use navigate to different parts of the document that a user can intera
 PDF reader will use the settings defined at the operating system level to render PDF content in high contrast mode.
 
 <!-- SCREENSHOT -->
-![High contrast mode for pdf file](media/microsoft-edge-pdf/pdf-reader-high-contrast.png)
+<!--![High contrast mode for pdf file](media/microsoft-edge-pdf/pdf-reader-high-contrast.png)-->
 
 ### Screen reader support
 
