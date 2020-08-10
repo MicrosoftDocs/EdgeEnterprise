@@ -8,8 +8,8 @@
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 8/5/2020 | [Plan your deployment of Microsoft Edge](/DeployEdge/deploy-edge-plan-deployment) | modified |
-| 8/5/2020 | [PDF reader in Microsoft Edge](/DeployEdge/microsoft-edge-pdf) | modified |
+| 8/5/2020 | [Plan your deployment of Microsoft Edge](/DeployEdge/deploy-edge-plan-deployment)<br>Minor rewording for clarity and accuracy. | modified |
+| 8/5/2020 | [PDF reader in Microsoft Edge](/DeployEdge/microsoft-edge-pdf)<br>Article that describes the features and capabilities of the built-in PDF reader for Microsoft Edge. | New |
 
 
 ## Week of July 27, 2020
