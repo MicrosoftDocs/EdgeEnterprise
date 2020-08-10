@@ -64,9 +64,11 @@ Security updates are listed [here](https://docs.microsoft.com/DeployEdge/microso
 
 - Additional Microsoft Edge API support:
 
-  - The Storage Access API is enabled for experimentation. This API allows access to first-party storage in a third-party context when a user provides a direct intent to allow storage that would otherwise be blocked by the browser's current configuration. For more information, see [Storage Access API](https://www.chromestatus.com/feature/5612590694662144). This feature is enabled for home users and Enterprise users with the [ExperimentationAndConfigurationServiceControl](https://docs.microsoft.com/deployedge/microsoft-edge-policies#experimentationandconfigurationservicecontrol) policy set to "Full". This feature will be enabled by default for all users in Microsoft Edge Stable Channel version 85.
-
+  - The Storage Access API is enabled for experimentation. This feature is enabled for home users and Enterprise users with the [ExperimentationAndConfigurationServiceControl](https://docs.microsoft.com/deployedge/microsoft-edge-policies#experimentationandconfigurationservicecontrol) policy set to "Full". This feature will be enabled by default for all users in Microsoft Edge Stable Channel version 85.
+  
     As privacy is becoming increasingly important to users, requests for stricter browser defaults and user opt-in settings like blocking all third-party storage access are increasingly common. While these settings help improve privacy and block unwanted access by unknown or untrusted parties, they can have unwanted side effects such as blocking access to content the user may want to view (for example, social media and embedded media content.)
+
+    The Storage Access API allows access to first-party storage in a third-party context when a user provides a direct intent to allow storage that would otherwise be blocked by the browser's current configuration. For more information, see [Storage Access API](https://www.chromestatus.com/feature/5612590694662144).
 
   - The Native File System API, which means you can give sites permissions to edit files or folders via the Native File System API.
 
