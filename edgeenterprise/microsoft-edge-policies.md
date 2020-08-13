@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation"
 ms.author: stmoody
 author: brianalt-msft
 manager: tahills
-ms.date: 07/24/2020
+ms.date: 08/12/2020
 audience: ITPro
 ms.topic: reference
 ms.prod: microsoft-edge
@@ -222,6 +222,7 @@ These tables list all of the browser-related group policies available in this re
 |[DelayNavigationsForInitialSiteListDownload](#delaynavigationsforinitialsitelistdownload)|Require that the Enterprise Mode Site List is available before tab navigation|
 |[DeleteDataOnMigration](#deletedataonmigration)|Delete old browser data on migration|
 |[DeveloperToolsAvailability](#developertoolsavailability)|Control where developer tools can be used|
+|[DiagnosticData](#diagnosticdata)|Send required and optional diagnostic data about browser usage|
 |[DirectInvokeEnabled](#directinvokeenabled)|Allow users to open files using the DirectInvoke protocol|
 |[Disable3DAPIs](#disable3dapis)|Disable support for 3D graphics APIs|
 |[DisableScreenshots](#disablescreenshots)|Disable taking screenshots|
@@ -281,7 +282,7 @@ These tables list all of the browser-related group policies available in this re
 |[ManagedSearchEngines](#managedsearchengines)|Manage Search Engines|
 |[MaxConnectionsPerProxy](#maxconnectionsperproxy)|Maximum number of concurrent connections to the proxy server|
 |[MediaRouterCastAllowAllIPs](#mediaroutercastallowallips)|Allow Google Cast to connect to Cast devices on all IP addresses|
-|[MetricsReportingEnabled](#metricsreportingenabled)|Enable usage and crash-related data reporting|
+|[MetricsReportingEnabled](#metricsreportingenabled)|Enable usage and crash-related data reporting (deprecated)|
 |[NativeWindowOcclusionEnabled](#nativewindowocclusionenabled)|Enable Native Window Occlusion|
 |[NavigationDelayForInitialSiteListDownloadTimeout](#navigationdelayforinitialsitelistdownloadtimeout)|Set a timeout for delay of tab navigation for the Enterprise Mode Site List|
 |[NetworkPredictionOptions](#networkpredictionoptions)|Enable network prediction|
@@ -305,13 +306,14 @@ These tables list all of the browser-related group policies available in this re
 |[RunAllFlashInAllowMode](#runallflashinallowmode)|Extend Adobe Flash content setting to all content|
 |[SSLErrorOverrideAllowed](#sslerroroverrideallowed)|Allow users to proceed from the HTTPS warning page|
 |[SSLVersionMin](#sslversionmin)|Minimum TLS version enabled|
+|[SaveCookiesOnExit](#savecookiesonexit)|Save cookies when Microsoft Edge closes|
 |[SavingBrowserHistoryDisabled](#savingbrowserhistorydisabled)|Disable saving browser history|
 |[ScreenCaptureAllowed](#screencaptureallowed)|Allow or deny screen capture|
 |[ScrollToTextFragmentEnabled](#scrolltotextfragmentenabled)|Enable scrolling to text specified in URL fragments|
 |[SearchSuggestEnabled](#searchsuggestenabled)|Enable search suggestions|
 |[SecurityKeyPermitAttestation](#securitykeypermitattestation)|Websites or domains that don't need permission to use direct Security Key attestation|
 |[SendIntranetToInternetExplorer](#sendintranettointernetexplorer)|Send all intranet sites to Internet Explorer|
-|[SendSiteInfoToImproveServices](#sendsiteinfotoimproveservices)|Send site information to improve Microsoft services|
+|[SendSiteInfoToImproveServices](#sendsiteinfotoimproveservices)|Send site information to improve Microsoft services (deprecated)|
 |[ShowOfficeShortcutInFavoritesBar](#showofficeshortcutinfavoritesbar)|Show Microsoft Office shortcut in favorites bar|
 |[SignedHTTPExchangeEnabled](#signedhttpexchangeenabled)|Enable Signed HTTP Exchange (SXG) support|
 |[SitePerProcess](#siteperprocess)|Enable site isolation for every site|
@@ -322,7 +324,7 @@ These tables list all of the browser-related group policies available in this re
 |[SuppressUnsupportedOSWarning](#suppressunsupportedoswarning)|Suppress the unsupported OS warning|
 |[SyncDisabled](#syncdisabled)|Disable synchronization of data using Microsoft sync services|
 |[SyncTypesListDisabled](#synctypeslistdisabled)|Configure the list of types that are excluded from synchronization|
-|[TLS13HardeningForLocalAnchorsEnabled](#tls13hardeningforlocalanchorsenabled)|Enable a TLS 1.3 security feature for local trust anchors|
+|[TLS13HardeningForLocalAnchorsEnabled](#tls13hardeningforlocalanchorsenabled)|Enable a TLS 1.3 security feature for local trust anchors (obsolete)|
 |[TLSCipherSuiteDenyList](#tlsciphersuitedenylist)|Specify the TLS cipher suites to disable|
 |[TabFreezingEnabled](#tabfreezingenabled)|Allow freezing of background tabs|
 |[TaskManagerEndProcessEnabled](#taskmanagerendprocessenabled)|Enable ending processes in the Browser task manager|
@@ -331,7 +333,7 @@ These tables list all of the browser-related group policies available in this re
 |[TranslateEnabled](#translateenabled)|Enable Translate|
 |[URLAllowlist](#urlallowlist)|Define a list of allowed URLs|
 |[URLBlocklist](#urlblocklist)|Block access to a list of URLs|
-|[UserAgentClientHintsEnabled](#useragentclienthintsenabled)|Enable the User-Agent Client Hints feature|
+|[UserAgentClientHintsEnabled](#useragentclienthintsenabled)|Enable the User-Agent Client Hints feature (deprecated)|
 |[UserDataDir](#userdatadir)|Set the user data directory|
 |[UserFeedbackAllowed](#userfeedbackallowed)|Allow user feedback|
 |[VideoCaptureAllowed](#videocaptureallowed)|Allow or block video capture|
@@ -600,6 +602,8 @@ Note there cannot be conflicting URL patterns set between these three policies:
 
 - [CookiesSessionOnlyForUrls](#cookiessessiononlyforurls)
 
+To exclude cookies from being deleted on exit, configure the [SaveCookiesOnExit](#savecookiesonexit) policy.
+
   #### Supported features:
   - Can be mandatory: Yes
   - Can be recommended: No
@@ -791,7 +795,7 @@ Policy options mapping:
 
 * BlockCookies (2) = Don't let any site create cookies
 
-* SessionOnly (4) = Keep cookies for the duration of the session
+* SessionOnly (4) = Keep cookies for the duration of the session, except ones listed in [SaveCookiesOnExit](#savecookiesonexit)
 
 Use the preceding information when configuring this policy.
 
@@ -2388,7 +2392,7 @@ If you enable or disable this policy, users can't change or override it.
 
 If you don't configure this policy, the default search provider is enabled, and the user can choose the default search provider and set the search provider list.
 
-This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain or Windows 10 Pro or Enterprise instances that are enrolled for device management.
+This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10 Pro or Enterprise instances that enrolled for device management, or macOS instances that are that are managed via MDM or joined to a domain via MCX..
 
 Starting in Microsoft Edge 84, you can set this policy as a recommended policy.
 
@@ -2846,7 +2850,7 @@ If you enable this policy and set it to:
 - "Address bar" ('redirect'), the new tab page search box uses the address bar to search on new tabs.
 
 Policy options mapping:
-						  
+		
 
 * bing (bing) = Search box (Recommended)
 
@@ -3999,8 +4003,8 @@ Mandatory and Recommended disabled: Both these states will work the normal way, 
 ```
 
 
-	 
-	 
+  
+  
    
  
  
@@ -4025,7 +4029,7 @@ If you enable this policy, then password protection service sends users to this 
 
 If you disable this policy or don't configure it, then password protection service will not redirect users to a change password URL.
 
-This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain or Windows 10 Pro or Enterprise instances that are enrolled for device management.
+This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10 Pro or Enterprise instances that enrolled for device management, or macOS instances that are that are managed via MDM or joined to a domain via MCX.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -4077,7 +4081,7 @@ If you enable this policy, the password protection service captures fingerprints
 
 If you disable this policy or don't configure it, no password fingerprints are captured.
 
-This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain or Windows 10 Pro or Enterprise instances that are enrolled for device management.
+This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10 Pro or Enterprise instances that enrolled for device management, or macOS instances that are that are managed via MDM or joined to a domain via MCX.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -4794,7 +4798,7 @@ If you enable this setting, users can't ignore Microsoft Defender SmartScreen wa
 
 If you disable or don't configure this setting, users can ignore Microsoft Defender SmartScreen warnings and continue to the site.
 
-This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain; or on Windows 10 Pro or Enterprise instances that are enrolled for device management.
+This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10 Pro or Enterprise instances that enrolled for device management, or macOS instances that are that are managed via MDM or joined to a domain via MCX.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -4847,7 +4851,7 @@ If you enable this policy, users in your organization can't ignore Microsoft Def
 
 If you disable or don't configure this policy, users can ignore Microsoft Defender SmartScreen warnings and complete unverified downloads.
 
-This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain; or on Windows 10 Pro or Enterprise instances that are enrolled for device management.
+This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10 Pro or Enterprise instances that enrolled for device management, or macOS instances that are that are managed via MDM or joined to a domain via MCX.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -4900,7 +4904,7 @@ The Microsoft Defender SmartScreen download protection service won't check downl
 If you enable this policy, Microsoft Defender SmartScreen trusts these domains.
 If you disable or don't set this policy, default Microsoft Defender SmartScreen protection is applied to all resources.
 
-This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain; or on Windows 10 Pro or Enterprise instances that are enrolled for device management.
+This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10 Pro or Enterprise instances that enrolled for device management, or macOS instances that are that are managed via MDM or joined to a domain via MCX.
 Also note that this policy does not apply if your organization has enabled Microsoft Defender Advanced Threat Protection. You must configure your allow and block lists in Microsoft Defender Security Center instead.
 
   #### Supported features:
@@ -4960,7 +4964,7 @@ If you disable this setting, Microsoft Defender SmartScreen is turned off.
 
 If you don't configure this setting, users can choose whether to use Microsoft Defender SmartScreen.
 
-This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain; or on Windows 10 Pro or Enterprise instances that are enrolled for device management.
+This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10 Pro or Enterprise instances that enrolled for device management, or macOS instances that are that are managed via MDM or joined to a domain via MCX.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -5012,7 +5016,7 @@ If you enable or don't configure this setting, Microsoft Defender SmartScreen ch
 
 If you disable this setting, Microsoft Defender SmartScreen doesn't check the download's reputation when downloading from a trusted source.
 
-This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain; or on Windows 10 Pro or Enterprise instances that are enrolled for device management.
+This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10 Pro or Enterprise instances that enrolled for device management.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -5060,7 +5064,7 @@ If you disable this setting, potentially unwanted app blocking with Microsoft De
 
 If you don't configure this setting, users can choose whether to use potentially unwanted app blocking with Microsoft Defender SmartScreen.
 
-This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain; or on Windows 10 Pro or Enterprise instances that are enrolled for device management.
+This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10 Pro or Enterprise instances that enrolled for device management, or macOS instances that are that are managed via MDM or joined to a domain via MCX.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -5118,7 +5122,7 @@ If you disable this policy, the user's home page can't be the new tab page, unle
 
 If not configured users can choose whether the new tab page is their home page.
 
-This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain or Windows 10 Pro or Enterprise instances enrolled for device management.
+This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10 Pro or Enterprise instances that enrolled for device management, or macOS instances that are that are managed via MDM or joined to a domain via MCX.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -5174,7 +5178,7 @@ If you enable this policy, users can't change their home page URL, but they can 
 
 If you disable or don't configure this policy, users can choose their own home page, as long as the [HomepageIsNewTabPage](#homepageisnewtabpage) policy isn't enabled.
 
-This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain or Windows 10 Pro or Enterprise instances enrolled for device management.
+This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10 Pro or Enterprise instances that enrolled for device management, or macOS instances that are that are managed via MDM or joined to a domain via MCX.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -5224,11 +5228,11 @@ https://www.contoso.com
 
 If you don't configure this policy, all background image types on the new tab page are enabled.
 
-  * 1 = Disable daily background image type
+										   
 
-  * 2 = Disable custom background image type
+											
 
-  * 3 = Disable all background image types
+										  
 
 Policy options mapping:
 
@@ -5431,7 +5435,7 @@ If you configure this policy *and* the [NewTabPageSetFeedType](#newtabpagesetfee
 
 If an invalid URL is provided, new tabs will open about://blank.
 
-This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain or Windows 10 Pro or Enterprise instances that are enrolled for device management.
+This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10 Pro or Enterprise instances that enrolled for device management, or macOS instances that are that are managed via MDM or joined to a domain via MCX.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -5683,7 +5687,7 @@ If you want to open a specific set of URLs, choose 'RestoreOnStartupIsURLs'.
 
 Disabling this setting is equivalent to leaving it not configured. Users will be able to change it in Microsoft Edge.
 
-This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain or Windows 10 Pro or Enterprise instances enrolled for device management.
+This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10 Pro or Enterprise instances that enrolled for device management, or macOS instances that are that are managed via MDM or joined to a domain via MCX.
 
 Policy options mapping:
 
@@ -5743,7 +5747,7 @@ Use the preceding information when configuring this policy.
 
 This policy only works if you also set the [RestoreOnStartup](#restoreonstartup) policy to 'Open a list of URLs' (4).
 
-This policy is only available on Windows instances that are joined to a Microsoft Active Directory domain or Windows 10 Pro or Enterprise instances that are enrolled for device management.
+This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10 Pro or Enterprise instances that enrolled for device management, or macOS instances that are that are managed via MDM or joined to a domain via MCX.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -6216,10 +6220,12 @@ If this list is empty, Token Binding will be disabled.
 
 This policy is only available on Windows 10 devices with Virtual Secure Mode capability.
 
+Starting in Microsoft Edge 86, this policy no longer supports dynamic refresh.
+
   #### Supported features:
   - Can be mandatory: Yes
   - Can be recommended: No
-  - Dynamic Policy Refresh: Yes
+  - Dynamic Policy Refresh: No - Requires browser restart
 
   #### Data Type:
   - List of strings
@@ -6741,17 +6747,17 @@ This policy is intended to give enterprises flexibility to disable the audio san
 
  
 
-																																														  
+												
 
-																						 
+					   
 
-																					   
+						
 
-																				   
+					   
 
-																			
+				   
 
-																							  
+						 
 
 The browser data from Microsoft Edge Legacy will always be silently migrated at the first run, irrespective of the value of this policy.
 
@@ -7035,9 +7041,9 @@ File types that a user has already specified to automatically be opened will con
 
 If you don't set this policy, only file types that a user has already specified to automatically be opened will do so when downloaded.
 
-For this policy to apply on Windows devices, the device must either be joined to a Microsoft Active Directory domain, or be a Windows 10 Pro or Enterprise instance that is enrolled for device management.
+																																																		   
 
-For this policy to apply on macOS devices, the device must either be managed via MDM, or be joined to a domain via MCX.
+This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10 Pro or Enterprise instances that enrolled for device management, or macOS instances that are that are managed via MDM or joined to a domain via MCX.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -7943,6 +7949,8 @@ If you disable or don't configure this policy, users can configure the Clear bro
 
 If you enable this policy, don't configure the [AllowDeletingBrowserHistory](#allowdeletingbrowserhistory) or the [ClearCachedImagesAndFilesOnExit](#clearcachedimagesandfilesonexit) policy, because they all deal with deleting browsing data. If you configure the preceding policies and this policy, all browsing data is deleted when Microsoft Edge closes, regardless of how you configured [AllowDeletingBrowserHistory](#allowdeletingbrowserhistory) or [ClearCachedImagesAndFilesOnExit](#clearcachedimagesandfilesonexit).
 
+To exclude cookies from being deleted on exit, configure the [SaveCookiesOnExit](#savecookiesonexit) policy.
+
   #### Supported features:
   - Can be mandatory: Yes
   - Can be recommended: Yes
@@ -8097,7 +8105,7 @@ If you enable this policy, services and export targets that match the given list
 
 If you don't configure this policy, no restrictions on the acceptable services and export targets are enforced.
 
-* pinterest_suggestions = Block Pinterest suggestions
+													 
 
 Policy options mapping:
 
@@ -8158,7 +8166,7 @@ If enabled or unset, security warnings are displayed when these command-line fla
 
 For example, the --disable-gpu-sandbox flag generates this warning:  You're using an unsupported command-line flag: --disable-gpu-sandbox. This poses stability and security risks.
 
-On Windows, this policy is only available on instances that are joined to a Microsoft Active Directory domain, or Windows 10 Pro (or Enterprise) instances that are enrolled for device management.
+This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10 Pro or Enterprise instances that enrolled for device management, or macOS instances that are that are managed via MDM or joined to a domain via MCX.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -8470,6 +8478,8 @@ If you enable this policy, an admin can specify a link for the Help menu or the 
 
 If you disable or don't configure this policy, the default link for the Help menu or the F1 key is used.
 
+This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10 Pro or Enterprise instances that enrolled for device management, or macOS instances that are that are managed via MDM or joined to a domain via MCX.
+
   #### Supported features:
   - Can be mandatory: Yes
   - Can be recommended: No
@@ -8566,7 +8576,7 @@ If you disable this policy, DNS interception checks aren't performed.
   - On Windows 7 and macOS since 77 or later
 
   #### Description
-						
+	  
 
   If you set this policy to True, Microsoft Edge always checks whether it's the default browser on startup and, if possible, automatically registers itself.
 
@@ -8821,6 +8831,80 @@ Use the preceding information when configuring this policy.
 
   #### Mac information and settings
   - Preference Key Name: DeveloperToolsAvailability
+  - Example value:
+``` xml
+<integer>2</integer>
+```
+  
+
+  [Back to top](#microsoft-edge---policies)
+
+  ### DiagnosticData
+  #### Send required and optional diagnostic data about browser usage
+  
+  
+  #### Supported versions:
+  - On Windows 7 and macOS since 86 or later
+
+  #### Description
+  This policy controls sending required and optional diagnostic data about browser usage to Microsoft.
+
+Required diagnostic data is collected keep Microsoft Edge secure, up to date and performing as expected.
+
+Optional diagnostic data includes data about how you use the browser, websites you visit and crash reports to Microsoft for product and service improvement.
+
+This policy is not supported on Windows 10 devices. To control this data collection on Windows 10, IT admins must use the Windows diagnostic data group policy. This policy will either be 'Allow Telemetry' or 'Allow Diagnostic Data', depending on the version of Windows. Learn more about Windows 10 diagnostic data collection: [https://go.microsoft.com/fwlink/?linkid=2099569](https://go.microsoft.com/fwlink/?linkid=2099569)
+
+Use one of the following settings to configure this policy:
+
+'Off' turns off required and optional diagnostic data collection. This option is not recommended.
+
+'RequiredData' sends required diagnostic data but turns off optional diagnostic data collection. Microsoft Edge will send required diagnostic data to keep Microsoft Edge secure, up to date and performing as expected.
+
+'OptionalData' sends optional diagnostic data includes data about browser usage, websites that are visited, crash reports sent to Microsoft for product and service improvement.
+
+On Windows 7/macOS, this policy controls sending required and optional data to Microsoft.
+
+If you don't configure this policy or disable it, Microsoft Edge will default to the user's preference.
+
+Policy options mapping:
+
+* Off (0) = Off (Not recommended)
+
+* RequiredData (1) = Required data
+
+* OptionalData (2) = Optional data
+
+Use the preceding information when configuring this policy.
+
+  #### Supported features:
+  - Can be mandatory: Yes
+  - Can be recommended: No
+  - Dynamic Policy Refresh: No - Requires browser restart
+
+  #### Data Type:
+  - Integer
+
+  #### Windows information and settings
+  ##### Group Policy (ADMX) info
+  - GP unique name: DiagnosticData
+  - GP name: Send required and optional diagnostic data about browser usage
+  - GP path (Mandatory): Administrative Templates/Microsoft Edge/
+  - GP path (Recommended): N/A
+  - GP ADMX file name: MSEdge.admx
+  ##### Windows Registry Settings
+  - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
+  - Path (Recommended): N/A
+  - Value Name: DiagnosticData
+  - Value Type: REG_DWORD
+  ##### Example value:
+```
+0x00000002
+```
+
+
+  #### Mac information and settings
+  - Preference Key Name: DiagnosticData
   - Example value:
 ``` xml
 <integer>2</integer>
@@ -9492,9 +9576,9 @@ SOFTWARE\Policies\Microsoft\Edge\EnableDeprecatedWebPlatformFeatures\1 = Example
 
   ### EnableDomainActionsDownload
   #### Enable Domain Actions Download from Microsoft (obsolete)
-																					  
 					   
 		
+  
   
   >OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 84.
   #### Supported versions:
@@ -9615,7 +9699,7 @@ Note that this policy depends on the operating system (OS) certificate verificat
 
 If you don't set this policy or set it to false, or the SHA-1 certificate chains to a publicly trusted certificate root, then Microsoft Edge won't allow certificates signed by SHA-1.
 
-This policy is only available on Windows instances that are joined to a Microsoft Active Directory domain or Windows 10 Pro or Enterprise instances enrolled for device management.
+This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10 Pro or Enterprise instances that enrolled for device management, or macOS instances that are that are managed via MDM or joined to a domain via MCX.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -10317,9 +10401,9 @@ This enterprise policy is disabled by default.
 
   ### ForceNetworkInProcess
   #### Force networking code to run in the browser process (obsolete)
-																					  
 					   
 		
+  
   
   
   >OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 83.
@@ -12224,8 +12308,8 @@ If the [EnableMediaRouter](#enablemediarouter) policy is disabled, then this pol
   [Back to top](#microsoft-edge---policies)
 
   ### MetricsReportingEnabled
-  #### Enable usage and crash-related data reporting
-
+  #### Enable usage and crash-related data reporting (deprecated)
+  >DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.
    
   
   
@@ -12233,16 +12317,20 @@ If the [EnableMediaRouter](#enablemediarouter) policy is disabled, then this pol
   - On Windows and macOS since 77 or later
 
   #### Description
-  This policy enables reporting of usage and crash-related data about Microsoft Edge to Microsoft.
+  This policy is deprecated. It is currently supported but will become obsolete in Microsoft Edge 89. This policy is replaced by the new policy:  [DiagnosticData](#diagnosticdata)for Windows 7, Windows 8, and macOS. This policy is replaced by Allow Telemetry on Win 10 ([https://go.microsoft.com/fwlink/?linkid=2099569](https://go.microsoft.com/fwlink/?linkid=2099569)).
+
+This policy enables reporting of usage and crash-related data about Microsoft Edge to Microsoft.
 
 Enable this policy to send reporting of usage and crash-related data to Microsoft. Disable this policy to not send the data to Microsoft. In both cases, users can't change or override the setting.
 
 On Windows 10, if you don't configure this policy, Microsoft Edge will default to the Windows diagnostic data setting. If you enable this policy, Microsoft Edge will only send usage data if the Windows Diagnostic data setting is set to Enhanced or Full. If you disable this policy, Microsoft Edge will not send usage data. Crash-related data is sent based on the Windows Diagnostic data setting. Learn more about Windows Diagnostic data settings at [https://go.microsoft.com/fwlink/?linkid=2099569](https://go.microsoft.com/fwlink/?linkid=2099569)
 
+On Windows 7, Windows 8, and macOS, this policy controls sending usage and crash-related data. If you don't configure this policy, Microsoft Edge will default to the user's preference.
 
-  
-On Windows 7, 8, and macOS, this policy controls sending usage and crash-related data. If you don't configure this policy, Microsoft Edge will default to the user's preference.
+To enable this policy,[SendSiteInfoToImproveServices](#sendsiteinfotoimproveservices) must be set to Enabled. If [MetricsReportingEnabled](#metricsreportingenabled) or [SendSiteInfoToImproveServices](#sendsiteinfotoimproveservices) is Not Configured or Disabled, this data will not be sent to Microsoft.
+																																												
 
+This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10 Pro or Enterprise instances that enrolled for device management, or macOS instances that are that are managed via MDM or joined to a domain via MCX.
 
   
   #### Supported features:
@@ -12256,7 +12344,7 @@ On Windows 7, 8, and macOS, this policy controls sending usage and crash-related
   #### Windows information and settings
   ##### Group Policy (ADMX) info
   - GP unique name: MetricsReportingEnabled
-  - GP name: Enable usage and crash-related data reporting
+  - GP name: Enable usage and crash-related data reporting (deprecated)
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/
   - GP path (Recommended): N/A
   - GP ADMX file name: MSEdge.admx
@@ -12455,6 +12543,8 @@ If you enable this policy, a non-removable profile will be created with the user
 If you disable or don't configure this policy, the profile automatically signed in with a user's work or school account on Windows can be signed out or removed by the user.
 
 If you want to configure browser sign in, use the [BrowserSignin](#browsersignin) policy.
+
+This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10 Pro or Enterprise instances that enrolled for device management.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -13285,11 +13375,11 @@ ${roaming_app_data}\edge-profile
 ```
 
 
-								   
-											   
-				  
-	   
-												 
+		   
+			  
+	  
+	
+			 
    
   
 
@@ -13337,11 +13427,11 @@ See https://docs.microsoft.com/windows-server/storage/folder-redirection/deploy-
 ```
 
 
-								   
-													 
-				  
-	   
-	   
+		   
+			  
+	  
+	
+	
    
   
 
@@ -13500,6 +13590,68 @@ tls1
   - Example value:
 ``` xml
 <string>tls1</string>
+```
+  
+
+  [Back to top](#microsoft-edge---policies)
+
+  ### SaveCookiesOnExit
+  #### Save cookies when Microsoft Edge closes
+  
+  
+  #### Supported versions:
+  - On Windows and macOS since 86 or later
+
+  #### Description
+  When this policy is enabled, the specified set of cookies is exempt from deletion when the browser closes. This policy is only effective when:
+- The 'Cookies and other site data' toggle is configured in Settings/Privacy and services/Clear browsing data on close or
+- The policy [ClearBrowsingDataOnExit](#clearbrowsingdataonexit) is enabled or
+- The policy [DefaultCookiesSetting](#defaultcookiessetting) is set to 'Keep cookies for the duration of the session'.
+
+You can define a list of sites, based on URL patterns, that will have their cookies preserved across sessions.
+
+Note: Users can still edit the cookie site list to add or remove URLs. However, they can't remove URLs that have been added by an Admin.
+
+If you enable this policy, the list of cookies won't be cleared when the browser closes.
+
+If you disable or don't configure this policy, the user's personal configuration is used.
+
+  #### Supported features:
+  - Can be mandatory: Yes
+  - Can be recommended: No
+  - Dynamic Policy Refresh: No - Requires browser restart
+
+  #### Data Type:
+  - List of strings
+
+  #### Windows information and settings
+  ##### Group Policy (ADMX) info
+  - GP unique name: SaveCookiesOnExit
+  - GP name: Save cookies when Microsoft Edge closes
+  - GP path (Mandatory): Administrative Templates/Microsoft Edge/
+  - GP path (Recommended): N/A
+  - GP ADMX file name: MSEdge.admx
+  ##### Windows Registry Settings
+  - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\SaveCookiesOnExit
+  - Path (Recommended): N/A
+  - Value Name: 1, 2, 3, ...
+  - Value Type: list of REG_SZ
+  ##### Example value:
+```
+SOFTWARE\Policies\Microsoft\Edge\SaveCookiesOnExit\1 = https://www.contoso.com
+SOFTWARE\Policies\Microsoft\Edge\SaveCookiesOnExit\2 = [*.]contoso.edu
+
+```
+
+
+  #### Mac information and settings
+  - Preference Key Name: SaveCookiesOnExit
+  - Example value:
+``` xml
+<array>
+  <string>https://www.contoso.com</string>
+  <string>[*.]contoso.edu</string>
+</array>
 ```
   
 
@@ -13796,8 +13948,8 @@ SOFTWARE\Policies\Microsoft\Edge\SecurityKeyPermitAttestation\1 = https://contos
   [Back to top](#microsoft-edge---policies)
 
   ### SendSiteInfoToImproveServices
-  #### Send site information to improve Microsoft services
-
+  #### Send site information to improve Microsoft services (deprecated)
+  >DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.
    
   
   
@@ -13805,17 +13957,19 @@ SOFTWARE\Policies\Microsoft\Edge\SecurityKeyPermitAttestation\1 = https://contos
   - On Windows and macOS since 77 or later
 
   #### Description
-  This policy enables sending info about websites visited in Microsoft Edge to Microsoft to improve services like search.
+  This policy is deprecated. It is currently supported but will become obsolete in Microsoft Edge 89. This policy is replaced by the new policy:  [DiagnosticData](#diagnosticdata)for Windows 7, Windows 8, and macOS. This policy is replaced by Allow Telemetry on Win 10 ([https://go.microsoft.com/fwlink/?linkid=2099569](https://go.microsoft.com/fwlink/?linkid=2099569)).
 
+This policy enables sending info about websites visited in Microsoft Edge to Microsoft to improve services like search.
 
    
 Enable this policy to send info about websites visited in Microsoft Edge to Microsoft. Disable this policy to not send info about websites visited in Microsoft Edge to Microsoft. In both cases, users can't change or override the setting.
 
 On Windows 10, if you don't configure this policy, Microsoft Edge will default to the Windows diagnostic data setting. If this policy is enabled Microsoft Edge will only send info about websites visited in Microsoft Edge if the Windows Diagnostic data setting is set to Full. If this policy is disabled Microsoft Edge will not send info about websites visited. Learn more about Windows Diagnostic data settings: [https://go.microsoft.com/fwlink/?linkid=2099569](https://go.microsoft.com/fwlink/?linkid=2099569)
 
+On Windows 7, windows 8, and macOS this policy controls sending info about websites visited. If you don't configure this policy, Microsoft Edge will default to the user's preference.
 
- 
-On Windows 7, 8, and Mac this policy controls sending info about websites visited. If you don't configure this policy, Microsoft Edge will default to the user's preference.
+To enable this policy, [MetricsReportingEnabled](#metricsreportingenabled) must be set to Enabled. If [SendSiteInfoToImproveServices](#sendsiteinfotoimproveservices) or [MetricsReportingEnabled](#metricsreportingenabled) is Not Configured or Disabled, this data will not be sent to Microsoft.
+																																											
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -13828,7 +13982,7 @@ On Windows 7, 8, and Mac this policy controls sending info about websites visite
   #### Windows information and settings
   ##### Group Policy (ADMX) info
   - GP unique name: SendSiteInfoToImproveServices
-  - GP name: Send site information to improve Microsoft services
+  - GP name: Send site information to improve Microsoft services (deprecated)
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/
   - GP path (Recommended): N/A
   - GP ADMX file name: MSEdge.admx
@@ -14319,7 +14473,7 @@ If you don't set this policy or apply it as recommended, users will be able to t
   #### Description
   If you enable this policy all the specified data types will be excluded from synchronization. This policy can be used to limit the type of data uploaded to the Microsoft Edge synchronization service.
 
-You can provide one of the following data types for this policy: "favorites", "settings", "passwords", "addressesAndMore", "extensions", and "collections". Note that these data type names are case sensitive.
+You can provide one of the following data types for this policy: "favorites", "settings", "passwords", "addressesAndMore", "extensions", "history", "openTabs", and "collections". Note that these data type names are case sensitive.
 
 Users will not be able to override the disabled data types.
 
@@ -14363,23 +14517,27 @@ SOFTWARE\Policies\Microsoft\Edge\SyncTypesListDisabled\1 = favorites
   [Back to top](#microsoft-edge---policies)
 
   ### TLS13HardeningForLocalAnchorsEnabled
-  #### Enable a TLS 1.3 security feature for local trust anchors
+  #### Enable a TLS 1.3 security feature for local trust anchors (obsolete)
   
   
+  >OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 85.
   #### Supported versions:
-  - On Windows and macOS since 81 or later
+  - On Windows and macOS since 81, until 85
 
   #### Description
-  This policy controls a security feature in TLS 1.3 that protects connections against downgrade attacks. It is backwards-compatible and will not affect connections to compliant TLS 1.2 servers or proxies. However, older versions of some TLS-intercepting proxies have an implementation flaw which causes them to be incompatible.
+  This policy doesn't work because it was only intended to be a short-term mechanism to give enterprises more time to upgrade affected proxies.
+
+This policy controls a security feature in TLS 1.3 that protects connections against downgrade attacks. It is backwards-compatible and will not affect connections to compliant TLS 1.2 servers or proxies. However, older versions of some TLS-intercepting proxies have an implementation flaw which causes them to be incompatible.
 
 If you enable this policy or don't set it, Microsoft Edge will enable these security protections for all connections.
 
 If you disable this policy, Microsoft Edge will disable these security protections for connections authenticated with locally-installed CA certificates. These protections are always enabled for connections authenticated with publicly-trusted CA certificates.
 
-This policy may be used to test for any affected proxies and upgrade them. Affected proxies are expected to fail connections with an error code of ERR_TLS13_DOWNGRADE_DETECTED. A later version of Microsoft Edge will enable this option by default.
+																																																													  
 
-After it is enabled by default, administrators who need more time to upgrade affected proxies may use this policy to temporarily disable this security feature. This policy will be removed after version 85.
+																																																			 
 
+This policy can be used to test for any affected proxies and upgrade them. Affected proxies are expected to fail connections with an error code of ERR_TLS13_DOWNGRADE_DETECTED.
 
   #### Supported features:
   - Can be mandatory: Yes
@@ -14392,7 +14550,7 @@ After it is enabled by default, administrators who need more time to upgrade aff
   #### Windows information and settings
   ##### Group Policy (ADMX) info
   - GP unique name: TLS13HardeningForLocalAnchorsEnabled
-  - GP name: Enable a TLS 1.3 security feature for local trust anchors
+  - GP name: Enable a TLS 1.3 security feature for local trust anchors (obsolete)
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/
   - GP path (Recommended): N/A
   - GP ADMX file name: MSEdge.admx
@@ -14760,6 +14918,8 @@ The most specific filter determines if a URL is blocked or allowed. The allowed 
 
 This policy is limited to 1000 entries; subsequent entries are ignored.
 
+This policy also allows the browser to automatically invoke external applications registered as protocol handlers for protocols like "tel:" or "ssh:".
+
 If you don't configure this policy, there are no exceptions to the block list in the [URLBlocklist](#urlblocklist) policy.
 
   #### Supported features:
@@ -14883,14 +15043,16 @@ SOFTWARE\Policies\Microsoft\Edge\URLBlocklist\8 = *
   [Back to top](#microsoft-edge---policies)
 
   ### UserAgentClientHintsEnabled
-  #### Enable the User-Agent Client Hints feature
-  
+  #### Enable the User-Agent Client Hints feature (deprecated)
+  >DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.
   
   #### Supported versions:
   - On Windows and macOS since 86 or later
 
   #### Description
-  When enabled the User-Agent Client Hints feature sends granular request headers that provide information about the user browser (for example, the browser version) and environment (for example, the system architecture).
+  This policy is deprecated because it's only intended to be a short-term mechanism to give enterprises more time to update their web content if and when it's found to be incompatible with the User-Agent Client Hints feature. It won't work in Microsoft Edge version 89.
+
+When enabled the User-Agent Client Hints feature sends granular request headers that provide information about the user browser (for example, the browser version) and environment (for example, the system architecture).
 
 This is an additive feature, but the new headers may break some websites that restrict the characters that requests may contain.
 
@@ -14907,7 +15069,7 @@ If you enable or don't configure this policy, the User-Agent Client Hints featur
   #### Windows information and settings
   ##### Group Policy (ADMX) info
   - GP unique name: UserAgentClientHintsEnabled
-  - GP name: Enable the User-Agent Client Hints feature
+  - GP name: Enable the User-Agent Client Hints feature (deprecated)
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/
   - GP path (Recommended): N/A
   - GP ADMX file name: MSEdge.admx
@@ -15274,9 +15436,9 @@ SOFTWARE\Policies\Microsoft\Edge\WebAppInstallForceList = [
 
   ### WebComponentsV0Enabled
   #### Re-enable Web Components v0 API until M84 (obsolete)
-																					  
 					   
 		
+  
   
   >OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 84.
   #### Supported versions:
@@ -15327,9 +15489,9 @@ If you set this policy to False or don't set this policy, the Web Components v0 
 
   ### WebDriverOverridesIncompatiblePolicies
   #### Allow WebDriver to Override Incompatible Policies (obsolete)
-																					  
 					   
 		
+  
   
   >OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 84.
   #### Supported versions:
