@@ -3,7 +3,7 @@ title: "Access the old version of Microsoft Edge"
 ms.author: jtkim
 author: dan-wesley
 manager: srugh
-ms.date: 06/01/2020
+ms.date: 08/14/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: microsoft-edge
@@ -26,6 +26,8 @@ While most organizations will want to replace Microsoft Edge Legacy with the new
 
 > [!IMPORTANT]
 > Running Microsoft Edge Legacy side-by-side with the new version is not recommended for regular usage. This configuration should only be used in specific cases where testing with both browser versions is required.
+>
+> The Microsoft Edge Legacy desktop app will reach end of support on March 9, 2021 in favor of the new Microsoft Edge. This means that Microsoft Edge Legacy will not receive security updates after that date. This change is applicable to all experiences that run in the Microsoft Edge Legacy desktop app. [Learn more](https://www.microsoft.com/edge/business).
 
 ## Before you begin
 
