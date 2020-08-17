@@ -8,9 +8,9 @@
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 8/11/2020 | [Release notes for Microsoft Edge Security Updates](/DeployEdge/microsoft-edge-relnotes-security) | modified |
-| 8/11/2020 | [Microsoft Edge release notes for Stable Channel](/DeployEdge/microsoft-edge-relnote-stable-channel) | modified |
-| 8/13/2020 | [Microsoft Edge Browser Policy Documentation](/DeployEdge/microsoft-edge-policies) | modified |
+| 8/11/2020 | [Release notes for Microsoft Edge Security Updates](/DeployEdge/microsoft-edge-relnotes-security)</br>Security update for Stable channel version 84.0.522.59. | modified |
+| 8/11/2020 | [Microsoft Edge release notes for Stable Channel](/DeployEdge/microsoft-edge-relnote-stable-channel)</br>Update to Version 84.0.522.59 to reflect security update. | modified |
+| 8/13/2020 | [Microsoft Edge Browser Policy Documentation](/DeployEdge/microsoft-edge-policies)</br>New group policies added. | modified |
 
 
 ## Week of August 03, 2020
